@@ -4,7 +4,7 @@
 <rect x="315" y="392" width="175" height="236" rx="87" fill="#f4f0df"/><path d="M315 539h175v89H315z" fill="#d6bb84"/><circle cx="410" cy="540" r="64" fill="#e1a67e"/>
 <path d="M52 659H553" stroke="#859485"/>
     <g font-family="Arial,Malgun Gothic,sans-serif" fill="#293733">
-      <text x="40" y="49" font-size="12" letter-spacing="2">CulturePick presents</text>
+      <text x="40" y="49" font-size="12" letter-spacing="2">Oddinary presents</text>
       <text x="40" y="102" font-size="50" font-weight="700" letter-spacing="-2">Fragments</text>
       <text x="40" y="141" font-size="24" font-weight="600" letter-spacing="-1">감각의 조각들</text>
       <path d="M40 711H560" stroke="#293733" stroke-opacity=".4"/>

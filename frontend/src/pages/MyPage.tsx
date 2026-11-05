@@ -10,7 +10,7 @@ const SECTIONS = [
   { to: '/mypage/bookmarks', label: '찜한 콘텐츠', Icon: Bookmark },
   { to: '/mypage/history', label: '최근 본 콘텐츠', Icon: Clock3 },
   { to: '/mypage/preferences', label: '취향 설정', Icon: Settings2 },
-  { to: '/mypage/payments', label: '이용·결제 내역', Icon: Ticket },
+  { to: '/mypage/payments', label: '결제 내역', Icon: Ticket },
 ]
 
 export function MyPage() {

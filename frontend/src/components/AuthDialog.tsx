@@ -22,9 +22,9 @@ export function AuthDialog() {
     } catch (e) { setError((e as Error).message) } finally { setBusy(false) }
   }
   return <Dialog open={session.authOpen} close={session.closeAuth} title={register ? '회원가입' : '로그인'}>
-    <div className="dialog-symbol">cp.</div><h2>{register ? '취향이 쌓이는 문화생활' : '나의 취향을 이어서'}</h2>
+    <h2>{register ? '취향이 쌓이는 문화생활' : '나의 취향을 이어서'}</h2>
     <p className="muted">{register ? '마음에 드는 순간을 모으고, 새로운 문화를 만나세요.' : '찜한 콘텐츠와 나를 위한 추천을 만나보세요.'}</p>
-    <div className="auth-tabs"><button className={!register ? 'selected' : ''} disabled={busy} onClick={() => { setRegister(false); setError('') }}>로그인</button><button className={register ? 'selected' : ''} disabled={busy} onClick={() => { setRegister(true); setError('') }}>회원가입</button></div>
+    <div className="auth-tabs" role="group" aria-label="로그인 또는 회원가입"><button aria-pressed={!register} className={!register ? 'selected' : ''} disabled={busy} onClick={() => { setRegister(false); setError('') }}>로그인</button><button aria-pressed={register} className={register ? 'selected' : ''} disabled={busy} onClick={() => { setRegister(true); setError('') }}>회원가입</button></div>
     <form onSubmit={submit} className="stack">
       {register && <label>이름<input name="name" autoComplete="name" minLength={2} maxLength={40} required placeholder="문화생활에서 사용할 이름" /></label>}
       <label>이메일<input name="email" type="email" autoComplete="email" maxLength={254} required placeholder="you@example.com" /></label>
