@@ -9,6 +9,11 @@
 | 진세은 | [@wlstpdms](https://github.com/wlstpdms) |
 
 
+| 팀원 1 | 팀원 2 | 팀원 3 |
+|---|---|---|
+| <img src="https://github.com/사용자ID1.png" width="100"> | <img src="https://github.com/사용자ID2.png" width="100"> | <img src="https://github.com/사용자ID3.png" width="100"> |
+| [사용자ID1](https://github.com/사용자ID1) | [사용자ID2](https://github.com/사용자ID2) | [사용자ID3](https://github.com/사용자ID3) |
+
 
 ## 2. 프로젝트 개요
 
