@@ -50,11 +50,10 @@ Oddinary는 외부 공개 API와 네이버 크롤링으로 전시·공연·문�
 | 구분 | 기술 | 사용 목적 |
 |---|---|---|
 | Language & Data Processing | Python, SQL | 데이터 수집·정제·가공 및 쿼리 작성 |
+| Frontend | HTML, CSS, JavaScript | UI 디자인 및 프론트엔드 구현 |
 | Backend | FastAPI | API 서버 개발 |
 | Database | MariaDB, MongoDB | 데이터 저장 및 관리 |
-| Data Visualization | Grafana | 데이터 시각화 및 모니터링 |
-| Infrastructure | Linux (Ubuntu), Nginx | 서버 운영 및 웹 요청 처리 |
-| Collaboration | Git, GitHub | 버전 관리 및 협업 |
+| Monitoring & Logging | Grafana, Prometheus, Loki, Grafana Alloy | 시스템 모니터링 및 로그 수집·분석 |
 
 
 ## 4. WBS
