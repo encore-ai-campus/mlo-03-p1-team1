@@ -5,7 +5,7 @@
 <circle cx="345" cy="449" r="22" fill="#cfb194"/><path d="M324 474h41l21 126h-81z" fill="#8e5b4c"/>
 <circle cx="100" cy="249" r="2" fill="#e0cda6"/><circle cx="505" cy="337" r="3" fill="#e0cda6"/>
     <g font-family="Arial,Malgun Gothic,sans-serif" fill="#f6e9d4">
-      <text x="40" y="49" font-size="12" letter-spacing="2">CulturePick presents</text>
+      <text x="40" y="49" font-size="12" letter-spacing="2">Oddinary presents</text>
       <text x="40" y="102" font-size="50" font-weight="700" letter-spacing="-2">Maybe, Happy</text>
       <text x="40" y="141" font-size="24" font-weight="600" letter-spacing="-1">어쩌면, 해피엔딩</text>
       <path d="M40 711H560" stroke="#f6e9d4" stroke-opacity=".4"/>

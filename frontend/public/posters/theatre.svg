@@ -4,7 +4,7 @@
 <path d="M119 606q179-67 357 0" fill="none" stroke="#a8884c" stroke-width="2"/>
 <g fill="#416c69"><circle cx="138" cy="266" r="7"/><circle cx="479" cy="420" r="5"/><circle cx="217" cy="599" r="4"/></g>
     <g font-family="Arial,Malgun Gothic,sans-serif" fill="#344f4b">
-      <text x="40" y="49" font-size="12" letter-spacing="2">CulturePick presents</text>
+      <text x="40" y="49" font-size="12" letter-spacing="2">Oddinary presents</text>
       <text x="40" y="102" font-size="50" font-weight="700" letter-spacing="-2">A Little Star</text>
       <text x="40" y="141" font-size="24" font-weight="600" letter-spacing="-1">작은 별의 여행</text>
       <path d="M40 711H560" stroke="#344f4b" stroke-opacity=".4"/>

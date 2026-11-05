@@ -4,7 +4,7 @@
 <rect x="128" y="271" width="344" height="348" fill="none" stroke="#f4efe4" stroke-width="9"/><circle cx="384" cy="346" r="45" fill="#eece9e"/>
 <path d="M301 237v422" stroke="#f4efe4" stroke-width="4"/>
     <g font-family="Arial,Malgun Gothic,sans-serif" fill="#293733">
-      <text x="40" y="49" font-size="12" letter-spacing="2">CulturePick presents</text>
+      <text x="40" y="49" font-size="12" letter-spacing="2">Oddinary presents</text>
       <text x="40" y="102" font-size="50" font-weight="700" letter-spacing="-2">Private Views</text>
       <text x="40" y="141" font-size="24" font-weight="600" letter-spacing="-1">사적인 풍경</text>
       <path d="M40 711H560" stroke="#293733" stroke-opacity=".4"/>
