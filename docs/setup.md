@@ -1,23 +1,14 @@
 # 환경 설정과 배포 안내
 
-## 새 작업자의 프론트엔드 실행
+## 브랜치 전환 후 프론트엔드 import 오류
 
-저장소 루트의 `frontend/`를 사용합니다. 다음 명령은 저장소 루트에서 실행합니다.
+2026-11-05 확인한 `feature/users` 브랜치는 `App.tsx`·`SurveyDialog.tsx`·`MyPage.tsx`에서 참조하는 필수 소스가 누락되어 있었다. `frontend`에서 이 브랜치로 전환하면 이전 브랜치의 파일은 작업 폴더에서 사라지고, 현재 브랜치의 불완전한 import가 빌드를 막는다. 이는 Vite 캐시나 DB 오류가 아니다.
 
-```powershell
-npm --prefix frontend ci
-npm run dev
-```
+사용자가 확인한 화면은 직전 `frontend` 브랜치의 `caa5ba1` 버전이다. 이 버전의 프론트엔드 추적 파일 62개를 기준으로 누락·변경된 50개 파일을 원래 경로에 복원했다. `#111216` 배경, Oddinary 화면, Apple 스타일 테마·스프링 인터랙션·화면 전환과 그 참조 파일·기존 테스트를 함께 복원했다. 브랜치 전환이나 파일 이동·삭제는 하지 않았고, `.env`와 다운로드 포스터는 유지했다. 복원 전 파일은 `.runtime/frontend-before-dark-restore-*.zip`에 백업했다.
 
-프론트엔드 실행에는 Node.js 24와 npm을 사용합니다. 기본 API 주소는 `http://localhost:8000/api/v1`입니다. 다른 백엔드에 연결할 때는 `frontend/.env.example`을 `frontend/.env`로 복사하고 `VITE_API_BASE_URL`을 실제 백엔드 주소로 바꿉니다. 예제의 `<backend-origin>`은 그대로 사용하지 않습니다. 데이터 조회와 로그인에는 실행 중인 백엔드가 필요합니다.
+복구 시에는 사용자가 확인한 디자인 버전의 테마·컴포넌트·참조 파일을 함께 유지한다. 오래된 버전에서 누락 파일 일부만 가져오면 빌드는 통과해도 디자인·동작이 달라질 수 있다. 이 복원은 `npm run build`, 기존 테스트 16개, 실제 브라우저의 배경색·헤더 블러·버튼 스프링 반응·콘텐츠와 포스터 표시로 확인했다.
 
-`npm run build`로 TypeScript 검사와 배포 빌드를 확인할 수 있습니다. GitHub Actions도 커밋된 파일만 받아 같은 빌드를 실행하므로, 로컬에만 있는 파일을 import하면 검사에 실패합니다.
-
-### 새 파일 공유 시 확인
-
-`git status --short`의 `??`는 무시된 파일이 아니라 **아직 Git에 추가하지 않은 파일**입니다. `git commit -am`은 기존에 추적 중인 파일만 포함하므로, 새 소스는 먼저 `git add <파일경로>`로 추가해야 합니다. 커밋 전 `git diff --cached --name-status`로 새 컴포넌트, 페이지, 스타일, API 모듈과 필요한 백엔드 소스·마이그레이션이 함께 포함됐는지 확인합니다. 이후 커밋하고 작업 브랜치를 push해야 다른 작업자가 받을 수 있습니다.
-
-`.env`, `node_modules/`, `dist/`, 가상환경과 로컬 실행 데이터는 공유 대상에서 제외합니다. 실행에 필요한 소스, `package.json`, `package-lock.json`, 설정 파일과 `.env.example`은 공유합니다.
+복원 파일은 해당 파일을 참조하는 코드와 함께 Git 커밋에 포함해야 한다. `git status --short`의 `??`는 아직 추적되지 않은 파일이므로 `git commit -am`만으로는 포함되지 않는다. 공유 전 필수 파일을 명시적으로 `git add`하고 `npm run build`로 누락 여부를 확인한다.
 
 ## 로컬 서버 실행
 
