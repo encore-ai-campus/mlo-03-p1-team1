@@ -14,7 +14,7 @@ import { PaymentResult } from './pages/PaymentResult'
 
 export default function App() {
   const { pathname } = useLocation()
-  useEffect(() => { window.scrollTo({ top: 0 }); document.title = 'CulturePick · 취향이 닿는 문화생활' }, [pathname])
+  useEffect(() => { window.scrollTo({ top: 0 }); document.title = 'Oddinary · 취향이 닿는 문화생활' }, [pathname])
   return <SessionProvider><Routes><Route element={<Layout />}>
     <Route index element={<Home />} />
     <Route path="explore" element={<Explore />} />

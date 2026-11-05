@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 780">
+    <rect width="600" height="780" fill="#e1e8e2"/><defs><radialGradient id="g"><stop stop-color="#f1ecae"/><stop offset=".5" stop-color="#b2cb7b"/><stop offset="1" stop-color="#6b967e"/></radialGradient></defs>
+<circle cx="302" cy="443" r="200" fill="url(#g)"/><path d="M300 246v397M104 443h396M163 303l278 280M442 303L163 583" stroke="#f2f2c6" stroke-width="1"/>
+<g fill="none" stroke="#f3efce"><ellipse cx="302" cy="443" rx="120" ry="200"/><ellipse cx="302" cy="443" rx="48" ry="200"/><ellipse cx="302" cy="443" rx="200" ry="120"/><ellipse cx="302" cy="443" rx="200" ry="48"/></g>
+<circle cx="302" cy="443" r="20" fill="#e6e8bc"/>
+    <g font-family="Arial,Malgun Gothic,sans-serif" fill="#293733">
+      <text x="40" y="49" font-size="12" letter-spacing="2">CulturePick presents</text>
+      <text x="40" y="102" font-size="50" font-weight="700" letter-spacing="-2">Light Garden</text>
+      <text x="40" y="141" font-size="24" font-weight="600" letter-spacing="-1">빛이 머무는 정원</text>
+      <path d="M40 711H560" stroke="#293733" stroke-opacity=".4"/>
+      <text x="40" y="746" font-size="13">문화의 새로운 장면을 만나다</text>
+      <text x="560" y="746" text-anchor="end" font-size="12">Sample exhibition</text>
+    </g></svg>

@@ -1,14 +1,13 @@
-import { Sparkles } from 'lucide-react'
 import { useSession } from '../context'
 import { Dialog } from './Dialog'
 import { PreferenceForm } from './PreferenceForm'
 
 export function SurveyDialog() {
   const s = useSession()
-  return <Dialog open={s.surveyOpen} close={s.closeSurvey} title="가입 취향 설정">
-    <div className="dialog-symbol"><Sparkles /></div>
-    <h2>어떤 순간에 마음이 끌리나요?</h2>
-    <p className="muted">좋아하는 분야를 하나 이상 골라 주세요.<br />이후에는 마이페이지의 취향 설정에서 수정할 수 있어요.</p>
-    {s.surveyOpen && s.user && <PreferenceForm onSaved={s.closeSurvey} />}
+  return <Dialog open={s.surveyOpen} close={s.closeSurvey} title="나의 취향으로 시작하기" className="survey-dialog">
+    <h2>나의 취향 찾기</h2>
+    <p className="muted">{s.user ? '선택한 취향과 활동에 맞춰 문화를 추천해 드려요.' : '로그인 없이 시작해요. 취향은 이 브라우저에 저장돼요.'}</p>
+    {s.surveyOpen && <PreferenceForm onSaved={s.closeSurvey} />}
+    <button type="button" className="survey-skip" onClick={s.closeSurvey}>나중에 고르고 둘러볼게요</button>
   </Dialog>
 }

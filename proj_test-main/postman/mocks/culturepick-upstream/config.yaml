@@ -1,0 +1,10 @@
+version: 1
+name: culturepick-upstream
+slug: culturepick-upstream
+protocol: http
+port: 4010
+interceptRequests: true
+scenarios:
+  - name: default
+    path: ./handler.js
+    default: true

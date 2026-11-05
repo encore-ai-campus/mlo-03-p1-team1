@@ -4,7 +4,7 @@
 <g fill="none" stroke="#f3efce"><ellipse cx="302" cy="443" rx="120" ry="200"/><ellipse cx="302" cy="443" rx="48" ry="200"/><ellipse cx="302" cy="443" rx="200" ry="120"/><ellipse cx="302" cy="443" rx="200" ry="48"/></g>
 <circle cx="302" cy="443" r="20" fill="#e6e8bc"/>
     <g font-family="Arial,Malgun Gothic,sans-serif" fill="#293733">
-      <text x="40" y="49" font-size="12" letter-spacing="2">CulturePick presents</text>
+      <text x="40" y="49" font-size="12" letter-spacing="2">Oddinary presents</text>
       <text x="40" y="102" font-size="50" font-weight="700" letter-spacing="-2">Light Garden</text>
       <text x="40" y="141" font-size="24" font-weight="600" letter-spacing="-1">빛이 머무는 정원</text>
       <path d="M40 711H560" stroke="#293733" stroke-opacity=".4"/>

@@ -1,5 +1,24 @@
 # 환경 설정과 배포 안내
 
+## 새 작업자의 프론트엔드 실행
+
+저장소 루트의 `frontend/`를 사용합니다. 다음 명령은 저장소 루트에서 실행합니다.
+
+```powershell
+npm --prefix frontend ci
+npm run dev
+```
+
+프론트엔드 실행에는 Node.js 24와 npm을 사용합니다. 기본 API 주소는 `http://localhost:8000/api/v1`입니다. 다른 백엔드에 연결할 때는 `frontend/.env.example`을 `frontend/.env`로 복사하고 `VITE_API_BASE_URL`을 실제 백엔드 주소로 바꿉니다. 예제의 `<backend-origin>`은 그대로 사용하지 않습니다. 데이터 조회와 로그인에는 실행 중인 백엔드가 필요합니다.
+
+`npm run build`로 TypeScript 검사와 배포 빌드를 확인할 수 있습니다. GitHub Actions도 커밋된 파일만 받아 같은 빌드를 실행하므로, 로컬에만 있는 파일을 import하면 검사에 실패합니다.
+
+### 새 파일 공유 시 확인
+
+`git status --short`의 `??`는 무시된 파일이 아니라 **아직 Git에 추가하지 않은 파일**입니다. `git commit -am`은 기존에 추적 중인 파일만 포함하므로, 새 소스는 먼저 `git add <파일경로>`로 추가해야 합니다. 커밋 전 `git diff --cached --name-status`로 새 컴포넌트, 페이지, 스타일, API 모듈과 필요한 백엔드 소스·마이그레이션이 함께 포함됐는지 확인합니다. 이후 커밋하고 작업 브랜치를 push해야 다른 작업자가 받을 수 있습니다.
+
+`.env`, `node_modules/`, `dist/`, 가상환경과 로컬 실행 데이터는 공유 대상에서 제외합니다. 실행에 필요한 소스, `package.json`, `package-lock.json`, 설정 파일과 `.env.example`은 공유합니다.
+
 ## 로컬 서버 실행
 
 PowerShell 현재 위치를 `CulturePick`으로 두고 두 터미널에서 시작합니다. 루트 `.venv`가 준비되어 있고 루트 `requirements.txt`의 패키지가 설치되어 있어야 합니다.
