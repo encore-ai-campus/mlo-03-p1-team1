@@ -48,19 +48,14 @@ Oddinary는 외부 공개 API와 네이버 크롤링으로 전시·공연·문�
 ## 3. 기술 스택
 
 | 구분 | 기술 | 사용 목적 |
-|---|---|---|
-| Language | Python, SQL, TypeScript | 데이터 처리 및 서비스 개발 |
-| Frontend | React, Vite | 웹 UI 구현 |
-| Backend | FastAPI | API 서버 구축 |
-| Web Server | Nginx | 웹 서버 및 요청 처리 |
-| Database | MariaDB | 회원·콘텐츠 등 정형 데이터 저장 |
-| Database | MongoDB | 사용자 행동·이벤트 데이터 저장 |
-| Data Processing | Python, Pandas (예정) | 데이터 수집·정제·가공 |
-| Logging | Grafana Alloy, Loki | 로그 수집·저장·조회 |
-| Monitoring | Prometheus, Grafana | 시스템 모니터링 및 시각화 |
-| Load Testing | Locust (예정) | API 부하 테스트 |
-| Infrastructure | Linux (Ubuntu) | 서버 운영 환경 |
-| Collaboration | Git, GitHub | 형상 관리 및 협업 |
+구분	기술
+Language  Python, SQL
+Backend  FastAPI
+Database	MariaDB, MongoDB
+Data Processing	  Python
+Data Visualization	Grafana
+Infrastructure  Linux(Ubuntu), Nginx
+Collaboration  Git, GitHub
 
 
 
