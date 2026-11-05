@@ -47,13 +47,36 @@ Oddinary는 외부 공개 API와 네이버 크롤링으로 전시·공연·문�
 
 ## 3. 기술 스택
 
-| 구분 | 기술 | 사용 목적 |
-|---|---|---|
-| Language & Data Processing | Python, SQL | 데이터 수집·정제·가공 및 쿼리 작성 |
-| Frontend | HTML, CSS, JavaScript | UI 디자인 및 프론트엔드 구현 |
-| Backend | FastAPI | API 서버 개발 |
-| Database | MariaDB, MongoDB | 데이터 저장 및 관리 |
-| Monitoring & Logging | Grafana, Prometheus, Loki, Grafana Alloy | 시스템 모니터링 및 로그 수집·분석 |
+
+## 🛠 Tech Stack
+
+### Language & Data Processing
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+
+### Frontend
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Apple Design Skill](https://img.shields.io/badge/Apple_Design_Skill-000000?style=for-the-badge&logo=apple&logoColor=white)
+![Codex](https://img.shields.io/badge/Codex-412991?style=for-the-badge&logo=openai&logoColor=white)
+
+### Backend
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+
+### Database
+![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+
+### Infrastructure
+![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
+
+### Monitoring & Logging
+![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
+![Loki](https://img.shields.io/badge/Loki-F46800?style=for-the-badge&logo=grafana&logoColor=white)
+![Grafana Alloy](https://img.shields.io/badge/Grafana_Alloy-F46800?style=for-the-badge&logo=grafana&logoColor=white)
+
 
 
 ## 4. WBS
