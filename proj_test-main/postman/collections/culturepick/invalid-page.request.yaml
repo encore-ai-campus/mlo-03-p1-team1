@@ -1,0 +1,11 @@
+$kind: http-request
+method: GET
+url: '{{base_url}}/contents?page=0'
+order: 5000
+queryParams:
+  - key: page
+    value: '0'
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test('Invalid pagination rejected', () => pm.response.to.have.status(422));

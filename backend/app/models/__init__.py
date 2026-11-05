@@ -107,6 +107,10 @@ class Order(Base):
     created_at: Mapped[datetime] = mapped_column(DateTime, default=utcnow)
     updated_at: Mapped[datetime] = mapped_column(DateTime, default=utcnow)
 
+    @property
+    def is_simulated(self) -> bool:
+        return self.payment_id.startswith('sim-')
+
 
 class PaymentHistory(Base):
     __tablename__ = 'payment_history'

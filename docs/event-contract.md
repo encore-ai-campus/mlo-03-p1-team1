@@ -12,6 +12,9 @@
 | search | 검색 제출 | 검색 횟수 분석. 원문 검색어 수집 안 함 |
 | filter_use | 탐색 필터 변경 | 사용 분석. 분야만 optional category 저장 |
 | bookmark_add / bookmark_remove | 찜 API 서버 | 실제 상태와 같은 DB 트랜잭션의 행동 기록 |
+| payment_completed | 모의 결제 API 서버 | 콘텐츠 선택·결제 행동 분석. 주문·결제 이력·이용 기록과 같은 트랜잭션에서 한 번 생성 |
+
+`payment_completed`의 properties는 `payment_id`, `payment_mode=simulation`, `quantity`, `amount`, `currency`다. 서버만 생성하며 브라우저 이벤트 수집 API로 직접 제출할 수 없다. 동일 주문 요청 재전송은 이벤트를 추가하지 않는다. 실제 청구/관람이 아닌 모의 결제 선택 데이터로 분석한다.
 
 추천 노출은 추천 페이지 목록이 렌더링된 기준이며 실제 viewport 교차/시야 체류 보장은 하지 않는다. 비로그인 사용자는 원본 행동을 저장하지 않고 공개 추천을 사용한다. 동일 event_id 재전송은 첫 저장만 인정하며 payload 덮어쓰기나 사용자 변경을 하지 않는다.
 

@@ -1,0 +1,20 @@
+$kind: http-request
+method: POST
+url: '{{base_url}}/payments/simulations'
+order: 7000
+auth:
+  type: noauth
+headers:
+  - key: Content-Type
+    value: application/json
+  - key: Idempotency-Key
+    value: 'd7543a9c-f34b-42dd-8336-3a34c5310c42'
+body:
+  type: json
+  content: |-
+    {"content_id": 1, "quantity": 1}
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test('Simulation payments require login', () => pm.response.to.have.status(401));
+      pm.test('Payment authentication error contract', () => pm.expect(pm.response.json().detail).to.be.a('string'));

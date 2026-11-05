@@ -1,0 +1,41 @@
+purpose:
+  stands_in_for: PortOne V2 payment read/full cancellation and Korean Culture Portal period/detail HTTP APIs.
+  unblocks: Local verification of the real FastAPI service and collector with real MariaDB, without provider credentials or charges.
+assumptions:
+  - id: caller-validates-payment-before-reservation
+    status: supported
+    claim: In the local scenarios exercised, the service rejects mismatched amount, currency, store, or order metadata and creates one reservation for concurrent valid verifications.
+    reason: Tests executed the actual HTTP adapter and database transactions rather than stubbing its HTTP client.
+    verification: On 2026-11-03 the 34-test suite passed against the running Postman simulation; its request events included GET /payments with storeId. This establishes caller behavior against the local model only.
+    source: backend/tests/test_upstreams.py; backend/app/services/payments.py; postman/mocks/culturepick-upstream/handler.js
+    updated_at: '2026-11-03'
+  - id: caller-cancel-idempotency
+    status: supported
+    claim: Three concurrent full cancellation calls in the local test produce one provider cancellation and one final cancelled reservation with the full cancelled amount recorded.
+    reason: The mock cancellation counter and real MariaDB history were both asserted.
+    verification: test_concurrent_cancellation_calls_provider_once passed on 2026-11-03. A separate test confirmed that a later PAID response does not regress a cancelled local order. These tests do not establish actual PG concurrency guarantees.
+    source: backend/tests/test_upstreams.py; backend/app/services/payments.py
+    updated_at: '2026-11-03'
+  - id: collector-upsert-and-rollback
+    status: supported
+    claim: With the modelled XML list/detail responses, two collector runs create one source record and an upstream 500 preserves that record.
+    reason: The actual collector, normalizer and transaction ran against HTTP and MariaDB.
+    verification: test_collector_http_normalization_and_error and test_collector_upsert_and_failure_preserves_existing passed on 2026-11-03. Requests to /period and /detail appeared in the simulation stream.
+    source: backend/tests/test_upstreams.py; backend/app/collectors/culture_portal.py; backend/app/tasks/collect.py
+    updated_at: '2026-11-03'
+  - id: real-provider-behavior
+    status: unknown
+    claim: The selected real PG channel and approved Culture Portal service return exactly the subset of response shapes represented by this stand-in.
+    reason: No provider credentials, actual PG channel, or provider sandbox deliveries were supplied. Official documentation informed the stand-in but does not establish live account behavior.
+    verification: Official PortOne V2 checkout, REST and Standard Webhooks pages and Culture Portal API guide were consulted. Owner mock search was skipped because Postman was unauthenticated; Orbit search returned 403. Live verification remains required.
+    source: https://developers.portone.io/api/rest-v2/payment?v=v2; https://developers.portone.io/opi/ko/integration/webhook/readme-v2; https://www.culture.go.kr/portal/main/contents.do?menuNo=200155
+    updated_at: '2026-11-03'
+fingerprints:
+  - id: member-discovery-local-validation
+    date: '2026-11-04'
+    commit: null
+    cli: '1.73.0; simulation start blocked by permission to local ~/.postman dataset files; upstream claims above were not reverified in this session'
+  - id: initial-implementation
+    date: '2026-11-03'
+    commit: null
+    cli: '1.73.0'

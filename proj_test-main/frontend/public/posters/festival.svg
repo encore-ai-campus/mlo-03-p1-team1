@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 780">
+    <rect width="600" height="780" fill="#dfebd1"/><path d="M50 620L153 327l109 293z" fill="#9aaf73"/><path d="M314 620l108-347 129 347z" fill="#6d8e63"/>
+<circle cx="302" cy="350" r="90" fill="#eec77c"/><path d="M230 620V443a70 70 0 0 1 140 0v177z" fill="#f0a681"/>
+<path d="M45 649q125-55 257-13t258-7" fill="none" stroke="#567653" stroke-width="4"/>
+<g fill="#f8f4df"><circle cx="176" cy="469" r="13"/><circle cx="438" cy="452" r="11"/></g>
+    <g font-family="Arial,Malgun Gothic,sans-serif" fill="#38573a">
+      <text x="40" y="49" font-size="12" letter-spacing="2">CulturePick presents</text>
+      <text x="40" y="102" font-size="50" font-weight="700" letter-spacing="-2">Park, Together</text>
+      <text x="40" y="141" font-size="24" font-weight="600" letter-spacing="-1">가을, 공원에서</text>
+      <path d="M40 711H560" stroke="#38573a" stroke-opacity=".4"/>
+      <text x="40" y="746" font-size="13">문화의 새로운 장면을 만나다</text>
+      <text x="560" y="746" text-anchor="end" font-size="12">Sample exhibition</text>
+    </g></svg>

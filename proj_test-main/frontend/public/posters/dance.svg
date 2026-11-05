@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 780">
+    <rect width="600" height="780" fill="#efd8d6"/><g fill="none" stroke-linecap="round"><path d="M304 275q-112 56-88 175t181 157" stroke="#aa5a67" stroke-width="50"/>
+<path d="M215 435q73-28 169-148" stroke="#aa5a67" stroke-width="40"/><path d="M256 501q-60 72-108 105" stroke="#aa5a67" stroke-width="40"/></g>
+<circle cx="327" cy="244" r="38" fill="#aa5a67"/><path d="M104 569q153 97 386-158" fill="none" stroke="#f7ece7" stroke-width="3"/>
+<path d="M141 642q160 34 328-115" fill="none" stroke="#c3848e"/>
+    <g font-family="Arial,Malgun Gothic,sans-serif" fill="#6e3542">
+      <text x="40" y="49" font-size="12" letter-spacing="2">CulturePick presents</text>
+      <text x="40" y="102" font-size="50" font-weight="700" letter-spacing="-2">Body Language</text>
+      <text x="40" y="141" font-size="24" font-weight="600" letter-spacing="-1">몸의 언어</text>
+      <path d="M40 711H560" stroke="#6e3542" stroke-opacity=".4"/>
+      <text x="40" y="746" font-size="13">문화의 새로운 장면을 만나다</text>
+      <text x="560" y="746" text-anchor="end" font-size="12">Sample exhibition</text>
+    </g></svg>
