@@ -101,8 +101,10 @@ def test_views_work_without_survey(client, catalog, auth):
     assert client.get('/api/v1/recommendations', headers=auth).json()['items'][0]['id'] == catalog[1]
 
 
-def test_payment_disabled_does_not_create_order(client, catalog, auth):
-    assert not client.get('/api/v1/payments/config').json()['enabled']
+def test_legacy_pg_payment_disabled_does_not_create_order(client, catalog, auth):
+    config = client.get('/api/v1/payments/config').json()
+    assert config['enabled'] and config['mode'] == 'simulation'
+    assert not config['refunds_enabled']
     assert client.post('/api/v1/payments/orders', headers={**auth, 'Idempotency-Key': str(uuid4())}, json={'content_id': catalog[0]}).status_code == 503
     assert client.get('/api/v1/payments', headers=auth).json() == []
 

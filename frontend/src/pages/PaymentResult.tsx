@@ -19,7 +19,7 @@ export function PaymentResult() {
     if (!paymentId) { setMessage('결제 식별자가 없습니다. 결제 내역에서 확인해 주세요.'); return }
     let active = true
     setBusy(true)
-    api<Order>(`/payments/${encodeURIComponent(paymentId)}/verify`, { method: 'POST' }).then(o => { if (active) setMessage(o.status === 'PAID' ? '결제가 확인되어 예약을 완료했어요.' : '아직 결제가 확인되지 않았어요. 잠시 후 다시 확인해 주세요.') }).catch(e => { if (active) setMessage(e.message) }).finally(() => { if (active) setBusy(false) })
+    api<Order>(`/payments/${encodeURIComponent(paymentId)}`).then(o => { if (active) setMessage(o.status === 'PAID' ? '결제가 완료됐어요. 결제 내역에서 확인해 주세요.' : '완료되지 않은 주문입니다. 결제 내역에서 확인해 주세요.') }).catch(e => { if (active) setMessage(e.message) }).finally(() => { if (active) setBusy(false) })
     return () => { active = false }
   }, [paymentId, code, s.ready, s.user, nonce])
   if (s.ready && !s.user) return <div className="container page-content"><LoginGate title="로그인 후 결제 결과를 확인해 주세요" /></div>
