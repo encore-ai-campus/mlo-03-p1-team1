@@ -137,6 +137,20 @@ class OrderInput(BaseModel):
     quantity: int = Field(default=1, ge=1, le=4)
 
 
+class SimulatedPaymentInput(BaseModel):
+    model_config = ConfigDict(extra='forbid')
+    content_id: int = Field(gt=0, strict=True)
+    quantity: int = Field(default=1, ge=1, le=4, strict=True)
+
+
+class PaymentConfigOut(BaseModel):
+    enabled: bool
+    mode: Literal['simulation']
+    refunds_enabled: bool
+    store_id: str = ''
+    channel_key: str = ''
+
+
 class OrderOut(BaseModel):
     model_config = ConfigDict(from_attributes=True)
     payment_id: str
@@ -147,6 +161,7 @@ class OrderOut(BaseModel):
     cancelled_amount: int
     currency: str
     status: str
+    is_simulated: bool
     created_at: datetime
 
     @field_serializer('created_at')

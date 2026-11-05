@@ -2,11 +2,10 @@
 
 **팀명: PrefIO**
 
-| 이름 | GitHub |
-| --- | --- |
-| 고은빈 | [@Eunbinko](https://github.com/eunbinko) |
-| 박완규 | [@domomo](https://github.com/domomo) |
-| 진세은 | [@wlstpdms](https://github.com/wlstpdms) |
+| 고은빈 | 박완규 | 진세은 |
+|---|---|---|
+| <img src="https://github.com/사용자ID1.png" width="100"> | <img src="https://github.com/사용자ID2.png" width="100"> | <img src="https://github.com/사용자ID3.png" width="100"> |
+| [@Eunbinko](https://github.com/eunbinko) | [@domomo](https://github.com/domomo) | [@wlstpdms](https://github.com/wlstpdms) |
 
 
 ## 2. 프로젝트 개요
@@ -17,6 +16,7 @@
 
 새로운 문화 경험을 발견하고, 자신만의 취향을 찾아가는 문화 콘텐츠 추천 플랫폼입니다.
 
+
 ### 2.2 프로젝트 소개
 
 Oddinary는 외부 공개 API와 네이버 크롤링으로 전시·공연·문화행사 정보를 수집하고, 사용자 취향에 맞는 문화 콘텐츠를 추천하는 데이터 기반 서비스입니다.
@@ -24,11 +24,13 @@ Oddinary는 외부 공개 API와 네이버 크롤링으로 전시·공연·문�
 회원 관리, 전시, 공연, 축제 등 문화 컨텐츠 정보 조회 및 검색, 맞춤형 추천, 모의 결제 기능을 제공하고, 사용자 활동 데이터를 수집·저장·처리하여 개인화 추천에 활용합니다.
 
 
+
 ### 2.3 프로젝트 필요성 및 배경
 
 문화 생활은 사용자의 지역, 나이, 관심도, 성향 등 설정한 프로필에 따라 다양한 선호도가 생길 수 있습니다. 서비스 내에서 사용자들의 다양한 선호도에 따른 사용자들의 활동 데이터를 수집, 처리, 저장하고 이를 분석하여 개인에게 적합한 컨텐츠 추천하는 과정이 필요합니다.
 
 검색 - 상세 페이지 조회 - 찜 - 결제에서 발생하는 사용자 데이터가 한 흐름에만 국한되지 않고 프로필에 따라 여러 사용 흐름을 만들어내 데이터 분석에 적합한 컨텐츠라고 판단하였습니다. 수요도가 높은 시간대의 경우 사용자가 몰리는 상황을 대응하면서 학습한 서버 기술을 활용해볼 수 있는 주제입니다.
+
 
 ### 2.4 프로젝트 목표
 
@@ -39,6 +41,37 @@ Oddinary는 외부 공개 API와 네이버 크롤링으로 전시·공연·문�
 데이터 저장 및 처리: 수집한 데이터를 정제하고 데이터베이스에 저장·관리
 
 데이터 활용: 사용자 취향 및 활동 데이터를 기반으로 맞춤형 콘텐츠를 추천하고, 이용 패턴 분석에 활용
+
+
+## 3. 기술 스택
+
+
+## 🛠 Tech Stack
+
+### Language & Data Processing
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+
+### Frontend
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
+
+### Backend
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+
+### Database
+![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+
+### Monitoring & Logging
+![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
+![Loki](https://img.shields.io/badge/Loki-F46800?style=for-the-badge&logo=grafana&logoColor=white)
+![Grafana Alloy](https://img.shields.io/badge/Grafana_Alloy-F46800?style=for-the-badge&logo=grafana&logoColor=white)
+
+
 
 ## 4. WBS
 
@@ -60,6 +93,7 @@ Oddinary는 외부 공개 API와 네이버 크롤링으로 전시·공연·문�
 | DATA-01 | DB 설계·구축 및 스키마 관리 | 고은빈 |
 | DATA-02 | 문화 콘텐츠 수집·정제 및 샘플 데이터 구성 | 고은빈 |
 
+
 ## 5. 요구사항 명세서
 
 ### 5.1 기능 요구사항
@@ -68,7 +102,7 @@ Oddinary는 외부 공개 API와 네이버 크롤링으로 전시·공연·문�
 | ------- | ------ | ----------- | ------------------------------------ | ---------------- |
 | FR-01   | 회원 관리  | 회원가입 및 로그인  | 이름, 이메일, PW 기반 회원가입, 로그인 및 로그아웃 기능 제공        | MEM-01, MEM-02   |
 | FR-02   | 회원 관리  | 프로필 관리      | 마이페이지에서 회원 정보 조회 및 수정                | MEM-01, MEM-02   |
-| FR-03   | 회원 관리  | 취향 설문       | 관심 장르, 지역, 가격대 등 사용자 선호 정보 수집 및 저장   | MEM-01, MEM-02   |
+| FR-03   | 회원 관리  | 취향 설문       | 관심 장르, 지역 등 사용자 선호 정보 수집 및 저장   | MEM-01, MEM-02   |
 | FR-04   | 콘텐츠    | 공연·전시 조회    | 문화 콘텐츠 목록 및 상세 정보 제공                 | CONT-01, CONT-02 |
 | FR-05   | 콘텐츠    | 검색 및 필터     | 키워드, 지역, 장르, 날짜, 가격 등을 기준으로 검색 및 필터링 | CONT-01, CONT-02 |
 | FR-06   | 사용자 활동 | 찜 기능        | 관심 콘텐츠 찜 등록·해제 및 목록 조회               | ACT-01, ACT-02   |
@@ -82,6 +116,7 @@ Oddinary는 외부 공개 API와 네이버 크롤링으로 전시·공연·문�
 | FR-14   | 데이터    | 외부 데이터 수집   | 외부 Open API를 활용한 공연·전시 정보 수집         | DATA-02          |
 | FR-15   | 데이터    | 데이터 정제 및 처리 | 수집 데이터의 형식 통일, 데이터베이스 적재     | DATA-02          |
 
+
 ### 5.2 비기능 요구사항
 
 | 요구사항 ID | 구분   | 요구사항        | 상세 내용                                  |
@@ -93,6 +128,7 @@ Oddinary는 외부 공개 API와 네이버 크롤링으로 전시·공연·문�
 | NFR-05  | 데이터  | 행동 데이터 수집   | 사용자별 검색·조회·찜·주문 등의 활동을 분석 가능한 형태로 기록   | |
 | NFR-06  | 운영   | 서버 연동       | 프론트엔드·백엔드·DB 서버 간 정상적인 통신 및 서비스 운영     |
 
+
 ## 6. 활용 데이터
 
 | 구분 | 데이터 출처 | 수집 방식 | 수집 범위 |
@@ -100,3 +136,14 @@ Oddinary는 외부 공개 API와 네이버 크롤링으로 전시·공연·문�
 | 공공 데이터 | 문화체육관광부 문화공공데이터광장 — 문화예술공연(통합) API | API 호출 후 DB 저장 | API에서 제공하는 문화예술공연 정보 |
 | 웹 수집 데이터 | 네이버 | 키워드 기반 크롤링 | 전시, 뮤지컬, 연극, 콘서트, 클래식, 가족/아동, 뮤직페스티벌, 공연제 |
 
+## 주요 프로시저
+
+## 수행결과(테스트/시연 페이지)
+
+### 팀원별 한 줄 회고
+
+| 팀원 | 한 줄 회고 |
+|---|---|
+| 고은빈 | |
+| 박완규 | |
+| 진세은 | |

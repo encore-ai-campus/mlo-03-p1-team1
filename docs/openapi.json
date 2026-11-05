@@ -850,7 +850,67 @@
             "description": "Successful Response",
             "content": {
               "application/json": {
-                "schema": {}
+                "schema": {
+                  "$ref": "#/components/schemas/PaymentConfigOut"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/payments/simulations": {
+      "post": {
+        "tags": [
+          "payments"
+        ],
+        "summary": "Simulate",
+        "operationId": "simulate_api_v1_payments_simulations_post",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "idempotency-key",
+            "in": "header",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "title": "Idempotency-Key"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SimulatedPaymentInput"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OrderOut"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
               }
             }
           }
@@ -962,6 +1022,53 @@
             "HTTPBearer": []
           }
         ]
+      }
+    },
+    "/api/v1/payments/{payment_id}": {
+      "get": {
+        "tags": [
+          "payments"
+        ],
+        "summary": "Read",
+        "operationId": "read_api_v1_payments__payment_id__get",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "payment_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Payment Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OrderOut"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
       }
     },
     "/api/v1/payments/{payment_id}/verify": {
@@ -1488,6 +1595,10 @@
             "type": "string",
             "title": "Status"
           },
+          "is_simulated": {
+            "type": "boolean",
+            "title": "Is Simulated"
+          },
           "created_at": {
             "type": "string",
             "format": "date-time",
@@ -1504,9 +1615,44 @@
           "cancelled_amount",
           "currency",
           "status",
+          "is_simulated",
           "created_at"
         ],
         "title": "OrderOut"
+      },
+      "PaymentConfigOut": {
+        "properties": {
+          "enabled": {
+            "type": "boolean",
+            "title": "Enabled"
+          },
+          "mode": {
+            "type": "string",
+            "const": "simulation",
+            "title": "Mode"
+          },
+          "refunds_enabled": {
+            "type": "boolean",
+            "title": "Refunds Enabled"
+          },
+          "store_id": {
+            "type": "string",
+            "title": "Store Id",
+            "default": ""
+          },
+          "channel_key": {
+            "type": "string",
+            "title": "Channel Key",
+            "default": ""
+          }
+        },
+        "type": "object",
+        "required": [
+          "enabled",
+          "mode",
+          "refunds_enabled"
+        ],
+        "title": "PaymentConfigOut"
       },
       "ProfileInput": {
         "properties": {
@@ -1799,6 +1945,28 @@
           "updated_at"
         ],
         "title": "ReviewOut"
+      },
+      "SimulatedPaymentInput": {
+        "properties": {
+          "content_id": {
+            "type": "integer",
+            "exclusiveMinimum": 0.0,
+            "title": "Content Id"
+          },
+          "quantity": {
+            "type": "integer",
+            "maximum": 4.0,
+            "minimum": 1.0,
+            "title": "Quantity",
+            "default": 1
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "content_id"
+        ],
+        "title": "SimulatedPaymentInput"
       },
       "SurveyInput": {
         "properties": {
