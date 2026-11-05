@@ -2,10 +2,10 @@
 
 **팀명: PrefIO**
 
-   이름  | GitHub 
-  고은빈 | [@Eunbinko](https://github.com/Eunbinko) 
-  박완규 | [@domomo](https://github.com/domomo) 
-  진세은 | [@wlstpdms](https://github.com/wlstpdms) 
+|  이름   | GitHub | 
+|  고은빈 | [@Eunbinko](https://github.com/Eunbinko) |
+|  박완규 | [@domomo](https://github.com/domomo)     |
+|  진세은 | [@wlstpdms](https://github.com/wlstpdms) |
 
 
 ## 2. 프로젝트 개요
