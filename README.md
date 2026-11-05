@@ -3,16 +3,12 @@
 **팀명: PrefIO**
 
 | 이름 | GitHub |
-| --- | --- |
-| 고은빈 | [@Eunbinko](https://github.com/eunbinko) |
-| 박완규 | [@domomo](https://github.com/domomo) |
-| 진세은 | [@wlstpdms](https://github.com/wlstpdms) |
 
 
-| 팀원 1 | 팀원 2 | 팀원 3 |
+| 고은빈 | 박완규 | 진세은 |
 |---|---|---|
 | <img src="https://github.com/사용자ID1.png" width="100"> | <img src="https://github.com/사용자ID2.png" width="100"> | <img src="https://github.com/사용자ID3.png" width="100"> |
-| [사용자ID1](https://github.com/사용자ID1) | [사용자ID2](https://github.com/사용자ID2) | [사용자ID3](https://github.com/사용자ID3) |
+| [@Eunbinko](https://github.com/eunbinko) | [@domomo](https://github.com/domomo) | [@wlstpdms](https://github.com/wlstpdms) |
 
 
 ## 2. 프로젝트 개요
