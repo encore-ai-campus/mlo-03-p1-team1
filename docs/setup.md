@@ -58,7 +58,7 @@ npm run dev
 
 ## 1. MariaDB DB와 계정
 
-임시 DB 서버는 AGENTS.md대로 **100.100.100.130**, 기본 포트 **3306**입니다. 이 환경에서 TCP 연결은 확인했지만 계정 정보가 없어 원격 로그인은 검증하지 않았습니다. 서비스 DB 예시 이름은 `culturepick`입니다. 다른 이름을 쓰면 권한 SQL과 DATABASE_URL의 마지막 경로를 함께 바꾸세요.
+MariaDB는 VM 두 대로 구성합니다. master는 **192.168.0.161:3306**, slave는 **192.168.0.162:3306**입니다. 백엔드의 `DATABASE_URL`은 master를 가리키며 조회·저장과 Alembic 모두 같은 master에 연결합니다. 현재 애플리케이션에는 slave 읽기 분리나 자동 장애 전환이 없습니다. master → slave 복제는 MariaDB 서버에서 별도로 구성해야 하며, 백엔드 연결 설정만으로 복제가 활성화되지는 않습니다. 서비스 DB 예시 이름은 `culturepick`입니다. 다른 이름을 쓰면 권한 SQL과 DATABASE_URL의 마지막 경로를 함께 바꾸세요.
 
 DB 관리자에게 `database/mariadb/permissions.sql`의 플레이스홀더를 교체해 실행하도록 요청하세요. 앱은 DML(SELECT/INSERT/UPDATE/DELETE)만, Alembic용 계정은 DDL(CREATE/ALTER/DROP/INDEX 등)까지, 수집 계정은 contents 테이블의 조회/추가/갱신만 필요합니다. `FLUSH PRIVILEGES`는 CREATE USER/GRANT 뒤에 필요하지 않습니다.
 
@@ -67,7 +67,7 @@ DB 관리자에게 `database/mariadb/permissions.sql`의 플레이스홀더를 �
 `backend/.env`의 형식:
 
 ```dotenv
-DATABASE_URL=mysql+pymysql://culturepick_app:<URL-encoded-password>@100.100.100.130:3306/culturepick?charset=utf8mb4
+DATABASE_URL=mysql+pymysql://culturepick_app:<URL-encoded-password>@192.168.0.161:3306/culturepick?charset=utf8mb4
 CORS_ORIGINS=["http://localhost:5173"]
 ENVIRONMENT=development
 PAYMENTS_ENABLED=false
@@ -151,6 +151,6 @@ PortOne 콘솔에 **백엔드의 공개 HTTPS 주소 + `/api/v1/payments/webhook
 
 인증 시도 제한은 프로세스 메모리 기준입니다. 다중 worker/다중 인스턴스 운영 전 공유 limiter를 도입해야 합니다. 세션 토큰은 sessionStorage에 저장되어 탭 단위로 유지되며 자바스크립트 접근이 가능합니다. 외부 스크립트를 최소화하고 CSP·HTTPS를 운영 환경에 적용하세요.
 
-## 6. 이번에 만든 로컬 DB 다시 시작
+## 6. 선택: 이전 로컬 DB 다시 시작
 
-프로젝트 루트에서 `powershell -ExecutionPolicy Bypass -File scripts/start-local-db.ps1`을 실행합니다. `.runtime/mariadb`를 재사용하고 127.0.0.1:13306에만 바인딩합니다. 새 PC에서는 `.tools`/`.runtime`가 없으므로 이 보조 스크립트 대신 위의 DB 서버 구성 또는 Docker 절차를 사용하세요. `.runtime/local-db.json`은 로컬 DB 관리용 임의 root 암호를 담은 Git 제외 파일입니다. 외부에 공유하지 마세요.
+기본 백엔드는 위의 VM master를 사용하므로 로컬 DB를 시작할 필요가 없습니다. 이전 로컬 DB가 필요한 경우 프로젝트 루트에서 `powershell -ExecutionPolicy Bypass -File scripts/start-local-db.ps1`을 실행합니다. `.runtime/mariadb`를 재사용하고 127.0.0.1:13306에만 바인딩합니다. 이 DB를 사용하려면 `backend/.env`의 `DATABASE_URL`도 로컬 주소로 변경해야 합니다. 새 PC에서는 `.tools`/`.runtime`가 없으므로 이 보조 스크립트 대신 위의 DB 서버 구성 또는 Docker 절차를 사용하세요. `.runtime/local-db.json`은 로컬 DB 관리용 임의 root 암호를 담은 Git 제외 파일입니다. 외부에 공유하지 마세요.
