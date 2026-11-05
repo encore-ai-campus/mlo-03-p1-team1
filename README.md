@@ -2,11 +2,10 @@
 
 **팀명: PrefIO**
 
-| 이름 | 이메일 | GitHub |
-| --- | --- | --- |
-| 고은빈 | [koeunbin90@gmail.com](mailto:koeunbin90@gmail.com) | [@Eunbinko](https://github.com/Eunbinko) |
-| 박완규 | [wqpark123@konkuk.ac.kr](mailto:wqpark123@konkuk.ac.kr) | [@domomo](https://github.com/domomo) |
-| 진세은 | [silverjs7dev@gmail.com](mailto:silverjs7dev@gmail.com) | [@wlstpdms](https://github.com/wlstpdms) |
+   이름  | GitHub 
+  고은빈 | [@Eunbinko](https://github.com/Eunbinko) 
+  박완규 | [@domomo](https://github.com/domomo) 
+  진세은 | [@wlstpdms](https://github.com/wlstpdms) 
 
 
 ## 2. 프로젝트 개요
