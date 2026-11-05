@@ -16,6 +16,6 @@ export interface Content {
 }
 export interface ContentPage { items: Content[]; total: number; page: number; size: number }
 export interface Review { id: number; user_id: number; name: string; rating: number; body: string; updated_at: string }
-export interface Order { payment_id: string; content_id: number; order_name: string; quantity: number; amount: number; cancelled_amount: number; currency: string; status: string; created_at: string }
-export interface Reservation { id: number; payment_id: string; content_id: number; title: string; venue: string; start_date: string; status: string; quantity: number; amount: number }
-export interface PaymentConfig { enabled: boolean; refunds_enabled: boolean; store_id: string; channel_key: string }
+export interface Order { payment_id: string; content_id: number; order_name: string; quantity: number; amount: number; cancelled_amount: number; currency: string; status: string; is_simulated: boolean; created_at: string }
+export interface Reservation { id: number; payment_id: string; content_id: number; title: string; venue: string; start_date: string; status: string; quantity: number; amount: number; is_simulated: boolean }
+export interface PaymentConfig { enabled: boolean; mode: 'simulation'; refunds_enabled: boolean; store_id: string; channel_key: string }

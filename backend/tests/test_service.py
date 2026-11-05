@@ -65,6 +65,28 @@ def test_bookmark_idempotency_and_user_isolation(client, catalog, auth):
     assert client.get('/api/v1/bookmarks', headers=auth).json()['total'] == 0
 
 
+def test_bookmark_removal_survives_refresh_and_relogin(client, catalog, auth):
+    first, second = catalog[:2]
+    for content_id in (first, second):
+        assert client.put(f'/api/v1/bookmarks/{content_id}', headers=auth).status_code == 200
+    removed = client.delete(f'/api/v1/bookmarks/{first}', headers=auth)
+    assert removed.status_code == 200 and removed.json()['bookmarked'] is False
+    for _ in range(2):
+        page = client.get('/api/v1/bookmarks', headers=auth).json()
+        assert page['total'] == 1
+        assert [item['id'] for item in page['items']] == [second]
+    assert client.post('/api/v1/auth/logout', headers=auth).status_code == 200
+    login = client.post('/api/v1/auth/login', json={
+        'email': 'tester@example.com', 'password': 'LocalTestPassword123!',
+    })
+    assert login.status_code == 200
+    fresh_auth = {'Authorization': f'Bearer {login.json()["access_token"]}'}
+    assert [item['id'] for item in client.get('/api/v1/bookmarks', headers=fresh_auth).json()['items']] == [second]
+    assert client.delete(f'/api/v1/bookmarks/{second}', headers=fresh_auth).json()['bookmarked'] is False
+    empty = client.get('/api/v1/bookmarks', headers=fresh_auth).json()
+    assert empty['total'] == 0 and empty['items'] == []
+
+
 def test_reviews_upsert_rating_and_delete(client, catalog, auth):
     path = f'/api/v1/contents/{catalog[0]}/reviews/me'
     assert client.put(path, headers=auth, json={'rating': 6, 'body': '충분한 길이의 리뷰'}).status_code == 422

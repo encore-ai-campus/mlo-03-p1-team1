@@ -1,0 +1,25 @@
+.keyword-picker { min-width: 0; }
+.keyword-selection-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; font-size: .875rem; }
+.keyword-selection-heading > span { color: var(--accent); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.keyword-selection-hint { margin: 8px 0 12px; font-size: .75rem; color: var(--muted); line-height: 1.7; }
+.keyword-selected-list { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; min-height: 48px; padding: 12px; margin-bottom: 22px; border: 1px solid var(--line); border-radius: 14px; background: var(--field); }
+.keyword-picker .keyword-selected { min-height: 36px; display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; font-size: .75rem; }
+.keyword-empty-selection { color: var(--muted); font-size: .75rem; }
+.keyword-tabs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 5px; padding: 5px; border-radius: 14px; background: var(--field); border: 1px solid var(--line); }
+.keyword-tabs button { min-height: 44px; padding: 9px 6px; border-radius: 10px; font-size: .8125rem; font-weight: 550; color: var(--muted); }
+.keyword-tabs button[aria-selected=true] { background: var(--surface-raised); color: var(--accent); box-shadow: 0 2px 8px #00000020; }
+.keyword-section-description { color: var(--muted); font-size: .8125rem; line-height: 1.8; margin: 20px 0 22px; }
+.keyword-group { margin-top: 22px; }
+.keyword-group h4 { margin: 0 0 12px; font-size: .875rem; font-weight: 600; line-height: 1.6; }
+.keyword-picker .tag-choices { display: flex; flex-wrap: wrap; gap: 9px; margin: 0; }
+.keyword-picker .tag-choices .tag { min-height: 40px; padding: 8px 13px; font-size: .8125rem; display: inline-flex; align-items: center; gap: 5px; }
+.keyword-picker [role=tabpanel]:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; border-radius: 8px; }
+.survey-dialog .preference-form-keywords .survey-actions { position: sticky; bottom: 0; z-index: 2; background: var(--surface); padding: 12px; margin-inline: -12px; border-top: 1px solid var(--line); border-radius: 12px 12px 0 0; }
+@media (hover: hover) and (pointer: fine) {
+  .keyword-tabs button:hover { color: var(--text); }
+}
+@media (max-width: 420px) {
+  .keyword-tabs button { font-size: .75rem; padding-inline: 2px; }
+  .keyword-picker .tag-choices { gap: 8px; }
+  .keyword-picker .tag-choices .tag { padding-inline: 11px; }
+}
