@@ -48,14 +48,13 @@ Oddinary는 외부 공개 API와 네이버 크롤링으로 전시·공연·문�
 ## 3. 기술 스택
 
 | 구분 | 기술 | 사용 목적 |
-구분	기술
-Language  Python, SQL
-Backend  FastAPI
-Database	MariaDB, MongoDB
-Data Processing	  Python
-Data Visualization	Grafana
-Infrastructure  Linux(Ubuntu), Nginx
-Collaboration  Git, GitHub
+|Language | Python, SQL |
+|Backend | FastAPI |
+|Database | MariaDB, MongoDB |
+|Data Processing	| Python |
+|Data Visualization |	Grafana |
+|Infrastructure  | Linux(Ubuntu), Nginx |
+|Collaboration  |Git, GitHub |
 
 
 
