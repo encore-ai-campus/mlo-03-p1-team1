@@ -58,6 +58,7 @@ Oddinary는 외부 공개 API와 네이버 크롤링으로 전시·공연·문�
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
 
 ### Backend
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
@@ -137,7 +138,7 @@ Oddinary는 외부 공개 API와 네이버 크롤링으로 전시·공연·문�
 | 공공 데이터 | 문화체육관광부 문화공공데이터광장 — 문화예술공연(통합) API | API 호출 후 DB 저장 | API에서 제공하는 문화예술공연 정보 |
 | 웹 수집 데이터 | 네이버 | 키워드 기반 크롤링 | 전시, 뮤지컬, 연극, 콘서트, 클래식, 가족/아동, 뮤직페스티벌, 공연제 |
 
-## 주소 프로시저
+## 주요 프로시저
 
 ## 수행결과(테스트/시연 페이지)
 
