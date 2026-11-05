@@ -134,7 +134,7 @@ culturepick/
 - 프론트엔드는 Vite 빌드 결과물이 `frontend/dist/`에 생성되며, 배포 시 Nginx가 해당 정적 파일을 제공한다.
 - 백엔드는 `backend/.env`의 `DATABASE_URL`로 MariaDB에 연결하고, DB 구조 변경은 Alembic으로 적용한다.
 - 배포 시 프론트엔드, 백엔드, DB를 각각 별도 서버에 실행한다.
-- mariadb 서버는 100.100.100.130, mongodb 서버는 100.100.100.140으로 임시로 설정하고 테스트한다.
+- MariaDB는 master 192.168.0.161:3306, slave 192.168.0.162:3306으로 구성하며 현재 서비스 DB는 culture다. 백엔드와 데이터 적재는 master에 연결한다. MongoDB 임시 서버 주소는 100.100.100.140이다.
 
 ### 통신 흐름 (리버스 프록시 사용 안 함)
 

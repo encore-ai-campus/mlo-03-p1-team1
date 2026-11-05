@@ -49,7 +49,7 @@ npm run dev
 
 ## 1. MariaDB DB와 계정
 
-MariaDB는 VM 두 대로 구성합니다. master는 **192.168.0.161:3306**, slave는 **192.168.0.162:3306**입니다. 백엔드의 `DATABASE_URL`은 master를 가리키며 조회·저장과 Alembic 모두 같은 master에 연결합니다. 현재 애플리케이션에는 slave 읽기 분리나 자동 장애 전환이 없습니다. master → slave 복제는 MariaDB 서버에서 별도로 구성해야 하며, 백엔드 연결 설정만으로 복제가 활성화되지는 않습니다. 서비스 DB 예시 이름은 `culturepick`입니다. 다른 이름을 쓰면 권한 SQL과 DATABASE_URL의 마지막 경로를 함께 바꾸세요.
+MariaDB는 VM 두 대로 구성합니다. master는 **192.168.0.161:3306**, slave는 **192.168.0.162:3306**입니다. 백엔드의 `DATABASE_URL`은 master를 가리키며 조회·저장과 Alembic 모두 같은 master에 연결합니다. 현재 애플리케이션에는 slave 읽기 분리나 자동 장애 전환이 없습니다. master → slave 복제는 MariaDB 서버에서 별도로 구성해야 하며, 백엔드 연결 설정만으로 복제가 활성화되지는 않습니다. 현재 서비스 DB 이름은 **`culture`**이며 기존 자료의 `culturepick`은 이전 예시 이름입니다. 권한 SQL과 DATABASE_URL을 적용할 때 실제 DB 이름을 확인하세요. 실제 계정·암호는 `backend/.env`에서 관리합니다.
 
 DB 관리자에게 `database/mariadb/permissions.sql`의 플레이스홀더를 교체해 실행하도록 요청하세요. 앱은 DML(SELECT/INSERT/UPDATE/DELETE)만, Alembic용 계정은 DDL(CREATE/ALTER/DROP/INDEX 등)까지, 수집 계정은 contents 테이블의 조회/추가/갱신만 필요합니다. `FLUSH PRIVILEGES`는 CREATE USER/GRANT 뒤에 필요하지 않습니다.
 
@@ -58,7 +58,7 @@ DB 관리자에게 `database/mariadb/permissions.sql`의 플레이스홀더를 �
 `backend/.env`의 형식:
 
 ```dotenv
-DATABASE_URL=mysql+pymysql://culturepick_app:<URL-encoded-password>@192.168.0.161:3306/culturepick?charset=utf8mb4
+DATABASE_URL=mysql+pymysql://<app-user>:<URL-encoded-password>@192.168.0.161:3306/culture?charset=utf8mb4
 CORS_ORIGINS=["http://localhost:5173"]
 ENVIRONMENT=development
 PAYMENTS_ENABLED=false
@@ -110,6 +110,26 @@ CORS 출처에는 경로(`/api/v1`)나 끝 슬래시를 붙이지 않습니다. 
 Vite 변수는 빌드 시 고정되므로 `.env` 변경 후 **다시 빌드·배포**합니다. Nginx는 SPA 경로를 `index.html`로 돌려주는 설정만 필요하며 API 리버스 프록시는 넣지 않습니다.
 
 ## 3. 문화포털 API 수집
+
+### 문화공공데이터광장 API 580 — 현재 적재 방식
+
+[문화체육관광부_문화예술공연(통합)](https://www.culture.go.kr/data/openapi/openapiView.do?id=580)은 `https://api.kcisa.kr/openapi/CNV_060/request`를 사용한다. 발급받은 키는 Git 제외 파일 `backend/.env`의 `CULTURE_API_KEY`에 설정한다. DB도 같은 파일의 `DATABASE_URL`을 사용한다. 이 키는 아래의 data.go.kr 기간/상세 API 키와 별개다.
+
+```powershell
+# backend 폴더, 가상환경을 활성화한 상태에서 실행
+# API 전체 수집 + 사용자 요청에 따른 테스트용 지역·가격 배정 + 적재
+python -m app.tasks.import_culture --demo-attributes
+
+# 저장된 원본에서 형식·대상 DB만 확인
+python -m app.tasks.import_culture --from-snapshot ../.runtime/culture-kcisa-raw.json --demo-attributes --dry-run
+
+# API를 다시 호출하지 않고 같은 원본으로 재적재
+python -m app.tasks.import_culture --from-snapshot ../.runtime/culture-kcisa-raw.json --demo-attributes
+```
+
+`--demo-attributes`는 사용자가 요청한 필터 테스트용 지역·관람료를 배정하는 명시적 옵션이다. 적용된 항목은 샘플로 표시하고 실제 판매를 비활성화한다. 이 옵션을 빼면 임의 지역·가격을 배정하지 않는다. 세부 보정 기준은 [데이터 품질](data-quality.md)을 따른다. 원본과 적재 보고서는 `.runtime/`에 저장하며 실제 키·DB 비밀번호를 Git에 포함하지 않는다.
+
+### 기존 data.go.kr 기간/상세 API
 
 [문화포털 사용 가이드](https://www.culture.go.kr/portal/main/contents.do?menuNo=200155)를 따라 공공데이터포털에서 ‘한눈에보는문화정보 조회서비스’를 활용 신청하고 키를 발급받습니다. `CULTURE_API_KEY`에 Decoding 키를 넣는 것을 권장합니다(Encoded 키도 한 번 디코딩 후 httpx가 인코딩).
 

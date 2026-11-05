@@ -1,10 +1,11 @@
-from datetime import timedelta
+from datetime import date, timedelta
+import pytest
 from uuid import uuid4
 from sqlalchemy import func, select
 from app.core.security import password_hash, password_matches, utcnow
 from app.db.session import SessionLocal
-from app.models import AuthSession, BehaviorEvent, User
-from app.pipelines.normalize import normalize
+from app.models import AuthSession, BehaviorEvent, Content, User
+from app.pipelines.normalize import normalize, normalize_kcisa
 
 
 def test_password_hashes_are_salted_and_verified():
@@ -148,3 +149,82 @@ def test_cors_allows_configured_frontend_only(client):
 def test_auth_rate_limit(client):
     for _ in range(20): assert client.post('/api/v1/auth/login', json={'email': 'missing@example.com', 'password': 'incorrect'}).status_code == 401
     assert client.post('/api/v1/auth/login', json={'email': 'missing@example.com', 'password': 'incorrect'}).status_code == 429
+
+
+def kcisa_record(seq='70001', period='20201101 ~ 20201201'):
+    return {'title': '연극 <빛&그림자>', 'eventSite': '문화극장', 'eventPeriod': period,
+            'period': None, 'type': None, '_dtype': '연극', 'charge': None,
+            'url': f'https://www.mcst.go.kr/kor/s_culture/culture/cultureView.jsp?pSeq={seq}',
+            'imageObject': 'http://www.culture.go.kr/poster.jpg', 'description': '<p>공식 설명</p>'}
+
+
+def test_kcisa_demo_fields_are_stable_and_explicit():
+    raw = kcisa_record()
+    value, audit = normalize_kcisa(raw, date(2026, 11, 5), True)
+    repeated, _ = normalize_kcisa(raw, date(2026, 11, 6), True)
+    assert value['title'] == '연극 <빛&그림자>'
+    assert value['source_id'] == '70001' and value['category'] == '연극'
+    assert value['region'] == repeated['region'] and value['price'] == repeated['price']
+    assert value['is_sample'] and not value['bookable'] and audit['demo_attributes']
+    assert '테스트' in value['description'] and value['image_url'].startswith('https://')
+    original, audit = normalize_kcisa(raw, date(2026, 11, 5), False)
+    assert not original['is_sample'] and not original['bookable']
+    assert original['region'] == '지역 확인 필요' and original['price'] == 0
+    assert original['price_text'] == '주최 기관 확인'
+
+
+@pytest.mark.parametrize('period,adjusted', [
+    ('20200101 ~ 20241231', False), ('20200101 ~ 20250101', True),
+    ('20160229 ~ 20210228', True), ('20000101 ~ 99991231', True),
+    ('20300101 ~ 20400101', True),
+])
+def test_kcisa_five_year_date_normalization(period, adjusted):
+    value, audit = normalize_kcisa(kcisa_record(period=period), date(2026, 11, 5), True)
+    assert audit['date_adjusted'] is adjusted
+    assert value['start_date'] <= value['end_date']
+    if adjusted:
+        assert (value['end_date'] - value['start_date']).days <= 210
+        assert 'original_start' in audit and '보정' in value['description']
+    if period.endswith('20250101') or period.endswith('20210228'):
+        assert value['end_date'] < date(2026, 11, 5)
+
+
+def test_kcisa_legacy_period_and_invalid_range():
+    raw = kcisa_record(period='30')
+    raw['period'] = '20261101 ~ 20261130'
+    value, _ = normalize_kcisa(raw, date(2026, 11, 5), True)
+    assert value['end_date'] == date(2026, 11, 30)
+    with pytest.raises(ValueError, match='invalid_date_range'):
+        normalize_kcisa(kcisa_record(period='20261101 ~ 20251001'), date(2026, 11, 5))
+
+
+def test_kcisa_import_is_idempotent_and_preserves_other_sources(catalog, tmp_path):
+    from app.tasks.import_culture import run
+    rows = [kcisa_record('70001'), kcisa_record('70002'), kcisa_record('70001')]
+    first = run(rows, True, report_path=tmp_path / 'first.json')
+    assert first['summary']['inserted'] == 2 and first['summary']['duplicates_merged'] == 1
+    with SessionLocal() as db:
+        ids = {content.source_id: content.id for content in db.scalars(select(Content).where(Content.source == 'culture_kcisa'))}
+    second = run(rows, True, report_path=tmp_path / 'second.json')
+    assert second['summary']['inserted'] == 0 and second['summary']['updated'] == 2
+    with SessionLocal() as db:
+        assert ids == {content.source_id: content.id for content in db.scalars(select(Content).where(Content.source == 'culture_kcisa'))}
+        assert len(list(db.scalars(select(Content).where(Content.id.in_(catalog))))) == len(catalog)
+
+
+def test_kcisa_failed_batch_rolls_back_all_imported_rows(catalog, monkeypatch, tmp_path):
+    from app.tasks import import_culture as task
+    original = task.normalize_kcisa
+    def invalid_price(raw, today, demo):
+        value, audit = original(raw, today, demo)
+        if value['source_id'] == '80001':
+            value['price'] = -1  # The final batch must fail the real MariaDB CHECK constraint.
+        return value, audit
+    monkeypatch.setattr(task, 'normalize_kcisa', invalid_price)
+    from sqlalchemy.exc import DBAPIError
+    with pytest.raises(DBAPIError) as failure:
+        task.run([kcisa_record(str(seq)) for seq in range(80001, 80202)], True, report_path=tmp_path / 'failed.json')
+    assert failure.value.orig.args[0] == 4025
+    with SessionLocal() as db:
+        assert db.scalar(select(func.count()).select_from(Content).where(Content.source == 'culture_kcisa')) == 0
+        assert len(list(db.scalars(select(Content).where(Content.id.in_(catalog))))) == len(catalog)
