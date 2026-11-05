@@ -2,9 +2,6 @@
 
 **팀명: PrefIO**
 
-| 이름 | GitHub |
-
-
 | 고은빈 | 박완규 | 진세은 |
 |---|---|---|
 | <img src="https://github.com/사용자ID1.png" width="100"> | <img src="https://github.com/사용자ID2.png" width="100"> | <img src="https://github.com/사용자ID3.png" width="100"> |
