@@ -4,10 +4,11 @@
 
 | 고은빈 | 박완규 | 진세은 |
 |---|---|---|
-| <img src="https://github.com/사용자ID1.png" width="100"> | <img src="https://github.com/사용자ID2.png" width="100"> | <img src="https://github.com/사용자ID3.png" width="100"> |
+| <img src="https://github.com/user-attachments/assets/8d8ff4bb-88b7-4c3d-a6a9-c049e434b698" width="100"> | <img src="https://avatars.githubusercontent.com/u/148618067?v=4" width="100"> | <img src="https://github.com/user-attachments/assets/709cca20-b9cb-4a35-b704-84ffff9b6064" width="100"> |
 | [@Eunbinko](https://github.com/eunbinko) | [@domomo](https://github.com/domomo) | [@wlstpdms](https://github.com/wlstpdms) |
 
-
+  <br />
+  
 ## 2. 프로젝트 개요
 
 ### 2.1 프로젝트명
@@ -43,36 +44,14 @@ Oddinary는 외부 공개 API와 네이버 크롤링으로 전시·공연·문�
 데이터 활용: 사용자 취향 및 활동 데이터를 기반으로 맞춤형 콘텐츠를 추천하고, 이용 패턴 분석에 활용
 
 
+   <br />
+   
 ## 3. 기술 스택
 
-
-## 🛠 Tech Stack
-
-### Language & Data Processing
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-
-### Frontend
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
-
-### Backend
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-
-### Database
-![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-
-### Monitoring & Logging
-![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
-![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
-![Loki](https://img.shields.io/badge/Loki-F46800?style=for-the-badge&logo=grafana&logoColor=white)
-![Grafana Alloy](https://img.shields.io/badge/Grafana_Alloy-F46800?style=for-the-badge&logo=grafana&logoColor=white)
-
-
-
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" width="60" alt="React"> <img src="https://images.openai.com/static-rsc-4/rACPM-tH7pnaqEZHZVHA5PkkgCszQHcz2ydzFwZZpu9zS92TaNbZCfXKixb7QheTuD1uma7qpIBGFK-lsL3ODTHlqyv1PRgnpZPBLneYa5W23YxS1dHW5dET_VQ_k3AA0ZEdYbXlAdpI7QUTGnjNWvuxt1MEy9WmYKkT5mWKhcinaO5HK5Jng93bolaWogMk?purpose=fullsize" width="100"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" width="60" alt="FastAPI"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nginx/nginx-original.svg" width="60" alt="Nginx"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mariadb/mariadb-original.svg" width="60" alt="MariaDB"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" width="60" alt="MongoDB"><img src="https://raw.githubusercontent.com/grafana/alloy/main/docs/sources/assets/logo_alloy_dark.svg" height="60" alt="Grafana Alloy"><img src="https://grafana.com/docs/loki/latest/logo_and_name.png" height="60" alt="Grafana Loki"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prometheus/prometheus-original.svg" width="60" alt="Prometheus"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/grafana/grafana-original.svg" width="60" alt="Grafana">
+ 
+   <br />
+   
 ## 4. WBS
 
 현재 코드에 구현된 기능을 기준으로 정리한 작업 분류표입니다. 작업 코드는 담당 영역 대신 기능별로 구분합니다.
@@ -93,7 +72,8 @@ Oddinary는 외부 공개 API와 네이버 크롤링으로 전시·공연·문�
 | DATA-01 | DB 설계·구축 및 스키마 관리 | 고은빈 |
 | DATA-02 | 문화 콘텐츠 수집·정제 및 샘플 데이터 구성 | 고은빈 |
 
-
+ <br />
+ 
 ## 5. 요구사항 명세서
 
 ### 5.1 기능 요구사항
@@ -127,15 +107,26 @@ Oddinary는 외부 공개 API와 네이버 크롤링으로 전시·공연·문�
 | NFR-04  | 데이터  | 데이터 무결성     | 회원·콘텐츠·주문 데이터 간 참조 관계 및 데이터 일관성 유지     |
 | NFR-05  | 데이터  | 행동 데이터 수집   | 사용자별 검색·조회·찜·주문 등의 활동을 분석 가능한 형태로 기록   | |
 | NFR-06  | 운영   | 서버 연동       | 프론트엔드·백엔드·DB 서버 간 정상적인 통신 및 서비스 운영     |
+ <br />
+ 
 
+## 6. 시스템 아키텍쳐
+<img width="3614" height="2188" alt="Image" src="https://github.com/user-attachments/assets/c1060ce4-7be0-4dc9-8d5d-14337dd5c68f" />
 
-## 6. 활용 데이터
+ <br />
+ 
+## 7. ERD (Entity Relationship Diagram)
+<img width="1920" height="1540" alt="Image" src="https://github.com/user-attachments/assets/c1ac5676-62e3-436b-bdaf-7fb5d59ac2cf" />
+ <br />
+ 
+## 8. 활용 데이터
 
 | 구분 | 데이터 출처 | 수집 방식 | 수집 범위 |
 |---|---|---|---|
 | 공공 데이터 | 문화체육관광부 문화공공데이터광장 — 문화예술공연(통합) API | API 호출 후 DB 저장 | API에서 제공하는 문화예술공연 정보 |
 | 웹 수집 데이터 | 네이버 | 키워드 기반 크롤링 | 전시, 뮤지컬, 연극, 콘서트, 클래식, 가족/아동, 뮤직페스티벌, 공연제 |
-
+ <br />
+ 
 ## 주요 프로시저
 
 ## 수행결과(테스트/시연 페이지)
