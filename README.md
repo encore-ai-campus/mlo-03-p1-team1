@@ -111,7 +111,7 @@ Oddinary는 외부 공개 API와 네이버 크롤링으로 전시·공연·문�
  
 
 ## 6. 시스템 아키텍쳐
-<img width="3614" height="2188" alt="Image" src="https://github.com/user-attachments/assets/6b0c013c-da14-424d-a4c4-4fa861ebe472" />
+<img width="3614" height="2188" alt="Image" src="https://github.com/user-attachments/assets/6b63d7b9-fa07-404c-bb64-c34be6243e76" />
 
  <br />
   <br />
