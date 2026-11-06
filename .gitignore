@@ -19,3 +19,4 @@ postman/skills/
 *.tsbuildinfo
 .DS_Store
 .idea/
+*.iml

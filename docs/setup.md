@@ -80,7 +80,7 @@ python -m app.tasks.seed # 개발용 가상 콘텐츠만 선택적으로 추가
 
 DB를 Docker로 실행한다면 DB 서버에서 `infra/db/.env.example`을 `.env`로 복사한 뒤 채우고 `docker compose -f infra/db/compose.yaml up -d`를 실행합니다. compose의 초기 DB/사용자 설정은 **비어 있는 볼륨의 첫 실행에만** 적용됩니다. 기존 DB의 계정·암호는 SQL로 변경하세요. compose가 생성하는 개발용 사용자는 해당 DB 전체 권한을 가지므로 운영에서는 권한 SQL의 앱/마이그레이션 분리를 적용합니다.
 
-MongoDB는 미도입입니다. 따라서 임시 주소 `100.100.100.140`으로 연결하거나 계정을 만들 필요가 없습니다. 추후 합의하면 행동 이벤트 전달·중복·재시도 정책을 먼저 설계합니다.
+2026-11-06 사용자 요청으로 MongoDB 분석 이벤트 저장을 도입했습니다. 이전 임시 주소 `100.100.100.140` 대신 현재 지정한 MongoDB를 사용하며 실제 URI는 Git 제외 `backend/.env`의 `MONGODB_URL`에 둡니다. `MONGODB_DATABASE=oddinary`, `MONGODB_EVENTS_ENABLED=true`로 설정하고 `alembic upgrade head`, `python -m app.tasks.setup_events_mongo`를 적용한 뒤 FastAPI를 재시작합니다. 실제 상태는 MariaDB가 기준이고 MongoDB 전달은 트랜잭션 outbox로 재시도합니다. 스키마와 검증 결과는 [행동 이벤트 계약](event-contract.md), [MongoDB 안내](../database/mongodb/README.md)를 참고하세요.
 
 테스트에는 별도 `culturepick_test` DB와 이 DB에만 DDL/DML 권한이 있는 별도 계정을 생성하고 그 URL을 `TEST_DATABASE_URL`에 지정합니다. pytest가 `_test` 접미사를 확인한 뒤 테스트 테이블의 데이터를 매번 비우므로 공유 데이터가 있는 DB를 사용하지 마세요. 테스트 마이그레이션도 같은 전용 계정으로 실행됩니다.
 
@@ -108,6 +108,73 @@ ENVIRONMENT=production
 CORS 출처에는 경로(`/api/v1`)나 끝 슬래시를 붙이지 않습니다. `localhost`와 `127.0.0.1`은 다른 출처입니다. 두 주소로 방문하면 둘 다 등록하세요. HTTPS 프론트엔드는 HTTPS 백엔드를 호출해야 혼합 콘텐츠 차단을 피합니다. API 비밀값은 `VITE_` 변수에 넣지 않습니다.
 
 Vite 변수는 빌드 시 고정되므로 `.env` 변경 후 **다시 빌드·배포**합니다. Nginx는 SPA 경로를 `index.html`로 돌려주는 설정만 필요하며 API 리버스 프록시는 넣지 않습니다.
+
+### 현재 VM 환경의 HTTPS 적용
+
+- 웹 페이지: `https://www.aiready.p-e.kr` → Nginx `192.168.0.151:443`
+- 브라우저 API 요청: `https://api.aiready.p-e.kr/api/v1` → HAProxy `192.168.0.155:443`
+- HAProxy → 기존 FastAPI 두 대: 현재 HTTP 주소·포트와 분산 설정 유지
+
+`crypto.randomUUID()`는 보안 컨텍스트가 필요하다. HTTP의 사설 IP로 페이지를 열면 상세 화면의 UUID 생성에서 오류가 발생할 수 있으므로 페이지 자체를 HTTPS로 제공해야 한다. API 주소만 HTTPS로 바꾸는 것으로는 해결되지 않는다. HTTPS 페이지에서 호출하는 API도 HTTPS를 사용해야 한다.
+
+프론트엔드 `.env`에는 다음 값을 설정하고 다시 빌드한다. 두 백엔드의 `.env`에는 기존 `CORS_ORIGINS` 배열에 `https://www.aiready.p-e.kr`을 추가하고 프로세스를 재시작한다.
+
+```dotenv
+VITE_API_BASE_URL=https://api.aiready.p-e.kr/api/v1
+```
+
+#### Nginx 서버
+
+`www.aiready.p-e.kr.zip`을 Nginx 서버의 `/tmp/`에 전송한 다음 실행한다. API 전용 인증서는 www 도메인에 사용할 수 없다.
+
+```bash
+sudo install -d -m 700 /etc/nginx/ssl/www.aiready.p-e.kr
+sudo unzip /tmp/www.aiready.p-e.kr.zip -d /etc/nginx/ssl/www.aiready.p-e.kr
+sudo sh -c 'cat /etc/nginx/ssl/www.aiready.p-e.kr/certificate.crt /etc/nginx/ssl/www.aiready.p-e.kr/ca_bundle.crt > /etc/nginx/ssl/www.aiready.p-e.kr/fullchain.pem'
+sudo chmod 600 /etc/nginx/ssl/www.aiready.p-e.kr/private.key
+```
+
+`infra/frontend/nginx.conf`의 server 블록을 실제 서비스 설정에 반영한다. 현재 Nginx의 정적 파일 경로는 `/var/www/html`이며 설정에도 이 경로를 사용한다. 다른 환경에서는 실제 정적 파일 경로를 유지한다. 새 `frontend/dist/` 내용을 해당 경로에 배포한 다음 검증·반영한다.
+
+```bash
+sudo nginx -t
+sudo systemctl reload nginx
+```
+
+설정은 443에서 HTTPS를 제공하고 80·3100의 HTTP 요청을 HTTPS로 이동시킨다. Nginx가 컨테이너 안에서 실행된다면 호스트의 443 포트도 컨테이너의 HTTPS 포트로 게시해야 한다.
+
+현재 직접 설치된 Nginx 서버에서는 HTTP 이동 블록을 `/etc/nginx/sites-available/default`, HTTPS 블록을 `/etc/nginx/sites-available/culturepick-https`로 나누어 관리한다. `/etc/nginx/sites-enabled/default`와 `/etc/nginx/sites-enabled/culturepick-https`는 각각 해당 파일의 심볼릭 링크다. 인증서 체인은 `/etc/nginx/ssl/www.aiready.p-e.kr/fullchain.pem`, 개인키는 같은 폴더의 `private.key`이며 개인키 권한은 `600`이다.
+
+#### HAProxy 서버
+
+`api.aiready.p-e.kr.zip`을 HAProxy 서버의 `/tmp/`에 전송한 다음 실행한다.
+
+```bash
+sudo install -d -m 700 /etc/haproxy/certs
+sudo install -d -m 700 /etc/haproxy/certs/api-source
+sudo unzip /tmp/api.aiready.p-e.kr.zip -d /etc/haproxy/certs/api-source
+sudo sh -c 'umask 077; cat /etc/haproxy/certs/api-source/certificate.crt /etc/haproxy/certs/api-source/ca_bundle.crt /etc/haproxy/certs/api-source/private.key > /etc/haproxy/certs/api.aiready.p-e.kr.pem'
+```
+
+`infra/haproxy/https-bind.cfg.example`의 두 설정 줄을 기존 HTTP frontend 블록 안에 추가한다. 전체 `haproxy.cfg`를 이 조각 파일로 덮어쓰지 않는다. 기존 `bind :80`, `default_backend`, FastAPI 서버 두 대의 주소·포트는 유지한다. frontend와 연결되는 backend는 `mode http`를 사용해야 한다.
+
+```bash
+sudo haproxy -c -f /etc/haproxy/haproxy.cfg
+sudo systemctl reload haproxy
+```
+
+도메인은 브라우저에서 각각 위 Nginx·HAProxy에 도달해야 한다. 공인 주소를 사용하는 DNS 구성이라면 방화벽·NAT에도 각 서버의 TCP 443 연결을 구성한다. DNS A 레코드만으로 포트가 지정되지는 않는다.
+
+서버 반영 후 인증서 검증을 생략하지 않고 다음 요청을 확인한다. `health`는 앱 응답, `ready`는 DB 연결을 확인한다.
+
+```bash
+curl -I https://www.aiready.p-e.kr/
+curl https://api.aiready.p-e.kr/api/v1/health
+curl https://api.aiready.p-e.kr/api/v1/ready
+curl -i -X OPTIONS https://api.aiready.p-e.kr/api/v1/contents -H 'Origin: https://www.aiready.p-e.kr' -H 'Access-Control-Request-Method: GET' -H 'Access-Control-Request-Headers: authorization'
+```
+
+마지막으로 브라우저에서 HTTPS 도메인으로 상세 화면을 열어 확인한다. 인증서·개인키와 두 `.env`는 Git에 포함하지 않는다.
 
 ## 3. 문화포털 API 수집
 

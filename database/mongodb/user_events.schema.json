@@ -1,0 +1,36 @@
+{
+  "bsonType": "object",
+  "additionalProperties": false,
+  "required": ["_id", "event_id", "schema_version", "event_type", "user_id", "content_id", "occurred_at", "ingested_at", "source", "anonymous_id", "session_id", "page_path", "referrer_path", "properties"],
+  "properties": {
+    "_id": {"bsonType": "string", "pattern": "^[0-9a-f-]{36}$"},
+    "event_id": {"bsonType": "string", "pattern": "^[0-9a-f-]{36}$"},
+    "schema_version": {"enum": [1]},
+    "event_type": {"enum": ["page_view", "search", "filter_use", "content_view", "recommendation_click", "recommendation_impression", "bookmark_add", "bookmark_remove", "payment_checkout_open", "payment_completed", "payment_cancelled"]},
+    "user_id": {"bsonType": ["int", "long", "null"], "minimum": 1},
+    "content_id": {"bsonType": ["int", "long", "null"], "minimum": 1},
+    "occurred_at": {"bsonType": "date"},
+    "ingested_at": {"bsonType": "date"},
+    "source": {"enum": ["browser", "server"]},
+    "anonymous_id": {"bsonType": ["string", "null"], "pattern": "^[0-9a-f-]{36}$"},
+    "session_id": {"bsonType": ["string", "null"], "pattern": "^[0-9a-f-]{36}$"},
+    "page_path": {"bsonType": ["string", "null"], "maxLength": 200, "pattern": "^/[^?#]*$"},
+    "referrer_path": {"bsonType": ["string", "null"], "maxLength": 200, "pattern": "^/[^?#]*$"},
+    "properties": {
+      "bsonType": "object",
+      "additionalProperties": false,
+      "properties": {
+        "category": {"enum": ["전시", "뮤지컬", "연극", "음악", "무용", "축제"]},
+        "query_length": {"bsonType": "int", "minimum": 0, "maximum": 100},
+        "filter_name": {"enum": ["category", "region", "free_only", "sort", "from_date", "to_date", "reset"]},
+        "filter_value": {"bsonType": "string", "maxLength": 30},
+        "payment_id": {"bsonType": "string", "maxLength": 64},
+        "payment_mode": {"enum": ["simulation", "portone_v2"]},
+        "quantity": {"bsonType": "int", "minimum": 1, "maximum": 4},
+        "amount": {"bsonType": ["int", "long"], "minimum": 0},
+        "cancelled_amount": {"bsonType": ["int", "long"], "minimum": 0},
+        "currency": {"enum": ["KRW"]}
+      }
+    }
+  }
+}

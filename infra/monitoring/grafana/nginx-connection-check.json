@@ -1,0 +1,783 @@
+{
+  "verified_at_utc": "2026-11-06T11:08:14.755127+00:00",
+  "dashboard": {
+    "uid": "culturepick-nginx",
+    "title": "CulturePick - Nginx",
+    "version": 2,
+    "modified": false
+  },
+  "endpoints": {
+    "nginx": "https://www.aiready.p-e.kr",
+    "nginx_server": "192.168.0.151",
+    "prometheus": "http://192.168.0.159:9090",
+    "loki": "http://192.168.0.158:3101",
+    "grafana": "http://192.168.0.160:3000"
+  },
+  "grafana_datasource_health": {
+    "prometheus": {
+      "http_status": 200,
+      "status": "OK"
+    },
+    "loki": {
+      "http_status": 200,
+      "status": "OK"
+    }
+  },
+  "probe_marker": "cp-nginx-check-20261106T110327057Z",
+  "browser_activity": [
+    "Nginx exploration page load with unique query marker",
+    "Search submitted through actual UI",
+    "Content detail opened through actual UI",
+    "GET favicon.svg with marker (HTTP 200)",
+    "GET unique missing assets/*.js (intentional HTTP 404)"
+  ],
+  "marker_log_proof": {
+    "access": {
+      "count": 3,
+      "labels": [
+        {
+          "detected_level": "unknown",
+          "filename": "/var/log/nginx/access.log",
+          "host": "nginx",
+          "job": "nginx",
+          "log_type": "access",
+          "service_name": "nginx"
+        }
+      ]
+    },
+    "error": {
+      "count": 1,
+      "labels": [
+        {
+          "detected_level": "error",
+          "filename": "/var/log/nginx/error.log",
+          "host": "nginx",
+          "job": "nginx",
+          "log_type": "error",
+          "service_name": "nginx"
+        }
+      ]
+    },
+    "http_status_counts": [
+      {
+        "metric": {
+          "status": "200"
+        },
+        "value": [
+          1793963161.315,
+          "2"
+        ]
+      },
+      {
+        "metric": {
+          "status": "404"
+        },
+        "value": [
+          1793963161.315,
+          "1"
+        ]
+      }
+    ]
+  },
+  "alloy": {
+    "active_source_files": 2,
+    "access_readable": true,
+    "error_readable": true,
+    "sent_entries_before": 95,
+    "sent_entries_after": 99,
+    "batch_retries": 0,
+    "dropped_entries": 0
+  },
+  "prometheus": {
+    "nginx_node_instance": "192.168.0.151:9100",
+    "up": 1,
+    "scrape_interval": "15s",
+    "network_receive_delta_bytes": 20995,
+    "network_delta_note": "Includes other traffic; request attribution comes from the unique log marker.",
+    "native_nginx_metric_names": []
+  },
+  "query_checks": {
+    "total": 31,
+    "success": 31,
+    "failed": 0,
+    "loki_queries": 17,
+    "prometheus_queries": 14,
+    "results": [
+      {
+        "panel_id": 2,
+        "title": "Requests | selected range",
+        "ref_id": "A",
+        "datasource": "loki",
+        "http_status": 200,
+        "success": true,
+        "result_type": "vector",
+        "series_count": 1,
+        "samples": [
+          {
+            "labels": {},
+            "latest": [
+              1793963065.351,
+              "3"
+            ]
+          }
+        ]
+      },
+      {
+        "panel_id": 3,
+        "title": "Requests / second",
+        "ref_id": "A",
+        "datasource": "loki",
+        "http_status": 200,
+        "success": true,
+        "result_type": "matrix",
+        "series_count": 1,
+        "samples": [
+          {
+            "labels": {},
+            "latest": [
+              1793963070,
+              "0.03333333333333333"
+            ]
+          }
+        ]
+      },
+      {
+        "panel_id": 4,
+        "title": "4xx requests | selected range",
+        "ref_id": "A",
+        "datasource": "loki",
+        "http_status": 200,
+        "success": true,
+        "result_type": "vector",
+        "series_count": 1,
+        "samples": [
+          {
+            "labels": {},
+            "latest": [
+              1793963065.351,
+              "1"
+            ]
+          }
+        ]
+      },
+      {
+        "panel_id": 5,
+        "title": "5xx error rate | selected range",
+        "ref_id": "A",
+        "datasource": "loki",
+        "http_status": 200,
+        "success": true,
+        "result_type": "vector",
+        "series_count": 1,
+        "samples": [
+          {
+            "labels": {},
+            "latest": [
+              1793963065.351,
+              "0"
+            ]
+          }
+        ]
+      },
+      {
+        "panel_id": 6,
+        "title": "Error log lines | selected range",
+        "ref_id": "A",
+        "datasource": "loki",
+        "http_status": 200,
+        "success": true,
+        "result_type": "vector",
+        "series_count": 1,
+        "samples": [
+          {
+            "labels": {},
+            "latest": [
+              1793963065.351,
+              "1"
+            ]
+          }
+        ]
+      },
+      {
+        "panel_id": 7,
+        "title": "Response body sent | selected range",
+        "ref_id": "A",
+        "datasource": "loki",
+        "http_status": 200,
+        "success": true,
+        "result_type": "vector",
+        "series_count": 1,
+        "samples": [
+          {
+            "labels": {},
+            "latest": [
+              1793963065.351,
+              "975"
+            ]
+          }
+        ]
+      },
+      {
+        "panel_id": 8,
+        "title": "Request rate by HTTP status",
+        "ref_id": "A",
+        "datasource": "loki",
+        "http_status": 200,
+        "success": true,
+        "result_type": "matrix",
+        "series_count": 2,
+        "samples": [
+          {
+            "labels": {
+              "status": "200"
+            },
+            "latest": [
+              1793963070,
+              "0.016666666666666666"
+            ]
+          },
+          {
+            "labels": {
+              "status": "404"
+            },
+            "latest": [
+              1793963070,
+              "0.016666666666666666"
+            ]
+          }
+        ]
+      },
+      {
+        "panel_id": 9,
+        "title": "4xx / 5xx request rate",
+        "ref_id": "A",
+        "datasource": "loki",
+        "http_status": 200,
+        "success": true,
+        "result_type": "matrix",
+        "series_count": 1,
+        "samples": [
+          {
+            "labels": {},
+            "latest": [
+              1793963070,
+              "0.016666666666666666"
+            ]
+          }
+        ]
+      },
+      {
+        "panel_id": 9,
+        "title": "4xx / 5xx request rate",
+        "ref_id": "B",
+        "datasource": "loki",
+        "http_status": 200,
+        "success": true,
+        "result_type": "matrix",
+        "series_count": 1,
+        "samples": [
+          {
+            "labels": {},
+            "latest": [
+              1793963070,
+              "0"
+            ]
+          }
+        ]
+      },
+      {
+        "panel_id": 10,
+        "title": "Top 10 paths | selected range",
+        "ref_id": "A",
+        "datasource": "loki",
+        "http_status": 200,
+        "success": true,
+        "result_type": "vector",
+        "series_count": 3,
+        "samples": [
+          {
+            "labels": {
+              "request_path": "/assets/cp-nginx-check-20261106T110327057Z.js"
+            },
+            "latest": [
+              1793963065.351,
+              "1"
+            ]
+          },
+          {
+            "labels": {
+              "request_path": "/explore"
+            },
+            "latest": [
+              1793963065.351,
+              "1"
+            ]
+          },
+          {
+            "labels": {
+              "request_path": "/favicon.svg"
+            },
+            "latest": [
+              1793963065.351,
+              "1"
+            ]
+          }
+        ]
+      },
+      {
+        "panel_id": 11,
+        "title": "HTTP status distribution | selected range",
+        "ref_id": "A",
+        "datasource": "loki",
+        "http_status": 200,
+        "success": true,
+        "result_type": "vector",
+        "series_count": 2,
+        "samples": [
+          {
+            "labels": {
+              "status": "200"
+            },
+            "latest": [
+              1793963065.351,
+              "2"
+            ]
+          },
+          {
+            "labels": {
+              "status": "404"
+            },
+            "latest": [
+              1793963065.351,
+              "1"
+            ]
+          }
+        ]
+      },
+      {
+        "panel_id": 12,
+        "title": "Request methods | selected range",
+        "ref_id": "A",
+        "datasource": "loki",
+        "http_status": 200,
+        "success": true,
+        "result_type": "vector",
+        "series_count": 1,
+        "samples": [
+          {
+            "labels": {
+              "method": "GET"
+            },
+            "latest": [
+              1793963065.351,
+              "3"
+            ]
+          }
+        ]
+      },
+      {
+        "panel_id": 13,
+        "title": "Response body throughput",
+        "ref_id": "A",
+        "datasource": "loki",
+        "http_status": 200,
+        "success": true,
+        "result_type": "matrix",
+        "series_count": 1,
+        "samples": [
+          {
+            "labels": {},
+            "latest": [
+              1793963070,
+              "7.933333333333334"
+            ]
+          }
+        ]
+      },
+      {
+        "panel_id": 14,
+        "title": "Top 10 client IPs | selected range",
+        "ref_id": "A",
+        "datasource": "loki",
+        "http_status": 200,
+        "success": true,
+        "result_type": "vector",
+        "series_count": 1,
+        "samples": [
+          {
+            "labels": {
+              "client_ip": "192.168.0.2"
+            },
+            "latest": [
+              1793963065.351,
+              "3"
+            ]
+          }
+        ]
+      },
+      {
+        "panel_id": 16,
+        "title": "Node Exporter scrape",
+        "ref_id": "A",
+        "datasource": "prometheus",
+        "http_status": 200,
+        "success": true,
+        "result_type": "vector",
+        "series_count": 1,
+        "samples": [
+          {
+            "labels": {
+              "__name__": "up",
+              "instance": "192.168.0.151:9100",
+              "job": "node"
+            },
+            "latest": [
+              1793963065.351,
+              "1"
+            ]
+          }
+        ]
+      },
+      {
+        "panel_id": 17,
+        "title": "Server uptime",
+        "ref_id": "A",
+        "datasource": "prometheus",
+        "http_status": 200,
+        "success": true,
+        "result_type": "vector",
+        "series_count": 1,
+        "samples": [
+          {
+            "labels": {
+              "instance": "192.168.0.151:9100",
+              "job": "node"
+            },
+            "latest": [
+              1793963065.351,
+              "9871.351000070572"
+            ]
+          }
+        ]
+      },
+      {
+        "panel_id": 18,
+        "title": "CPU usage",
+        "ref_id": "A",
+        "datasource": "prometheus",
+        "http_status": 200,
+        "success": true,
+        "result_type": "vector",
+        "series_count": 1,
+        "samples": [
+          {
+            "labels": {},
+            "latest": [
+              1793963065.351,
+              "0.9055555555551154"
+            ]
+          }
+        ]
+      },
+      {
+        "panel_id": 19,
+        "title": "Memory usage",
+        "ref_id": "A",
+        "datasource": "prometheus",
+        "http_status": 200,
+        "success": true,
+        "result_type": "vector",
+        "series_count": 1,
+        "samples": [
+          {
+            "labels": {
+              "instance": "192.168.0.151:9100",
+              "job": "node"
+            },
+            "latest": [
+              1793963065.351,
+              "25.04033743049042"
+            ]
+          }
+        ]
+      },
+      {
+        "panel_id": 20,
+        "title": "Root filesystem used",
+        "ref_id": "A",
+        "datasource": "prometheus",
+        "http_status": 200,
+        "success": true,
+        "result_type": "vector",
+        "series_count": 1,
+        "samples": [
+          {
+            "labels": {
+              "device": "/dev/mapper/ubuntu--vg-ubuntu--lv",
+              "fstype": "ext4",
+              "instance": "192.168.0.151:9100",
+              "job": "node",
+              "mountpoint": "/"
+            },
+            "latest": [
+              1793963065.351,
+              "80.18818699546286"
+            ]
+          }
+        ]
+      },
+      {
+        "panel_id": 21,
+        "title": "CPU / memory utilization",
+        "ref_id": "A",
+        "datasource": "prometheus",
+        "http_status": 200,
+        "success": true,
+        "result_type": "matrix",
+        "series_count": 1,
+        "samples": [
+          {
+            "labels": {},
+            "latest": [
+              1793963065.351,
+              "0.9055555555551154"
+            ]
+          }
+        ]
+      },
+      {
+        "panel_id": 21,
+        "title": "CPU / memory utilization",
+        "ref_id": "B",
+        "datasource": "prometheus",
+        "http_status": 200,
+        "success": true,
+        "result_type": "matrix",
+        "series_count": 1,
+        "samples": [
+          {
+            "labels": {
+              "instance": "192.168.0.151:9100",
+              "job": "node"
+            },
+            "latest": [
+              1793963065.351,
+              "25.04033743049042"
+            ]
+          }
+        ]
+      },
+      {
+        "panel_id": 22,
+        "title": "Network throughput",
+        "ref_id": "A",
+        "datasource": "prometheus",
+        "http_status": 200,
+        "success": true,
+        "result_type": "matrix",
+        "series_count": 1,
+        "samples": [
+          {
+            "labels": {},
+            "latest": [
+              1793963065.351,
+              "136.3111111111111"
+            ]
+          }
+        ]
+      },
+      {
+        "panel_id": 22,
+        "title": "Network throughput",
+        "ref_id": "B",
+        "datasource": "prometheus",
+        "http_status": 200,
+        "success": true,
+        "result_type": "matrix",
+        "series_count": 1,
+        "samples": [
+          {
+            "labels": {},
+            "latest": [
+              1793963065.351,
+              "1338.822222222222"
+            ]
+          }
+        ]
+      },
+      {
+        "panel_id": 23,
+        "title": "Load average",
+        "ref_id": "A",
+        "datasource": "prometheus",
+        "http_status": 200,
+        "success": true,
+        "result_type": "matrix",
+        "series_count": 1,
+        "samples": [
+          {
+            "labels": {
+              "__name__": "node_load1",
+              "instance": "192.168.0.151:9100",
+              "job": "node"
+            },
+            "latest": [
+              1793963065.351,
+              "0.03"
+            ]
+          }
+        ]
+      },
+      {
+        "panel_id": 23,
+        "title": "Load average",
+        "ref_id": "B",
+        "datasource": "prometheus",
+        "http_status": 200,
+        "success": true,
+        "result_type": "matrix",
+        "series_count": 1,
+        "samples": [
+          {
+            "labels": {
+              "__name__": "node_load5",
+              "instance": "192.168.0.151:9100",
+              "job": "node"
+            },
+            "latest": [
+              1793963065.351,
+              "0.03"
+            ]
+          }
+        ]
+      },
+      {
+        "panel_id": 23,
+        "title": "Load average",
+        "ref_id": "C",
+        "datasource": "prometheus",
+        "http_status": 200,
+        "success": true,
+        "result_type": "matrix",
+        "series_count": 1,
+        "samples": [
+          {
+            "labels": {
+              "__name__": "node_load15",
+              "instance": "192.168.0.151:9100",
+              "job": "node"
+            },
+            "latest": [
+              1793963065.351,
+              "0"
+            ]
+          }
+        ]
+      },
+      {
+        "panel_id": 24,
+        "title": "Disk I/O throughput",
+        "ref_id": "A",
+        "datasource": "prometheus",
+        "http_status": 200,
+        "success": true,
+        "result_type": "matrix",
+        "series_count": 1,
+        "samples": [
+          {
+            "labels": {},
+            "latest": [
+              1793963065.351,
+              "0"
+            ]
+          }
+        ]
+      },
+      {
+        "panel_id": 24,
+        "title": "Disk I/O throughput",
+        "ref_id": "B",
+        "datasource": "prometheus",
+        "http_status": 200,
+        "success": true,
+        "result_type": "matrix",
+        "series_count": 1,
+        "samples": [
+          {
+            "labels": {},
+            "latest": [
+              1793963065.351,
+              "26214.399999999998"
+            ]
+          }
+        ]
+      },
+      {
+        "panel_id": 25,
+        "title": "Recent HTTP 4xx / 5xx access logs",
+        "ref_id": "A",
+        "datasource": "loki",
+        "http_status": 200,
+        "success": true,
+        "result_type": "streams",
+        "series_count": 1,
+        "log_count": 1,
+        "marker_lines": 1
+      },
+      {
+        "panel_id": 26,
+        "title": "Nginx error.log",
+        "ref_id": "A",
+        "datasource": "loki",
+        "http_status": 200,
+        "success": true,
+        "result_type": "streams",
+        "series_count": 1,
+        "log_count": 1,
+        "marker_lines": 1
+      },
+      {
+        "panel_id": 27,
+        "title": "Nginx access.log",
+        "ref_id": "A",
+        "datasource": "loki",
+        "http_status": 200,
+        "success": true,
+        "result_type": "streams",
+        "series_count": 1,
+        "log_count": 3,
+        "marker_lines": 3
+      }
+    ]
+  },
+  "findings": [
+    {
+      "severity": "configuration",
+      "issue": "node variable defaults to __select_nginx_host__",
+      "resolution": "Select 192.168.0.151:9100 and save it as the dashboard default if desired."
+    },
+    {
+      "severity": "accuracy",
+      "issue": "RPS uses a range query, $__auto and lastNotNull, so the displayed value can remain stale and vary with panel width.",
+      "observed_panel_value_reqps": 2,
+      "observed_last_data_time_utc": "2026-11-06T11:03:44Z",
+      "instant_1m_at_check": "No matching log lines",
+      "resolution": "Use queryType=instant with a fixed [1m] window. If zero-fill is desired, monitor collector health separately."
+    },
+    {
+      "severity": "accuracy",
+      "issue": "Disk I/O panel sums both dm-0 and its physical backing sda.",
+      "observed_write_rate_Bps": {
+        "dm-0": 16369.628070175437,
+        "sda": 16369.628070175437
+      },
+      "resolution": "Select the physical device sda or display devices separately; do not sum the same I/O at both layers."
+    }
+  ],
+  "limitations": [
+    "No 5xx error or service outage was induced.",
+    "Prometheus monitors the Nginx host through Node Exporter, not native Nginx application metrics.",
+    "SPA navigation and API requests directly to api.aiready.p-e.kr do not each generate a frontend Nginx request.",
+    "No server configuration or Grafana dashboard was changed."
+  ]
+}

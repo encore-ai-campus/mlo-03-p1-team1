@@ -2,7 +2,8 @@ from datetime import date, datetime, timezone
 from typing import Literal
 from uuid import UUID
 
-from pydantic import BaseModel, ConfigDict, EmailStr, Field, field_validator, field_serializer
+from pydantic import BaseModel, ConfigDict, EmailStr, Field, field_validator, field_serializer, model_validator
+from app.core.activity import valid_page_path
 from app.schemas.profile import Gender, ProfileInput, Residence
 
 CATEGORIES = ('전시', '뮤지컬', '연극', '음악', '무용', '축제')
@@ -126,10 +127,37 @@ class ReviewOut(BaseModel):
 
 
 class EventInput(BaseModel):
+    model_config = ConfigDict(extra='forbid')
     event_id: UUID
-    event_type: Literal['content_view', 'search', 'filter_use', 'recommendation_click', 'recommendation_impression']
+    event_type: Literal['page_view', 'content_view', 'search', 'filter_use', 'recommendation_click', 'recommendation_impression', 'payment_checkout_open']
     content_id: int | None = Field(default=None, gt=0)
     category: Category | None = None
+    anonymous_id: UUID | None = None
+    session_id: UUID | None = None
+    page_path: str | None = Field(default=None, max_length=200)
+    referrer_path: str | None = Field(default=None, max_length=200)
+    query_length: int | None = Field(default=None, ge=0, le=100, strict=True)
+    filter_name: Literal['category', 'region', 'free_only', 'sort', 'from_date', 'to_date', 'reset'] | None = None
+    filter_value: str | None = Field(default=None, max_length=30, pattern=r'^[^\x00-\x1f<>"{}]*$')
+
+    @field_validator('page_path', 'referrer_path')
+    @classmethod
+    def safe_path(cls, value):
+        if value is not None and not valid_page_path(value):
+            raise ValueError('Only a known application pathname without query parameters is allowed.')
+        return value
+
+    @model_validator(mode='after')
+    def event_fields(self):
+        if self.event_type in ('content_view', 'recommendation_click', 'recommendation_impression', 'payment_checkout_open') and not self.content_id:
+            raise ValueError('This event requires content_id.')
+        if self.event_type == 'page_view' and not self.page_path:
+            raise ValueError('page_view requires page_path.')
+        if self.query_length is not None and self.event_type != 'search':
+            raise ValueError('query_length is only accepted for search.')
+        if (self.filter_name is not None or self.filter_value is not None) and self.event_type != 'filter_use':
+            raise ValueError('Filter fields are only accepted for filter_use.')
+        return self
 
 
 class OrderInput(BaseModel):

@@ -1,0 +1,134 @@
+{
+  "verified_at_utc": "2026-11-06T11:24:36.752222+00:00",
+  "dashboard_uid": "culturepick-fastapi-servers",
+  "dashboard_version": 4,
+  "configuration_changed": false,
+  "request_probe": {
+    "marker": "cp-fastapi-link-20261106T112210338Z",
+    "requests": [
+      {
+        "ip": "192.168.0.156",
+        "path": "/api/v1/health",
+        "http_status": 200,
+        "summary": {
+          "status": "ok",
+          "database": null,
+          "total": null,
+          "items_count": null
+        }
+      },
+      {
+        "ip": "192.168.0.156",
+        "path": "/api/v1/ready",
+        "http_status": 200,
+        "summary": {
+          "status": "ready",
+          "database": "mariadb",
+          "total": null,
+          "items_count": null
+        }
+      },
+      {
+        "ip": "192.168.0.156",
+        "path": "/api/v1/contents?size=1",
+        "http_status": 200,
+        "summary": {
+          "status": null,
+          "database": null,
+          "total": 1297,
+          "items_count": 1
+        }
+      },
+      {
+        "ip": "192.168.0.157",
+        "path": "/api/v1/health",
+        "http_status": 200,
+        "summary": {
+          "status": "ok",
+          "database": null,
+          "total": null,
+          "items_count": null
+        }
+      },
+      {
+        "ip": "192.168.0.157",
+        "path": "/api/v1/ready",
+        "http_status": 200,
+        "summary": {
+          "status": "ready",
+          "database": "mariadb",
+          "total": null,
+          "items_count": null
+        }
+      },
+      {
+        "ip": "192.168.0.157",
+        "path": "/api/v1/contents?size=1",
+        "http_status": 200,
+        "summary": {
+          "status": null,
+          "database": null,
+          "total": 1297,
+          "items_count": 1
+        }
+      }
+    ]
+  },
+  "node_exporter": {
+    "192.168.0.156:9100": {
+      "up": 1,
+      "job": "node"
+    },
+    "192.168.0.157:9100": {
+      "up": 1,
+      "job": "node"
+    }
+  },
+  "legacy_panel": {
+    "panel_id": 3,
+    "query_port": 8000,
+    "job": "node",
+    "active_targets": 0,
+    "meaning": "No scrape target exists; UNKNOWN / NOT SCRAPED does not indicate that FastAPI is down."
+  },
+  "fastapi_metrics": {
+    "192.168.0.156:8000/metrics": 404,
+    "192.168.0.157:8000/metrics": 404
+  },
+  "loki_new_request_checks": {
+    "fastapi1": {
+      "http_status": 200,
+      "new_request_log_count": 0
+    },
+    "fastapi2": {
+      "http_status": 200,
+      "new_request_log_count": 0
+    }
+  },
+  "ssh_observations": {
+    "192.168.0.156": {
+      "culturepick_fastapi_service": "inactive",
+      "uvicorn_pid": 21673,
+      "stdout": "/dev/pts/2",
+      "alloy": "active",
+      "node_exporter": "active",
+      "alloy_source": "/var/log/culturepick/fastapi.log",
+      "marker_in_source_file": 0
+    },
+    "192.168.0.157": {
+      "culturepick_fastapi_service": "inactive",
+      "uvicorn_pid": 74014,
+      "stdout": "/dev/pts/1",
+      "alloy": "active",
+      "node_exporter": "active",
+      "alloy_source": "/var/log/culturepick/fastapi.log",
+      "marker_in_source_file": 0
+    }
+  },
+  "dashboard_query_validation": {
+    "checked_queries": 30,
+    "failed_queries": 0,
+    "legacy_panel_result": "empty for both servers and All; expected because targets were removed",
+    "scope": "Successful query execution is not proof of fresh log arrival; the marker checks failed."
+  }
+}

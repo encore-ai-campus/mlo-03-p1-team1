@@ -1,0 +1,1002 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "grafana",
+          "uid": "-- Grafana --"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "description": "실측 메트릭/라벨에 기반한 두 FastAPI 서버 모니터링. 미수집 항목은 수집 대기 상태로 표시합니다.",
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": 1939380770476032,
+  "links": [],
+  "panels": [
+    {
+      "description": "",
+      "gridPos": {
+        "h": 5,
+        "w": 24,
+        "x": 0,
+        "y": 0
+      },
+      "id": 1,
+      "options": {
+        "content": "실측 확인: `2026-11-06T09:48:35.005410+00:00` (UTC). 필터에서 FastAPI1 / FastAPI2 / All을 선택합니다.\n\n**UP/DOWN은 Prometheus 수집 대상의 상태입니다.** DOWN만으로 서버 또는 FastAPI 장애를 단정할 수 없습니다. NO DATA / UNKNOWN은 미등록·미수집·시계열 소실이며 0으로 바꾸지 않습니다.\n\nNode 데이터 미수집 서버: `없음`. FastAPI 요청 메트릭: **미수집**. Loki FastAPI 스트림: **확인됨**. 추가 설정과 실측 기록은 함께 제공된 README.md / discovery.json을 확인하세요.",
+        "mode": "markdown"
+      },
+      "title": "CulturePick · 수집 상태 및 해석",
+      "type": "text"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "fg3gsoufwijnka"
+      },
+      "description": "1=수집 성공, 0=수집 실패. 대상이 없으면 UNKNOWN. OS 자원 수집 상태이며 FastAPI 헬스체크가 아닙니다.",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [
+            {
+              "options": {
+                "0": {
+                  "color": "red",
+                  "text": "DOWN"
+                },
+                "1": {
+                  "color": "green",
+                  "text": "UP"
+                }
+              },
+              "type": "value"
+            }
+          ],
+          "noValue": "UNKNOWN / NOT SCRAPED",
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "red"
+              },
+              {
+                "color": "green",
+                "value": 1
+              }
+            ]
+          },
+          "unit": "short"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 12,
+        "x": 0,
+        "y": 5
+      },
+      "id": 2,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "fg3gsoufwijnka"
+          },
+          "editorMode": "code",
+          "expr": "up{job=\"node\",instance=~`(${server:regex}):9100`}",
+          "instant": true,
+          "legendFormat": "{{instance}}",
+          "range": false,
+          "refId": "A"
+        }
+      ],
+      "title": "Node Exporter UP / DOWN · :9100",
+      "transformations": [
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "192\\.168\\.0\\.156(?::[0-9]+)?",
+            "renamePattern": "FastAPI1"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "192\\.168\\.0\\.157(?::[0-9]+)?",
+            "renamePattern": "FastAPI2"
+          }
+        }
+      ],
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "fg3gsoufwijnka"
+      },
+      "description": "현재 잘못 등록된 Node 수집 대상의 진단 패널. /metrics 404이면 DOWN. 설정 수정 후 이 패널은 NO DATA가 정상입니다.",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [
+            {
+              "options": {
+                "0": {
+                  "color": "red",
+                  "text": "DOWN"
+                },
+                "1": {
+                  "color": "green",
+                  "text": "UP"
+                }
+              },
+              "type": "value"
+            }
+          ],
+          "noValue": "UNKNOWN / NOT SCRAPED",
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "red"
+              },
+              {
+                "color": "green",
+                "value": 1
+              }
+            ]
+          },
+          "unit": "short"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 12,
+        "x": 12,
+        "y": 5
+      },
+      "id": 3,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "fg3gsoufwijnka"
+          },
+          "editorMode": "code",
+          "expr": "up{job=\"node\",instance=~`(${server:regex}):8000`}",
+          "instant": true,
+          "legendFormat": "{{instance}}",
+          "range": false,
+          "refId": "A"
+        }
+      ],
+      "title": "기존 :8000 수집 UP / DOWN · job=node",
+      "transformations": [
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "192\\.168\\.0\\.156(?::[0-9]+)?",
+            "renamePattern": "FastAPI1"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "192\\.168\\.0\\.157(?::[0-9]+)?",
+            "renamePattern": "FastAPI2"
+          }
+        }
+      ],
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "fg3gsoufwijnka"
+      },
+      "description": "확인된 Node Exporter 메트릭. 두 서버의 :9100을 job=node로 수집해야 데이터가 표시됩니다. 디스크 I/O는 장치별이며 dm-0과 sda를 합산하지 않습니다.",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisCenteredZero": false,
+            "drawStyle": "line",
+            "fillOpacity": 8,
+            "lineInterpolation": "linear",
+            "lineWidth": 2,
+            "showPoints": "never",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            }
+          },
+          "decimals": 1,
+          "mappings": [],
+          "max": 100,
+          "min": 0,
+          "noValue": "NO DATA",
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green"
+              }
+            ]
+          },
+          "unit": "percent"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 12,
+        "x": 0,
+        "y": 9
+      },
+      "id": 4,
+      "options": {
+        "legend": {
+          "calcs": [
+            "lastNotNull",
+            "mean"
+          ],
+          "displayMode": "table",
+          "placement": "bottom"
+        },
+        "tooltip": {
+          "mode": "multi",
+          "sort": "desc"
+        }
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "fg3gsoufwijnka"
+          },
+          "editorMode": "code",
+          "expr": "100 * (1 - avg by (instance) (rate(node_cpu_seconds_total{job=\"node\",instance=~`(${server:regex}):9100`,mode=\"idle\"}[$__rate_interval])))",
+          "instant": false,
+          "legendFormat": "{{instance}}",
+          "range": true,
+          "refId": "A"
+        }
+      ],
+      "title": "CPU 사용률",
+      "transformations": [
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "192\\.168\\.0\\.156(?::[0-9]+)?",
+            "renamePattern": "FastAPI1"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "192\\.168\\.0\\.157(?::[0-9]+)?",
+            "renamePattern": "FastAPI2"
+          }
+        }
+      ],
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "fg3gsoufwijnka"
+      },
+      "description": "확인된 Node Exporter 메트릭. 두 서버의 :9100을 job=node로 수집해야 데이터가 표시됩니다. 디스크 I/O는 장치별이며 dm-0과 sda를 합산하지 않습니다.",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisCenteredZero": false,
+            "drawStyle": "line",
+            "fillOpacity": 8,
+            "lineInterpolation": "linear",
+            "lineWidth": 2,
+            "showPoints": "never",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            }
+          },
+          "decimals": 1,
+          "mappings": [],
+          "max": 100,
+          "min": 0,
+          "noValue": "NO DATA",
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green"
+              }
+            ]
+          },
+          "unit": "percent"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 12,
+        "x": 12,
+        "y": 9
+      },
+      "id": 5,
+      "options": {
+        "legend": {
+          "calcs": [
+            "lastNotNull",
+            "mean"
+          ],
+          "displayMode": "table",
+          "placement": "bottom"
+        },
+        "tooltip": {
+          "mode": "multi",
+          "sort": "desc"
+        }
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "fg3gsoufwijnka"
+          },
+          "editorMode": "code",
+          "expr": "100 * (1 - node_memory_MemAvailable_bytes{job=\"node\",instance=~`(${server:regex}):9100`} / node_memory_MemTotal_bytes{job=\"node\",instance=~`(${server:regex}):9100`})",
+          "instant": false,
+          "legendFormat": "{{instance}}",
+          "range": true,
+          "refId": "A"
+        }
+      ],
+      "title": "메모리 사용률",
+      "transformations": [
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "192\\.168\\.0\\.156(?::[0-9]+)?",
+            "renamePattern": "FastAPI1"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "192\\.168\\.0\\.157(?::[0-9]+)?",
+            "renamePattern": "FastAPI2"
+          }
+        }
+      ],
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "fg3gsoufwijnka"
+      },
+      "description": "확인된 Node Exporter 메트릭. 두 서버의 :9100을 job=node로 수집해야 데이터가 표시됩니다. 디스크 I/O는 장치별이며 dm-0과 sda를 합산하지 않습니다.",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisCenteredZero": false,
+            "drawStyle": "line",
+            "fillOpacity": 8,
+            "lineInterpolation": "linear",
+            "lineWidth": 2,
+            "showPoints": "never",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            }
+          },
+          "decimals": 1,
+          "mappings": [],
+          "max": 100,
+          "min": 0,
+          "noValue": "NO DATA",
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green"
+              }
+            ]
+          },
+          "unit": "percent"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 12,
+        "x": 0,
+        "y": 16
+      },
+      "id": 6,
+      "options": {
+        "legend": {
+          "calcs": [
+            "lastNotNull",
+            "mean"
+          ],
+          "displayMode": "table",
+          "placement": "bottom"
+        },
+        "tooltip": {
+          "mode": "multi",
+          "sort": "desc"
+        }
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "fg3gsoufwijnka"
+          },
+          "editorMode": "code",
+          "expr": "100 * (1 - node_filesystem_avail_bytes{job=\"node\",instance=~`(${server:regex}):9100`,fstype!~\"tmpfs|devtmpfs|overlay|squashfs\",mountpoint!~\"/run.*|/snap.*\"} / node_filesystem_size_bytes{job=\"node\",instance=~`(${server:regex}):9100`,fstype!~\"tmpfs|devtmpfs|overlay|squashfs\",mountpoint!~\"/run.*|/snap.*\"})",
+          "instant": false,
+          "legendFormat": "{{instance}} {{mountpoint}}",
+          "range": true,
+          "refId": "A"
+        }
+      ],
+      "title": "디스크 공간 사용률 · 파일시스템별",
+      "transformations": [
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "192\\.168\\.0\\.156(?::[0-9]+)?",
+            "renamePattern": "FastAPI1"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "192\\.168\\.0\\.157(?::[0-9]+)?",
+            "renamePattern": "FastAPI2"
+          }
+        }
+      ],
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "fg3gsoufwijnka"
+      },
+      "description": "확인된 Node Exporter 메트릭. 두 서버의 :9100을 job=node로 수집해야 데이터가 표시됩니다. 디스크 I/O는 장치별이며 dm-0과 sda를 합산하지 않습니다.",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisCenteredZero": false,
+            "drawStyle": "line",
+            "fillOpacity": 8,
+            "lineInterpolation": "linear",
+            "lineWidth": 2,
+            "showPoints": "never",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            }
+          },
+          "mappings": [],
+          "noValue": "NO DATA",
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green"
+              }
+            ]
+          },
+          "unit": "Bps"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 12,
+        "x": 12,
+        "y": 16
+      },
+      "id": 7,
+      "options": {
+        "legend": {
+          "calcs": [
+            "lastNotNull",
+            "mean"
+          ],
+          "displayMode": "table",
+          "placement": "bottom"
+        },
+        "tooltip": {
+          "mode": "multi",
+          "sort": "desc"
+        }
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "fg3gsoufwijnka"
+          },
+          "editorMode": "code",
+          "expr": "rate(node_disk_read_bytes_total{job=\"node\",instance=~`(${server:regex}):9100`,device!~\"loop.*|ram.*|sr.*\"}[$__rate_interval])",
+          "instant": false,
+          "legendFormat": "{{instance}} {{device}} 읽기",
+          "range": true,
+          "refId": "A"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "fg3gsoufwijnka"
+          },
+          "editorMode": "code",
+          "expr": "rate(node_disk_written_bytes_total{job=\"node\",instance=~`(${server:regex}):9100`,device!~\"loop.*|ram.*|sr.*\"}[$__rate_interval])",
+          "instant": false,
+          "legendFormat": "{{instance}} {{device}} 쓰기",
+          "range": true,
+          "refId": "B"
+        }
+      ],
+      "title": "디스크 I/O · 장치별 읽기 / 쓰기",
+      "transformations": [
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "192\\.168\\.0\\.156(?::[0-9]+)?",
+            "renamePattern": "FastAPI1"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "192\\.168\\.0\\.157(?::[0-9]+)?",
+            "renamePattern": "FastAPI2"
+          }
+        }
+      ],
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "fg3gsoufwijnka"
+      },
+      "description": "확인된 Node Exporter 메트릭. 두 서버의 :9100을 job=node로 수집해야 데이터가 표시됩니다. 디스크 I/O는 장치별이며 dm-0과 sda를 합산하지 않습니다.",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisCenteredZero": false,
+            "drawStyle": "line",
+            "fillOpacity": 8,
+            "lineInterpolation": "linear",
+            "lineWidth": 2,
+            "showPoints": "never",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            }
+          },
+          "mappings": [],
+          "noValue": "NO DATA",
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green"
+              }
+            ]
+          },
+          "unit": "Bps"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 12,
+        "x": 0,
+        "y": 23
+      },
+      "id": 8,
+      "options": {
+        "legend": {
+          "calcs": [
+            "lastNotNull",
+            "mean"
+          ],
+          "displayMode": "table",
+          "placement": "bottom"
+        },
+        "tooltip": {
+          "mode": "multi",
+          "sort": "desc"
+        }
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "fg3gsoufwijnka"
+          },
+          "editorMode": "code",
+          "expr": "rate(node_network_receive_bytes_total{job=\"node\",instance=~`(${server:regex}):9100`,device!~\"lo|veth.*|docker.*|br-.*\"}[$__rate_interval])",
+          "instant": false,
+          "legendFormat": "{{instance}} {{device}} RX",
+          "range": true,
+          "refId": "A"
+        }
+      ],
+      "title": "네트워크 수신 · 인터페이스별",
+      "transformations": [
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "192\\.168\\.0\\.156(?::[0-9]+)?",
+            "renamePattern": "FastAPI1"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "192\\.168\\.0\\.157(?::[0-9]+)?",
+            "renamePattern": "FastAPI2"
+          }
+        }
+      ],
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "fg3gsoufwijnka"
+      },
+      "description": "확인된 Node Exporter 메트릭. 두 서버의 :9100을 job=node로 수집해야 데이터가 표시됩니다. 디스크 I/O는 장치별이며 dm-0과 sda를 합산하지 않습니다.",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisCenteredZero": false,
+            "drawStyle": "line",
+            "fillOpacity": 8,
+            "lineInterpolation": "linear",
+            "lineWidth": 2,
+            "showPoints": "never",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            }
+          },
+          "mappings": [],
+          "noValue": "NO DATA",
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green"
+              }
+            ]
+          },
+          "unit": "Bps"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 12,
+        "x": 12,
+        "y": 23
+      },
+      "id": 9,
+      "options": {
+        "legend": {
+          "calcs": [
+            "lastNotNull",
+            "mean"
+          ],
+          "displayMode": "table",
+          "placement": "bottom"
+        },
+        "tooltip": {
+          "mode": "multi",
+          "sort": "desc"
+        }
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "fg3gsoufwijnka"
+          },
+          "editorMode": "code",
+          "expr": "rate(node_network_transmit_bytes_total{job=\"node\",instance=~`(${server:regex}):9100`,device!~\"lo|veth.*|docker.*|br-.*\"}[$__rate_interval])",
+          "instant": false,
+          "legendFormat": "{{instance}} {{device}} TX",
+          "range": true,
+          "refId": "A"
+        }
+      ],
+      "title": "네트워크 송신 · 인터페이스별",
+      "transformations": [
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "192\\.168\\.0\\.156(?::[0-9]+)?",
+            "renamePattern": "FastAPI1"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "192\\.168\\.0\\.157(?::[0-9]+)?",
+            "renamePattern": "FastAPI2"
+          }
+        }
+      ],
+      "type": "timeseries"
+    },
+    {
+      "description": "",
+      "gridPos": {
+        "h": 7,
+        "w": 12,
+        "x": 0,
+        "y": 30
+      },
+      "id": 10,
+      "options": {
+        "content": "**수집 데이터가 없습니다.** 확인되지 않은 메트릭의 쿼리는 만들지 않았습니다.\n\nFastAPI 계측 및 Prometheus 수집을 설정한 뒤 생성 스크립트를 다시 실행하세요. 요청 수/RPS/오류율에는 요청 카운터와 상태 코드, 응답 시간에는 duration sum/count 또는 histogram이 필요합니다.",
+        "mode": "markdown"
+      },
+      "title": "FastAPI 요청 수 · 선택 기간 증가량 · 수집 대기",
+      "type": "text"
+    },
+    {
+      "description": "",
+      "gridPos": {
+        "h": 7,
+        "w": 12,
+        "x": 12,
+        "y": 30
+      },
+      "id": 11,
+      "options": {
+        "content": "**수집 데이터가 없습니다.** 확인되지 않은 메트릭의 쿼리는 만들지 않았습니다.\n\nFastAPI 계측 및 Prometheus 수집을 설정한 뒤 생성 스크립트를 다시 실행하세요. 요청 수/RPS/오류율에는 요청 카운터와 상태 코드, 응답 시간에는 duration sum/count 또는 histogram이 필요합니다.",
+        "mode": "markdown"
+      },
+      "title": "FastAPI RPS · 수집 대기",
+      "type": "text"
+    },
+    {
+      "description": "",
+      "gridPos": {
+        "h": 7,
+        "w": 12,
+        "x": 0,
+        "y": 37
+      },
+      "id": 12,
+      "options": {
+        "content": "**수집 데이터가 없습니다.** 확인되지 않은 메트릭의 쿼리는 만들지 않았습니다.\n\nFastAPI 계측 및 Prometheus 수집을 설정한 뒤 생성 스크립트를 다시 실행하세요. 요청 수/RPS/오류율에는 요청 카운터와 상태 코드, 응답 시간에는 duration sum/count 또는 histogram이 필요합니다.",
+        "mode": "markdown"
+      },
+      "title": "FastAPI 응답 시간 · 평균 / p95 · 수집 대기",
+      "type": "text"
+    },
+    {
+      "description": "",
+      "gridPos": {
+        "h": 7,
+        "w": 12,
+        "x": 12,
+        "y": 37
+      },
+      "id": 13,
+      "options": {
+        "content": "**수집 데이터가 없습니다.** 확인되지 않은 메트릭의 쿼리는 만들지 않았습니다.\n\nFastAPI 계측 및 Prometheus 수집을 설정한 뒤 생성 스크립트를 다시 실행하세요. 요청 수/RPS/오류율에는 요청 카운터와 상태 코드, 응답 시간에는 duration sum/count 또는 histogram이 필요합니다.",
+        "mode": "markdown"
+      },
+      "title": "HTTP 오류율 · 4xx / 5xx · 수집 대기",
+      "type": "text"
+    },
+    {
+      "description": "",
+      "gridPos": {
+        "h": 4,
+        "w": 24,
+        "x": 0,
+        "y": 44
+      },
+      "id": 14,
+      "options": {
+        "content": "Loki에서 확인된 스트림에만 로그 쿼리를 연결합니다. FastAPI 스트림이 확인되었습니다. 서버 필터와 로그 검색어를 사용할 수 있습니다.",
+        "mode": "markdown"
+      },
+      "title": "Alloy → Loki · 로그 수집 상태",
+      "type": "text"
+    },
+    {
+      "datasource": {
+        "type": "loki",
+        "uid": "dg3gsp6pckjk0a"
+      },
+      "description": "Alloy에서 Loki로 들어온 실제 로그. server_ip는 host와 IP의 고정 대응을 이용해 쿼리 시점에 만드는 필터용 라벨입니다.",
+      "gridPos": {
+        "h": 12,
+        "w": 24,
+        "x": 0,
+        "y": 48
+      },
+      "id": 15,
+      "options": {
+        "dedupStrategy": "none",
+        "enableLogDetails": true,
+        "prettifyLogMessage": false,
+        "showCommonLabels": false,
+        "showLabels": true,
+        "showTime": true,
+        "sortOrder": "Descending",
+        "wrapLogMessage": true
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "loki",
+            "uid": "dg3gsp6pckjk0a"
+          },
+          "editorMode": "code",
+          "expr": "{job=\"fastapi\",host=~\"fastapi1|fastapi2\"} | label_format server_ip=`{{ if eq .host \"fastapi1\" }}192.168.0.156{{ else if eq .host \"fastapi2\" }}192.168.0.157{{ end }}` | server_ip=~`${server:regex}` |= ${search:doublequote}",
+          "queryType": "range",
+          "refId": "A"
+        }
+      ],
+      "title": "FastAPI 로그",
+      "type": "logs"
+    }
+  ],
+  "refresh": "30s",
+  "schemaVersion": 42,
+  "tags": [
+    "culturepick",
+    "fastapi",
+    "node-exporter",
+    "loki"
+  ],
+  "templating": {
+    "list": [
+      {
+        "allValue": "192[.]168[.]0[.](156|157)",
+        "current": {
+          "selected": true,
+          "text": [
+            "All"
+          ],
+          "value": [
+            "$__all"
+          ]
+        },
+        "hide": 0,
+        "includeAll": true,
+        "label": "서버",
+        "multi": true,
+        "name": "server",
+        "options": [
+          {
+            "selected": true,
+            "text": "All",
+            "value": "$__all"
+          },
+          {
+            "selected": false,
+            "text": "FastAPI1",
+            "value": "192.168.0.156"
+          },
+          {
+            "selected": false,
+            "text": "FastAPI2",
+            "value": "192.168.0.157"
+          }
+        ],
+        "query": "FastAPI1 : 192.168.0.156,FastAPI2 : 192.168.0.157",
+        "type": "custom"
+      },
+      {
+        "current": {
+          "text": "",
+          "value": ""
+        },
+        "hide": 0,
+        "label": "로그 검색어",
+        "name": "search",
+        "options": [],
+        "query": "",
+        "type": "textbox"
+      }
+    ]
+  },
+  "time": {
+    "from": "now-1h",
+    "to": "now"
+  },
+  "timepicker": {
+    "refresh_intervals": [
+      "15s",
+      "30s",
+      "1m",
+      "5m"
+    ]
+  },
+  "timezone": "browser",
+  "title": "CulturePick · FastAPI1 / FastAPI2",
+  "uid": "culturepick-fastapi-servers",
+  "version": 4,
+  "weekStart": ""
+}

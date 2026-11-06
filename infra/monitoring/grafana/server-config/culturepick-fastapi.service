@@ -1,0 +1,24 @@
+[Unit]
+Description=CulturePick FastAPI with persistent application logs
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+# Preserve the identity, executable and working directory of the deployed process.
+User=root
+Group=root
+WorkingDirectory=/home/test/backend
+Environment=HOME=/root
+Environment=LANG=en_US.UTF-8
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/home/test/.venv/bin/python3.14 /home/test/.venv/bin/uvicorn app.main:app --host 0.0.0.0
+StandardOutput=append:/var/log/culturepick/fastapi.log
+StandardError=append:/var/log/culturepick/fastapi.log
+Restart=on-failure
+RestartSec=3
+TimeoutStopSec=30
+UMask=0027
+
+[Install]
+WantedBy=multi-user.target

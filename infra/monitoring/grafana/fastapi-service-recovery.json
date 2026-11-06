@@ -1,0 +1,334 @@
+{
+  "started_at_utc": "2026-11-06T11:31:14.414969+00:00",
+  "servers": {
+    "192.168.0.156": {
+      "service_state": "active",
+      "enabled": "enabled",
+      "pid": 22190,
+      "stdout": "/var/log/culturepick/fastapi.log",
+      "stderr": "/var/log/culturepick/fastapi.log",
+      "ready": true,
+      "log_readable_by_alloy": true
+    },
+    "192.168.0.157": {
+      "service_state": "active",
+      "enabled": "enabled",
+      "pid": 74514,
+      "stdout": "/var/log/culturepick/fastapi.log",
+      "stderr": "/var/log/culturepick/fastapi.log",
+      "ready": true,
+      "log_readable_by_alloy": true
+    }
+  },
+  "marker": "cp-fastapi-recovery-20261106T113142734Z",
+  "http_probes": [
+    {
+      "ip": "192.168.0.156",
+      "path": "/api/v1/health",
+      "http_status": 200,
+      "status": "ok",
+      "total": null,
+      "items_count": null
+    },
+    {
+      "ip": "192.168.0.156",
+      "path": "/api/v1/ready",
+      "http_status": 200,
+      "status": "ready",
+      "total": null,
+      "items_count": null
+    },
+    {
+      "ip": "192.168.0.156",
+      "path": "/api/v1/contents?size=1",
+      "http_status": 200,
+      "status": null,
+      "total": 1297,
+      "items_count": 1
+    },
+    {
+      "ip": "192.168.0.157",
+      "path": "/api/v1/health",
+      "http_status": 200,
+      "status": "ok",
+      "total": null,
+      "items_count": null
+    },
+    {
+      "ip": "192.168.0.157",
+      "path": "/api/v1/ready",
+      "http_status": 200,
+      "status": "ready",
+      "total": null,
+      "items_count": null
+    },
+    {
+      "ip": "192.168.0.157",
+      "path": "/api/v1/contents?size=1",
+      "http_status": 200,
+      "status": null,
+      "total": 1297,
+      "items_count": 1
+    }
+  ],
+  "source_checks": {
+    "192.168.0.156": {
+      "service_state": "active",
+      "service_enabled": "enabled",
+      "pid": 22190,
+      "uvicorn_process_count": 1,
+      "stdout": "/var/log/culturepick/fastapi.log",
+      "source_marker_count": 3,
+      "alloy_metrics": [
+        "loki_source_file_files_active_total{component_id=\"loki.source.file.fastapi_logs\",component_path=\"/\"} 1",
+        "loki_write_batch_retries_total{component_id=\"loki.write.central\",component_path=\"/\",host=\"192.168.0.158:3101\"} 0",
+        "loki_write_sent_entries_total{component_id=\"loki.write.central\",component_path=\"/\",host=\"192.168.0.158:3101\"} 1946"
+      ]
+    },
+    "192.168.0.157": {
+      "service_state": "active",
+      "service_enabled": "enabled",
+      "pid": 74514,
+      "uvicorn_process_count": 1,
+      "stdout": "/var/log/culturepick/fastapi.log",
+      "source_marker_count": 3,
+      "alloy_metrics": [
+        "loki_source_file_files_active_total{component_id=\"loki.source.file.fastapi_logs\",component_path=\"/\"} 1",
+        "loki_write_batch_retries_total{component_id=\"loki.write.central\",component_path=\"/\",host=\"192.168.0.158:3101\"} 0",
+        "loki_write_sent_entries_total{component_id=\"loki.write.central\",component_path=\"/\",host=\"192.168.0.158:3101\"} 1959"
+      ]
+    }
+  },
+  "loki_checks": {
+    "fastapi1": {
+      "http_status": 200,
+      "marker_count": 3,
+      "labels": [
+        {
+          "detected_level": "info",
+          "env": "production",
+          "filename": "/var/log/culturepick/fastapi.log",
+          "host": "fastapi1",
+          "job": "fastapi",
+          "service": "mlops-api",
+          "service_name": "mlops-api"
+        }
+      ]
+    },
+    "fastapi2": {
+      "http_status": 200,
+      "marker_count": 3,
+      "labels": [
+        {
+          "detected_level": "info",
+          "env": "production",
+          "filename": "/var/log/culturepick/fastapi.log",
+          "host": "fastapi2",
+          "job": "fastapi",
+          "service": "mlops-api",
+          "service_name": "mlops-api"
+        }
+      ]
+    }
+  },
+  "verified_at_utc": "2026-11-06T11:33:54.339001+00:00",
+  "dashboard": {
+    "uid": "culturepick-fastapi-servers",
+    "version": 5,
+    "legacy_panel_replaced_with_guidance": true
+  },
+  "grafana_server_filter_checks": [
+    {
+      "selection": "FastAPI1",
+      "httpStatus": 200,
+      "status": 200,
+      "rows": 3,
+      "hosts": [
+        "fastapi1"
+      ]
+    },
+    {
+      "selection": "FastAPI2",
+      "httpStatus": 200,
+      "status": 200,
+      "rows": 3,
+      "hosts": [
+        "fastapi2"
+      ]
+    },
+    {
+      "selection": "All",
+      "httpStatus": 200,
+      "status": 200,
+      "rows": 6,
+      "hosts": [
+        "fastapi1",
+        "fastapi2"
+      ]
+    }
+  ],
+  "query_validation": [
+    {
+      "panel_id": 2,
+      "server": "FastAPI1",
+      "success": true,
+      "series_count": 1
+    },
+    {
+      "panel_id": 2,
+      "server": "FastAPI2",
+      "success": true,
+      "series_count": 1
+    },
+    {
+      "panel_id": 2,
+      "server": "All",
+      "success": true,
+      "series_count": 2
+    },
+    {
+      "panel_id": 4,
+      "server": "FastAPI1",
+      "success": true,
+      "series_count": 1
+    },
+    {
+      "panel_id": 4,
+      "server": "FastAPI2",
+      "success": true,
+      "series_count": 1
+    },
+    {
+      "panel_id": 4,
+      "server": "All",
+      "success": true,
+      "series_count": 2
+    },
+    {
+      "panel_id": 5,
+      "server": "FastAPI1",
+      "success": true,
+      "series_count": 1
+    },
+    {
+      "panel_id": 5,
+      "server": "FastAPI2",
+      "success": true,
+      "series_count": 1
+    },
+    {
+      "panel_id": 5,
+      "server": "All",
+      "success": true,
+      "series_count": 2
+    },
+    {
+      "panel_id": 6,
+      "server": "FastAPI1",
+      "success": true,
+      "series_count": 2
+    },
+    {
+      "panel_id": 6,
+      "server": "FastAPI2",
+      "success": true,
+      "series_count": 2
+    },
+    {
+      "panel_id": 6,
+      "server": "All",
+      "success": true,
+      "series_count": 4
+    },
+    {
+      "panel_id": 7,
+      "server": "FastAPI1",
+      "success": true,
+      "series_count": 2
+    },
+    {
+      "panel_id": 7,
+      "server": "FastAPI2",
+      "success": true,
+      "series_count": 2
+    },
+    {
+      "panel_id": 7,
+      "server": "All",
+      "success": true,
+      "series_count": 4
+    },
+    {
+      "panel_id": 7,
+      "server": "FastAPI1",
+      "success": true,
+      "series_count": 2
+    },
+    {
+      "panel_id": 7,
+      "server": "FastAPI2",
+      "success": true,
+      "series_count": 2
+    },
+    {
+      "panel_id": 7,
+      "server": "All",
+      "success": true,
+      "series_count": 4
+    },
+    {
+      "panel_id": 8,
+      "server": "FastAPI1",
+      "success": true,
+      "series_count": 1
+    },
+    {
+      "panel_id": 8,
+      "server": "FastAPI2",
+      "success": true,
+      "series_count": 1
+    },
+    {
+      "panel_id": 8,
+      "server": "All",
+      "success": true,
+      "series_count": 2
+    },
+    {
+      "panel_id": 9,
+      "server": "FastAPI1",
+      "success": true,
+      "series_count": 1
+    },
+    {
+      "panel_id": 9,
+      "server": "FastAPI2",
+      "success": true,
+      "series_count": 1
+    },
+    {
+      "panel_id": 9,
+      "server": "All",
+      "success": true,
+      "series_count": 2
+    },
+    {
+      "panel_id": 15,
+      "server": "FastAPI1",
+      "success": true,
+      "series_count": 1
+    },
+    {
+      "panel_id": 15,
+      "server": "FastAPI2",
+      "success": true,
+      "series_count": 1
+    },
+    {
+      "panel_id": 15,
+      "server": "All",
+      "success": true,
+      "series_count": 2
+    }
+  ]
+}

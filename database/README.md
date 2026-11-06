@@ -1,6 +1,6 @@
 # 데이터베이스
 
-MariaDB만 사용한다. 행동 이벤트도 MariaDB에 보관하며 MongoDB는 팀 합의 전 도입하지 않는다.
+MariaDB는 업무 상태와 behavior_events/outbox를 관리한다. 2026-11-06 사용자 요청으로 MongoDB `oddinary.user_events`에 분석 이벤트를 적재하도록 도입했다. 업무와 이벤트의 동일 트랜잭션 및 전달 멱등성을 보장하며, MongoDB의 이벤트가 찜/주문/결제 상태를 대체하지 않는다. [MongoDB 스키마·실측 결과](mongodb/README.md), [이벤트 계약](../docs/event-contract.md) 참조.
 
 - 스키마 적용: backend에서 `alembic upgrade head`.
 - `mariadb/schema.sql`은 migration에서 내보낸 참고용 DDL. 직접 적용하지 않는다.

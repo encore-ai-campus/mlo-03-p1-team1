@@ -17,7 +17,7 @@
 | PUT, DELETE | /contents/{id}/reviews/me | 본인 리뷰 작성·수정 / 삭제 |
 | GET | /bookmarks | 본인 찜 목록 |
 | PUT, DELETE | /bookmarks/{content_id} | 멱등 찜 / 취소 |
-| POST | /history/events | 본인 행동 이벤트 수집(event_id UUID 중복 무시) |
+| POST | /history/events | 회원·익명 행동 이벤트 수집. MariaDB+outbox 커밋 후 202, MongoDB 비동기 전달(event_id UUID 중복 무시) |
 | GET | /history | 본인 최근 조회 콘텐츠 |
 | GET | /recommendations | 공개 인기순 / 인증 시 취향·활동 기반 및 추천 이유 |
 | GET | /payments/config | 현재 `enabled=true`, `mode=simulation`, `refunds_enabled=false` |
@@ -37,6 +37,8 @@
 `/payments/orders`, verify/cancel/webhook은 기존 PortOne 경로이며 현재 프론트엔드에서 사용하지 않는다. 이 기존 경로만 샘플 실제 결제를 금지한다. 웹훅은 검증/트랜잭션 완료 후 반환하며 외부 장애 시 502로 재시도를 유도한다. 현재 사용하는 결제 명세는 [모의 결제](payment-spec.md)를 따른다.
 
 인증 관련 요청은 프로세스당 IP 기준 1분 20회로 제한한다. 다중 Uvicorn worker 운영 시 공유 rate limiter 도입 필요. CORS는 명시 출처만 허용하며 Vite/Nginx 프록시를 사용하지 않는다.
+
+활동 수집은 [행동 이벤트 계약 v2](event-contract.md)를 따른다. 비로그인은 익명 UUID와 세션 UUID가 필수이며 user_id는 인증 토큰에서만 결정한다. `page_view`, `content_view`, `search`, `filter_use`, 추천 노출/클릭, `payment_checkout_open`을 허용하고 찜·결제 완료/취소는 서버만 생성한다. 추가 입력과 query가 포함된 페이지 경로는 422다. 수집 202는 MongoDB 적재 완료가 아니며, 장애 시 outbox에서 재시도한다. 선택 분석 헤더는 `X-Activity-Anonymous-Id`, `X-Activity-Session-Id`, `X-Activity-Page`다.
 
 ## 프로필과 취향 설정
 

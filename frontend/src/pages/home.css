@@ -8,6 +8,9 @@
 .home-art-orbit { position: absolute; inset: 15px 0 25px; border-radius: 50%; background: var(--accent-soft); z-index: -1; }
 .home-art-poster { position: absolute; width: 43%; overflow: hidden; border-radius: 8px; box-shadow: 0 16px 32px #20272b1a; }
 .home-art-poster img { display: block; width: 100%; aspect-ratio: 3 / 3.7; object-fit: cover; }
+.home-art-caption { position: absolute; inset: 0 0 auto; padding: 12px 12px 32px; background: linear-gradient(#000c, transparent); color: #fff; }
+.home-art-caption strong { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; font-size: 13px; line-height: 1.5; }
+.home-art-caption > span { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin-top: 4px; font-size: 10px; }
 .poster-music { left: 4%; top: 24px; transform: rotate(-9deg); }
 .poster-exhibition { right: 7%; top: 4px; transform: rotate(9deg); }
 .home-art-note { position: absolute; bottom: 8px; left: 8%; right: 2%; display: flex; align-items: center; gap: 14px; padding: 18px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; box-shadow: var(--shadow); }
@@ -17,6 +20,7 @@
 .home-note-icon { display: grid; place-items: center; width: 42px; height: 42px; background: var(--accent-soft); border-radius: 50%; color: var(--accent); flex-shrink: 0; }
 .home-art-note > svg { color: var(--accent); margin-left: auto; flex-shrink: 0; }
 .home-discovery { display: flex; align-items: center; gap: 32px; padding-block: 24px 40px; }
+.home-discovery .home-search { width: 100%; margin: 0; }
 .home-categories { display: grid; grid-template-columns: repeat(6, 1fr); gap: 24px; flex: 1; }
 .home-categories a { display: flex; flex-direction: column; align-items: center; gap: 10px; white-space: nowrap; font-size: 12px; }
 .home-category-icon { display: grid; place-items: center; width: 52px; height: 52px; border-radius: 16px; background: var(--accent-soft); color: var(--accent); }

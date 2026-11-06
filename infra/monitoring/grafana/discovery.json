@@ -1,0 +1,403 @@
+{
+  "observed_at_utc": "2026-11-06T11:31:44.011752+00:00",
+  "endpoints": {
+    "prometheus": "http://192.168.0.159:9090",
+    "loki": "http://192.168.0.158:3101"
+  },
+  "targets": [
+    {
+      "labels": {
+        "instance": "192.168.0.151:9100",
+        "job": "node"
+      },
+      "scrapeUrl": "http://192.168.0.151:9100/metrics",
+      "health": "up",
+      "lastError": "",
+      "scrapeInterval": "15s"
+    },
+    {
+      "labels": {
+        "instance": "192.168.0.161:9100",
+        "job": "node"
+      },
+      "scrapeUrl": "http://192.168.0.161:9100/metrics",
+      "health": "up",
+      "lastError": "",
+      "scrapeInterval": "15s"
+    },
+    {
+      "labels": {
+        "instance": "192.168.0.162:9100",
+        "job": "node"
+      },
+      "scrapeUrl": "http://192.168.0.162:9100/metrics",
+      "health": "up",
+      "lastError": "",
+      "scrapeInterval": "15s"
+    },
+    {
+      "labels": {
+        "instance": "192.168.0.170:9100",
+        "job": "node"
+      },
+      "scrapeUrl": "http://192.168.0.170:9100/metrics",
+      "health": "up",
+      "lastError": "",
+      "scrapeInterval": "15s"
+    },
+    {
+      "labels": {
+        "instance": "192.168.0.156:9100",
+        "job": "node"
+      },
+      "scrapeUrl": "http://192.168.0.156:9100/metrics",
+      "health": "up",
+      "lastError": "",
+      "scrapeInterval": "15s"
+    },
+    {
+      "labels": {
+        "instance": "192.168.0.157:9100",
+        "job": "node"
+      },
+      "scrapeUrl": "http://192.168.0.157:9100/metrics",
+      "health": "up",
+      "lastError": "",
+      "scrapeInterval": "15s"
+    },
+    {
+      "labels": {
+        "instance": "localhost:9090",
+        "job": "prometheus"
+      },
+      "scrapeUrl": "http://localhost:9090/metrics",
+      "health": "up",
+      "lastError": "",
+      "scrapeInterval": "5s"
+    }
+  ],
+  "node_metrics_in_prometheus": [
+    "node_cpu_seconds_total",
+    "node_disk_read_bytes_total",
+    "node_disk_written_bytes_total",
+    "node_filesystem_avail_bytes",
+    "node_filesystem_size_bytes",
+    "node_memory_MemAvailable_bytes",
+    "node_memory_MemTotal_bytes",
+    "node_network_receive_bytes_total",
+    "node_network_transmit_bytes_total"
+  ],
+  "node_metrics_missing_from_prometheus": [],
+  "servers": {
+    "192.168.0.156": {
+      "hostname": "fastapi1",
+      "health": {
+        "http_status": 200,
+        "body": {
+          "status": "ok"
+        }
+      },
+      "metrics_endpoint": {
+        "http_status": 404,
+        "error": "{\"detail\":\"Not Found\"}"
+      },
+      "exporter_http_status": 200,
+      "verified_exporter_metric_names": [
+        "node_cpu_seconds_total",
+        "node_disk_read_bytes_total",
+        "node_disk_written_bytes_total",
+        "node_filesystem_avail_bytes",
+        "node_filesystem_size_bytes",
+        "node_memory_MemAvailable_bytes",
+        "node_memory_MemTotal_bytes",
+        "node_network_receive_bytes_total",
+        "node_network_transmit_bytes_total"
+      ],
+      "prometheus_node_up": [
+        {
+          "metric": {
+            "__name__": "up",
+            "instance": "192.168.0.156:9100",
+            "job": "node"
+          },
+          "value": [
+            1793964704.644,
+            "1"
+          ]
+        }
+      ],
+      "prometheus_node_data": [
+        {
+          "metric": {
+            "__name__": "node_memory_MemTotal_bytes",
+            "instance": "192.168.0.156:9100",
+            "job": "node"
+          },
+          "value": [
+            1793964704.672,
+            "4055887872"
+          ]
+        }
+      ]
+    },
+    "192.168.0.157": {
+      "hostname": "fastapi2",
+      "health": {
+        "http_status": 200,
+        "body": {
+          "status": "ok"
+        }
+      },
+      "metrics_endpoint": {
+        "http_status": 404,
+        "error": "{\"detail\":\"Not Found\"}"
+      },
+      "exporter_http_status": 200,
+      "verified_exporter_metric_names": [
+        "node_cpu_seconds_total",
+        "node_disk_read_bytes_total",
+        "node_disk_written_bytes_total",
+        "node_filesystem_avail_bytes",
+        "node_filesystem_size_bytes",
+        "node_memory_MemAvailable_bytes",
+        "node_memory_MemTotal_bytes",
+        "node_network_receive_bytes_total",
+        "node_network_transmit_bytes_total"
+      ],
+      "prometheus_node_up": [
+        {
+          "metric": {
+            "__name__": "up",
+            "instance": "192.168.0.157:9100",
+            "job": "node"
+          },
+          "value": [
+            1793964704.756,
+            "1"
+          ]
+        }
+      ],
+      "prometheus_node_data": [
+        {
+          "metric": {
+            "__name__": "node_memory_MemTotal_bytes",
+            "instance": "192.168.0.157:9100",
+            "job": "node"
+          },
+          "value": [
+            1793964704.766,
+            "4055912448"
+          ]
+        }
+      ]
+    }
+  },
+  "application_series": {},
+  "loki_readiness": {
+    "http_status": 200,
+    "body": "ready\n"
+  },
+  "loki_labels_7d": {
+    "http_status": 200,
+    "body": {
+      "status": "success",
+      "data": [
+        "env",
+        "filename",
+        "host",
+        "job",
+        "log_type",
+        "service",
+        "service_name"
+      ]
+    }
+  },
+  "loki_fastapi_series_7d": {
+    "http_status": 200,
+    "body": {
+      "status": "success",
+      "data": [
+        {
+          "env": "production",
+          "filename": "/var/log/culturepick/fastapi.log",
+          "host": "fastapi2",
+          "job": "fastapi",
+          "service": "mlops-api",
+          "service_name": "mlops-api"
+        },
+        {
+          "service_name": "mlops-api",
+          "env": "production",
+          "filename": "/var/log/culturepick/fastapi.log",
+          "host": "fastapi1",
+          "job": "fastapi",
+          "service": "mlops-api"
+        }
+      ]
+    }
+  },
+  "dashboard_query_validation": [
+    {
+      "panel_id": 2,
+      "server": "FastAPI1",
+      "success": true,
+      "series_count": 1
+    },
+    {
+      "panel_id": 2,
+      "server": "FastAPI2",
+      "success": true,
+      "series_count": 1
+    },
+    {
+      "panel_id": 2,
+      "server": "All",
+      "success": true,
+      "series_count": 2
+    },
+    {
+      "panel_id": 4,
+      "server": "FastAPI1",
+      "success": true,
+      "series_count": 1
+    },
+    {
+      "panel_id": 4,
+      "server": "FastAPI2",
+      "success": true,
+      "series_count": 1
+    },
+    {
+      "panel_id": 4,
+      "server": "All",
+      "success": true,
+      "series_count": 2
+    },
+    {
+      "panel_id": 5,
+      "server": "FastAPI1",
+      "success": true,
+      "series_count": 1
+    },
+    {
+      "panel_id": 5,
+      "server": "FastAPI2",
+      "success": true,
+      "series_count": 1
+    },
+    {
+      "panel_id": 5,
+      "server": "All",
+      "success": true,
+      "series_count": 2
+    },
+    {
+      "panel_id": 6,
+      "server": "FastAPI1",
+      "success": true,
+      "series_count": 2
+    },
+    {
+      "panel_id": 6,
+      "server": "FastAPI2",
+      "success": true,
+      "series_count": 2
+    },
+    {
+      "panel_id": 6,
+      "server": "All",
+      "success": true,
+      "series_count": 4
+    },
+    {
+      "panel_id": 7,
+      "server": "FastAPI1",
+      "success": true,
+      "series_count": 2
+    },
+    {
+      "panel_id": 7,
+      "server": "FastAPI2",
+      "success": true,
+      "series_count": 2
+    },
+    {
+      "panel_id": 7,
+      "server": "All",
+      "success": true,
+      "series_count": 4
+    },
+    {
+      "panel_id": 7,
+      "server": "FastAPI1",
+      "success": true,
+      "series_count": 2
+    },
+    {
+      "panel_id": 7,
+      "server": "FastAPI2",
+      "success": true,
+      "series_count": 2
+    },
+    {
+      "panel_id": 7,
+      "server": "All",
+      "success": true,
+      "series_count": 4
+    },
+    {
+      "panel_id": 8,
+      "server": "FastAPI1",
+      "success": true,
+      "series_count": 1
+    },
+    {
+      "panel_id": 8,
+      "server": "FastAPI2",
+      "success": true,
+      "series_count": 1
+    },
+    {
+      "panel_id": 8,
+      "server": "All",
+      "success": true,
+      "series_count": 2
+    },
+    {
+      "panel_id": 9,
+      "server": "FastAPI1",
+      "success": true,
+      "series_count": 1
+    },
+    {
+      "panel_id": 9,
+      "server": "FastAPI2",
+      "success": true,
+      "series_count": 1
+    },
+    {
+      "panel_id": 9,
+      "server": "All",
+      "success": true,
+      "series_count": 2
+    },
+    {
+      "panel_id": 15,
+      "server": "FastAPI1",
+      "success": true,
+      "series_count": 1
+    },
+    {
+      "panel_id": 15,
+      "server": "FastAPI2",
+      "success": true,
+      "series_count": 1
+    },
+    {
+      "panel_id": 15,
+      "server": "All",
+      "success": true,
+      "series_count": 2
+    }
+  ]
+}

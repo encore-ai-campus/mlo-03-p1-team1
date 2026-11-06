@@ -1,0 +1,55 @@
+{
+  "verified_at_utc": "2026-11-06T10:42:24.134882+00:00",
+  "website": "https://www.aiready.p-e.kr",
+  "database": "oddinary",
+  "collection": "user_events",
+  "test_user_id": 4,
+  "test_session_id": "a011c3a1-e75a-4f50-a87a-339a1baa37af",
+  "event_counts": {
+    "bookmark_add": 1,
+    "bookmark_remove": 1,
+    "content_view": 3,
+    "filter_use": 1,
+    "page_view": 10,
+    "payment_checkout_open": 1,
+    "payment_completed": 1,
+    "recommendation_click": 1,
+    "recommendation_impression": 24,
+    "search": 2
+  },
+  "mariadb_event_count": 45,
+  "mongo_document_count": 45,
+  "unique_event_ids": 45,
+  "missing_in_mongo": [],
+  "unexpected_in_mongo": [],
+  "outbox_delivered": 45,
+  "outbox_pending": 0,
+  "outbox_error_classes": [],
+  "bookmarked_after_add_remove": false,
+  "payment": {
+    "payment_id": "sim-1441838d-440d-42d8-a50f-c601c190f240",
+    "status": "PAID",
+    "amount": 10000,
+    "quantity": 1,
+    "currency": "KRW",
+    "is_simulated": true,
+    "history_rows": 1,
+    "reservation_rows": 1
+  },
+  "api_readiness": {
+    "192.168.0.156": {
+      "http_status": 200,
+      "body": {
+        "status": "ready",
+        "database": "mariadb"
+      }
+    },
+    "192.168.0.157": {
+      "http_status": 200,
+      "body": {
+        "status": "ready",
+        "database": "mariadb"
+      }
+    }
+  }
+}

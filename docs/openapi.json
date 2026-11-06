@@ -1459,11 +1459,13 @@
           "event_type": {
             "type": "string",
             "enum": [
+              "page_view",
               "content_view",
               "search",
               "filter_use",
               "recommendation_click",
-              "recommendation_impression"
+              "recommendation_impression",
+              "payment_checkout_open"
             ],
             "title": "Event Type"
           },
@@ -1497,8 +1499,103 @@
               }
             ],
             "title": "Category"
+          },
+          "anonymous_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "uuid"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Anonymous Id"
+          },
+          "session_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "uuid"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Session Id"
+          },
+          "page_path": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 200
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Page Path"
+          },
+          "referrer_path": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 200
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Referrer Path"
+          },
+          "query_length": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "maximum": 100.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Query Length"
+          },
+          "filter_name": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "category",
+                  "region",
+                  "free_only",
+                  "sort",
+                  "from_date",
+                  "to_date",
+                  "reset"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Filter Name"
+          },
+          "filter_value": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 30,
+                "pattern": "^[^\\x00-\\x1f<>\"{}]*$"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Filter Value"
           }
         },
+        "additionalProperties": false,
         "type": "object",
         "required": [
           "event_id",

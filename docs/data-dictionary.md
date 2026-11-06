@@ -19,6 +19,8 @@
 | bookmarks | user_id, content_id, created_at | 현재 찜 상태 (복합 PK) |
 | reviews | user_id, content_id, rating, body, updated_at | 회원당 콘텐츠당 1개, 1–5점, 5–2000자 |
 | behavior_events | event_id, event_type, user_id, content_id, occurred_at, properties | 이벤트 원본, [계약](event-contract.md) 참조 |
+| event_outbox | event_id, attempts, next_attempt_at, delivered_at, last_error | 커밋된 이벤트의 Mongo 전달/재시도. event_id는 behavior_events FK/PK |
+| oddinary.user_events (MongoDB) | event_id, schema_version, event_type, user_id, anonymous_id, session_id, content_id, occurred_at, ingested_at, source, page_path, referrer_path, properties | 분석 이벤트 문서. 업무 현재 상태를 대체하지 않음. BSON Date는 UTC, _id=event_id |
 | orders | payment_id, user_id, content_id, idempotency_key | 서버 발급 UUID 주문, 소유권·요청 멱등성 |
 | orders | order_name, quantity, amount, currency | 생성 시 고정한 주문명·수량·금액(KRW). 클라이언트 금액 불수신 |
 | orders | status, cancelled_amount, updated_at | 검증한 현재 결제 상태·누적 취소액 |

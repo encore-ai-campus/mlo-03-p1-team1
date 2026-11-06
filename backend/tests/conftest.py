@@ -10,6 +10,8 @@ test_url = os.environ.get('TEST_DATABASE_URL') or dotenv_values(ROOT / '.runtime
 if not test_url or not make_url(test_url).database.endswith('_test'):
     raise RuntimeError('Set TEST_DATABASE_URL to a dedicated MariaDB database ending in _test. Tests never use the development database or SQLite.')
 os.environ['DATABASE_URL'] = test_url
+os.environ['DATABASE_READ_URL'] = os.environ.get('TEST_DATABASE_READ_URL', '')
+os.environ['MONGODB_EVENTS_ENABLED'] = 'false'
 
 from alembic import command
 from alembic.config import Config

@@ -4,6 +4,7 @@ import { ArrowUpRight } from 'lucide-react'
 import { useSession } from '../context'
 import { useApi } from '../hooks'
 import { checkout } from '../api/payments'
+import { track } from '../api/client'
 import type { Content, PaymentConfig } from '../types'
 import { safeUrl } from './ContentCard'
 import { Dialog } from './Dialog'
@@ -52,7 +53,7 @@ export function SimulationCheckout({ content }: { content: Content }) {
       <strong>{total.toLocaleString()}원</strong>
       <button className="button primary" disabled={!s.ready || busy || (!!s.user && !ready)} onClick={() => {
         if (!s.user) { s.openAuth(); return }
-        setError(''); setOpen(true)
+        setError(''); setOpen(true); void track('payment_checkout_open', content.id)
       }}>{!s.user ? '로그인 후 결제' : ready ? '결제하기' : '결제 준비 중'}</button>
     </div>
     {config.error && <p className="form-error" role="alert">{config.error} <button className="text-link" onClick={config.retry}>다시 확인</button></p>}

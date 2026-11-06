@@ -1,14 +1,29 @@
 from sqlalchemy import delete, func, or_, select
 from sqlalchemy.dialects.mysql import insert
 from sqlalchemy.orm import Session
+from sqlalchemy.exc import SQLAlchemyError
+import logging
 
-from app.models import AuthSession, BehaviorEvent, Bookmark, Content, Order, Reservation, Review, User, WebhookReceipt
+from app.models import AuthSession, BehaviorEvent, Bookmark, Content, EventOutbox, Order, Reservation, Review, User, WebhookReceipt
 from app.core.security import seoul_today
 
 
 class Store:
-    def __init__(self, db: Session):
+    def __init__(self, db: Session, event_context=None, catalog_db=None):
         self.db = db
+        self.catalog_db = catalog_db if catalog_db is not None else db
+        self.event_context = event_context or {}
+
+    def _catalog_read(self, operation):
+        try:
+            return operation(self.catalog_db)
+        except SQLAlchemyError as exc:
+            if self.catalog_db is self.db:
+                raise
+            self.catalog_db.rollback()
+            self.catalog_db = self.db
+            logging.getLogger('culturepick.db').warning('Replica query failed; catalog uses master (%s)', type(exc).__name__)
+            return operation(self.db)
 
     def add(self, obj):
         self.db.add(obj)
@@ -25,10 +40,10 @@ class Store:
         return self.db.scalar(select(User).where(User.id == user_id).with_for_update())
 
     def contents_by_ids(self, content_ids):
-        return list(self.db.scalars(select(Content).where(Content.id.in_(content_ids)))) if content_ids else []
+        return self._catalog_read(lambda db: list(db.scalars(select(Content).where(Content.id.in_(content_ids))))) if content_ids else []
 
     def content(self, content_id: int):
-        return self.db.get(Content, content_id)
+        return self._catalog_read(lambda db: db.get(Content, content_id))
 
     def user_by_email(self, email: str):
         return self.db.scalar(select(User).where(User.email == email))
@@ -64,12 +79,14 @@ class Store:
             stmt = stmt.where(Content.end_date >= from_date)
         if to_date:
             stmt = stmt.where(Content.start_date <= to_date)
-        total = self.db.scalar(select(func.count()).select_from(stmt.subquery()))
+        count_stmt = select(func.count()).select_from(stmt.subquery())
         if sort == 'popular':
             counts = select(Bookmark.content_id, func.count().label('count')).group_by(Bookmark.content_id).subquery()
             stmt = stmt.outerjoin(counts, Content.id == counts.c.content_id).order_by(func.coalesce(counts.c.count, 0).desc())
         stmt = stmt.order_by(Content.end_date.asc() if sort == 'ending' else Content.collected_at.desc(), Content.id.asc())
-        return list(self.db.scalars(stmt.offset((page - 1) * size).limit(size))), total
+        # Retry count + rows together if the replica disconnects between them.
+        return self._catalog_read(lambda db: (
+            list(db.scalars(stmt.offset((page - 1) * size).limit(size))), db.scalar(count_stmt)))
 
     def enrich(self, contents, user_id=None):
         ids = [c.id for c in contents]
@@ -91,8 +108,16 @@ class Store:
             self.db.execute(delete(Bookmark).where(Bookmark.user_id == user_id, Bookmark.content_id == content_id))
 
     def event(self, values: dict):
+        values = dict(values)
+        if self.event_context:
+            properties = dict(values.get('properties') or {})
+            properties['_context'] = {**self.event_context, **properties.get('_context', {})}
+            values['properties'] = properties
         stmt = insert(BehaviorEvent).values(**values)
         self.db.execute(stmt.on_duplicate_key_update(event_id=stmt.inserted.event_id))
+        # Same transaction as the event and any bookmark/order changes. No Mongo I/O here.
+        pending = insert(EventOutbox).values(event_id=values['event_id'])
+        self.db.execute(pending.on_duplicate_key_update(event_id=pending.inserted.event_id))
 
     def events(self, user_id: int, limit=500):
         return list(self.db.scalars(select(BehaviorEvent).where(BehaviorEvent.user_id == user_id).order_by(BehaviorEvent.occurred_at.desc()).limit(limit)))

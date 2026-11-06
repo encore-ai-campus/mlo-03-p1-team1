@@ -1,0 +1,214 @@
+[
+  {
+    "_id": "33495a6a-826c-490b-84a2-902171fcfbe9",
+    "anonymous_id": "06f90e3e-d4fb-4ebe-a11c-5b288b5ff1cb",
+    "content_id": 973,
+    "event_id": "33495a6a-826c-490b-84a2-902171fcfbe9",
+    "event_type": "bookmark_add",
+    "ingested_at": {
+      "$date": "2026-11-06T10:34:02.842Z"
+    },
+    "occurred_at": {
+      "$date": "2026-11-06T10:34:01Z"
+    },
+    "page_path": "/contents/973",
+    "properties": {},
+    "referrer_path": null,
+    "schema_version": 1,
+    "session_id": "a011c3a1-e75a-4f50-a87a-339a1baa37af",
+    "source": "server",
+    "user_id": 4
+  },
+  {
+    "_id": "2275246a-dc98-4da2-8297-65920af3eac3",
+    "anonymous_id": "06f90e3e-d4fb-4ebe-a11c-5b288b5ff1cb",
+    "content_id": 973,
+    "event_id": "2275246a-dc98-4da2-8297-65920af3eac3",
+    "event_type": "bookmark_remove",
+    "ingested_at": {
+      "$date": "2026-11-06T10:35:45.079Z"
+    },
+    "occurred_at": {
+      "$date": "2026-11-06T10:35:45Z"
+    },
+    "page_path": "/contents/973",
+    "properties": {},
+    "referrer_path": null,
+    "schema_version": 1,
+    "session_id": "a011c3a1-e75a-4f50-a87a-339a1baa37af",
+    "source": "server",
+    "user_id": 4
+  },
+  {
+    "_id": "8f6cd8d4-708a-47a2-9d8c-6892b51e36be",
+    "anonymous_id": "06f90e3e-d4fb-4ebe-a11c-5b288b5ff1cb",
+    "content_id": 973,
+    "event_id": "8f6cd8d4-708a-47a2-9d8c-6892b51e36be",
+    "event_type": "content_view",
+    "ingested_at": {
+      "$date": "2026-11-06T10:33:45.060Z"
+    },
+    "occurred_at": {
+      "$date": "2026-11-06T10:33:44Z"
+    },
+    "page_path": "/contents/973",
+    "properties": {},
+    "referrer_path": null,
+    "schema_version": 1,
+    "session_id": "a011c3a1-e75a-4f50-a87a-339a1baa37af",
+    "source": "browser",
+    "user_id": 4
+  },
+  {
+    "_id": "78d7c41f-7fce-4011-8bcd-3ccc02210291",
+    "anonymous_id": "06f90e3e-d4fb-4ebe-a11c-5b288b5ff1cb",
+    "content_id": null,
+    "event_id": "78d7c41f-7fce-4011-8bcd-3ccc02210291",
+    "event_type": "filter_use",
+    "ingested_at": {
+      "$date": "2026-11-06T10:32:43.524Z"
+    },
+    "occurred_at": {
+      "$date": "2026-11-06T10:32:43Z"
+    },
+    "page_path": "/explore",
+    "properties": {
+      "category": "전시",
+      "filter_name": "category",
+      "filter_value": "전시"
+    },
+    "referrer_path": null,
+    "schema_version": 1,
+    "session_id": "a011c3a1-e75a-4f50-a87a-339a1baa37af",
+    "source": "browser",
+    "user_id": null
+  },
+  {
+    "_id": "f69c40d2-c3b1-4e96-9064-a393a3036069",
+    "anonymous_id": "06f90e3e-d4fb-4ebe-a11c-5b288b5ff1cb",
+    "content_id": null,
+    "event_id": "f69c40d2-c3b1-4e96-9064-a393a3036069",
+    "event_type": "page_view",
+    "ingested_at": {
+      "$date": "2026-11-06T10:32:06.260Z"
+    },
+    "occurred_at": {
+      "$date": "2026-11-06T10:32:06Z"
+    },
+    "page_path": "/",
+    "properties": {},
+    "referrer_path": null,
+    "schema_version": 1,
+    "session_id": "a011c3a1-e75a-4f50-a87a-339a1baa37af",
+    "source": "browser",
+    "user_id": null
+  },
+  {
+    "_id": "85adcd1b-8817-4f88-a8fc-16fabdfb0377",
+    "anonymous_id": "06f90e3e-d4fb-4ebe-a11c-5b288b5ff1cb",
+    "content_id": 973,
+    "event_id": "85adcd1b-8817-4f88-a8fc-16fabdfb0377",
+    "event_type": "payment_checkout_open",
+    "ingested_at": {
+      "$date": "2026-11-06T10:34:23.873Z"
+    },
+    "occurred_at": {
+      "$date": "2026-11-06T10:34:23Z"
+    },
+    "page_path": "/contents/973",
+    "properties": {},
+    "referrer_path": null,
+    "schema_version": 1,
+    "session_id": "a011c3a1-e75a-4f50-a87a-339a1baa37af",
+    "source": "browser",
+    "user_id": 4
+  },
+  {
+    "_id": "a89b8ba7-7f99-46d6-9625-a390e092fe07",
+    "anonymous_id": "06f90e3e-d4fb-4ebe-a11c-5b288b5ff1cb",
+    "content_id": 973,
+    "event_id": "a89b8ba7-7f99-46d6-9625-a390e092fe07",
+    "event_type": "payment_completed",
+    "ingested_at": {
+      "$date": "2026-11-06T10:34:32.186Z"
+    },
+    "occurred_at": {
+      "$date": "2026-11-06T10:34:31Z"
+    },
+    "page_path": "/contents/973",
+    "properties": {
+      "payment_id": "sim-1441838d-440d-42d8-a50f-c601c190f240",
+      "payment_mode": "simulation",
+      "quantity": 1,
+      "amount": 10000,
+      "currency": "KRW"
+    },
+    "referrer_path": null,
+    "schema_version": 1,
+    "session_id": "a011c3a1-e75a-4f50-a87a-339a1baa37af",
+    "source": "server",
+    "user_id": 4
+  },
+  {
+    "_id": "cdbf68ac-2043-4b54-9375-0aed4e4b4f61",
+    "anonymous_id": "06f90e3e-d4fb-4ebe-a11c-5b288b5ff1cb",
+    "content_id": 1139,
+    "event_id": "cdbf68ac-2043-4b54-9375-0aed4e4b4f61",
+    "event_type": "recommendation_click",
+    "ingested_at": {
+      "$date": "2026-11-06T10:37:50.682Z"
+    },
+    "occurred_at": {
+      "$date": "2026-11-06T10:37:50Z"
+    },
+    "page_path": "/recommendations",
+    "properties": {},
+    "referrer_path": null,
+    "schema_version": 1,
+    "session_id": "a011c3a1-e75a-4f50-a87a-339a1baa37af",
+    "source": "browser",
+    "user_id": 4
+  },
+  {
+    "_id": "169c51b9-f939-4144-883d-94f1d1b178e4",
+    "anonymous_id": "06f90e3e-d4fb-4ebe-a11c-5b288b5ff1cb",
+    "content_id": 1811,
+    "event_id": "169c51b9-f939-4144-883d-94f1d1b178e4",
+    "event_type": "recommendation_impression",
+    "ingested_at": {
+      "$date": "2026-11-06T10:35:46.275Z"
+    },
+    "occurred_at": {
+      "$date": "2026-11-06T10:35:46Z"
+    },
+    "page_path": "/recommendations",
+    "properties": {},
+    "referrer_path": null,
+    "schema_version": 1,
+    "session_id": "a011c3a1-e75a-4f50-a87a-339a1baa37af",
+    "source": "browser",
+    "user_id": 4
+  },
+  {
+    "_id": "c0385b0d-6674-46cd-89be-26046e1b0f39",
+    "anonymous_id": "06f90e3e-d4fb-4ebe-a11c-5b288b5ff1cb",
+    "content_id": null,
+    "event_id": "c0385b0d-6674-46cd-89be-26046e1b0f39",
+    "event_type": "search",
+    "ingested_at": {
+      "$date": "2026-11-06T10:32:30.947Z"
+    },
+    "occurred_at": {
+      "$date": "2026-11-06T10:32:30Z"
+    },
+    "page_path": "/",
+    "properties": {
+      "query_length": 2
+    },
+    "referrer_path": null,
+    "schema_version": 1,
+    "session_id": "a011c3a1-e75a-4f50-a87a-339a1baa37af",
+    "source": "browser",
+    "user_id": null
+  }
+]

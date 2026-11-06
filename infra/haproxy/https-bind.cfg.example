@@ -1,0 +1,14 @@
+# Merge these lines into the EXISTING HTTP frontend on 192.168.0.155.
+# This is a fragment, not a replacement for /etc/haproxy/haproxy.cfg.
+# Keep its current bind :80, default_backend, and the two FastAPI server lines.
+# The frontend/backend must use mode http.
+# api.aiready.p-e.kr must route to this HAProxy server on TCP 443.
+# PEM order: certificate.crt, ca_bundle.crt, private.key (from the API zip).
+# Install the PEM at the path below; keep the private key out of Git.
+
+    bind :443 ssl crt /etc/haproxy/certs/api.aiready.p-e.kr.pem ssl-min-ver TLSv1.2
+    http-request set-header X-Forwarded-Proto https if { ssl_fc }
+
+# Browser -> HAProxy: HTTPS. HAProxy -> existing FastAPI servers: HTTP.
+# Validate with: sudo haproxy -c -f /etc/haproxy/haproxy.cfg
+# Then reload with: sudo systemctl reload haproxy

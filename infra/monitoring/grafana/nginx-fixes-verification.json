@@ -1,0 +1,144 @@
+{
+  "verified_at_utc": "2026-11-06T11:14:29.754Z",
+  "dashboard_uid": "culturepick-nginx",
+  "version_before": 2,
+  "version_after": 3,
+  "default_node": "192.168.0.151:9100",
+  "rps_query": {
+    "datasource": {
+      "type": "loki",
+      "uid": "dg3gsp6pckjk0a"
+    },
+    "editorMode": "code",
+    "expr": "sum(rate({job=\"nginx\",host=~\"$log_host\",log_type=\"access\"}[1m])) or vector(0)",
+    "legendFormat": "",
+    "queryType": "instant",
+    "refId": "A"
+  },
+  "disk_queries": [
+    "sum(rate(node_disk_read_bytes_total{job=\"node\",instance=\"$node\",device=\"sda\"}[$__rate_interval]))",
+    "sum(rate(node_disk_written_bytes_total{job=\"node\",instance=\"$node\",device=\"sda\"}[$__rate_interval]))"
+  ],
+  "query_checks": [
+    {
+      "label": "rps",
+      "httpStatus": 200,
+      "status": 200,
+      "frames": [
+        {
+          "fields": [
+            "Time",
+            "Value"
+          ],
+          "values": [
+            [
+              1793963565404
+            ],
+            [
+              0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "label": "disk_A",
+      "httpStatus": 200,
+      "status": 200,
+      "frames": [
+        {
+          "fields": [
+            "Time",
+            "Value"
+          ],
+          "values": [
+            [
+              1793963565404
+            ],
+            [
+              0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "label": "disk_B",
+      "httpStatus": 200,
+      "status": 200,
+      "frames": [
+        {
+          "fields": [
+            "Time",
+            "Value"
+          ],
+          "values": [
+            [
+              1793963565404
+            ],
+            [
+              12652.088888888888
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "label": "node_up",
+      "httpStatus": 200,
+      "status": 200,
+      "frames": [
+        {
+          "fields": [
+            "Time",
+            "up"
+          ],
+          "values": [
+            [
+              1793963565404
+            ],
+            [
+              1
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "traffic_check": {
+    "httpStatus": 200,
+    "attempts": 2,
+    "marker": "cp-nginx-rps-fix-20261106T111358707Z",
+    "results": {
+      "A": {
+        "status": 200,
+        "values": [
+          [
+            [
+              1793963640526
+            ],
+            [
+              0.016666666666666666
+            ]
+          ]
+        ]
+      },
+      "B": {
+        "status": 200,
+        "values": [
+          [
+            [
+              1793963640526
+            ],
+            [
+              1
+            ]
+          ]
+        ]
+      }
+    }
+  },
+  "url_overrides_required": false,
+  "other_panels_unchanged": true,
+  "server_configuration_changed": false
+}
