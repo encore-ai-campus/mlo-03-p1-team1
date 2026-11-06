@@ -114,9 +114,10 @@ Oddinary는 외부 공개 API와 네이버 크롤링으로 전시·공연·문�
 <img width="3614" height="2188" alt="Image" src="https://github.com/user-attachments/assets/c1060ce4-7be0-4dc9-8d5d-14337dd5c68f" />
 
  <br />
- 
+  <br />
+  
 ## 7. ERD (Entity Relationship Diagram)
-<img width="1920" height="1540" alt="Image" src="https://github.com/user-attachments/assets/c1ac5676-62e3-436b-bdaf-7fb5d59ac2cf" />
+<img width="1920" height="1540" alt="Image" src="https://github.com/user-attachments/assets/d57ebe33-b78b-470b-9194-f9500e460855" />
  <br />
  
 ## 8. 활용 데이터
