@@ -8,7 +8,7 @@ import type { Content } from '../types'
 export const priceLabel = (c: Content) => c.price_text || (c.price ? `${c.price.toLocaleString('ko-KR')}원` : '가격 확인 필요')
 export const dateLabel = (date: string) => date.replaceAll('-', '.')
 export const safeUrl = (url: string) => /^https?:\/\//i.test(url) ? url : undefined
-export function ContentCard({ content, recommended = false, onChange }: { content: Content; recommended?: boolean; onChange?: () => void }) {
+export function ContentCard({ content, recommended = false, onChange }: { content: Content; recommended?: boolean; onChange?: (contentId: number, bookmarked: boolean) => void }) {
   const s = useSession()
   const [busy, setBusy] = useState(false)
   const [marked, setMarked] = useState(content.bookmarked)
@@ -18,8 +18,10 @@ export function ContentCard({ content, recommended = false, onChange }: { conten
     if (busy) return
     setBusy(true)
     try {
-      await api(`/bookmarks/${content.id}`, { method: marked ? 'DELETE' : 'PUT' })
-      setMarked(!marked); s.toast(marked ? '찜을 해제했어요.' : '찜한 콘텐츠에 담았어요.'); s.refresh(); onChange?.()
+      const result = await api<{ bookmarked: boolean }>(`/bookmarks/${content.id}`, { method: marked ? 'DELETE' : 'PUT' })
+      setMarked(result.bookmarked)
+      onChange?.(content.id, result.bookmarked)
+      s.toast(result.bookmarked ? '찜한 콘텐츠에 담았어요.' : '찜을 해제했어요.'); s.refresh()
     } catch (e) { s.toast((e as Error).message) } finally { setBusy(false) }
   }
   return <article className="content-card">

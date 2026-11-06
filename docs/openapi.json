@@ -1762,31 +1762,128 @@
       },
       "RegisterInput": {
         "properties": {
-          "email": {
-            "type": "string",
-            "format": "email",
-            "title": "Email"
-          },
           "name": {
             "type": "string",
             "maxLength": 40,
             "minLength": 2,
             "title": "Name"
           },
+          "gender": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "female",
+                  "male",
+                  "other",
+                  "prefer_not_to_say"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Gender"
+          },
+          "age": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "maximum": 120.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Age"
+          },
+          "residence": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "서울",
+                  "부산",
+                  "대구",
+                  "인천",
+                  "광주",
+                  "대전",
+                  "울산",
+                  "세종",
+                  "경기",
+                  "강원",
+                  "충북",
+                  "충남",
+                  "전북",
+                  "전남",
+                  "경북",
+                  "경남",
+                  "제주",
+                  "해외"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Residence"
+          },
+          "occupation": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 80
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Occupation"
+          },
+          "mbti": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^[EI][NS][FT][JP]$"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Mbti"
+          },
+          "email": {
+            "type": "string",
+            "format": "email",
+            "title": "Email"
+          },
           "password": {
             "type": "string",
             "maxLength": 128,
             "minLength": 10,
             "title": "Password"
+          },
+          "survey": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/SurveyInput"
+              },
+              {
+                "type": "null"
+              }
+            ]
           }
         },
+        "additionalProperties": false,
         "type": "object",
         "required": [
-          "email",
           "name",
+          "email",
           "password"
         ],
-        "title": "RegisterInput"
+        "title": "RegisterInput",
+        "description": "Create an account with optional profile fields and an initial taste survey."
       },
       "ReviewInput": {
         "properties": {

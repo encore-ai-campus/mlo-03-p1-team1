@@ -4,10 +4,18 @@ import { useSession } from '../context'
 import { CATEGORIES } from '../types'
 import { MAX_PREFERENCE_TAGS, togglePreferenceTag } from '../preferenceKeywords'
 import { PreferenceKeywords } from './PreferenceKeywords'
+import type { TastePreferences } from '../preferences'
 
 const ICONS = [Frame, Drama, AudioLines, Music2, Flower2, PartyPopper]
 
-export function PreferenceForm({ onSaved }: { onSaved?: () => void }) {
+interface PreferenceFormProps {
+  onSaved?: () => void;
+  onSubmitPreferences?: (preferences: TastePreferences) => Promise<void>;
+  onBack?: () => void;
+  submitLabel?: string;
+}
+
+export function PreferenceForm({ onSaved, onSubmitPreferences, onBack, submitLabel = '취향 저장하기' }: PreferenceFormProps) {
   const s = useSession()
   const [categories, setCategories] = useState<string[]>(s.preferences?.categories || [])
   const [tags, setTags] = useState<string[]>(s.preferences?.tags || [])
@@ -28,7 +36,7 @@ export function PreferenceForm({ onSaved }: { onSaved?: () => void }) {
     if (tags.length > MAX_PREFERENCE_TAGS) return
     setBusy(true); setError('')
     try {
-      await s.savePreferences({ categories, tags })
+      await (onSubmitPreferences || s.savePreferences)({ categories, tags })
       onSaved?.()
     } catch (e) { setError((e as Error).message) } finally { setBusy(false) }
   }}>
@@ -46,6 +54,6 @@ export function PreferenceForm({ onSaved }: { onSaved?: () => void }) {
       </fieldset>}
     </div>
     {error && <p className="form-error" role="alert">{error}</p>}
-    <div className="survey-actions">{step === 1 && <button type="button" className="button outline" disabled={busy} onClick={() => move(0)}><ArrowLeft size={17} />이전</button>}<button className="button primary" disabled={!categories.length || (step === 1 && tags.length > MAX_PREFERENCE_TAGS) || busy}>{busy ? '저장 중…' : step === 0 ? '다음으로' : '취향 저장하기'}{step === 0 ? <ArrowRight size={17} /> : <Sparkles size={17} />}</button></div>
+    <div className="survey-actions">{(step === 1 || onBack) && <button type="button" className="button outline" disabled={busy} onClick={() => step === 1 ? move(0) : onBack?.()}><ArrowLeft size={17} />이전</button>}<button className="button primary" disabled={!categories.length || (step === 1 && tags.length > MAX_PREFERENCE_TAGS) || busy}>{busy ? '저장 중…' : step === 0 ? '다음으로' : submitLabel}{step === 0 ? <ArrowRight size={17} /> : <Sparkles size={17} />}</button></div>
   </form>
 }

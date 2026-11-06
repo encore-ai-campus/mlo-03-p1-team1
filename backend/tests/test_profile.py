@@ -1,12 +1,84 @@
 import pytest
-from sqlalchemy import select
+from sqlalchemy import func, select
 
 from app.db.session import SessionLocal
-from app.models import User
+from app.models import AuthSession, User
 
 
 PROFILE = {'name': '문화생활', 'gender': 'female', 'age': 28, 'residence': '서울',
            'occupation': '개발자', 'mbti': 'INFP'}
+
+
+def test_registration_saves_profile_and_survey_together(client):
+    payload = {**PROFILE, 'email': 'onboarding@example.com', 'password': 'OnboardingPassword123!',
+               'occupation': '  개발자  ', 'mbti': ' infp ',
+               'survey': {'categories': ['전시', '음악', '전시'], 'tags': ['재즈', ' 재즈 ', '사진']}}
+    response = client.post('/api/v1/auth/register', json=payload)
+    assert response.status_code == 201, response.text
+    result = response.json()
+    saved = result['user']
+    assert saved['survey_completed'] is True
+    assert saved['categories'] == ['전시', '음악']
+    assert saved['tags'] == ['재즈', '사진']
+    for field, value in PROFILE.items():
+        assert saved[field] == value
+    assert saved['age_recorded_at'].endswith('Z')
+    headers = {'Authorization': f'Bearer {result["access_token"]}'}
+    assert client.get('/api/v1/users/me', headers=headers).json() == saved
+    assert client.post('/api/v1/auth/logout', headers=headers).status_code == 200
+    login = client.post('/api/v1/auth/login', json={
+        'email': payload['email'], 'password': payload['password'],
+    })
+    assert login.status_code == 200
+    assert login.json()['user'] == saved
+
+
+def test_registration_optional_profile_can_be_empty(client):
+    response = client.post('/api/v1/auth/register', json={
+        'email': 'optional@example.com', 'password': 'OptionalPassword123!', 'name': '선택정보',
+        'gender': None, 'age': None, 'residence': None, 'occupation': '', 'mbti': '',
+        'survey': {'categories': ['전시'], 'tags': []},
+    })
+    assert response.status_code == 201, response.text
+    saved = response.json()['user']
+    assert saved['survey_completed']
+    for field in ('gender', 'age', 'age_recorded_at', 'residence', 'occupation', 'mbti'):
+        assert saved[field] is None
+
+
+@pytest.mark.parametrize('extra', [
+    {'age': -1}, {'age': 121}, {'age': '28'}, {'age': True}, {'age': 20.5},
+    {'gender': 'unknown'}, {'residence': '없는 지역'}, {'mbti': 'ABCD'},
+    {'occupation': 'a' * 81}, {'age_recorded_at': '2026-01-01T00:00:00Z'},
+    {'survey': {'categories': [], 'tags': []}},
+    {'survey': {'categories': ['없는 분야'], 'tags': []}},
+    {'survey': {'categories': ['전시'], 'tags': ['태그'] * 11}},
+])
+def test_invalid_registration_profile_or_survey_creates_no_account(client, extra):
+    response = client.post('/api/v1/auth/register', json={
+        'email': 'invalid-onboarding@example.com', 'name': '입력검증',
+        'password': 'ValidationPassword123!', **extra,
+    })
+    assert response.status_code == 422, response.text
+    with SessionLocal() as db:
+        assert db.scalar(select(func.count()).select_from(User)) == 0
+        assert db.scalar(select(func.count()).select_from(AuthSession)) == 0
+
+
+def test_registration_rolls_back_profile_and_survey_when_session_fails(client, monkeypatch):
+    def fail_session(*args):
+        raise RuntimeError('session creation failed')
+    payload = {**PROFILE, 'email': 'rollback@example.com', 'password': 'RollbackPassword123!',
+               'survey': {'categories': ['전시'], 'tags': ['사진']}}
+    with monkeypatch.context() as patch:
+        patch.setattr('app.services.auth.create_session', fail_session)
+        with pytest.raises(RuntimeError, match='session creation failed'):
+            client.post('/api/v1/auth/register', json=payload)
+    with SessionLocal() as db:
+        assert db.scalar(select(func.count()).select_from(User)) == 0
+        assert db.scalar(select(func.count()).select_from(AuthSession)) == 0
+    # The same email can be submitted again after the failed transaction.
+    assert client.post('/api/v1/auth/register', json=payload).status_code == 201
 
 
 def test_profile_requires_authentication(client):

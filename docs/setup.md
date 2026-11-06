@@ -1,23 +1,14 @@
 # 환경 설정과 배포 안내
 
-## 새 작업자의 프론트엔드 실행
+## 브랜치 전환 후 프론트엔드 import 오류
 
-저장소 루트의 `frontend/`를 사용합니다. 다음 명령은 저장소 루트에서 실행합니다.
+2026-11-05 확인한 `feature/users` 브랜치는 `App.tsx`·`SurveyDialog.tsx`·`MyPage.tsx`에서 참조하는 필수 소스가 누락되어 있었다. `frontend`에서 이 브랜치로 전환하면 이전 브랜치의 파일은 작업 폴더에서 사라지고, 현재 브랜치의 불완전한 import가 빌드를 막는다. 이는 Vite 캐시나 DB 오류가 아니다.
 
-```powershell
-npm --prefix frontend ci
-npm run dev
-```
+사용자가 확인한 화면은 직전 `frontend` 브랜치의 `caa5ba1` 버전이다. 이 버전의 프론트엔드 추적 파일 62개를 기준으로 누락·변경된 50개 파일을 원래 경로에 복원했다. `#111216` 배경, Oddinary 화면, Apple 스타일 테마·스프링 인터랙션·화면 전환과 그 참조 파일·기존 테스트를 함께 복원했다. 브랜치 전환이나 파일 이동·삭제는 하지 않았고, `.env`와 다운로드 포스터는 유지했다. 복원 전 파일은 `.runtime/frontend-before-dark-restore-*.zip`에 백업했다.
 
-프론트엔드 실행에는 Node.js 24와 npm을 사용합니다. 기본 API 주소는 `http://localhost:8000/api/v1`입니다. 다른 백엔드에 연결할 때는 `frontend/.env.example`을 `frontend/.env`로 복사하고 `VITE_API_BASE_URL`을 실제 백엔드 주소로 바꿉니다. 예제의 `<backend-origin>`은 그대로 사용하지 않습니다. 데이터 조회와 로그인에는 실행 중인 백엔드가 필요합니다.
+복구 시에는 사용자가 확인한 디자인 버전의 테마·컴포넌트·참조 파일을 함께 유지한다. 오래된 버전에서 누락 파일 일부만 가져오면 빌드는 통과해도 디자인·동작이 달라질 수 있다. 이 복원은 `npm run build`, 기존 테스트 16개, 실제 브라우저의 배경색·헤더 블러·버튼 스프링 반응·콘텐츠와 포스터 표시로 확인했다.
 
-`npm run build`로 TypeScript 검사와 배포 빌드를 확인할 수 있습니다. GitHub Actions도 커밋된 파일만 받아 같은 빌드를 실행하므로, 로컬에만 있는 파일을 import하면 검사에 실패합니다.
-
-### 새 파일 공유 시 확인
-
-`git status --short`의 `??`는 무시된 파일이 아니라 **아직 Git에 추가하지 않은 파일**입니다. `git commit -am`은 기존에 추적 중인 파일만 포함하므로, 새 소스는 먼저 `git add <파일경로>`로 추가해야 합니다. 커밋 전 `git diff --cached --name-status`로 새 컴포넌트, 페이지, 스타일, API 모듈과 필요한 백엔드 소스·마이그레이션이 함께 포함됐는지 확인합니다. 이후 커밋하고 작업 브랜치를 push해야 다른 작업자가 받을 수 있습니다.
-
-`.env`, `node_modules/`, `dist/`, 가상환경과 로컬 실행 데이터는 공유 대상에서 제외합니다. 실행에 필요한 소스, `package.json`, `package-lock.json`, 설정 파일과 `.env.example`은 공유합니다.
+복원 파일은 해당 파일을 참조하는 코드와 함께 Git 커밋에 포함해야 한다. `git status --short`의 `??`는 아직 추적되지 않은 파일이므로 `git commit -am`만으로는 포함되지 않는다. 공유 전 필수 파일을 명시적으로 `git add`하고 `npm run build`로 누락 여부를 확인한다.
 
 ## 로컬 서버 실행
 
@@ -58,7 +49,7 @@ npm run dev
 
 ## 1. MariaDB DB와 계정
 
-MariaDB는 VM 두 대로 구성합니다. master는 **192.168.0.161:3306**, slave는 **192.168.0.162:3306**입니다. 백엔드의 `DATABASE_URL`은 master를 가리키며 조회·저장과 Alembic 모두 같은 master에 연결합니다. 현재 애플리케이션에는 slave 읽기 분리나 자동 장애 전환이 없습니다. master → slave 복제는 MariaDB 서버에서 별도로 구성해야 하며, 백엔드 연결 설정만으로 복제가 활성화되지는 않습니다. 서비스 DB 예시 이름은 `culturepick`입니다. 다른 이름을 쓰면 권한 SQL과 DATABASE_URL의 마지막 경로를 함께 바꾸세요.
+MariaDB는 VM 두 대로 구성합니다. master는 **192.168.0.161:3306**, slave는 **192.168.0.162:3306**입니다. 백엔드의 `DATABASE_URL`은 master를 가리키며 조회·저장과 Alembic 모두 같은 master에 연결합니다. 현재 애플리케이션에는 slave 읽기 분리나 자동 장애 전환이 없습니다. master → slave 복제는 MariaDB 서버에서 별도로 구성해야 하며, 백엔드 연결 설정만으로 복제가 활성화되지는 않습니다. 현재 서비스 DB 이름은 **`culture`**이며 기존 자료의 `culturepick`은 이전 예시 이름입니다. 권한 SQL과 DATABASE_URL을 적용할 때 실제 DB 이름을 확인하세요. 실제 계정·암호는 `backend/.env`에서 관리합니다.
 
 DB 관리자에게 `database/mariadb/permissions.sql`의 플레이스홀더를 교체해 실행하도록 요청하세요. 앱은 DML(SELECT/INSERT/UPDATE/DELETE)만, Alembic용 계정은 DDL(CREATE/ALTER/DROP/INDEX 등)까지, 수집 계정은 contents 테이블의 조회/추가/갱신만 필요합니다. `FLUSH PRIVILEGES`는 CREATE USER/GRANT 뒤에 필요하지 않습니다.
 
@@ -67,7 +58,7 @@ DB 관리자에게 `database/mariadb/permissions.sql`의 플레이스홀더를 �
 `backend/.env`의 형식:
 
 ```dotenv
-DATABASE_URL=mysql+pymysql://culturepick_app:<URL-encoded-password>@192.168.0.161:3306/culturepick?charset=utf8mb4
+DATABASE_URL=mysql+pymysql://<app-user>:<URL-encoded-password>@192.168.0.161:3306/culture?charset=utf8mb4
 CORS_ORIGINS=["http://localhost:5173"]
 ENVIRONMENT=development
 PAYMENTS_ENABLED=false
@@ -119,6 +110,26 @@ CORS 출처에는 경로(`/api/v1`)나 끝 슬래시를 붙이지 않습니다. 
 Vite 변수는 빌드 시 고정되므로 `.env` 변경 후 **다시 빌드·배포**합니다. Nginx는 SPA 경로를 `index.html`로 돌려주는 설정만 필요하며 API 리버스 프록시는 넣지 않습니다.
 
 ## 3. 문화포털 API 수집
+
+### 문화공공데이터광장 API 580 — 현재 적재 방식
+
+[문화체육관광부_문화예술공연(통합)](https://www.culture.go.kr/data/openapi/openapiView.do?id=580)은 `https://api.kcisa.kr/openapi/CNV_060/request`를 사용한다. 발급받은 키는 Git 제외 파일 `backend/.env`의 `CULTURE_API_KEY`에 설정한다. DB도 같은 파일의 `DATABASE_URL`을 사용한다. 이 키는 아래의 data.go.kr 기간/상세 API 키와 별개다.
+
+```powershell
+# backend 폴더, 가상환경을 활성화한 상태에서 실행
+# API 전체 수집 + 사용자 요청에 따른 테스트용 지역·가격 배정 + 적재
+python -m app.tasks.import_culture --demo-attributes
+
+# 저장된 원본에서 형식·대상 DB만 확인
+python -m app.tasks.import_culture --from-snapshot ../.runtime/culture-kcisa-raw.json --demo-attributes --dry-run
+
+# API를 다시 호출하지 않고 같은 원본으로 재적재
+python -m app.tasks.import_culture --from-snapshot ../.runtime/culture-kcisa-raw.json --demo-attributes
+```
+
+`--demo-attributes`는 사용자가 요청한 필터 테스트용 지역·관람료를 배정하는 명시적 옵션이다. 적용된 항목은 샘플로 표시하고 실제 판매를 비활성화한다. 이 옵션을 빼면 임의 지역·가격을 배정하지 않는다. 세부 보정 기준은 [데이터 품질](data-quality.md)을 따른다. 원본과 적재 보고서는 `.runtime/`에 저장하며 실제 키·DB 비밀번호를 Git에 포함하지 않는다.
+
+### 기존 data.go.kr 기간/상세 API
 
 [문화포털 사용 가이드](https://www.culture.go.kr/portal/main/contents.do?menuNo=200155)를 따라 공공데이터포털에서 ‘한눈에보는문화정보 조회서비스’를 활용 신청하고 키를 발급받습니다. `CULTURE_API_KEY`에 Decoding 키를 넣는 것을 권장합니다(Encoded 키도 한 번 디코딩 후 httpx가 인코딩).
 

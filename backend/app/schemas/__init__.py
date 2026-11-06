@@ -9,19 +9,6 @@ CATEGORIES = ('전시', '뮤지컬', '연극', '음악', '무용', '축제')
 Category = Literal['전시', '뮤지컬', '연극', '음악', '무용', '축제']
 
 
-class RegisterInput(BaseModel):
-    email: EmailStr
-    name: str = Field(min_length=2, max_length=40)
-    password: str = Field(min_length=10, max_length=128)
-
-    @field_validator('name')
-    @classmethod
-    def clean_name(cls, value: str) -> str:
-        if len(value.strip()) < 2:
-            raise ValueError('이름은 공백 제외 두 글자 이상 입력해 주세요.')
-        return value.strip()
-
-
 class LoginInput(BaseModel):
     email: EmailStr
     password: str = Field(min_length=1, max_length=128)
@@ -37,6 +24,16 @@ class SurveyInput(BaseModel):
         if any(not v.strip() or len(v) > 30 for v in values):
             raise ValueError('태그는 1–30자입니다.')
         return list(dict.fromkeys(v.strip() for v in values))
+
+
+class RegisterInput(ProfileInput):
+    """Create an account with optional profile fields and an initial taste survey."""
+
+    email: EmailStr
+    name: str = Field(min_length=2, max_length=40)
+    password: str = Field(min_length=10, max_length=128)
+    # Older callers can still register with only account credentials.
+    survey: SurveyInput | None = None
 
 
 class UserOut(BaseModel):
