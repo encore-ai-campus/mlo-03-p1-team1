@@ -117,7 +117,7 @@ Oddinary는 외부 공개 API와 네이버 크롤링으로 전시·공연·문�
 
 Nginx, HAProxy, FastAPI 기반의 서비스 구조와 MariaDB, MongoDB, Grafana 모니터링 환경 구성
 
-[시스템 아키텍처 WIKI 상세보기](https://github.com/encore-ai-campus/mlo-03-p1-team1/wiki/System-Architecture)
+[시스템 아키텍처 WIKI 상세보기](https://github.com/encore-ai-campus/mlo-03-p1-team1/wiki/System%E2%80%90Architecture)
 
 ### 6.2 ERD (Entity Relationship Diagram)
 
