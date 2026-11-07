@@ -111,10 +111,7 @@ Oddinary는 외부 공개 API와 네이버 크롤링으로 전시·공연·문�
  
 
 ## 6. 시스템 아키텍쳐
-<img width="3614" height="2188" alt="Image" src="https://github.com/user-attachments/assets/6b63d7b9-fa07-404c-bb64-c34be6243e76" />
-
 <img width="1448" height="1086" alt="요청 처리와 로그 분석 아키텍처" src="https://github.com/user-attachments/assets/1916e3f4-d0f2-4adb-b3cb-632835b3fddf" />
- <br />
   <br />
   
 ## 7. ERD (Entity Relationship Diagram)
