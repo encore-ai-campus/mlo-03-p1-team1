@@ -116,7 +116,7 @@ Oddinary는 외부 공개 API와 네이버 크롤링으로 전시·공연·문�
 ### 6.1 시스템 아키텍처
 
 Nginx, HAProxy, FastAPI 기반의 서비스 구조와 MariaDB, MongoDB, Grafana 모니터링 환경 구성
-[시스템 아키텍처 WIKI 상세보기](https://github.com/encore-ai-campus/mlo-03-p1-team1/wiki/System%E2%80%90Architecture)
+ [시스템 아키텍처 WIKI 상세보기](https://github.com/encore-ai-campus/mlo-03-p1-team1/wiki/System%E2%80%90Architecture)
 
 <img width="1920" height="1540" alt="Image" src="https://github.com/user-attachments/assets/341a757a-7ed2-4935-8812-ac6937f6def2" />
  <br />
@@ -124,7 +124,7 @@ Nginx, HAProxy, FastAPI 기반의 서비스 구조와 MariaDB, MongoDB, Grafana 
 ### 6.2 ERD (Entity Relationship Diagram)
 
 사용자, 콘텐츠, 찜, 리뷰, 주문, 결제 및 예약 데이터를 관리하기 위한 데이터베이스 구조 설계
-[ERD WIKI 상세보기](https://github.com/encore-ai-campus/mlo-03-p1-team1/wiki/ERD)
+ [ERD WIKI 상세보기](https://github.com/encore-ai-campus/mlo-03-p1-team1/wiki/ERD)
 
 ## 7. 주요 프로시저
 
