@@ -110,12 +110,25 @@ Oddinary는 외부 공개 API와 네이버 크롤링으로 전시·공연·문�
  <br />
  
 
+
+## 6. 시스템 설계
+
+### 6.1 시스템 아키텍처
+
+Nginx, HAProxy, FastAPI 기반의 서비스 구조와 MariaDB, MongoDB, Grafana 모니터링 환경 구성
+
+[📖 상세 보기](https://github.com/사용자명/저장소명/wiki/System-Architecture)
+
+### 6.2 ERD (Entity Relationship Diagram)
+
+사용자, 콘텐츠, 찜, 리뷰, 주문, 결제 및 예약 데이터를 관리하기 위한 데이터베이스 구조 설계
+
+[📖 상세 보기]([https://github.com/사용자명/저장소명/wiki/ERD](https://github.com/encore-ai-campus/mlo-03-p1-team1.wiki.git))
+
+
 ## 6. 시스템 아키텍쳐
 <img width="1448" height="1086" alt="요청 처리와 로그 분석 아키텍처" src="https://github.com/user-attachments/assets/1916e3f4-d0f2-4adb-b3cb-632835b3fddf" />
   <br />
-  
-## 7. ERD (Entity Relationship Diagram)
-https://github.com/encore-ai-campus/mlo-03-p1-team1.wiki.git
 
 ## 8. 주요 프로시저
 
