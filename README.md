@@ -114,25 +114,28 @@ Oddinary는 외부 공개 API와 네이버 크롤링으로 전시·공연·문�
 ## 6. 시스템 설계
 
 ### 6.1 시스템 아키텍처
+<img width="3583" height="2193" alt="Image" src="https://github.com/user-attachments/assets/27678f0d-5207-44c6-8f6d-eab6df8c4b7f" />
+ <br />
+ <br />
 
-Nginx, HAProxy, FastAPI 기반의 서비스 구조와 MariaDB, MongoDB, Grafana 모니터링 환경 구성
  [시스템 아키텍처 WIKI 상세보기](https://github.com/encore-ai-campus/mlo-03-p1-team1/wiki/System%E2%80%90Architecture)
 
-<img width="1920" height="1540" alt="Image" src="https://github.com/user-attachments/assets/341a757a-7ed2-4935-8812-ac6937f6def2" />
  <br />
 
 ### 6.2 ERD (Entity Relationship Diagram)
 
-사용자, 콘텐츠, 찜, 리뷰, 주문, 결제 및 예약 데이터를 관리하기 위한 데이터베이스 구조 설계
+<img width="1920" height="1540" alt="Image" src="https://github.com/user-attachments/assets/1909acf6-4674-4248-bd91-b471221b1bd5" />
+ 
  [ERD WIKI 상세보기](https://github.com/encore-ai-campus/mlo-03-p1-team1/wiki/ERD)
-
+ <br /> 
+ <br />
 ## 7. 주요 프로시저
 
-### 1. 개요
+### 7.1 개요
 
 데이터베이스에서 반복적으로 수행되는 주요 SQL 작업 관리
 
-### 2. 주요 프로시저
+### 7.2 주요 프로시저
 
 | 프로시저명 (예시) | 주요 기능 | 관련 테이블 |
 |---|---|---|
@@ -142,7 +145,7 @@ Nginx, HAProxy, FastAPI 기반의 서비스 구조와 MariaDB, MongoDB, Grafana 
 | `sp_get_reservation` | 예약 정보 조회 | reservations |
 | `sp_get_user_bookmarks` | 사용자 찜 목록 조회 | bookmarks, contents |
 
-### 3. 주요 처리 기능
+### 7.3 주요 처리 기능
 
 - **사용자 관리**: 회원 정보 조회
 - **주문 및 결제**: 주문 생성 및 결제 상태 관리
