@@ -127,9 +127,6 @@ Nginx, HAProxy, FastAPI 기반의 서비스 구조와 MariaDB, MongoDB, Grafana 
 
 ## 7. 주요 프로시저
 
-
-## 주요 프로시저 (Stored Procedure)
-
 ### 1. 개요
 
 데이터베이스에서 반복적으로 수행되는 주요 SQL 작업 관리
