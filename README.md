@@ -117,7 +117,7 @@ Oddinary는 외부 공개 API와 네이버 크롤링으로 전시·공연·문�
 
 Nginx, HAProxy, FastAPI 기반의 서비스 구조와 MariaDB, MongoDB, Grafana 모니터링 환경 구성
 
-[📖 상세 보기](https://github.com/사용자명/저장소명/wiki/System-Architecture)
+[시스템 아키텍처 WIKI 상세보기](https://github.com/encore-ai-campus/mlo-03-p1-team1/wiki/System-Architecture)
 
 ### 6.2 ERD (Entity Relationship Diagram)
 
@@ -125,11 +125,11 @@ Nginx, HAProxy, FastAPI 기반의 서비스 구조와 MariaDB, MongoDB, Grafana 
 
 [ERD WIKI 상세보기](https://github.com/encore-ai-campus/mlo-03-p1-team1/wiki/ERD)
 
-## 8. 주요 프로시저
+## 7. 주요 프로시저
 
-## 9. 수행결과 (테스트/시연 페이지)
+## 8. 수행결과 (테스트/시연 페이지)
  
-## 10. 활용 데이터
+## 9. 활용 데이터
 
 | 구분 | 데이터 출처 | 수집 방식 | 수집 범위 |
 |---|---|---|---|
@@ -137,7 +137,7 @@ Nginx, HAProxy, FastAPI 기반의 서비스 구조와 MariaDB, MongoDB, Grafana 
 | 웹 수집 데이터 | 네이버 | 키워드 기반 크롤링 | 전시, 뮤지컬, 연극, 콘서트, 클래식, 가족/아동, 뮤직페스티벌, 공연제 |
  <br />
 
-### 팀원별 한 줄 회고
+### 10. 팀원별 한 줄 회고
 
 | 팀원 | 한 줄 회고 |
 |---|---|
