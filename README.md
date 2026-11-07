@@ -123,12 +123,7 @@ Nginx, HAProxy, FastAPI 기반의 서비스 구조와 MariaDB, MongoDB, Grafana 
 
 사용자, 콘텐츠, 찜, 리뷰, 주문, 결제 및 예약 데이터를 관리하기 위한 데이터베이스 구조 설계
 
-[ERD (Entity Relationship Diagram) 상세보기](https://github.com/encore-ai-campus/mlo-03-p1-team1/wiki/ERD)
-
-
-## 6. 시스템 아키텍쳐
-<img width="1448" height="1086" alt="요청 처리와 로그 분석 아키텍처" src="https://github.com/user-attachments/assets/1916e3f4-d0f2-4adb-b3cb-632835b3fddf" />
-  <br />
+[ERD WIKI 상세보기](https://github.com/encore-ai-campus/mlo-03-p1-team1/wiki/ERD)
 
 ## 8. 주요 프로시저
 
