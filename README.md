@@ -115,8 +115,7 @@ Oddinary는 외부 공개 API와 네이버 크롤링으로 전시·공연·문�
   <br />
   
 ## 7. ERD (Entity Relationship Diagram)
-[<img width="1920" height="1540" alt="Image" src="https://github.com/user-attachments/assets/d57ebe33-b78b-470b-9194-f9500e460855" />
- <br />](https://github.com/encore-ai-campus/mlo-03-p1-team1.wiki.git)
+https://github.com/encore-ai-campus/mlo-03-p1-team1.wiki.git
 
 ## 8. 주요 프로시저
 
