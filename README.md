@@ -141,7 +141,7 @@ Oddinary는 사용자 프로필 정보와 서비스 내 활동 데이터를 수�
  
 
 ### 9. 4  mariaDB 데이터 발생 화면
-<img width="2822" height="352" alt="Image" src="https://github.com/user-attachments/assets/5a0f4f99-88d3-40ba-89e3-843b4663f463" />
+<img width="1918" height="1016" alt="oddinary_demo_7-20s_hq" src="https://github.com/user-attachments/assets/02ec9cc5-4218-43fd-86f1-19a7fe38024e" />
  <br />
 
 
