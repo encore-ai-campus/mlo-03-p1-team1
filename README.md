@@ -113,6 +113,7 @@ Oddinary는 사용자 프로필 정보와 서비스 내 활동 데이터를 수�
 ### 9. 1  Playwight 시연
 <img width="2822" height="352" alt="Image" src="https://github.com/user-attachments/assets/5a0f4f99-88d3-40ba-89e3-843b4663f463" />
  <br />
+<img width="852" height="480" alt="Image" src="https://github.com/user-attachments/assets/273c6f2c-53b7-493e-ba77-71078c5f9be3" />
 
 
 ### 9. 2  네이버 크롤링 화면
