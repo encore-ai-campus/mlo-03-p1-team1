@@ -122,7 +122,7 @@ Oddinary는 사용자 프로필 정보와 서비스 내 활동 데이터를 수�
 
 
 ### 9. 3  Grafana 모니터링 화면
-<img width="2822" height="352" alt="Image" src="https://github.com/user-attachments/assets/5a0f4f99-88d3-40ba-89e3-843b4663f463" />
+<img width="1411" height="316" alt="image" src="https://github.com/user-attachments/assets/f2909abe-7e7d-47da-a32e-591a6e09a1e0" />
  <br />
 
 
@@ -142,5 +142,5 @@ Oddinary는 사용자 프로필 정보와 서비스 내 활동 데이터를 수�
 | 팀원 | 한 줄 회고 |
 |---|---|
 | 고은빈 | 데이터 수집, DB화, sql로 데이터 확인 및 정리하고 커밋, 이벤트 로그 수집 확인, playwight 실행, 페르소나 설정으로 정신이 없었다.|
-| 박완규 | |
+| 박완규 | 백엔드 파트를 맡아 사용자가 api를 요청할 때 어느 주소로 호출해야 하는 지에 대한 개념을 익히게 되었다.|
 | 진세은 | 3일간의 프로젝트를 통해 프론트엔드와 다양한 모니터링 기술을 직접 다뤄보며 조금은 알 것 같다 |
