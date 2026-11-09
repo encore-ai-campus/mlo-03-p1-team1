@@ -106,30 +106,23 @@ Open API(문화체육관광부)와 네이버 크롤링으로 문화 컨텐츠 �
 ## 6. 시스템 설계
 
 ### 6.1 시스템 아키텍처
+[시스템 아키텍처 WIKI 상세보기](https://github.com/encore-ai-campus/mlo-03-p1-team1/wiki/System%E2%80%90Architecture)
+ 
 <img width="3583" height="2193" alt="Image" src="https://github.com/user-attachments/assets/27678f0d-5207-44c6-8f6d-eab6df8c4b7f" />
- <br />
- <br />
-
- [시스템 아키텍처 WIKI 상세보기](https://github.com/encore-ai-campus/mlo-03-p1-team1/wiki/System%E2%80%90Architecture)
-
- <br />
 
 ### 6.2 ERD (Entity Relationship Diagram)
-
-<img width="1920" height="1540" alt="Image" src="https://github.com/user-attachments/assets/1909acf6-4674-4248-bd91-b471221b1bd5" />
- 
  [ERD WIKI 상세보기](https://github.com/encore-ai-campus/mlo-03-p1-team1/wiki/ERD)
- <br /> 
- <br />
-## 7. 주요 프로시저
+ 
+ <img width="3578" height="2188" alt="SystemArchitecture" src="https://github.com/user-attachments/assets/530fb772-7282-4c2b-9db7-f9d11290df06" />
 
-### 7.1 개요
+ 
+## 7. 주요 프로시저 
+
+### 7.1 개요 [주요 프로시저 WIKI 상세보기](https://github.com/encore-ai-campus/mlo-03-p1-team1/wiki/%EC%A3%BC%EC%9A%94-%ED%94%84%EB%A1%9C%EC%8B%9C%EC%A0%80)
 데이터베이스에서 반복적으로 수행되는 주요 SQL 작업 관리
-[주요 프로시저 WIKI 상세보기](https://github.com/encore-ai-campus/mlo-03-p1-team1/wiki/%EC%A3%BC%EC%9A%94-%ED%94%84%EB%A1%9C%EC%8B%9C%EC%A0%80)
+
 
 <img width="1672" height="941" alt="주요 프로시저 데이터 흐름도" src="https://github.com/user-attachments/assets/185f2f52-f1ce-4fd9-a806-2635f002a07b" />
-
-
 
 ## 8. 활용 데이터
 
