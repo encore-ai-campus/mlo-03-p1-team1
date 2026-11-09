@@ -79,7 +79,7 @@ Open API(문화체육관광부)와 네이버 크롤링으로 문화 컨텐츠 �
  <br />
  
 ## 5. 요구사항 명세서
-[요구사항 명세서 이슈 상세보기]()
+[요구사항 명세서 이슈 상세보기](https://github.com/encore-ai-campus/mlo-03-p1-team1/issues/31)
 
 ## 6. 시스템 설계
 
