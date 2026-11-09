@@ -146,7 +146,7 @@ Oddinary는 사용자 프로필 정보와 서비스 내 활동 데이터를 수�
 
 
 ### 9. 5  mongoDB 데이터 발생 화면
- <img width="2822" height="352" alt="Image" src="https://github.com/user-attachments/assets/5a0f4f99-88d3-40ba-89e3-843b4663f463" />
+<img width="852" height="480" alt="Image" src="https://github.com/user-attachments/assets/bb5c79b9-35dc-4bfd-a199-774908ab3867" />
  <br />
   <br />
 
@@ -155,6 +155,6 @@ Oddinary는 사용자 프로필 정보와 서비스 내 활동 데이터를 수�
 
 | 팀원 | 한 줄 회고 |
 |---|---|
-| 고은빈 | 데이터 수집, DB화, sql로 데이터 확인 및 정리하고 커밋, 이벤트 로그 수집 확인, playwight 실행, 페르소나 설정으로 정신이 없었다.|
+| 고은빈 | 데이터 수집, DB화, sql로 확인·정리하고 커밋, 이벤트 로그 수집 확인, playwight 실행, 페르소나 설정으로 정신이 없었다.|
 | 박완규 | 백엔드 파트를 맡아 사용자가 api를 요청할 때 어느 주소로 호출해야 하는 지에 대한 개념을 익히게 되었다.|
 | 진세은 | 정신없는 3일간의 프로젝트가 되었지만 프론트엔드와 다양한 모니터링 기술을 직접 다뤄보며 어떻게 실행되고 어떻게 데이터가 쌓이는지 조금은 알 것 같다 |
