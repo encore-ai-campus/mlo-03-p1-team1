@@ -1,6 +1,0 @@
-$kind: collection
-name: CulturePick local smoke checks
-description: Public and validation checks against the real FastAPI service. No cloud workspace or credentials required.
-variables:
-  - key: base_url
-    value: 'http://localhost:8000/api/v1'

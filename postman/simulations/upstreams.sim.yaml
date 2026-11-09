@@ -1,6 +1,0 @@
-simulation: culturepick-upstreams
-routing: path
-mocks:
-  - name: portone-and-culture-portal
-    routeKey: upstream
-    path: postman/mocks/culturepick-upstream/config.yaml

@@ -1,3 +1,6 @@
+import { activityContext } from './activity'
+import type { ActivityDetails, ClientEventType } from './activity'
+
 export const API_BASE = (import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000/api/v1').replace(/\/$/, '')
 const TOKEN_KEY = 'culturepick.session'
 export const getToken = () => sessionStorage.getItem(TOKEN_KEY)
@@ -12,6 +15,12 @@ export async function api<T>(path: string, options: RequestInit = {}): Promise<T
   if (options.body) headers.set('Content-Type', 'application/json')
   const token = getToken()
   if (token) headers.set('Authorization', `Bearer ${token}`)
+  try {
+    const context = activityContext()
+    headers.set('X-Activity-Anonymous-Id', context.anonymous_id)
+    headers.set('X-Activity-Session-Id', context.session_id)
+    if (context.page_path) headers.set('X-Activity-Page', context.page_path)
+  } catch { /* Storage restrictions must not prevent normal API requests. */ }
   let response: Response
   try {
     response = await fetch(`${API_BASE}${path}`, { ...options, headers, signal: options.signal ?? AbortSignal.timeout(20000) })
@@ -31,9 +40,18 @@ export async function api<T>(path: string, options: RequestInit = {}): Promise<T
   return body as T
 }
 
-export async function track(event_type: string, content_id?: number, category?: string) {
-  if (!getToken()) return
+export async function track(event_type: ClientEventType, content_id?: number, category?: string, details: ActivityDetails = {}) {
   try {
-    await api('/history/events', { method: 'POST', body: JSON.stringify({ event_id: crypto.randomUUID(), event_type, content_id, category }) })
+    const token = getToken()
+    const body = JSON.stringify({ event_id: crypto.randomUUID(), event_type, content_id, category, ...activityContext(), ...details })
+    // Keep one event_id on retry and never attribute an old event to a new login.
+    for (let attempt = 0; attempt < 2; attempt++) {
+      if (getToken() !== token) return
+      try { await api('/history/events', { method: 'POST', body, keepalive: true }); return }
+      catch (error) {
+        if (attempt || (error instanceof ApiError && error.status > 0 && error.status < 500)) return
+        await new Promise(resolve => setTimeout(resolve, 500))
+      }
+    }
   } catch { /* Analytics failure must not block browsing. */ }
 }

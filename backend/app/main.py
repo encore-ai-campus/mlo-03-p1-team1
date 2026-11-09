@@ -1,4 +1,6 @@
 import logging
+import asyncio
+from contextlib import asynccontextmanager
 
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
@@ -9,12 +11,32 @@ from sqlalchemy.exc import SQLAlchemyError
 from app.api.router import router
 from app.core.config import get_settings
 from app.db.session import engine
+from app.db.mongo import close_mongo
+from app.services.events import event_delivery_loop
 
 settings = get_settings()
-app = FastAPI(title='CulturePick API', version='1.0.0', description='문화 콘텐츠 탐색과 취향·행동 기반 추천')
+
+
+@asynccontextmanager
+async def lifespan(app):
+    stop = asyncio.Event()
+    task = None
+    if settings.mongodb_events_enabled and settings.mongodb_url.get_secret_value():
+        task = asyncio.create_task(event_delivery_loop(stop))
+    try:
+        yield
+    finally:
+        stop.set()
+        if task:
+            await task
+        close_mongo()
+
+
+app = FastAPI(title='CulturePick API', version='1.0.0', description='문화 콘텐츠 탐색과 취향·행동 기반 추천', lifespan=lifespan)
 app.add_middleware(CORSMiddleware, allow_origins=settings.cors_origins,
                    allow_methods=['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
-                   allow_headers=['Authorization', 'Content-Type', 'Idempotency-Key'])
+                   allow_headers=['Authorization', 'Content-Type', 'Idempotency-Key',
+                                  'X-Activity-Anonymous-Id', 'X-Activity-Session-Id', 'X-Activity-Page'])
 app.include_router(router)
 
 

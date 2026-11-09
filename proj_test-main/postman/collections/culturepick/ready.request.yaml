@@ -1,9 +1,0 @@
-$kind: http-request
-method: GET
-url: '{{base_url}}/ready'
-order: 2000
-scripts:
-  - type: afterResponse
-    code: |-
-      pm.test('Database reachable', () => pm.response.to.have.status(200));
-      pm.test('MariaDB is used', () => pm.expect(pm.response.json().database).to.eql('mariadb'));
