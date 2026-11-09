@@ -1,0 +1,21 @@
+services:
+  mariadb:
+    image: mariadb:11.4
+    restart: unless-stopped
+    environment:
+      MARIADB_ROOT_PASSWORD: ${MARIADB_ROOT_PASSWORD:?Set in infra/db/.env}
+      MARIADB_DATABASE: ${MARIADB_DATABASE:?Set database name}
+      MARIADB_USER: ${MARIADB_USER:?Set app user}
+      MARIADB_PASSWORD: ${MARIADB_PASSWORD:?Set app password}
+    ports:
+      - "${DB_BIND_HOST:-127.0.0.1}:${DB_PORT:-3306}:3306"
+    volumes:
+      - mariadb_data:/var/lib/mysql
+      - ./mariadb.cnf:/etc/mysql/conf.d/culturepick.cnf:ro
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+volumes:
+  mariadb_data:

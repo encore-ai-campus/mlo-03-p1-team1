@@ -2,12 +2,24 @@ from datetime import date, datetime, timezone
 from typing import Literal
 from uuid import UUID
 
-from pydantic import BaseModel, ConfigDict, EmailStr, Field, field_validator, field_serializer, model_validator
-from app.core.activity import valid_page_path
+from pydantic import BaseModel, ConfigDict, EmailStr, Field, field_validator, field_serializer
 from app.schemas.profile import Gender, ProfileInput, Residence
 
 CATEGORIES = ('전시', '뮤지컬', '연극', '음악', '무용', '축제')
 Category = Literal['전시', '뮤지컬', '연극', '음악', '무용', '축제']
+
+
+class RegisterInput(BaseModel):
+    email: EmailStr
+    name: str = Field(min_length=2, max_length=40)
+    password: str = Field(min_length=10, max_length=128)
+
+    @field_validator('name')
+    @classmethod
+    def clean_name(cls, value: str) -> str:
+        if len(value.strip()) < 2:
+            raise ValueError('이름은 공백 제외 두 글자 이상 입력해 주세요.')
+        return value.strip()
 
 
 class LoginInput(BaseModel):
@@ -25,16 +37,6 @@ class SurveyInput(BaseModel):
         if any(not v.strip() or len(v) > 30 for v in values):
             raise ValueError('태그는 1–30자입니다.')
         return list(dict.fromkeys(v.strip() for v in values))
-
-
-class RegisterInput(ProfileInput):
-    """Create an account with optional profile fields and an initial taste survey."""
-
-    email: EmailStr
-    name: str = Field(min_length=2, max_length=40)
-    password: str = Field(min_length=10, max_length=128)
-    # Older callers can still register with only account credentials.
-    survey: SurveyInput | None = None
 
 
 class UserOut(BaseModel):
@@ -127,37 +129,10 @@ class ReviewOut(BaseModel):
 
 
 class EventInput(BaseModel):
-    model_config = ConfigDict(extra='forbid')
     event_id: UUID
-    event_type: Literal['page_view', 'content_view', 'search', 'filter_use', 'recommendation_click', 'recommendation_impression', 'payment_checkout_open']
+    event_type: Literal['content_view', 'search', 'filter_use', 'recommendation_click', 'recommendation_impression']
     content_id: int | None = Field(default=None, gt=0)
     category: Category | None = None
-    anonymous_id: UUID | None = None
-    session_id: UUID | None = None
-    page_path: str | None = Field(default=None, max_length=200)
-    referrer_path: str | None = Field(default=None, max_length=200)
-    query_length: int | None = Field(default=None, ge=0, le=100, strict=True)
-    filter_name: Literal['category', 'region', 'free_only', 'sort', 'from_date', 'to_date', 'reset'] | None = None
-    filter_value: str | None = Field(default=None, max_length=30, pattern=r'^[^\x00-\x1f<>"{}]*$')
-
-    @field_validator('page_path', 'referrer_path')
-    @classmethod
-    def safe_path(cls, value):
-        if value is not None and not valid_page_path(value):
-            raise ValueError('Only a known application pathname without query parameters is allowed.')
-        return value
-
-    @model_validator(mode='after')
-    def event_fields(self):
-        if self.event_type in ('content_view', 'recommendation_click', 'recommendation_impression', 'payment_checkout_open') and not self.content_id:
-            raise ValueError('This event requires content_id.')
-        if self.event_type == 'page_view' and not self.page_path:
-            raise ValueError('page_view requires page_path.')
-        if self.query_length is not None and self.event_type != 'search':
-            raise ValueError('query_length is only accepted for search.')
-        if (self.filter_name is not None or self.filter_value is not None) and self.event_type != 'filter_use':
-            raise ValueError('Filter fields are only accepted for filter_use.')
-        return self
 
 
 class OrderInput(BaseModel):

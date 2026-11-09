@@ -1,0 +1,15 @@
+$kind: http-request
+method: GET
+url: '{{base_url}}/contents'
+order: 3000
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test('Catalogue available', () => pm.response.to.have.status(200));
+      pm.test('Pagination contract', () => {
+        const body = pm.response.json();
+        pm.expect(body.items).to.be.an('array');
+        pm.expect(body.total).to.be.a('number');
+        pm.expect(body.page).to.eql(1);
+      });
+      pm.test('Samples cannot be sold', () => pm.response.json().items.filter(c => c.is_sample).forEach(c => pm.expect(c.bookable).to.eql(false)));

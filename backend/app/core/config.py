@@ -1,20 +1,15 @@
 from functools import lru_cache
 from pathlib import Path
 
-from pydantic import Field, SecretStr, field_validator
+from pydantic import field_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=Path(__file__).resolve().parents[2] / '.env', extra='ignore', hide_input_in_errors=True)
     database_url: str
-    database_read_url: SecretStr = SecretStr('')
-    database_replica_wait_seconds: float = Field(default=0.5, ge=0.05, le=3)
     cors_origins: list[str] = ['http://localhost:5173']
     environment: str = 'development'
-    mongodb_url: SecretStr = SecretStr('')
-    mongodb_database: str = 'oddinary'
-    mongodb_events_enabled: bool = False
     portone_api_secret: str = ''
     portone_webhook_secret: str = ''
     portone_store_id: str = ''
@@ -30,14 +25,6 @@ class Settings(BaseSettings):
     def maria_only(cls, value: str) -> str:
         if not value.startswith(('mysql+pymysql://', 'mariadb+pymysql://')):
             raise ValueError('MariaDB / PyMySQL DATABASE_URL is required; SQLite is not supported.')
-        return value
-
-    @field_validator('database_read_url')
-    @classmethod
-    def maria_reader_only(cls, value: SecretStr) -> SecretStr:
-        raw = value.get_secret_value()
-        if raw and not raw.startswith(('mysql+pymysql://', 'mariadb+pymysql://')):
-            raise ValueError('DATABASE_READ_URL must use MariaDB / PyMySQL.')
         return value
 
     @property

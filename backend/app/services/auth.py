@@ -19,14 +19,8 @@ def register(store, data):
     email = str(data.email).lower()
     if store.user_by_email(email):
         raise HTTPException(409, '이미 가입된 이메일입니다.')
-    values = data.model_dump(exclude={'email', 'password', 'survey'}, exclude_unset=True)
-    if data.age is not None:
-        values['age_recorded_at'] = utcnow().replace(microsecond=0)
-    if data.survey is not None:
-        values.update(categories=list(dict.fromkeys(data.survey.categories)), tags=data.survey.tags,
-                      survey_completed=True)
     try:
-        user = store.add(User(email=email, password_hash=password_hash(data.password), **values))
+        user = store.add(User(email=email, name=data.name, password_hash=password_hash(data.password)))
     except IntegrityError:
         store.rollback()
         raise HTTPException(409, '이미 가입된 이메일입니다.')

@@ -170,16 +170,6 @@ dialog::backdrop { background: #050609a6; backdrop-filter: blur(6px); -webkit-ba
 .dialog-symbol { background: var(--accent-soft); color: var(--accent); }
 .stack input { background: var(--field); color: var(--text); border-color: var(--control-line); }
 .auth-tabs .selected { color: var(--accent); }
-.registration-progress { display: flex; gap: 12px; padding: 0; margin: 0 0 24px; list-style: none; }
-.registration-progress li { flex: 1; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; color: var(--muted); font-size: .8125rem; line-height: 1.6; }
-.registration-progress li > span { display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: var(--surface-raised); border: 1px solid var(--line); }
-.registration-progress li.complete { color: var(--accent); }
-.registration-progress li.complete > span { background: var(--accent-soft); border-color: var(--accent); }
-.registration-progress li[aria-current=step] { font-weight: 650; }
-.registration-dialog .profile-form fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
-.registration-dialog .profile-note { margin-top: 0; }
-.registration-dialog .profile-form-grid input, .registration-dialog .profile-form-grid select { background: var(--field); }
-.registration-dialog [hidden] { display: none; }
 .choice { background: var(--field); color: var(--text); border-color: var(--control-line); border-radius: 14px; }
 .choice.selected { background: var(--accent-soft); color: var(--accent); border-color: var(--accent); }
 .tag { background: var(--surface-raised); color: #d1d5e0; border-color: var(--line); }

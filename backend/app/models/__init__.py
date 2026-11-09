@@ -90,16 +90,6 @@ class BehaviorEvent(Base):
     properties: Mapped[dict] = mapped_column(JSON, default=dict)
 
 
-class EventOutbox(Base):
-    __tablename__ = 'event_outbox'
-    __table_args__ = (Index('ix_outbox_pending', 'delivered_at', 'next_attempt_at'),)
-    event_id: Mapped[str] = mapped_column(ForeignKey('behavior_events.event_id', ondelete='CASCADE'), primary_key=True)
-    attempts: Mapped[int] = mapped_column(default=0, server_default='0')
-    next_attempt_at: Mapped[datetime] = mapped_column(DateTime, default=utcnow)
-    delivered_at: Mapped[datetime | None] = mapped_column(DateTime, nullable=True)
-    last_error: Mapped[str | None] = mapped_column(String(80), nullable=True)
-
-
 class Order(Base):
     __tablename__ = 'orders'
     __table_args__ = (UniqueConstraint('user_id', 'idempotency_key', name='uq_order_idempotency'),
