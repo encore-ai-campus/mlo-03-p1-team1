@@ -77,30 +77,26 @@ Open API(문화체육관광부)와 네이버 크롤링으로 문화 컨텐츠 �
 | DATA-02 | 문화 콘텐츠 수집·정제 및 데이터 구성 | 고은빈 |
 
  <br />
- 
+
 ## 5. 요구사항 명세서
 [요구사항 명세서 이슈 상세보기](https://github.com/encore-ai-campus/mlo-03-p1-team1/issues/31)
 
-## 6. 시스템 설계
 
-### 6.1 시스템 아키텍처
+
+## 6. ERD (Entity Relationship Diagram)
+[ERD WIKI 상세보기](https://github.com/encore-ai-campus/mlo-03-p1-team1/wiki/ERD)
+ 
+<img width="3578" height="2188" alt="SystemArchitecture" src="https://github.com/user-attachments/assets/d57ebe33-b78b-470b-9194-f9500e460855" />
+
+
+
+## 7. 주요 프로시저 
+
 [시스템 아키텍처 WIKI 상세보기](https://github.com/encore-ai-campus/mlo-03-p1-team1/wiki/System%E2%80%90Architecture)
  
 <img width="3578" height="2188" alt="SystemArchitecture" src="https://github.com/user-attachments/assets/530fb772-7282-4c2b-9db7-f9d11290df06" />
 
-### 6.2 ERD (Entity Relationship Diagram)
- [ERD WIKI 상세보기](https://github.com/encore-ai-campus/mlo-03-p1-team1/wiki/ERD)
- 
- <img width="3578" height="2188" alt="SystemArchitecture" src="https://github.com/user-attachments/assets/d57ebe33-b78b-470b-9194-f9500e460855" />
 
- 
-## 7. 주요 프로시저 
-
-### 7.1 개요 [주요 프로시저 WIKI 상세보기](https://github.com/encore-ai-campus/mlo-03-p1-team1/wiki/%EC%A3%BC%EC%9A%94-%ED%94%84%EB%A1%9C%EC%8B%9C%EC%A0%80)
-데이터베이스에서 반복적으로 수행되는 주요 SQL 작업 관리
-
-
-<img width="1672" height="941" alt="주요 프로시저 데이터 흐름도" src="https://github.com/user-attachments/assets/185f2f52-f1ce-4fd9-a806-2635f002a07b" />
 
 ## 8. 활용 데이터
 
@@ -110,8 +106,12 @@ Open API(문화체육관광부)와 네이버 크롤링으로 문화 컨텐츠 �
 | 웹 수집 데이터 | 네이버 | 키워드 기반 크롤링 | 전시, 뮤지컬, 연극, 콘서트, 클래식, 가족/아동, 뮤직페스티벌, 공연제 |
  <br />
 
+
+
 ## 9. 수행결과 (테스트/시연 페이지)
- 
+
+
+
 ## 10. 팀원별 한 줄 회고
 
 | 팀원 | 한 줄 회고 |
