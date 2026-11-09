@@ -127,8 +127,7 @@ Open API(문화체육관광부)와 네이버 크롤링으로 문화 컨텐츠 �
 데이터베이스에서 반복적으로 수행되는 주요 SQL 작업 관리
 [주요 프로시저 WIKI 상세보기](https://github.com/encore-ai-campus/mlo-03-p1-team1/wiki/%EC%A3%BC%EC%9A%94-%ED%94%84%EB%A1%9C%EC%8B%9C%EC%A0%80)
 
-<img width="1600" height="916" alt="major_procedure_flow" src="https://github.com/user-attachments/assets/8d4a2e12-dfab-482c-bda2-29b1bd05698f" />
-
+<img width="1672" height="941" alt="주요 프로시저 데이터 흐름도" src="https://github.com/user-attachments/assets/185f2f52-f1ce-4fd9-a806-2635f002a07b" />
 
 
 
