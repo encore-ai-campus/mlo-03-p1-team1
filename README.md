@@ -113,7 +113,7 @@ Open API(문화체육관광부)와 네이버 크롤링으로 문화 컨텐츠 �
 ### 6.2 ERD (Entity Relationship Diagram)
  [ERD WIKI 상세보기](https://github.com/encore-ai-campus/mlo-03-p1-team1/wiki/ERD)
  
- <img width="3578" height="2188" alt="SystemArchitecture" src="https://github.com/user-attachments/assets/530fb772-7282-4c2b-9db7-f9d11290df06" />
+ <img width="3578" height="2188" alt="SystemArchitecture" src="https://github.com/user-attachments/assets/d57ebe33-b78b-470b-9194-f9500e460855" />
 
  
 ## 7. 주요 프로시저 
