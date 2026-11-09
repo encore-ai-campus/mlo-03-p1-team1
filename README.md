@@ -124,7 +124,13 @@ Oddinary는 사용자 프로필 정보와 서비스 내 활동 데이터를 수�
 ### 9. 3  Grafana 모니터링 화면
 <img width="1411" height="316" alt="image" src="https://github.com/user-attachments/assets/f2909abe-7e7d-47da-a32e-591a6e09a1e0" />
  <br />
-
+ 2026년 11월 7일 db 서버 부하 dashboard
+ <img width="690" height="333" alt="image" src="https://github.com/user-attachments/assets/8ea7f820-0f79-4a64-89f2-01f608785f99" />
+ <br />
+ 2026년 11월 7일 nginx 서버 부하 dashboard
+ <img width="1411" height="320" alt="image" src="https://github.com/user-attachments/assets/373617b5-15bd-47e0-b952-7306521ea860" />
+ <br />
+ 2026년 11월 7일 fastapi01, 02 서버 부하 dashboard
 
 ### 9. 4  mariaDB 데이터 발생 화면
 <img width="2822" height="352" alt="Image" src="https://github.com/user-attachments/assets/5a0f4f99-88d3-40ba-89e3-843b4663f463" />
