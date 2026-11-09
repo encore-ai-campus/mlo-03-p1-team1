@@ -124,23 +124,8 @@ Open API(문화체육관광부)와 네이버 크롤링으로 문화 컨텐츠 �
 ## 7. 주요 프로시저
 
 ### 7.1 개요
-
 데이터베이스에서 반복적으로 수행되는 주요 SQL 작업 관리
-
-### 7.2 주요 프로시저
-
-| 프로시저명 (예시) | 주요 기능 | 관련 테이블 |
-|---|---|---|
-| `sp_get_user` | 사용자 정보 조회 | users |
-| `sp_create_order` | 주문 정보 저장 | orders |
-| `sp_update_payment` | 결제 상태 변경 | orders, payment_history |
-| `sp_get_user_bookmarks` | 사용자 찜 목록 조회 | bookmarks, contents |
-
-### 7.3 주요 처리 기능
-
-- **사용자 관리**: 회원 정보 조회
-- **주문 및 결제**: 주문 생성 및 결제 상태 관리
-- **콘텐츠 관리**: 사용자 찜 목록 조회
+ [주요 프로시저 WIKI 상세보기](https://github.com/encore-ai-campus/mlo-03-p1-team1/wiki/%EC%A3%BC%EC%9A%94-%ED%94%84%EB%A1%9C%EC%8B%9C%EC%A0%80)
 
 ## 8. 활용 데이터
 
