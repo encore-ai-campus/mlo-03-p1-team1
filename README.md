@@ -4,7 +4,7 @@
 
 | 고은빈 | 박완규 | 진세은 |
 |---|---|---|
-| <img src="https://github.com/user-attachments/assets/8d8ff4bb-88b7-4c3d-a6a9-c049e434b698" width="100"> | <img src="https://avatars.githubusercontent.com/u/148618067?v=4" width="100"> | <img src="https://github.com/user-attachments/assets/709cca20-b9cb-4a35-b704-84ffff9b6064" width="100"> |
+| <img src="https://github.com/user-attachments/assets/8d8ff4bb-88b7-4c3d-a6a9-c049e434b698" width="100"> | <img src="https://github.com/user-attachments/assets/cba0bfd7-3cec-4642-9560-6fa98df792cf" width="100"> | <img src="https://github.com/user-attachments/assets/709cca20-b9cb-4a35-b704-84ffff9b6064" width="100"> |
 | [@Eunbinko](https://github.com/eunbinko) | [@domomo](https://github.com/domomo) | [@wlstpdms](https://github.com/wlstpdms) |
 
   <br />
