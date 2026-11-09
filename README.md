@@ -117,7 +117,7 @@ Oddinary는 사용자 프로필 정보와 서비스 내 활동 데이터를 수�
 
 
 ### 9. 2  네이버 크롤링 화면
-<img width="2822" height="352" alt="Image" src="https://github.com/user-attachments/assets/5a0f4f99-88d3-40ba-89e3-843b4663f463" />
+<img width="852" height="480" alt="Image" src="https://github.com/user-attachments/assets/0082a191-b3bd-45a8-b1c2-fc1d9e81d94e" />
  <br />
 
 
@@ -141,6 +141,6 @@ Oddinary는 사용자 프로필 정보와 서비스 내 활동 데이터를 수�
 
 | 팀원 | 한 줄 회고 |
 |---|---|
-| 고은빈 | |
+| 고은빈 | 데이터 수집, DB화, sql로 데이터 확인 및 정리하고 커밋, 이벤트 로그 수집 확인, playwight 실행, 페르소나 설정으로 정신이 없었다.|
 | 박완규 | |
 | 진세은 | 3일간의 프로젝트를 통해 프론트엔드와 다양한 모니터링 기술을 직접 다뤄보며 새로운 경험을 쌓을 수 있었다 |
