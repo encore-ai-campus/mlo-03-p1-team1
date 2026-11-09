@@ -92,7 +92,7 @@ Open API(문화체육관광부)와 네이버 크롤링으로 문화 컨텐츠 �
 
 ## 7. 주요 프로시저 
 
-[시스템 아키텍처 WIKI 상세보기](https://github.com/encore-ai-campus/mlo-03-p1-team1/wiki/System%E2%80%90Architecture)
+[프로시저 WIKI 상세보기](https://github.com/encore-ai-campus/mlo-03-p1-team1/wiki/System%E2%80%90Architecture)
  
 <img width="3578" height="2188" alt="SystemArchitecture" src="https://github.com/user-attachments/assets/530fb772-7282-4c2b-9db7-f9d11290df06" />
 
