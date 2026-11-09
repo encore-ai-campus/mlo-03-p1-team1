@@ -83,6 +83,14 @@ class PaymentService:
             self.store.add(PaymentHistory(payment_id=order.payment_id, status=target, amount=order.amount,
                                            cancelled_amount=cancelled,
                                            provider_transaction_id=str(payment.get('transactionId', ''))[:200]))
+            self.store.event({
+                'event_id': str(uuid4()),
+                'event_type': 'payment_completed' if target == 'PAID' else 'payment_cancelled',
+                'user_id': order.user_id, 'content_id': order.content_id,
+                'properties': {'payment_id': order.payment_id, 'payment_mode': 'portone_v2',
+                               'quantity': order.quantity, 'amount': order.amount,
+                               'currency': order.currency, 'cancelled_amount': cancelled},
+            })
         return order
 
     def verify(self, payment_id, user):

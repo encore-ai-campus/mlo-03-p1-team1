@@ -1,0 +1,4 @@
+# Replica only. Merge with the existing replica configuration.
+# Do not replace server_id, replication credentials, relay logs or binlog options.
+[mariadb]
+read_only=ON

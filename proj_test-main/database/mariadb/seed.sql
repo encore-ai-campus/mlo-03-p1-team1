@@ -1,4 +1,0 @@
--- Seed data is maintained by the idempotent Python task because sample dates
--- are relative to the day it is first run and all samples must prohibit payment.
--- From backend/: python -m app.tasks.seed
--- This script deliberately creates no shared demo account or default password.

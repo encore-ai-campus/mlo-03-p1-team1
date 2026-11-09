@@ -11,11 +11,12 @@ import { Profile } from './pages/Profile'
 import { Preferences } from './pages/Preferences'
 import { PaymentHistory } from './pages/PaymentHistory'
 import { PaymentResult } from './pages/PaymentResult'
+import { ActivityTracker } from './components/ActivityTracker'
 
 export default function App() {
   const { pathname } = useLocation()
   useEffect(() => { window.scrollTo({ top: 0 }); document.title = 'Oddinary · 취향이 닿는 문화생활' }, [pathname])
-  return <SessionProvider><Routes><Route element={<Layout />}>
+  return <SessionProvider><ActivityTracker /><Routes><Route element={<Layout />}>
     <Route index element={<Home />} />
     <Route path="explore" element={<Explore />} />
     <Route path="contents/:id" element={<Detail />} />

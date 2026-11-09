@@ -1,0 +1,11 @@
+/var/log/culturepick/fastapi.log {
+    daily
+    maxsize 10M
+    rotate 7
+    compress
+    delaycompress
+    missingok
+    notifempty
+    copytruncate
+    su root alloy
+}

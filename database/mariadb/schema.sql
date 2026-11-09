@@ -186,3 +186,15 @@ ALTER TABLE users ADD CONSTRAINT ck_user_age CHECK (age BETWEEN 0 AND 120);
 
 UPDATE alembic_version SET version_num='65e5c5f31b9a' WHERE alembic_version.version_num = '30943449ef19';
 
+-- Running upgrade 65e5c5f31b9a -> 78a3b1c2d4e5 (reference only; apply with Alembic)
+CREATE TABLE event_outbox (
+    event_id VARCHAR(36) NOT NULL PRIMARY KEY,
+    attempts INTEGER NOT NULL DEFAULT 0,
+    next_attempt_at DATETIME NOT NULL,
+    delivered_at DATETIME NULL,
+    last_error VARCHAR(80) NULL,
+    FOREIGN KEY (event_id) REFERENCES behavior_events(event_id) ON DELETE CASCADE
+);
+CREATE INDEX ix_outbox_pending ON event_outbox (delivered_at, next_attempt_at);
+UPDATE alembic_version SET version_num='78a3b1c2d4e5' WHERE alembic_version.version_num='65e5c5f31b9a';
+

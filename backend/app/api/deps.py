@@ -1,13 +1,15 @@
 from collections import defaultdict, deque
 from threading import Lock
 import time
+import logging
 
 from fastapi import Depends, HTTPException, Request
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 
 from app.core.config import get_settings
+from app.core.activity import request_activity_context
 from app.core.security import token_hash, utcnow
-from app.db.session import get_db
+from app.db.session import catalog_session, get_db
 from app.integrations.portone import PortOne
 from app.repositories.store import Store
 from app.services.payments import PaymentService
@@ -15,8 +17,20 @@ from app.services.payments import PaymentService
 bearer = HTTPBearer(auto_error=False)
 
 
-def get_store(db=Depends(get_db, scope='function')):
-    return Store(db)
+def get_store(request: Request, db=Depends(get_db, scope='function')):
+    return Store(db, event_context=request_activity_context(request))
+
+
+def get_catalog_store(request: Request, primary=Depends(get_store)):
+    with catalog_session(primary.db) as reader:
+        store = Store(primary.db, event_context=primary.event_context, catalog_db=reader)
+        try:
+            yield store
+        finally:
+            # Routing evidence only: no SQL text, parameters, credentials or query strings.
+            logging.getLogger('uvicorn.error').info('Catalog database route=%s endpoint=%s',
+                                                   'master' if store.catalog_db is store.db else 'replica',
+                                                   request.url.path)
 
 
 def optional_user(credentials: HTTPAuthorizationCredentials | None = Depends(bearer), store=Depends(get_store)):
