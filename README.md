@@ -110,6 +110,41 @@ Open API(문화체육관광부)와 네이버 크롤링으로 문화 컨텐츠 �
 
 
 ## 9. 수행결과 (테스트/시연 페이지)
+| 대상 | 결과 |
+|---|---|
+| 서버당 데이터 적제량(초당) | nginx **7,694건** / mariaDB **7,686건** / mongoDB **8건** |
+| Playwright 수행 | 100명 × 5회(500세션) · 주요 행동 5종: Playwright **7,694건** / MongoDB **7,686건** / 차이 **-8건** |
+| 데이터 정제 | 공공 API **65,858 → 36,569건** (차이 **29,289건**) · 네이버 크롤링 **560 → 479건** (차이 **-61건**) |
+
+[수행결과 WIKI 상세보기](https://github.com/encore-ai-campus/mlo-03-p1-team1/wiki/%EC%88%98%ED%96%89-%EA%B2%B0%EA%B3%BC)
+
+ <br />
+
+### 9. 1  Playwight 시연
+<img width="2822" height="352" alt="Image" src="https://github.com/user-attachments/assets/5a0f4f99-88d3-40ba-89e3-843b4663f463" />
+
+ <br />
+
+### 9. 2  네이버 크롤링 화면
+<img width="2822" height="352" alt="Image" src="https://github.com/user-attachments/assets/5a0f4f99-88d3-40ba-89e3-843b4663f463" />
+ <br />
+
+### 9. 3  Grafana 모니터링 화면
+<img width="2822" height="352" alt="Image" src="https://github.com/user-attachments/assets/5a0f4f99-88d3-40ba-89e3-843b4663f463" />
+ <br />
+
+
+### 9. 4  mariaDB 데이터 발생 화면
+<img width="2822" height="352" alt="Image" src="https://github.com/user-attachments/assets/5a0f4f99-88d3-40ba-89e3-843b4663f463" />
+ <br />
+
+
+### 9. 5  mongoDB 데이터 발생 화면
+ <img width="2822" height="352" alt="Image" src="https://github.com/user-attachments/assets/5a0f4f99-88d3-40ba-89e3-843b4663f463" />
+ <br />
+  <br />
+
+
 
 
 
