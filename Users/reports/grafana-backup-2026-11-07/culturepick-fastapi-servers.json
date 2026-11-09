@@ -1,0 +1,986 @@
+﻿{
+    "meta":  {
+                 "type":  "db",
+                 "canSave":  true,
+                 "canEdit":  true,
+                 "canAdmin":  true,
+                 "canStar":  true,
+                 "canDelete":  true,
+                 "slug":  "culturepick-c2b7-fastapi1-fastapi2",
+                 "url":  "/d/culturepick-fastapi-servers/culturepick-c2b7-fastapi1-fastapi2",
+                 "expires":  "0001-01-01T00:00:00Z",
+                 "created":  "2026-11-06T09:06:56Z",
+                 "updated":  "2026-11-06T11:32:21Z",
+                 "updatedBy":  "admin",
+                 "createdBy":  "admin",
+                 "version":  5,
+                 "hasAcl":  false,
+                 "isFolder":  false,
+                 "apiVersion":  "v0alpha1",
+                 "folderId":  0,
+                 "folderUid":  "",
+                 "folderTitle":  "General",
+                 "folderUrl":  "",
+                 "provisioned":  false,
+                 "provisionedExternalId":  "",
+                 "annotationsPermissions":  {
+                                                "dashboard":  {
+                                                                  "canAdd":  true,
+                                                                  "canEdit":  true,
+                                                                  "canDelete":  true
+                                                              }
+                                            }
+             },
+    "dashboard":  {
+                      "annotations":  {
+                                          "list":  [
+                                                       {
+                                                           "builtIn":  1,
+                                                           "datasource":  {
+                                                                              "type":  "grafana",
+                                                                              "uid":  "-- Grafana --"
+                                                                          },
+                                                           "enable":  true,
+                                                           "hide":  true,
+                                                           "iconColor":  "rgba(0, 211, 255, 1)",
+                                                           "name":  "Annotations \u0026 Alerts",
+                                                           "type":  "dashboard"
+                                                       }
+                                                   ]
+                                      },
+                      "description":  "ì¤ì¸¡ ë©í¸ë¦­/ë¼ë²¨ì ê¸°ë°í ë FastAPI ìë² ëª¨ëí°ë§. ë¯¸ìì§ í­ëª©ì ìì§ ëê¸° ìíë¡ íìí©ëë¤.",
+                      "editable":  true,
+                      "fiscalYearStartMonth":  0,
+                      "graphTooltip":  0,
+                      "id":  1939380770476032,
+                      "links":  [
+
+                                ],
+                      "panels":  [
+                                     {
+                                         "description":  "",
+                                         "gridPos":  {
+                                                         "h":  5,
+                                                         "w":  24,
+                                                         "x":  0,
+                                                         "y":  0
+                                                     },
+                                         "id":  1,
+                                         "options":  {
+                                                         "content":  "ì¤ì¸¡ íì¸: `2026-11-06T11:31:44.011752+00:00` (UTC). íí°ìì FastAPI1 / FastAPI2 / Allì ì íí©ëë¤.\n\n**UP/DOWNì Prometheus ìì§ ëìì ìíì\u0085ëë¤.** DOWNë§ì¼ë¡ ìë² ëë FastAPI ì¥ì ë¥¼ ë¨ì í  ì ììµëë¤. NO DATA / UNKNOWNì ë¯¸ë±ë¡Â·ë¯¸ìì§Â·ìê³ì´ ìì¤ì´ë©° 0ì¼ë¡ ë°ê¾¸ì§ ììµëë¤.\n\nNode ë°ì´í° ë¯¸ìì§ ìë²: `ìì`. FastAPI ìì²­ ë©í¸ë¦­: **ë¯¸ìì§**. Loki FastAPI ì¤í¸ë¦¼: **íì¸ë¨**. ì¶ê° ì¤ì ê³¼ ì¤ì¸¡ ê¸°ë¡ì í¨ê» ì ê³µë README.md / discovery.jsonì íì¸íì¸ì.",
+                                                         "mode":  "markdown"
+                                                     },
+                                         "title":  "CulturePick Â· ìì§ ìí ë° í´ì",
+                                         "type":  "text"
+                                     },
+                                     {
+                                         "datasource":  {
+                                                            "type":  "prometheus",
+                                                            "uid":  "fg3gsoufwijnka"
+                                                        },
+                                         "description":  "1=ìì§ ì±ê³µ, 0=ìì§ ì¤í¨. ëìì´ ìì¼ë©´ UNKNOWN. OS ìì ìì§ ìíì´ë©° FastAPI í¬ì¤ì²´í¬ê° ìëëë¤.",
+                                         "fieldConfig":  {
+                                                             "defaults":  {
+                                                                              "color":  {
+                                                                                            "mode":  "thresholds"
+                                                                                        },
+                                                                              "mappings":  [
+                                                                                               {
+                                                                                                   "options":  {
+                                                                                                                   "0":  {
+                                                                                                                             "color":  "red",
+                                                                                                                             "text":  "DOWN"
+                                                                                                                         },
+                                                                                                                   "1":  {
+                                                                                                                             "color":  "green",
+                                                                                                                             "text":  "UP"
+                                                                                                                         }
+                                                                                                               },
+                                                                                                   "type":  "value"
+                                                                                               }
+                                                                                           ],
+                                                                              "noValue":  "UNKNOWN / NOT SCRAPED",
+                                                                              "thresholds":  {
+                                                                                                 "mode":  "absolute",
+                                                                                                 "steps":  [
+                                                                                                               {
+                                                                                                                   "color":  "red"
+                                                                                                               },
+                                                                                                               {
+                                                                                                                   "color":  "green",
+                                                                                                                   "value":  1
+                                                                                                               }
+                                                                                                           ]
+                                                                                             },
+                                                                              "unit":  "short"
+                                                                          },
+                                                             "overrides":  [
+
+                                                                           ]
+                                                         },
+                                         "gridPos":  {
+                                                         "h":  4,
+                                                         "w":  12,
+                                                         "x":  0,
+                                                         "y":  5
+                                                     },
+                                         "id":  2,
+                                         "options":  {
+                                                         "colorMode":  "background",
+                                                         "graphMode":  "none",
+                                                         "orientation":  "horizontal",
+                                                         "reduceOptions":  {
+                                                                               "calcs":  [
+                                                                                             "lastNotNull"
+                                                                                         ],
+                                                                               "fields":  "",
+                                                                               "values":  false
+                                                                           },
+                                                         "textMode":  "auto"
+                                                     },
+                                         "targets":  [
+                                                         {
+                                                             "datasource":  {
+                                                                                "type":  "prometheus",
+                                                                                "uid":  "fg3gsoufwijnka"
+                                                                            },
+                                                             "editorMode":  "code",
+                                                             "expr":  "up{job=\"node\",instance=~`(${server:regex}):9100`}",
+                                                             "instant":  true,
+                                                             "legendFormat":  "{{instance}}",
+                                                             "range":  false,
+                                                             "refId":  "A"
+                                                         }
+                                                     ],
+                                         "title":  "Node Exporter UP / DOWN Â· :9100",
+                                         "transformations":  [
+                                                                 {
+                                                                     "id":  "renameByRegex",
+                                                                     "options":  {
+                                                                                     "regex":  "192\\.168\\.0\\.156(?::[0-9]+)?",
+                                                                                     "renamePattern":  "FastAPI1"
+                                                                                 }
+                                                                 },
+                                                                 {
+                                                                     "id":  "renameByRegex",
+                                                                     "options":  {
+                                                                                     "regex":  "192\\.168\\.0\\.157(?::[0-9]+)?",
+                                                                                     "renamePattern":  "FastAPI2"
+                                                                                 }
+                                                                 }
+                                                             ],
+                                         "type":  "stat"
+                                     },
+                                     {
+                                         "description":  "",
+                                         "gridPos":  {
+                                                         "h":  4,
+                                                         "w":  12,
+                                                         "x":  12,
+                                                         "y":  5
+                                                     },
+                                         "id":  3,
+                                         "options":  {
+                                                         "content":  "**ìì¤í\u0085 ìì§ ìí:** ì¼ìª½ Node Exporter `:9100` í¨ëì íì¸íì¸ì.\n\n**FastAPI API:** `:8000/api/v1/health`, `:8000/api/v1/ready`ë¡ íì¸í©ëë¤. ì´ ìë´ë ì¤ìê° API ìí ì¸¡ì ê°ì´ ìëëë¤. ê³¼ê±° `:8000 job=node` ìì§ ëìì ì ë¦¬ëììµëë¤.",
+                                                         "mode":  "markdown"
+                                                     },
+                                         "title":  "FastAPI ì°ê²° ìë´ Â· API :8000 / ìì¤í\u0085 :9100",
+                                         "type":  "text"
+                                     },
+                                     {
+                                         "datasource":  {
+                                                            "type":  "prometheus",
+                                                            "uid":  "fg3gsoufwijnka"
+                                                        },
+                                         "description":  "íì¸ë Node Exporter ë©í¸ë¦­. ë ìë²ì :9100ì job=nodeë¡ ìì§í´ì¼ ë°ì´í°ê° íìë©ëë¤. ëì¤í¬ I/Oë ì¥ì¹ë³ì´ë©° dm-0ê³¼ sdaë¥¼ í©ì°íì§ ììµëë¤.",
+                                         "fieldConfig":  {
+                                                             "defaults":  {
+                                                                              "color":  {
+                                                                                            "mode":  "palette-classic"
+                                                                                        },
+                                                                              "custom":  {
+                                                                                             "axisCenteredZero":  false,
+                                                                                             "drawStyle":  "line",
+                                                                                             "fillOpacity":  8,
+                                                                                             "lineInterpolation":  "linear",
+                                                                                             "lineWidth":  2,
+                                                                                             "showPoints":  "never",
+                                                                                             "spanNulls":  false,
+                                                                                             "stacking":  {
+                                                                                                              "group":  "A",
+                                                                                                              "mode":  "none"
+                                                                                                          }
+                                                                                         },
+                                                                              "decimals":  1,
+                                                                              "mappings":  [
+
+                                                                                           ],
+                                                                              "max":  100,
+                                                                              "min":  0,
+                                                                              "noValue":  "NO DATA",
+                                                                              "thresholds":  {
+                                                                                                 "mode":  "absolute",
+                                                                                                 "steps":  [
+                                                                                                               {
+                                                                                                                   "color":  "green"
+                                                                                                               }
+                                                                                                           ]
+                                                                                             },
+                                                                              "unit":  "percent"
+                                                                          },
+                                                             "overrides":  [
+
+                                                                           ]
+                                                         },
+                                         "gridPos":  {
+                                                         "h":  7,
+                                                         "w":  12,
+                                                         "x":  0,
+                                                         "y":  9
+                                                     },
+                                         "id":  4,
+                                         "options":  {
+                                                         "legend":  {
+                                                                        "calcs":  [
+                                                                                      "lastNotNull",
+                                                                                      "mean"
+                                                                                  ],
+                                                                        "displayMode":  "table",
+                                                                        "placement":  "bottom"
+                                                                    },
+                                                         "tooltip":  {
+                                                                         "mode":  "multi",
+                                                                         "sort":  "desc"
+                                                                     }
+                                                     },
+                                         "targets":  [
+                                                         {
+                                                             "datasource":  {
+                                                                                "type":  "prometheus",
+                                                                                "uid":  "fg3gsoufwijnka"
+                                                                            },
+                                                             "editorMode":  "code",
+                                                             "expr":  "100 * (1 - avg by (instance) (rate(node_cpu_seconds_total{job=\"node\",instance=~`(${server:regex}):9100`,mode=\"idle\"}[$__rate_interval])))",
+                                                             "instant":  false,
+                                                             "legendFormat":  "{{instance}}",
+                                                             "range":  true,
+                                                             "refId":  "A"
+                                                         }
+                                                     ],
+                                         "title":  "CPU ì¬ì©ë¥ ",
+                                         "transformations":  [
+                                                                 {
+                                                                     "id":  "renameByRegex",
+                                                                     "options":  {
+                                                                                     "regex":  "192\\.168\\.0\\.156(?::[0-9]+)?",
+                                                                                     "renamePattern":  "FastAPI1"
+                                                                                 }
+                                                                 },
+                                                                 {
+                                                                     "id":  "renameByRegex",
+                                                                     "options":  {
+                                                                                     "regex":  "192\\.168\\.0\\.157(?::[0-9]+)?",
+                                                                                     "renamePattern":  "FastAPI2"
+                                                                                 }
+                                                                 }
+                                                             ],
+                                         "type":  "timeseries"
+                                     },
+                                     {
+                                         "datasource":  {
+                                                            "type":  "prometheus",
+                                                            "uid":  "fg3gsoufwijnka"
+                                                        },
+                                         "description":  "íì¸ë Node Exporter ë©í¸ë¦­. ë ìë²ì :9100ì job=nodeë¡ ìì§í´ì¼ ë°ì´í°ê° íìë©ëë¤. ëì¤í¬ I/Oë ì¥ì¹ë³ì´ë©° dm-0ê³¼ sdaë¥¼ í©ì°íì§ ììµëë¤.",
+                                         "fieldConfig":  {
+                                                             "defaults":  {
+                                                                              "color":  {
+                                                                                            "mode":  "palette-classic"
+                                                                                        },
+                                                                              "custom":  {
+                                                                                             "axisCenteredZero":  false,
+                                                                                             "drawStyle":  "line",
+                                                                                             "fillOpacity":  8,
+                                                                                             "lineInterpolation":  "linear",
+                                                                                             "lineWidth":  2,
+                                                                                             "showPoints":  "never",
+                                                                                             "spanNulls":  false,
+                                                                                             "stacking":  {
+                                                                                                              "group":  "A",
+                                                                                                              "mode":  "none"
+                                                                                                          }
+                                                                                         },
+                                                                              "decimals":  1,
+                                                                              "mappings":  [
+
+                                                                                           ],
+                                                                              "max":  100,
+                                                                              "min":  0,
+                                                                              "noValue":  "NO DATA",
+                                                                              "thresholds":  {
+                                                                                                 "mode":  "absolute",
+                                                                                                 "steps":  [
+                                                                                                               {
+                                                                                                                   "color":  "green"
+                                                                                                               }
+                                                                                                           ]
+                                                                                             },
+                                                                              "unit":  "percent"
+                                                                          },
+                                                             "overrides":  [
+
+                                                                           ]
+                                                         },
+                                         "gridPos":  {
+                                                         "h":  7,
+                                                         "w":  12,
+                                                         "x":  12,
+                                                         "y":  9
+                                                     },
+                                         "id":  5,
+                                         "options":  {
+                                                         "legend":  {
+                                                                        "calcs":  [
+                                                                                      "lastNotNull",
+                                                                                      "mean"
+                                                                                  ],
+                                                                        "displayMode":  "table",
+                                                                        "placement":  "bottom"
+                                                                    },
+                                                         "tooltip":  {
+                                                                         "mode":  "multi",
+                                                                         "sort":  "desc"
+                                                                     }
+                                                     },
+                                         "targets":  [
+                                                         {
+                                                             "datasource":  {
+                                                                                "type":  "prometheus",
+                                                                                "uid":  "fg3gsoufwijnka"
+                                                                            },
+                                                             "editorMode":  "code",
+                                                             "expr":  "100 * (1 - node_memory_MemAvailable_bytes{job=\"node\",instance=~`(${server:regex}):9100`} / node_memory_MemTotal_bytes{job=\"node\",instance=~`(${server:regex}):9100`})",
+                                                             "instant":  false,
+                                                             "legendFormat":  "{{instance}}",
+                                                             "range":  true,
+                                                             "refId":  "A"
+                                                         }
+                                                     ],
+                                         "title":  "ë©ëª¨ë¦¬ ì¬ì©ë¥ ",
+                                         "transformations":  [
+                                                                 {
+                                                                     "id":  "renameByRegex",
+                                                                     "options":  {
+                                                                                     "regex":  "192\\.168\\.0\\.156(?::[0-9]+)?",
+                                                                                     "renamePattern":  "FastAPI1"
+                                                                                 }
+                                                                 },
+                                                                 {
+                                                                     "id":  "renameByRegex",
+                                                                     "options":  {
+                                                                                     "regex":  "192\\.168\\.0\\.157(?::[0-9]+)?",
+                                                                                     "renamePattern":  "FastAPI2"
+                                                                                 }
+                                                                 }
+                                                             ],
+                                         "type":  "timeseries"
+                                     },
+                                     {
+                                         "datasource":  {
+                                                            "type":  "prometheus",
+                                                            "uid":  "fg3gsoufwijnka"
+                                                        },
+                                         "description":  "íì¸ë Node Exporter ë©í¸ë¦­. ë ìë²ì :9100ì job=nodeë¡ ìì§í´ì¼ ë°ì´í°ê° íìë©ëë¤. ëì¤í¬ I/Oë ì¥ì¹ë³ì´ë©° dm-0ê³¼ sdaë¥¼ í©ì°íì§ ììµëë¤.",
+                                         "fieldConfig":  {
+                                                             "defaults":  {
+                                                                              "color":  {
+                                                                                            "mode":  "palette-classic"
+                                                                                        },
+                                                                              "custom":  {
+                                                                                             "axisCenteredZero":  false,
+                                                                                             "drawStyle":  "line",
+                                                                                             "fillOpacity":  8,
+                                                                                             "lineInterpolation":  "linear",
+                                                                                             "lineWidth":  2,
+                                                                                             "showPoints":  "never",
+                                                                                             "spanNulls":  false,
+                                                                                             "stacking":  {
+                                                                                                              "group":  "A",
+                                                                                                              "mode":  "none"
+                                                                                                          }
+                                                                                         },
+                                                                              "decimals":  1,
+                                                                              "mappings":  [
+
+                                                                                           ],
+                                                                              "max":  100,
+                                                                              "min":  0,
+                                                                              "noValue":  "NO DATA",
+                                                                              "thresholds":  {
+                                                                                                 "mode":  "absolute",
+                                                                                                 "steps":  [
+                                                                                                               {
+                                                                                                                   "color":  "green"
+                                                                                                               }
+                                                                                                           ]
+                                                                                             },
+                                                                              "unit":  "percent"
+                                                                          },
+                                                             "overrides":  [
+
+                                                                           ]
+                                                         },
+                                         "gridPos":  {
+                                                         "h":  7,
+                                                         "w":  12,
+                                                         "x":  0,
+                                                         "y":  16
+                                                     },
+                                         "id":  6,
+                                         "options":  {
+                                                         "legend":  {
+                                                                        "calcs":  [
+                                                                                      "lastNotNull",
+                                                                                      "mean"
+                                                                                  ],
+                                                                        "displayMode":  "table",
+                                                                        "placement":  "bottom"
+                                                                    },
+                                                         "tooltip":  {
+                                                                         "mode":  "multi",
+                                                                         "sort":  "desc"
+                                                                     }
+                                                     },
+                                         "targets":  [
+                                                         {
+                                                             "datasource":  {
+                                                                                "type":  "prometheus",
+                                                                                "uid":  "fg3gsoufwijnka"
+                                                                            },
+                                                             "editorMode":  "code",
+                                                             "expr":  "100 * (1 - node_filesystem_avail_bytes{job=\"node\",instance=~`(${server:regex}):9100`,fstype!~\"tmpfs|devtmpfs|overlay|squashfs\",mountpoint!~\"/run.*|/snap.*\"} / node_filesystem_size_bytes{job=\"node\",instance=~`(${server:regex}):9100`,fstype!~\"tmpfs|devtmpfs|overlay|squashfs\",mountpoint!~\"/run.*|/snap.*\"})",
+                                                             "instant":  false,
+                                                             "legendFormat":  "{{instance}} {{mountpoint}}",
+                                                             "range":  true,
+                                                             "refId":  "A"
+                                                         }
+                                                     ],
+                                         "title":  "ëì¤í¬ ê³µê° ì¬ì©ë¥  Â· íì¼ìì¤í\u0085ë³",
+                                         "transformations":  [
+                                                                 {
+                                                                     "id":  "renameByRegex",
+                                                                     "options":  {
+                                                                                     "regex":  "192\\.168\\.0\\.156(?::[0-9]+)?",
+                                                                                     "renamePattern":  "FastAPI1"
+                                                                                 }
+                                                                 },
+                                                                 {
+                                                                     "id":  "renameByRegex",
+                                                                     "options":  {
+                                                                                     "regex":  "192\\.168\\.0\\.157(?::[0-9]+)?",
+                                                                                     "renamePattern":  "FastAPI2"
+                                                                                 }
+                                                                 }
+                                                             ],
+                                         "type":  "timeseries"
+                                     },
+                                     {
+                                         "datasource":  {
+                                                            "type":  "prometheus",
+                                                            "uid":  "fg3gsoufwijnka"
+                                                        },
+                                         "description":  "íì¸ë Node Exporter ë©í¸ë¦­. ë ìë²ì :9100ì job=nodeë¡ ìì§í´ì¼ ë°ì´í°ê° íìë©ëë¤. ëì¤í¬ I/Oë ì¥ì¹ë³ì´ë©° dm-0ê³¼ sdaë¥¼ í©ì°íì§ ììµëë¤.",
+                                         "fieldConfig":  {
+                                                             "defaults":  {
+                                                                              "color":  {
+                                                                                            "mode":  "palette-classic"
+                                                                                        },
+                                                                              "custom":  {
+                                                                                             "axisCenteredZero":  false,
+                                                                                             "drawStyle":  "line",
+                                                                                             "fillOpacity":  8,
+                                                                                             "lineInterpolation":  "linear",
+                                                                                             "lineWidth":  2,
+                                                                                             "showPoints":  "never",
+                                                                                             "spanNulls":  false,
+                                                                                             "stacking":  {
+                                                                                                              "group":  "A",
+                                                                                                              "mode":  "none"
+                                                                                                          }
+                                                                                         },
+                                                                              "mappings":  [
+
+                                                                                           ],
+                                                                              "noValue":  "NO DATA",
+                                                                              "thresholds":  {
+                                                                                                 "mode":  "absolute",
+                                                                                                 "steps":  [
+                                                                                                               {
+                                                                                                                   "color":  "green"
+                                                                                                               }
+                                                                                                           ]
+                                                                                             },
+                                                                              "unit":  "Bps"
+                                                                          },
+                                                             "overrides":  [
+
+                                                                           ]
+                                                         },
+                                         "gridPos":  {
+                                                         "h":  7,
+                                                         "w":  12,
+                                                         "x":  12,
+                                                         "y":  16
+                                                     },
+                                         "id":  7,
+                                         "options":  {
+                                                         "legend":  {
+                                                                        "calcs":  [
+                                                                                      "lastNotNull",
+                                                                                      "mean"
+                                                                                  ],
+                                                                        "displayMode":  "table",
+                                                                        "placement":  "bottom"
+                                                                    },
+                                                         "tooltip":  {
+                                                                         "mode":  "multi",
+                                                                         "sort":  "desc"
+                                                                     }
+                                                     },
+                                         "targets":  [
+                                                         {
+                                                             "datasource":  {
+                                                                                "type":  "prometheus",
+                                                                                "uid":  "fg3gsoufwijnka"
+                                                                            },
+                                                             "editorMode":  "code",
+                                                             "expr":  "rate(node_disk_read_bytes_total{job=\"node\",instance=~`(${server:regex}):9100`,device!~\"loop.*|ram.*|sr.*\"}[$__rate_interval])",
+                                                             "instant":  false,
+                                                             "legendFormat":  "{{instance}} {{device}} ì½ê¸°",
+                                                             "range":  true,
+                                                             "refId":  "A"
+                                                         },
+                                                         {
+                                                             "datasource":  {
+                                                                                "type":  "prometheus",
+                                                                                "uid":  "fg3gsoufwijnka"
+                                                                            },
+                                                             "editorMode":  "code",
+                                                             "expr":  "rate(node_disk_written_bytes_total{job=\"node\",instance=~`(${server:regex}):9100`,device!~\"loop.*|ram.*|sr.*\"}[$__rate_interval])",
+                                                             "instant":  false,
+                                                             "legendFormat":  "{{instance}} {{device}} ì°ê¸°",
+                                                             "range":  true,
+                                                             "refId":  "B"
+                                                         }
+                                                     ],
+                                         "title":  "ëì¤í¬ I/O Â· ì¥ì¹ë³ ì½ê¸° / ì°ê¸°",
+                                         "transformations":  [
+                                                                 {
+                                                                     "id":  "renameByRegex",
+                                                                     "options":  {
+                                                                                     "regex":  "192\\.168\\.0\\.156(?::[0-9]+)?",
+                                                                                     "renamePattern":  "FastAPI1"
+                                                                                 }
+                                                                 },
+                                                                 {
+                                                                     "id":  "renameByRegex",
+                                                                     "options":  {
+                                                                                     "regex":  "192\\.168\\.0\\.157(?::[0-9]+)?",
+                                                                                     "renamePattern":  "FastAPI2"
+                                                                                 }
+                                                                 }
+                                                             ],
+                                         "type":  "timeseries"
+                                     },
+                                     {
+                                         "datasource":  {
+                                                            "type":  "prometheus",
+                                                            "uid":  "fg3gsoufwijnka"
+                                                        },
+                                         "description":  "íì¸ë Node Exporter ë©í¸ë¦­. ë ìë²ì :9100ì job=nodeë¡ ìì§í´ì¼ ë°ì´í°ê° íìë©ëë¤. ëì¤í¬ I/Oë ì¥ì¹ë³ì´ë©° dm-0ê³¼ sdaë¥¼ í©ì°íì§ ììµëë¤.",
+                                         "fieldConfig":  {
+                                                             "defaults":  {
+                                                                              "color":  {
+                                                                                            "mode":  "palette-classic"
+                                                                                        },
+                                                                              "custom":  {
+                                                                                             "axisCenteredZero":  false,
+                                                                                             "drawStyle":  "line",
+                                                                                             "fillOpacity":  8,
+                                                                                             "lineInterpolation":  "linear",
+                                                                                             "lineWidth":  2,
+                                                                                             "showPoints":  "never",
+                                                                                             "spanNulls":  false,
+                                                                                             "stacking":  {
+                                                                                                              "group":  "A",
+                                                                                                              "mode":  "none"
+                                                                                                          }
+                                                                                         },
+                                                                              "mappings":  [
+
+                                                                                           ],
+                                                                              "noValue":  "NO DATA",
+                                                                              "thresholds":  {
+                                                                                                 "mode":  "absolute",
+                                                                                                 "steps":  [
+                                                                                                               {
+                                                                                                                   "color":  "green"
+                                                                                                               }
+                                                                                                           ]
+                                                                                             },
+                                                                              "unit":  "Bps"
+                                                                          },
+                                                             "overrides":  [
+
+                                                                           ]
+                                                         },
+                                         "gridPos":  {
+                                                         "h":  7,
+                                                         "w":  12,
+                                                         "x":  0,
+                                                         "y":  23
+                                                     },
+                                         "id":  8,
+                                         "options":  {
+                                                         "legend":  {
+                                                                        "calcs":  [
+                                                                                      "lastNotNull",
+                                                                                      "mean"
+                                                                                  ],
+                                                                        "displayMode":  "table",
+                                                                        "placement":  "bottom"
+                                                                    },
+                                                         "tooltip":  {
+                                                                         "mode":  "multi",
+                                                                         "sort":  "desc"
+                                                                     }
+                                                     },
+                                         "targets":  [
+                                                         {
+                                                             "datasource":  {
+                                                                                "type":  "prometheus",
+                                                                                "uid":  "fg3gsoufwijnka"
+                                                                            },
+                                                             "editorMode":  "code",
+                                                             "expr":  "rate(node_network_receive_bytes_total{job=\"node\",instance=~`(${server:regex}):9100`,device!~\"lo|veth.*|docker.*|br-.*\"}[$__rate_interval])",
+                                                             "instant":  false,
+                                                             "legendFormat":  "{{instance}} {{device}} RX",
+                                                             "range":  true,
+                                                             "refId":  "A"
+                                                         }
+                                                     ],
+                                         "title":  "ë¤í¸ìí¬ ìì  Â· ì¸í°íì´ì¤ë³",
+                                         "transformations":  [
+                                                                 {
+                                                                     "id":  "renameByRegex",
+                                                                     "options":  {
+                                                                                     "regex":  "192\\.168\\.0\\.156(?::[0-9]+)?",
+                                                                                     "renamePattern":  "FastAPI1"
+                                                                                 }
+                                                                 },
+                                                                 {
+                                                                     "id":  "renameByRegex",
+                                                                     "options":  {
+                                                                                     "regex":  "192\\.168\\.0\\.157(?::[0-9]+)?",
+                                                                                     "renamePattern":  "FastAPI2"
+                                                                                 }
+                                                                 }
+                                                             ],
+                                         "type":  "timeseries"
+                                     },
+                                     {
+                                         "datasource":  {
+                                                            "type":  "prometheus",
+                                                            "uid":  "fg3gsoufwijnka"
+                                                        },
+                                         "description":  "íì¸ë Node Exporter ë©í¸ë¦­. ë ìë²ì :9100ì job=nodeë¡ ìì§í´ì¼ ë°ì´í°ê° íìë©ëë¤. ëì¤í¬ I/Oë ì¥ì¹ë³ì´ë©° dm-0ê³¼ sdaë¥¼ í©ì°íì§ ììµëë¤.",
+                                         "fieldConfig":  {
+                                                             "defaults":  {
+                                                                              "color":  {
+                                                                                            "mode":  "palette-classic"
+                                                                                        },
+                                                                              "custom":  {
+                                                                                             "axisCenteredZero":  false,
+                                                                                             "drawStyle":  "line",
+                                                                                             "fillOpacity":  8,
+                                                                                             "lineInterpolation":  "linear",
+                                                                                             "lineWidth":  2,
+                                                                                             "showPoints":  "never",
+                                                                                             "spanNulls":  false,
+                                                                                             "stacking":  {
+                                                                                                              "group":  "A",
+                                                                                                              "mode":  "none"
+                                                                                                          }
+                                                                                         },
+                                                                              "mappings":  [
+
+                                                                                           ],
+                                                                              "noValue":  "NO DATA",
+                                                                              "thresholds":  {
+                                                                                                 "mode":  "absolute",
+                                                                                                 "steps":  [
+                                                                                                               {
+                                                                                                                   "color":  "green"
+                                                                                                               }
+                                                                                                           ]
+                                                                                             },
+                                                                              "unit":  "Bps"
+                                                                          },
+                                                             "overrides":  [
+
+                                                                           ]
+                                                         },
+                                         "gridPos":  {
+                                                         "h":  7,
+                                                         "w":  12,
+                                                         "x":  12,
+                                                         "y":  23
+                                                     },
+                                         "id":  9,
+                                         "options":  {
+                                                         "legend":  {
+                                                                        "calcs":  [
+                                                                                      "lastNotNull",
+                                                                                      "mean"
+                                                                                  ],
+                                                                        "displayMode":  "table",
+                                                                        "placement":  "bottom"
+                                                                    },
+                                                         "tooltip":  {
+                                                                         "mode":  "multi",
+                                                                         "sort":  "desc"
+                                                                     }
+                                                     },
+                                         "targets":  [
+                                                         {
+                                                             "datasource":  {
+                                                                                "type":  "prometheus",
+                                                                                "uid":  "fg3gsoufwijnka"
+                                                                            },
+                                                             "editorMode":  "code",
+                                                             "expr":  "rate(node_network_transmit_bytes_total{job=\"node\",instance=~`(${server:regex}):9100`,device!~\"lo|veth.*|docker.*|br-.*\"}[$__rate_interval])",
+                                                             "instant":  false,
+                                                             "legendFormat":  "{{instance}} {{device}} TX",
+                                                             "range":  true,
+                                                             "refId":  "A"
+                                                         }
+                                                     ],
+                                         "title":  "ë¤í¸ìí¬ ì¡ì  Â· ì¸í°íì´ì¤ë³",
+                                         "transformations":  [
+                                                                 {
+                                                                     "id":  "renameByRegex",
+                                                                     "options":  {
+                                                                                     "regex":  "192\\.168\\.0\\.156(?::[0-9]+)?",
+                                                                                     "renamePattern":  "FastAPI1"
+                                                                                 }
+                                                                 },
+                                                                 {
+                                                                     "id":  "renameByRegex",
+                                                                     "options":  {
+                                                                                     "regex":  "192\\.168\\.0\\.157(?::[0-9]+)?",
+                                                                                     "renamePattern":  "FastAPI2"
+                                                                                 }
+                                                                 }
+                                                             ],
+                                         "type":  "timeseries"
+                                     },
+                                     {
+                                         "description":  "",
+                                         "gridPos":  {
+                                                         "h":  7,
+                                                         "w":  12,
+                                                         "x":  0,
+                                                         "y":  30
+                                                     },
+                                         "id":  10,
+                                         "options":  {
+                                                         "content":  "**ìì§ ë°ì´í°ê° ììµëë¤.** íì¸ëì§ ìì ë©í¸ë¦­ì ì¿¼ë¦¬ë ë§ë¤ì§ ìììµëë¤.\n\nFastAPI ê³ì¸¡ ë° Prometheus ìì§ì ì¤ì í ë¤ ìì± ì¤í¬ë¦½í¸ë¥¼ ë¤ì ì¤ííì¸ì. ìì²­ ì/RPS/ì¤ë¥ì¨ìë ìì²­ ì¹´ì´í°ì ìí ì½ë, ìëµ ìê°ìë duration sum/count ëë histogramì´ íìí©ëë¤.",
+                                                         "mode":  "markdown"
+                                                     },
+                                         "title":  "FastAPI ìì²­ ì Â· ì í ê¸°ê° ì¦ê°ë Â· ìì§ ëê¸°",
+                                         "type":  "text"
+                                     },
+                                     {
+                                         "description":  "",
+                                         "gridPos":  {
+                                                         "h":  7,
+                                                         "w":  12,
+                                                         "x":  12,
+                                                         "y":  30
+                                                     },
+                                         "id":  11,
+                                         "options":  {
+                                                         "content":  "**ìì§ ë°ì´í°ê° ììµëë¤.** íì¸ëì§ ìì ë©í¸ë¦­ì ì¿¼ë¦¬ë ë§ë¤ì§ ìììµëë¤.\n\nFastAPI ê³ì¸¡ ë° Prometheus ìì§ì ì¤ì í ë¤ ìì± ì¤í¬ë¦½í¸ë¥¼ ë¤ì ì¤ííì¸ì. ìì²­ ì/RPS/ì¤ë¥ì¨ìë ìì²­ ì¹´ì´í°ì ìí ì½ë, ìëµ ìê°ìë duration sum/count ëë histogramì´ íìí©ëë¤.",
+                                                         "mode":  "markdown"
+                                                     },
+                                         "title":  "FastAPI RPS Â· ìì§ ëê¸°",
+                                         "type":  "text"
+                                     },
+                                     {
+                                         "description":  "",
+                                         "gridPos":  {
+                                                         "h":  7,
+                                                         "w":  12,
+                                                         "x":  0,
+                                                         "y":  37
+                                                     },
+                                         "id":  12,
+                                         "options":  {
+                                                         "content":  "**ìì§ ë°ì´í°ê° ììµëë¤.** íì¸ëì§ ìì ë©í¸ë¦­ì ì¿¼ë¦¬ë ë§ë¤ì§ ìììµëë¤.\n\nFastAPI ê³ì¸¡ ë° Prometheus ìì§ì ì¤ì í ë¤ ìì± ì¤í¬ë¦½í¸ë¥¼ ë¤ì ì¤ííì¸ì. ìì²­ ì/RPS/ì¤ë¥ì¨ìë ìì²­ ì¹´ì´í°ì ìí ì½ë, ìëµ ìê°ìë duration sum/count ëë histogramì´ íìí©ëë¤.",
+                                                         "mode":  "markdown"
+                                                     },
+                                         "title":  "FastAPI ìëµ ìê° Â· íê·  / p95 Â· ìì§ ëê¸°",
+                                         "type":  "text"
+                                     },
+                                     {
+                                         "description":  "",
+                                         "gridPos":  {
+                                                         "h":  7,
+                                                         "w":  12,
+                                                         "x":  12,
+                                                         "y":  37
+                                                     },
+                                         "id":  13,
+                                         "options":  {
+                                                         "content":  "**ìì§ ë°ì´í°ê° ììµëë¤.** íì¸ëì§ ìì ë©í¸ë¦­ì ì¿¼ë¦¬ë ë§ë¤ì§ ìììµëë¤.\n\nFastAPI ê³ì¸¡ ë° Prometheus ìì§ì ì¤ì í ë¤ ìì± ì¤í¬ë¦½í¸ë¥¼ ë¤ì ì¤ííì¸ì. ìì²­ ì/RPS/ì¤ë¥ì¨ìë ìì²­ ì¹´ì´í°ì ìí ì½ë, ìëµ ìê°ìë duration sum/count ëë histogramì´ íìí©ëë¤.",
+                                                         "mode":  "markdown"
+                                                     },
+                                         "title":  "HTTP ì¤ë¥ì¨ Â· 4xx / 5xx Â· ìì§ ëê¸°",
+                                         "type":  "text"
+                                     },
+                                     {
+                                         "description":  "",
+                                         "gridPos":  {
+                                                         "h":  4,
+                                                         "w":  24,
+                                                         "x":  0,
+                                                         "y":  44
+                                                     },
+                                         "id":  14,
+                                         "options":  {
+                                                         "content":  "Lokiìì íì¸ë ì¤í¸ë¦¼ìë§ ë¡ê·¸ ì¿¼ë¦¬ë¥¼ ì°ê²°í©ëë¤. FastAPI ì¤í¸ë¦¼ì´ íì¸ëììµëë¤. ìë² íí°ì ë¡ê·¸ ê²ìì´ë¥¼ ì¬ì©í  ì ììµëë¤.",
+                                                         "mode":  "markdown"
+                                                     },
+                                         "title":  "Alloy â Loki Â· ë¡ê·¸ ìì§ ìí",
+                                         "type":  "text"
+                                     },
+                                     {
+                                         "datasource":  {
+                                                            "type":  "loki",
+                                                            "uid":  "dg3gsp6pckjk0a"
+                                                        },
+                                         "description":  "Alloyìì Lokië¡ ë¤ì´ì¨ ì¤ì  ë¡ê·¸. server_ipë hostì IPì ê³ ì  ëìì ì´ì©í´ ì¿¼ë¦¬ ìì ì ë§ëë íí°ì© ë¼ë²¨ì\u0085ëë¤.",
+                                         "gridPos":  {
+                                                         "h":  12,
+                                                         "w":  24,
+                                                         "x":  0,
+                                                         "y":  48
+                                                     },
+                                         "id":  15,
+                                         "options":  {
+                                                         "dedupStrategy":  "none",
+                                                         "enableLogDetails":  true,
+                                                         "prettifyLogMessage":  false,
+                                                         "showCommonLabels":  false,
+                                                         "showLabels":  true,
+                                                         "showTime":  true,
+                                                         "sortOrder":  "Descending",
+                                                         "wrapLogMessage":  true
+                                                     },
+                                         "targets":  [
+                                                         {
+                                                             "datasource":  {
+                                                                                "type":  "loki",
+                                                                                "uid":  "dg3gsp6pckjk0a"
+                                                                            },
+                                                             "editorMode":  "code",
+                                                             "expr":  "{job=\"fastapi\",host=~\"fastapi1|fastapi2\"} | label_format server_ip=`{{ if eq .host \"fastapi1\" }}[IP_REDACTED]{{ else if eq .host \"fastapi2\" }}[IP_REDACTED]{{ end }}` | server_ip=~`${server:regex}` |= ${search:doublequote}",
+                                                             "queryType":  "range",
+                                                             "refId":  "A"
+                                                         }
+                                                     ],
+                                         "title":  "FastAPI ë¡ê·¸",
+                                         "type":  "logs"
+                                     }
+                                 ],
+                      "refresh":  "30s",
+                      "schemaVersion":  42,
+                      "tags":  [
+                                   "culturepick",
+                                   "fastapi",
+                                   "node-exporter",
+                                   "loki"
+                               ],
+                      "templating":  {
+                                         "list":  [
+                                                      {
+                                                          "allValue":  "192[.]168[.]0[.](156|157)",
+                                                          "current":  {
+                                                                          "selected":  true,
+                                                                          "text":  [
+                                                                                       "All"
+                                                                                   ],
+                                                                          "value":  [
+                                                                                        "$__all"
+                                                                                    ]
+                                                                      },
+                                                          "hide":  0,
+                                                          "includeAll":  true,
+                                                          "label":  "ìë²",
+                                                          "multi":  true,
+                                                          "name":  "server",
+                                                          "options":  [
+                                                                          {
+                                                                              "selected":  true,
+                                                                              "text":  "All",
+                                                                              "value":  "$__all"
+                                                                          },
+                                                                          {
+                                                                              "selected":  false,
+                                                                              "text":  "FastAPI1",
+                                                                              "value":  "[IP_REDACTED]"
+                                                                          },
+                                                                          {
+                                                                              "selected":  false,
+                                                                              "text":  "FastAPI2",
+                                                                              "value":  "[IP_REDACTED]"
+                                                                          }
+                                                                      ],
+                                                          "query":  "FastAPI1 : [IP_REDACTED],FastAPI2 : [IP_REDACTED]",
+                                                          "type":  "custom"
+                                                      },
+                                                      {
+                                                          "current":  {
+                                                                          "text":  "",
+                                                                          "value":  ""
+                                                                      },
+                                                          "hide":  0,
+                                                          "label":  "ë¡ê·¸ ê²ìì´",
+                                                          "name":  "search",
+                                                          "options":  [
+
+                                                                      ],
+                                                          "query":  "",
+                                                          "type":  "textbox"
+                                                      }
+                                                  ]
+                                     },
+                      "time":  {
+                                   "from":  "now-1h",
+                                   "to":  "now"
+                               },
+                      "timepicker":  {
+                                         "refresh_intervals":  [
+                                                                   "15s",
+                                                                   "30s",
+                                                                   "1m",
+                                                                   "5m"
+                                                               ]
+                                     },
+                      "timezone":  "browser",
+                      "title":  "CulturePick Â· FastAPI1 / FastAPI2",
+                      "uid":  "culturepick-fastapi-servers",
+                      "version":  5,
+                      "weekStart":  ""
+                  }
+}

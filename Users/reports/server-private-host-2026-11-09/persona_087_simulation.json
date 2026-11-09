@@ -1,0 +1,63 @@
+{
+  "persona_id": "persona_087",
+  "started_at": "2026-11-09T00:26:42.427710+00:00",
+  "ended_at": "2026-11-09T00:26:46.036034+00:00",
+  "end_reason": "페이지 로딩 또는 실행 실패",
+  "interests": {
+    "categories": [
+      "연극"
+    ],
+    "tags": [
+      "가족",
+      "서정적인",
+      "깊이 감상",
+      "코미디극",
+      "역사 이야기",
+      "체험형",
+      "해설과 함께",
+      "야외",
+      "실내",
+      "추리극"
+    ]
+  },
+  "probabilities": {
+    "persona_id": "persona_087",
+    "action_probabilities": {
+      "search": 0.181571,
+      "content_view": 0.272356,
+      "favorite_add": 0.211076,
+      "favorite_remove": 0.045393,
+      "review_write": 0.039946,
+      "recommendation_click": 0.108942,
+      "purchase_simulation": 0.140717
+    },
+    "category_probabilities": {
+      "전시": 0.06818181818181819,
+      "뮤지컬": 0.06818181818181819,
+      "연극": 0.6590909090909092,
+      "음악": 0.06818181818181819,
+      "무용": 0.06818181818181819,
+      "축제": 0.06818181818181819
+    }
+  },
+  "actions": [
+    {
+      "timestamp": "2026-11-09T00:26:45.983117+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE"
+    },
+    {
+      "timestamp": "2026-11-09T00:26:45.988908+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/\nCall log:\n  - navigating to \"https://www.aiready.p-e.kr/\", waiting until \"domcontentloaded\"\n"
+    }
+  ],
+  "viewed_contents": [],
+  "summary": {
+    "content_count_by_category": {},
+    "content_count_by_tag": {},
+    "viewed_content_ids": []
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "page": 16,
+  "records": [
+    {
+      "page": 16,
+      "event_id": "42230898",
+      "title": "엔트로피의 정원",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42230898&qvt=0&query=%EC%97%94%ED%8A%B8%EB%A1%9C%ED%94%BC%EC%9D%98%20%EC%A0%95%EC%9B%90",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261014_96%2F1791955684781Of3hc_JPEG%2F360_main_thumb_url_1791955684741.jpg",
+      "period": "2026.10.17.~2026.11.14.",
+      "venue": "아트프로젝트 씨오",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=1797329706"
+    },
+    {
+      "page": 16,
+      "event_id": "42230390",
+      "title": "왕칸나 개인전",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42230390&qvt=0&query=%EC%99%95%EC%B9%B8%EB%82%98%20%EA%B0%9C%EC%9D%B8%EC%A0%84",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261014_218%2F1791945643088keGJt_JPEG%2F360_main_thumb_url_1791945643062.jpg",
+      "period": "2026.10.17.~2026.11.14.",
+      "venue": "갤러리 이행",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=2063448705"
+    },
+    {
+      "page": 16,
+      "event_id": "42225932",
+      "title": "희현 개인전",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42225932&qvt=0&query=%ED%9D%AC%ED%98%84%20%EA%B0%9C%EC%9D%B8%EC%A0%84",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261013_54%2F1791886968062b5T9c_JPEG%2F360_main_thumb_url_1791886968029.jpg",
+      "period": "2026.11.02.~2026.11.27.",
+      "venue": "비커밍갤러리",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=1125757573"
+    },
+    {
+      "page": 16,
+      "event_id": "42224258",
+      "title": "오의영 개인전",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42224258&qvt=0&query=%EC%98%A4%EC%9D%98%EC%98%81%20%EA%B0%9C%EC%9D%B8%EC%A0%84",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261013_184%2F1791873698361JmYn0_JPEG%2F360_main_thumb_url_1791873698343.jpg",
+      "period": "2026.10.18.~2026.11.11.",
+      "venue": "갤러리한결",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=2034150599"
+    }
+  ]
+}

@@ -1,0 +1,5222 @@
+{
+  "ordinal": 6,
+  "start": "2026-11-07T15:37:42.708343+00:00",
+  "line_start": 123419,
+  "people": {
+    "persona_001": {
+      "id": "persona_001",
+      "start": "2026-11-07T15:37:42.708343+00:00",
+      "start_line": 123419,
+      "save_lines": [
+        123425
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:37:46.339831+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123420,
+          "candidates": [
+            "persona_001"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:37:46.342859+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123421,
+          "candidates": [
+            "persona_001"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:37:46.394753+00:00",
+      "end_line": 123426
+    },
+    "persona_002": {
+      "id": "persona_002",
+      "start": "2026-11-07T15:38:16.620540+00:00",
+      "start_line": 123427,
+      "save_lines": [
+        123433
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:38:20.194393+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123428,
+          "candidates": [
+            "persona_002"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:38:20.199799+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123429,
+          "candidates": [
+            "persona_002"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:38:20.253164+00:00",
+      "end_line": 123434
+    },
+    "persona_003": {
+      "id": "persona_003",
+      "start": "2026-11-07T15:39:00.282469+00:00",
+      "start_line": 123435,
+      "save_lines": [
+        123441
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:39:03.843400+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123436,
+          "candidates": [
+            "persona_003"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:39:03.846958+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123437,
+          "candidates": [
+            "persona_003"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:39:03.902458+00:00",
+      "end_line": 123442
+    },
+    "persona_004": {
+      "id": "persona_004",
+      "start": "2026-11-07T15:39:16.526825+00:00",
+      "start_line": 123443,
+      "save_lines": [
+        123449
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:39:20.101576+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123444,
+          "candidates": [
+            "persona_004"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:39:20.105525+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123445,
+          "candidates": [
+            "persona_004"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:39:20.157184+00:00",
+      "end_line": 123450
+    },
+    "persona_005": {
+      "id": "persona_005",
+      "start": "2026-11-07T15:39:25.390880+00:00",
+      "start_line": 123451,
+      "save_lines": [
+        123457
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:39:28.930095+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123452,
+          "candidates": [
+            "persona_005"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:39:28.933958+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123453,
+          "candidates": [
+            "persona_005"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:39:28.986783+00:00",
+      "end_line": 123458
+    },
+    "persona_006": {
+      "id": "persona_006",
+      "start": "2026-11-07T15:39:34.269816+00:00",
+      "start_line": 123459,
+      "save_lines": [
+        123465
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:39:37.827731+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123460,
+          "candidates": [
+            "persona_006"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:39:37.832019+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123461,
+          "candidates": [
+            "persona_006"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:39:37.890690+00:00",
+      "end_line": 123466
+    },
+    "persona_007": {
+      "id": "persona_007",
+      "start": "2026-11-07T15:39:42.095727+00:00",
+      "start_line": 123467,
+      "save_lines": [
+        123473
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:39:45.630814+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123468,
+          "candidates": [
+            "persona_007"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:39:45.633725+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123469,
+          "candidates": [
+            "persona_007"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:39:45.694393+00:00",
+      "end_line": 123474
+    },
+    "persona_008": {
+      "id": "persona_008",
+      "start": "2026-11-07T15:40:10.393433+00:00",
+      "start_line": 123475,
+      "save_lines": [
+        123481
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:40:13.921977+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123476,
+          "candidates": [
+            "persona_008"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:40:13.928327+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123477,
+          "candidates": [
+            "persona_008"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:40:13.980137+00:00",
+      "end_line": 123482
+    },
+    "persona_009": {
+      "id": "persona_009",
+      "start": "2026-11-07T15:40:46.143511+00:00",
+      "start_line": 123483,
+      "save_lines": [
+        123489
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:40:49.695791+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123484,
+          "candidates": [
+            "persona_009"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:40:49.698976+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123485,
+          "candidates": [
+            "persona_009"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:40:49.754182+00:00",
+      "end_line": 123490
+    },
+    "persona_010": {
+      "id": "persona_010",
+      "start": "2026-11-07T15:41:28.822655+00:00",
+      "start_line": 123491,
+      "save_lines": [
+        123497
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:41:32.382649+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123492,
+          "candidates": [
+            "persona_010"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:41:32.388131+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123493,
+          "candidates": [
+            "persona_010"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:41:32.448876+00:00",
+      "end_line": 123498
+    },
+    "persona_011": {
+      "id": "persona_011",
+      "start": "2026-11-07T15:41:41.554132+00:00",
+      "start_line": 123499,
+      "save_lines": [
+        123505
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:41:45.120878+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123500,
+          "candidates": [
+            "persona_011"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:41:45.124009+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123501,
+          "candidates": [
+            "persona_011"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:41:45.176762+00:00",
+      "end_line": 123506
+    },
+    "persona_012": {
+      "id": "persona_012",
+      "start": "2026-11-07T15:41:55.542356+00:00",
+      "start_line": 123507,
+      "save_lines": [
+        123513
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:41:59.076086+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123508,
+          "candidates": [
+            "persona_012"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:41:59.079573+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123509,
+          "candidates": [
+            "persona_012"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:41:59.131474+00:00",
+      "end_line": 123514
+    },
+    "persona_013": {
+      "id": "persona_013",
+      "start": "2026-11-07T15:42:15.041919+00:00",
+      "start_line": 123515,
+      "save_lines": [
+        123521
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:42:18.592649+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123516,
+          "candidates": [
+            "persona_013"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:42:18.598616+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123517,
+          "candidates": [
+            "persona_013"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:42:18.651809+00:00",
+      "end_line": 123522
+    },
+    "persona_014": {
+      "id": "persona_014",
+      "start": "2026-11-07T15:42:23.727775+00:00",
+      "start_line": 123523,
+      "save_lines": [
+        123529
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:42:27.299650+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123524,
+          "candidates": [
+            "persona_014"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:42:27.303214+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123525,
+          "candidates": [
+            "persona_014"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:42:27.358904+00:00",
+      "end_line": 123530
+    },
+    "persona_015": {
+      "id": "persona_015",
+      "start": "2026-11-07T15:42:35.647418+00:00",
+      "start_line": 123531,
+      "save_lines": [
+        123537
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:42:39.200879+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123532,
+          "candidates": [
+            "persona_015"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:42:39.209147+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123533,
+          "candidates": [
+            "persona_015"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:42:39.264241+00:00",
+      "end_line": 123538
+    },
+    "persona_016": {
+      "id": "persona_016",
+      "start": "2026-11-07T15:42:48.661470+00:00",
+      "start_line": 123539,
+      "save_lines": [
+        123545
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:42:52.322928+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123540,
+          "candidates": [
+            "persona_016"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:42:52.328246+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123541,
+          "candidates": [
+            "persona_016"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:42:52.382761+00:00",
+      "end_line": 123546
+    },
+    "persona_017": {
+      "id": "persona_017",
+      "start": "2026-11-07T15:43:31.121583+00:00",
+      "start_line": 123547,
+      "save_lines": [
+        123553
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:43:34.694833+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123548,
+          "candidates": [
+            "persona_017"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:43:34.694991+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123549,
+          "candidates": [
+            "persona_017"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:43:34.751745+00:00",
+      "end_line": 123554
+    },
+    "persona_018": {
+      "id": "persona_018",
+      "start": "2026-11-07T15:44:13.981653+00:00",
+      "start_line": 123555,
+      "save_lines": [
+        123561
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:44:17.511436+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123556,
+          "candidates": [
+            "persona_018"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:44:17.511617+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123557,
+          "candidates": [
+            "persona_018"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:44:17.564561+00:00",
+      "end_line": 123562
+    },
+    "persona_019": {
+      "id": "persona_019",
+      "start": "2026-11-07T15:44:46.564937+00:00",
+      "start_line": 123563,
+      "save_lines": [
+        123569
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:44:50.148768+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123564,
+          "candidates": [
+            "persona_019"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:44:50.152124+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123565,
+          "candidates": [
+            "persona_019"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:44:50.208440+00:00",
+      "end_line": 123570
+    },
+    "persona_020": {
+      "id": "persona_020",
+      "start": "2026-11-07T15:45:22.042620+00:00",
+      "start_line": 123571,
+      "save_lines": [
+        123577
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:45:25.605662+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123572,
+          "candidates": [
+            "persona_020"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:45:25.609528+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123573,
+          "candidates": [
+            "persona_020"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:45:25.663005+00:00",
+      "end_line": 123578
+    },
+    "persona_021": {
+      "id": "persona_021",
+      "start": "2026-11-07T15:45:31.347430+00:00",
+      "start_line": 123579,
+      "save_lines": [
+        123585
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:45:34.879083+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123580,
+          "candidates": [
+            "persona_021"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:45:34.885990+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123581,
+          "candidates": [
+            "persona_021"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:45:34.942178+00:00",
+      "end_line": 123586
+    },
+    "persona_022": {
+      "id": "persona_022",
+      "start": "2026-11-07T15:46:07.657722+00:00",
+      "start_line": 123587,
+      "save_lines": [
+        123593
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:46:11.233783+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123588,
+          "candidates": [
+            "persona_022"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:46:11.242062+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123589,
+          "candidates": [
+            "persona_022"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:46:11.299308+00:00",
+      "end_line": 123594
+    },
+    "persona_023": {
+      "id": "persona_023",
+      "start": "2026-11-07T15:46:39.745908+00:00",
+      "start_line": 123595,
+      "save_lines": [
+        123601
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:46:43.302830+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123596,
+          "candidates": [
+            "persona_023"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:46:43.307143+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123597,
+          "candidates": [
+            "persona_023"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:46:43.362390+00:00",
+      "end_line": 123602
+    },
+    "persona_024": {
+      "id": "persona_024",
+      "start": "2026-11-07T15:47:17.265966+00:00",
+      "start_line": 123603,
+      "save_lines": [
+        123609
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:47:20.798213+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123604,
+          "candidates": [
+            "persona_024"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:47:20.803030+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123605,
+          "candidates": [
+            "persona_024"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:47:20.857129+00:00",
+      "end_line": 123610
+    },
+    "persona_025": {
+      "id": "persona_025",
+      "start": "2026-11-07T15:47:35.133956+00:00",
+      "start_line": 123611,
+      "save_lines": [
+        123617
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:47:38.657637+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123612,
+          "candidates": [
+            "persona_025"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:47:38.662588+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123613,
+          "candidates": [
+            "persona_025"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:47:38.715705+00:00",
+      "end_line": 123618
+    },
+    "persona_026": {
+      "id": "persona_026",
+      "start": "2026-11-07T15:48:11.257963+00:00",
+      "start_line": 123619,
+      "save_lines": [
+        123625
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:48:14.877453+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123620,
+          "candidates": [
+            "persona_026"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:48:14.883989+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123621,
+          "candidates": [
+            "persona_026"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:48:14.939380+00:00",
+      "end_line": 123626
+    },
+    "persona_027": {
+      "id": "persona_027",
+      "start": "2026-11-07T15:48:25.162221+00:00",
+      "start_line": 123627,
+      "save_lines": [
+        123633
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:48:28.708339+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123628,
+          "candidates": [
+            "persona_027"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:48:28.711472+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123629,
+          "candidates": [
+            "persona_027"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:48:28.766939+00:00",
+      "end_line": 123634
+    },
+    "persona_028": {
+      "id": "persona_028",
+      "start": "2026-11-07T15:48:35.228608+00:00",
+      "start_line": 123635,
+      "save_lines": [
+        123641
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:48:38.753851+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123636,
+          "candidates": [
+            "persona_028"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:48:38.759131+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123637,
+          "candidates": [
+            "persona_028"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:48:38.812316+00:00",
+      "end_line": 123642
+    },
+    "persona_029": {
+      "id": "persona_029",
+      "start": "2026-11-07T15:48:52.521340+00:00",
+      "start_line": 123643,
+      "save_lines": [
+        123649
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:48:56.097827+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123644,
+          "candidates": [
+            "persona_029"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:48:56.104995+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123645,
+          "candidates": [
+            "persona_029"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:48:56.158580+00:00",
+      "end_line": 123650
+    },
+    "persona_030": {
+      "id": "persona_030",
+      "start": "2026-11-07T15:49:36.834012+00:00",
+      "start_line": 123651,
+      "save_lines": [
+        123657
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:49:40.386152+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123652,
+          "candidates": [
+            "persona_030"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:49:40.387772+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123653,
+          "candidates": [
+            "persona_030"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:49:40.441858+00:00",
+      "end_line": 123658
+    },
+    "persona_031": {
+      "id": "persona_031",
+      "start": "2026-11-07T15:49:59.950582+00:00",
+      "start_line": 123659,
+      "save_lines": [
+        123665
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:50:03.490807+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123660,
+          "candidates": [
+            "persona_031"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:50:03.495526+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123661,
+          "candidates": [
+            "persona_031"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:50:03.569417+00:00",
+      "end_line": 123666
+    },
+    "persona_032": {
+      "id": "persona_032",
+      "start": "2026-11-07T15:50:17.691141+00:00",
+      "start_line": 123667,
+      "save_lines": [
+        123673
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:50:21.218989+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123668,
+          "candidates": [
+            "persona_032"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:50:21.223401+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123669,
+          "candidates": [
+            "persona_032"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:50:21.275648+00:00",
+      "end_line": 123674
+    },
+    "persona_033": {
+      "id": "persona_033",
+      "start": "2026-11-07T15:50:23.085088+00:00",
+      "start_line": 123675,
+      "save_lines": [
+        123681
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:50:26.655649+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123676,
+          "candidates": [
+            "persona_033"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:50:26.662204+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123677,
+          "candidates": [
+            "persona_033"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:50:26.715709+00:00",
+      "end_line": 123682
+    },
+    "persona_034": {
+      "id": "persona_034",
+      "start": "2026-11-07T15:50:37.627458+00:00",
+      "start_line": 123683,
+      "save_lines": [
+        123689
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:50:41.182824+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123684,
+          "candidates": [
+            "persona_034"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:50:41.187597+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123685,
+          "candidates": [
+            "persona_034"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:50:41.238408+00:00",
+      "end_line": 123690
+    },
+    "persona_035": {
+      "id": "persona_035",
+      "start": "2026-11-07T15:50:44.958579+00:00",
+      "start_line": 123691,
+      "save_lines": [
+        123697
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:50:48.487844+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123692,
+          "candidates": [
+            "persona_035"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:50:48.490521+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123693,
+          "candidates": [
+            "persona_035"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:50:48.546912+00:00",
+      "end_line": 123698
+    },
+    "persona_036": {
+      "id": "persona_036",
+      "start": "2026-11-07T15:50:51.538377+00:00",
+      "start_line": 123699,
+      "save_lines": [
+        123705
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:50:55.075682+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123700,
+          "candidates": [
+            "persona_036"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:50:55.077127+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123701,
+          "candidates": [
+            "persona_036"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:50:55.131991+00:00",
+      "end_line": 123706
+    },
+    "persona_037": {
+      "id": "persona_037",
+      "start": "2026-11-07T15:51:25.655370+00:00",
+      "start_line": 123707,
+      "save_lines": [
+        123713
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:51:29.184148+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123708,
+          "candidates": [
+            "persona_037"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:51:29.187532+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123709,
+          "candidates": [
+            "persona_037"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:51:29.238720+00:00",
+      "end_line": 123714
+    },
+    "persona_038": {
+      "id": "persona_038",
+      "start": "2026-11-07T15:51:59.196220+00:00",
+      "start_line": 123715,
+      "save_lines": [
+        123721
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:52:02.724432+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123716,
+          "candidates": [
+            "persona_038"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:52:02.726529+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123717,
+          "candidates": [
+            "persona_038"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:52:02.779347+00:00",
+      "end_line": 123722
+    },
+    "persona_039": {
+      "id": "persona_039",
+      "start": "2026-11-07T15:52:33.481077+00:00",
+      "start_line": 123723,
+      "save_lines": [
+        123729
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:52:37.024498+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123724,
+          "candidates": [
+            "persona_039"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:52:37.029498+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123725,
+          "candidates": [
+            "persona_039"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:52:37.080878+00:00",
+      "end_line": 123730
+    },
+    "persona_040": {
+      "id": "persona_040",
+      "start": "2026-11-07T15:52:48.629771+00:00",
+      "start_line": 123731,
+      "save_lines": [
+        123737
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:52:52.195244+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123732,
+          "candidates": [
+            "persona_040"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:52:52.198552+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123733,
+          "candidates": [
+            "persona_040"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:52:52.250404+00:00",
+      "end_line": 123738
+    },
+    "persona_041": {
+      "id": "persona_041",
+      "start": "2026-11-07T15:53:28.396564+00:00",
+      "start_line": 123739,
+      "save_lines": [
+        123745
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:53:32.065058+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123740,
+          "candidates": [
+            "persona_041"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:53:32.071429+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123741,
+          "candidates": [
+            "persona_041"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:53:32.123798+00:00",
+      "end_line": 123746
+    },
+    "persona_042": {
+      "id": "persona_042",
+      "start": "2026-11-07T15:54:10.569888+00:00",
+      "start_line": 123747,
+      "save_lines": [
+        123753
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:54:14.111895+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123748,
+          "candidates": [
+            "persona_042"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:54:14.118353+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123749,
+          "candidates": [
+            "persona_042"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:54:14.171844+00:00",
+      "end_line": 123754
+    },
+    "persona_043": {
+      "id": "persona_043",
+      "start": "2026-11-07T15:54:36.089172+00:00",
+      "start_line": 123755,
+      "save_lines": [
+        123761
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:54:39.651218+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123756,
+          "candidates": [
+            "persona_043"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:54:39.655444+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123757,
+          "candidates": [
+            "persona_043"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:54:39.709001+00:00",
+      "end_line": 123762
+    },
+    "persona_044": {
+      "id": "persona_044",
+      "start": "2026-11-07T15:54:55.605742+00:00",
+      "start_line": 123763,
+      "save_lines": [
+        123769
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:54:59.169271+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123764,
+          "candidates": [
+            "persona_044"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:54:59.176458+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123765,
+          "candidates": [
+            "persona_044"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:54:59.231300+00:00",
+      "end_line": 123770
+    },
+    "persona_045": {
+      "id": "persona_045",
+      "start": "2026-11-07T15:55:10.100982+00:00",
+      "start_line": 123771,
+      "save_lines": [
+        123777
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:55:13.635849+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123772,
+          "candidates": [
+            "persona_045"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:55:13.640046+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123773,
+          "candidates": [
+            "persona_045"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:55:13.691981+00:00",
+      "end_line": 123778
+    },
+    "persona_046": {
+      "id": "persona_046",
+      "start": "2026-11-07T15:55:46.939063+00:00",
+      "start_line": 123779,
+      "save_lines": [
+        123785
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:55:50.502398+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123780,
+          "candidates": [
+            "persona_046"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:55:50.502553+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123781,
+          "candidates": [
+            "persona_046"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:55:50.558911+00:00",
+      "end_line": 123786
+    },
+    "persona_047": {
+      "id": "persona_047",
+      "start": "2026-11-07T15:56:01.641955+00:00",
+      "start_line": 123787,
+      "save_lines": [
+        123793
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:56:05.219694+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123788,
+          "candidates": [
+            "persona_047"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:56:05.225894+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123789,
+          "candidates": [
+            "persona_047"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:56:05.280207+00:00",
+      "end_line": 123794
+    },
+    "persona_048": {
+      "id": "persona_048",
+      "start": "2026-11-07T15:56:06.913683+00:00",
+      "start_line": 123795,
+      "save_lines": [
+        123801
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:56:10.464110+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123796,
+          "candidates": [
+            "persona_048"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:56:10.470665+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123797,
+          "candidates": [
+            "persona_048"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:56:10.523413+00:00",
+      "end_line": 123802
+    },
+    "persona_049": {
+      "id": "persona_049",
+      "start": "2026-11-07T15:56:47.904452+00:00",
+      "start_line": 123803,
+      "save_lines": [
+        123809
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:56:51.420901+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123804,
+          "candidates": [
+            "persona_049"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:56:51.427848+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123805,
+          "candidates": [
+            "persona_049"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:56:51.480946+00:00",
+      "end_line": 123810
+    },
+    "persona_050": {
+      "id": "persona_050",
+      "start": "2026-11-07T15:57:10.556965+00:00",
+      "start_line": 123811,
+      "save_lines": [
+        123817
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:57:14.080947+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123812,
+          "candidates": [
+            "persona_050"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:57:14.088514+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123813,
+          "candidates": [
+            "persona_050"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:57:14.140324+00:00",
+      "end_line": 123818
+    },
+    "persona_051": {
+      "id": "persona_051",
+      "start": "2026-11-07T15:57:52.025732+00:00",
+      "start_line": 123819,
+      "save_lines": [
+        123825
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:57:55.555726+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123820,
+          "candidates": [
+            "persona_051"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:57:55.560195+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123821,
+          "candidates": [
+            "persona_051"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:57:55.612601+00:00",
+      "end_line": 123826
+    },
+    "persona_052": {
+      "id": "persona_052",
+      "start": "2026-11-07T15:58:29.699431+00:00",
+      "start_line": 123827,
+      "save_lines": [
+        123833
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:58:33.380942+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123828,
+          "candidates": [
+            "persona_052"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:58:33.383267+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123829,
+          "candidates": [
+            "persona_052"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:58:33.437854+00:00",
+      "end_line": 123834
+    },
+    "persona_053": {
+      "id": "persona_053",
+      "start": "2026-11-07T15:59:02.063158+00:00",
+      "start_line": 123835,
+      "save_lines": [
+        123841
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:59:05.640737+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123836,
+          "candidates": [
+            "persona_053"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:59:05.640900+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123837,
+          "candidates": [
+            "persona_053"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:59:05.693480+00:00",
+      "end_line": 123842
+    },
+    "persona_054": {
+      "id": "persona_054",
+      "start": "2026-11-07T15:59:24.233863+00:00",
+      "start_line": 123843,
+      "save_lines": [
+        123849
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T15:59:27.777633+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123844,
+          "candidates": [
+            "persona_054"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T15:59:27.784622+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123845,
+          "candidates": [
+            "persona_054"
+          ]
+        }
+      ],
+      "end": "2026-11-07T15:59:27.839109+00:00",
+      "end_line": 123850
+    },
+    "persona_055": {
+      "id": "persona_055",
+      "start": "2026-11-07T16:00:04.684251+00:00",
+      "start_line": 123851,
+      "save_lines": [
+        123857
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:00:08.224266+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123852,
+          "candidates": [
+            "persona_055"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:00:08.230512+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123853,
+          "candidates": [
+            "persona_055"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:00:08.282981+00:00",
+      "end_line": 123858
+    },
+    "persona_056": {
+      "id": "persona_056",
+      "start": "2026-11-07T16:00:30.559999+00:00",
+      "start_line": 123859,
+      "save_lines": [
+        123865
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:00:34.083098+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123860,
+          "candidates": [
+            "persona_056"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:00:34.088559+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123861,
+          "candidates": [
+            "persona_056"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:00:34.144604+00:00",
+      "end_line": 123866
+    },
+    "persona_057": {
+      "id": "persona_057",
+      "start": "2026-11-07T16:00:55.168986+00:00",
+      "start_line": 123867,
+      "save_lines": [
+        123873
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:00:58.725070+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123868,
+          "candidates": [
+            "persona_057"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:00:58.729734+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123869,
+          "candidates": [
+            "persona_057"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:00:58.783145+00:00",
+      "end_line": 123874
+    },
+    "persona_058": {
+      "id": "persona_058",
+      "start": "2026-11-07T16:01:03.572671+00:00",
+      "start_line": 123875,
+      "save_lines": [
+        123881
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:01:07.106862+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123876,
+          "candidates": [
+            "persona_058"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:01:07.113188+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123877,
+          "candidates": [
+            "persona_058"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:01:07.166187+00:00",
+      "end_line": 123882
+    },
+    "persona_059": {
+      "id": "persona_059",
+      "start": "2026-11-07T16:01:21.561825+00:00",
+      "start_line": 123883,
+      "save_lines": [
+        123889
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:01:25.092652+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123884,
+          "candidates": [
+            "persona_059"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:01:25.096761+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123885,
+          "candidates": [
+            "persona_059"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:01:25.146970+00:00",
+      "end_line": 123890
+    },
+    "persona_060": {
+      "id": "persona_060",
+      "start": "2026-11-07T16:01:29.121719+00:00",
+      "start_line": 123891,
+      "save_lines": [
+        123897
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:01:32.643117+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123892,
+          "candidates": [
+            "persona_060"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:01:32.643267+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123893,
+          "candidates": [
+            "persona_060"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:01:32.700517+00:00",
+      "end_line": 123898
+    },
+    "persona_061": {
+      "id": "persona_061",
+      "start": "2026-11-07T16:01:58.972551+00:00",
+      "start_line": 123899,
+      "save_lines": [
+        123905
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:02:02.532947+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123900,
+          "candidates": [
+            "persona_061"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:02:02.535624+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123901,
+          "candidates": [
+            "persona_061"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:02:02.588369+00:00",
+      "end_line": 123906
+    },
+    "persona_062": {
+      "id": "persona_062",
+      "start": "2026-11-07T16:02:05.497503+00:00",
+      "start_line": 123907,
+      "save_lines": [
+        123913
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:02:09.062559+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123908,
+          "candidates": [
+            "persona_062"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:02:09.065061+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123909,
+          "candidates": [
+            "persona_062"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:02:09.118142+00:00",
+      "end_line": 123914
+    },
+    "persona_063": {
+      "id": "persona_063",
+      "start": "2026-11-07T16:02:23.840931+00:00",
+      "start_line": 123915,
+      "save_lines": [
+        123921
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:02:27.431045+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123916,
+          "candidates": [
+            "persona_063"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:02:27.434252+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123917,
+          "candidates": [
+            "persona_063"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:02:27.488713+00:00",
+      "end_line": 123922
+    },
+    "persona_064": {
+      "id": "persona_064",
+      "start": "2026-11-07T16:02:42.835431+00:00",
+      "start_line": 123923,
+      "save_lines": [
+        123929
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:02:46.376420+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123924,
+          "candidates": [
+            "persona_064"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:02:46.378784+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123925,
+          "candidates": [
+            "persona_064"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:02:46.430372+00:00",
+      "end_line": 123930
+    },
+    "persona_065": {
+      "id": "persona_065",
+      "start": "2026-11-07T16:03:07.718439+00:00",
+      "start_line": 123931,
+      "save_lines": [
+        123937
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:03:11.265117+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123932,
+          "candidates": [
+            "persona_065"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:03:11.272145+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123933,
+          "candidates": [
+            "persona_065"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:03:11.328092+00:00",
+      "end_line": 123938
+    },
+    "persona_066": {
+      "id": "persona_066",
+      "start": "2026-11-07T16:03:51.656743+00:00",
+      "start_line": 123939,
+      "save_lines": [
+        123945
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:03:55.296246+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123940,
+          "candidates": [
+            "persona_066"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:03:55.302571+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123941,
+          "candidates": [
+            "persona_066"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:03:55.354056+00:00",
+      "end_line": 123946
+    },
+    "persona_067": {
+      "id": "persona_067",
+      "start": "2026-11-07T16:04:32.047599+00:00",
+      "start_line": 123947,
+      "save_lines": [
+        123953
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:04:35.555028+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123948,
+          "candidates": [
+            "persona_067"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:04:35.561487+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123949,
+          "candidates": [
+            "persona_067"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:04:35.617613+00:00",
+      "end_line": 123954
+    },
+    "persona_068": {
+      "id": "persona_068",
+      "start": "2026-11-07T16:04:51.265606+00:00",
+      "start_line": 123955,
+      "save_lines": [
+        123961
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:04:54.815678+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123956,
+          "candidates": [
+            "persona_068"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:04:54.823229+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123957,
+          "candidates": [
+            "persona_068"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:04:54.881073+00:00",
+      "end_line": 123962
+    },
+    "persona_069": {
+      "id": "persona_069",
+      "start": "2026-11-07T16:05:16.783553+00:00",
+      "start_line": 123963,
+      "save_lines": [
+        123969
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:05:20.287556+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123964,
+          "candidates": [
+            "persona_069"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:05:20.291047+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123965,
+          "candidates": [
+            "persona_069"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:05:20.348376+00:00",
+      "end_line": 123970
+    },
+    "persona_070": {
+      "id": "persona_070",
+      "start": "2026-11-07T16:05:28.719974+00:00",
+      "start_line": 123971,
+      "save_lines": [
+        123977
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:05:32.253966+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123972,
+          "candidates": [
+            "persona_070"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:05:32.259831+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123973,
+          "candidates": [
+            "persona_070"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:05:32.311146+00:00",
+      "end_line": 123978
+    },
+    "persona_071": {
+      "id": "persona_071",
+      "start": "2026-11-07T16:06:05.980105+00:00",
+      "start_line": 123979,
+      "save_lines": [
+        123985
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:06:09.569149+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123980,
+          "candidates": [
+            "persona_071"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:06:09.578780+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123981,
+          "candidates": [
+            "persona_071"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:06:09.632329+00:00",
+      "end_line": 123986
+    },
+    "persona_072": {
+      "id": "persona_072",
+      "start": "2026-11-07T16:06:28.783770+00:00",
+      "start_line": 123987,
+      "save_lines": [
+        123993
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:06:32.356582+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123988,
+          "candidates": [
+            "persona_072"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:06:32.360452+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123989,
+          "candidates": [
+            "persona_072"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:06:32.410411+00:00",
+      "end_line": 123994
+    },
+    "persona_073": {
+      "id": "persona_073",
+      "start": "2026-11-07T16:06:56.474158+00:00",
+      "start_line": 123995,
+      "save_lines": [
+        124001
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:07:00.002789+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 123996,
+          "candidates": [
+            "persona_073"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:07:00.006520+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 123997,
+          "candidates": [
+            "persona_073"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:07:00.060013+00:00",
+      "end_line": 124002
+    },
+    "persona_074": {
+      "id": "persona_074",
+      "start": "2026-11-07T16:07:36.569576+00:00",
+      "start_line": 124003,
+      "save_lines": [
+        124009
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:07:40.127751+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 124004,
+          "candidates": [
+            "persona_074"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:07:40.133512+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 124005,
+          "candidates": [
+            "persona_074"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:07:40.189198+00:00",
+      "end_line": 124010
+    },
+    "persona_075": {
+      "id": "persona_075",
+      "start": "2026-11-07T16:07:54.118833+00:00",
+      "start_line": 124011,
+      "save_lines": [
+        124017
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:07:57.666847+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 124012,
+          "candidates": [
+            "persona_075"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:07:57.672506+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 124013,
+          "candidates": [
+            "persona_075"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:07:57.722414+00:00",
+      "end_line": 124018
+    },
+    "persona_076": {
+      "id": "persona_076",
+      "start": "2026-11-07T16:08:00.863099+00:00",
+      "start_line": 124019,
+      "save_lines": [
+        124025
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:08:04.389479+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 124020,
+          "candidates": [
+            "persona_076"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:08:04.392808+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 124021,
+          "candidates": [
+            "persona_076"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:08:04.440916+00:00",
+      "end_line": 124026
+    },
+    "persona_077": {
+      "id": "persona_077",
+      "start": "2026-11-07T16:08:20.329462+00:00",
+      "start_line": 124027,
+      "save_lines": [
+        124033
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:08:23.900798+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 124028,
+          "candidates": [
+            "persona_077"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:08:23.906819+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 124029,
+          "candidates": [
+            "persona_077"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:08:23.952057+00:00",
+      "end_line": 124034
+    },
+    "persona_078": {
+      "id": "persona_078",
+      "start": "2026-11-07T16:08:33.463973+00:00",
+      "start_line": 124035,
+      "save_lines": [
+        124041
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:08:37.026917+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 124036,
+          "candidates": [
+            "persona_078"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:08:37.031331+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 124037,
+          "candidates": [
+            "persona_078"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:08:37.084862+00:00",
+      "end_line": 124042
+    },
+    "persona_079": {
+      "id": "persona_079",
+      "start": "2026-11-07T16:09:04.653235+00:00",
+      "start_line": 124043,
+      "save_lines": [
+        124049
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:09:08.259166+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 124044,
+          "candidates": [
+            "persona_079"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:09:08.262135+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 124045,
+          "candidates": [
+            "persona_079"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:09:08.314910+00:00",
+      "end_line": 124050
+    },
+    "persona_080": {
+      "id": "persona_080",
+      "start": "2026-11-07T16:09:14.766818+00:00",
+      "start_line": 124051,
+      "save_lines": [
+        124057
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:09:18.304032+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 124052,
+          "candidates": [
+            "persona_080"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:09:18.311326+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 124053,
+          "candidates": [
+            "persona_080"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:09:18.363651+00:00",
+      "end_line": 124058
+    },
+    "persona_081": {
+      "id": "persona_081",
+      "start": "2026-11-07T16:09:54.713089+00:00",
+      "start_line": 124059,
+      "save_lines": [
+        124065
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:09:58.237572+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 124060,
+          "candidates": [
+            "persona_081"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:09:58.242377+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 124061,
+          "candidates": [
+            "persona_081"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:09:58.298296+00:00",
+      "end_line": 124066
+    },
+    "persona_082": {
+      "id": "persona_082",
+      "start": "2026-11-07T16:10:23.101525+00:00",
+      "start_line": 124067,
+      "save_lines": [
+        124073
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:10:26.660604+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 124068,
+          "candidates": [
+            "persona_082"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:10:26.663564+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 124069,
+          "candidates": [
+            "persona_082"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:10:26.713867+00:00",
+      "end_line": 124074
+    },
+    "persona_083": {
+      "id": "persona_083",
+      "start": "2026-11-07T16:11:00.276459+00:00",
+      "start_line": 124075,
+      "save_lines": [
+        124081
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:11:03.839814+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 124076,
+          "candidates": [
+            "persona_083"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:11:03.843701+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 124077,
+          "candidates": [
+            "persona_083"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:11:03.897565+00:00",
+      "end_line": 124082
+    },
+    "persona_084": {
+      "id": "persona_084",
+      "start": "2026-11-07T16:11:33.897911+00:00",
+      "start_line": 124083,
+      "save_lines": [
+        124089
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:11:37.443527+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 124084,
+          "candidates": [
+            "persona_084"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:11:37.448161+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 124085,
+          "candidates": [
+            "persona_084"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:11:37.500060+00:00",
+      "end_line": 124090
+    },
+    "persona_085": {
+      "id": "persona_085",
+      "start": "2026-11-07T16:12:00.190979+00:00",
+      "start_line": 124091,
+      "save_lines": [
+        124097
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:12:03.748744+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 124092,
+          "candidates": [
+            "persona_085"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:12:03.752776+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 124093,
+          "candidates": [
+            "persona_085"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:12:03.805787+00:00",
+      "end_line": 124098
+    },
+    "persona_086": {
+      "id": "persona_086",
+      "start": "2026-11-07T16:12:16.473988+00:00",
+      "start_line": 124099,
+      "save_lines": [
+        124105
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:12:20.003024+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 124100,
+          "candidates": [
+            "persona_086"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:12:20.008256+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 124101,
+          "candidates": [
+            "persona_086"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:12:20.060816+00:00",
+      "end_line": 124106
+    },
+    "persona_087": {
+      "id": "persona_087",
+      "start": "2026-11-07T16:12:30.489912+00:00",
+      "start_line": 124107,
+      "save_lines": [
+        124113
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:12:34.021756+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 124108,
+          "candidates": [
+            "persona_087"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:12:34.025679+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 124109,
+          "candidates": [
+            "persona_087"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:12:34.077987+00:00",
+      "end_line": 124114
+    },
+    "persona_088": {
+      "id": "persona_088",
+      "start": "2026-11-07T16:12:59.554843+00:00",
+      "start_line": 124115,
+      "save_lines": [
+        124121
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:13:03.140711+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 124116,
+          "candidates": [
+            "persona_088"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:13:03.145780+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 124117,
+          "candidates": [
+            "persona_088"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:13:03.199656+00:00",
+      "end_line": 124122
+    },
+    "persona_089": {
+      "id": "persona_089",
+      "start": "2026-11-07T16:13:30.850217+00:00",
+      "start_line": 124123,
+      "save_lines": [
+        124129
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:13:34.366774+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 124124,
+          "candidates": [
+            "persona_089"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:13:34.371970+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 124125,
+          "candidates": [
+            "persona_089"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:13:34.425818+00:00",
+      "end_line": 124130
+    },
+    "persona_090": {
+      "id": "persona_090",
+      "start": "2026-11-07T16:13:55.983967+00:00",
+      "start_line": 124131,
+      "save_lines": [
+        124137
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:13:59.517785+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 124132,
+          "candidates": [
+            "persona_090"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:13:59.522982+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 124133,
+          "candidates": [
+            "persona_090"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:13:59.574112+00:00",
+      "end_line": 124138
+    },
+    "persona_091": {
+      "id": "persona_091",
+      "start": "2026-11-07T16:14:32.516793+00:00",
+      "start_line": 124139,
+      "save_lines": [
+        124145
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:14:36.261660+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 124140,
+          "candidates": [
+            "persona_091"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:14:36.264487+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 124141,
+          "candidates": [
+            "persona_091"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:14:36.317596+00:00",
+      "end_line": 124146
+    },
+    "persona_092": {
+      "id": "persona_092",
+      "start": "2026-11-07T16:14:56.376419+00:00",
+      "start_line": 124147,
+      "save_lines": [
+        124153
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:14:59.939247+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 124148,
+          "candidates": [
+            "persona_092"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:14:59.944369+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 124149,
+          "candidates": [
+            "persona_092"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:15:00.001052+00:00",
+      "end_line": 124154
+    },
+    "persona_093": {
+      "id": "persona_093",
+      "start": "2026-11-07T16:15:07.109450+00:00",
+      "start_line": 124155,
+      "save_lines": [
+        124161
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:15:10.629616+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 124156,
+          "candidates": [
+            "persona_093"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:15:10.633458+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 124157,
+          "candidates": [
+            "persona_093"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:15:10.689148+00:00",
+      "end_line": 124162
+    },
+    "persona_094": {
+      "id": "persona_094",
+      "start": "2026-11-07T16:15:25.841259+00:00",
+      "start_line": 124163,
+      "save_lines": [
+        124169
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:15:29.376089+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 124164,
+          "candidates": [
+            "persona_094"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:15:29.383259+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 124165,
+          "candidates": [
+            "persona_094"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:15:29.436955+00:00",
+      "end_line": 124170
+    },
+    "persona_095": {
+      "id": "persona_095",
+      "start": "2026-11-07T16:15:35.565804+00:00",
+      "start_line": 124171,
+      "save_lines": [
+        124177
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:15:39.103667+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 124172,
+          "candidates": [
+            "persona_095"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:15:39.108912+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 124173,
+          "candidates": [
+            "persona_095"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:15:39.163055+00:00",
+      "end_line": 124178
+    },
+    "persona_096": {
+      "id": "persona_096",
+      "start": "2026-11-07T16:15:44.025976+00:00",
+      "start_line": 124179,
+      "save_lines": [
+        124185
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:15:47.555563+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 124180,
+          "candidates": [
+            "persona_096"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:15:47.559775+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 124181,
+          "candidates": [
+            "persona_096"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:15:47.615761+00:00",
+      "end_line": 124186
+    },
+    "persona_097": {
+      "id": "persona_097",
+      "start": "2026-11-07T16:16:24.254943+00:00",
+      "start_line": 124187,
+      "save_lines": [
+        124193
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:16:27.810069+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 124188,
+          "candidates": [
+            "persona_097"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:16:27.816604+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 124189,
+          "candidates": [
+            "persona_097"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:16:27.869568+00:00",
+      "end_line": 124194
+    },
+    "persona_098": {
+      "id": "persona_098",
+      "start": "2026-11-07T16:16:36.101568+00:00",
+      "start_line": 124195,
+      "save_lines": [
+        124201
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:16:39.652551+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 124196,
+          "candidates": [
+            "persona_098"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:16:39.656590+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 124197,
+          "candidates": [
+            "persona_098"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:16:39.711989+00:00",
+      "end_line": 124202
+    },
+    "persona_099": {
+      "id": "persona_099",
+      "start": "2026-11-07T16:17:16.101912+00:00",
+      "start_line": 124203,
+      "save_lines": [
+        124209
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:17:19.646057+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 124204,
+          "candidates": [
+            "persona_099"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:17:19.653620+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 124205,
+          "candidates": [
+            "persona_099"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:17:19.709610+00:00",
+      "end_line": 124210
+    },
+    "persona_100": {
+      "id": "persona_100",
+      "start": "2026-11-07T16:18:00.549640+00:00",
+      "start_line": 124211,
+      "save_lines": [
+        124217
+      ],
+      "events": [
+        {
+          "timestamp": "2026-11-07T16:18:04.069553+00:00",
+          "action": "네트워크 요청",
+          "status": "실패",
+          "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+          "line": 124212,
+          "candidates": [
+            "persona_100"
+          ]
+        },
+        {
+          "timestamp": "2026-11-07T16:18:04.073697+00:00",
+          "action": "페이지 실행",
+          "status": "실패",
+          "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+          "line": 124213,
+          "candidates": [
+            "persona_100"
+          ]
+        }
+      ],
+      "end": "2026-11-07T16:18:04.128155+00:00",
+      "end_line": 124218
+    }
+  },
+  "actions": {
+    "네트워크 요청 / 실패": 100,
+    "페이지 실행 / 실패": 100
+  },
+  "counts": {
+    "실패": 200
+  },
+  "events": [
+    {
+      "timestamp": "2026-11-07T15:37:46.339831+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123420,
+      "candidates": [
+        "persona_001"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:37:46.342859+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123421,
+      "candidates": [
+        "persona_001"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:38:20.194393+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123428,
+      "candidates": [
+        "persona_002"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:38:20.199799+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123429,
+      "candidates": [
+        "persona_002"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:39:03.843400+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123436,
+      "candidates": [
+        "persona_003"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:39:03.846958+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123437,
+      "candidates": [
+        "persona_003"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:39:20.101576+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123444,
+      "candidates": [
+        "persona_004"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:39:20.105525+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123445,
+      "candidates": [
+        "persona_004"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:39:28.930095+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123452,
+      "candidates": [
+        "persona_005"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:39:28.933958+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123453,
+      "candidates": [
+        "persona_005"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:39:37.827731+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123460,
+      "candidates": [
+        "persona_006"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:39:37.832019+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123461,
+      "candidates": [
+        "persona_006"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:39:45.630814+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123468,
+      "candidates": [
+        "persona_007"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:39:45.633725+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123469,
+      "candidates": [
+        "persona_007"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:40:13.921977+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123476,
+      "candidates": [
+        "persona_008"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:40:13.928327+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123477,
+      "candidates": [
+        "persona_008"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:40:49.695791+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123484,
+      "candidates": [
+        "persona_009"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:40:49.698976+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123485,
+      "candidates": [
+        "persona_009"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:41:32.382649+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123492,
+      "candidates": [
+        "persona_010"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:41:32.388131+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123493,
+      "candidates": [
+        "persona_010"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:41:45.120878+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123500,
+      "candidates": [
+        "persona_011"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:41:45.124009+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123501,
+      "candidates": [
+        "persona_011"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:41:59.076086+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123508,
+      "candidates": [
+        "persona_012"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:41:59.079573+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123509,
+      "candidates": [
+        "persona_012"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:42:18.592649+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123516,
+      "candidates": [
+        "persona_013"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:42:18.598616+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123517,
+      "candidates": [
+        "persona_013"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:42:27.299650+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123524,
+      "candidates": [
+        "persona_014"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:42:27.303214+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123525,
+      "candidates": [
+        "persona_014"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:42:39.200879+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123532,
+      "candidates": [
+        "persona_015"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:42:39.209147+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123533,
+      "candidates": [
+        "persona_015"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:42:52.322928+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123540,
+      "candidates": [
+        "persona_016"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:42:52.328246+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123541,
+      "candidates": [
+        "persona_016"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:43:34.694833+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123548,
+      "candidates": [
+        "persona_017"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:43:34.694991+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123549,
+      "candidates": [
+        "persona_017"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:44:17.511436+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123556,
+      "candidates": [
+        "persona_018"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:44:17.511617+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123557,
+      "candidates": [
+        "persona_018"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:44:50.148768+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123564,
+      "candidates": [
+        "persona_019"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:44:50.152124+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123565,
+      "candidates": [
+        "persona_019"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:45:25.605662+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123572,
+      "candidates": [
+        "persona_020"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:45:25.609528+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123573,
+      "candidates": [
+        "persona_020"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:45:34.879083+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123580,
+      "candidates": [
+        "persona_021"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:45:34.885990+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123581,
+      "candidates": [
+        "persona_021"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:46:11.233783+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123588,
+      "candidates": [
+        "persona_022"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:46:11.242062+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123589,
+      "candidates": [
+        "persona_022"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:46:43.302830+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123596,
+      "candidates": [
+        "persona_023"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:46:43.307143+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123597,
+      "candidates": [
+        "persona_023"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:47:20.798213+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123604,
+      "candidates": [
+        "persona_024"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:47:20.803030+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123605,
+      "candidates": [
+        "persona_024"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:47:38.657637+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123612,
+      "candidates": [
+        "persona_025"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:47:38.662588+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123613,
+      "candidates": [
+        "persona_025"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:48:14.877453+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123620,
+      "candidates": [
+        "persona_026"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:48:14.883989+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123621,
+      "candidates": [
+        "persona_026"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:48:28.708339+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123628,
+      "candidates": [
+        "persona_027"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:48:28.711472+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123629,
+      "candidates": [
+        "persona_027"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:48:38.753851+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123636,
+      "candidates": [
+        "persona_028"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:48:38.759131+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123637,
+      "candidates": [
+        "persona_028"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:48:56.097827+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123644,
+      "candidates": [
+        "persona_029"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:48:56.104995+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123645,
+      "candidates": [
+        "persona_029"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:49:40.386152+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123652,
+      "candidates": [
+        "persona_030"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:49:40.387772+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123653,
+      "candidates": [
+        "persona_030"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:50:03.490807+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123660,
+      "candidates": [
+        "persona_031"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:50:03.495526+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123661,
+      "candidates": [
+        "persona_031"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:50:21.218989+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123668,
+      "candidates": [
+        "persona_032"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:50:21.223401+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123669,
+      "candidates": [
+        "persona_032"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:50:26.655649+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123676,
+      "candidates": [
+        "persona_033"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:50:26.662204+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123677,
+      "candidates": [
+        "persona_033"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:50:41.182824+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123684,
+      "candidates": [
+        "persona_034"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:50:41.187597+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123685,
+      "candidates": [
+        "persona_034"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:50:48.487844+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123692,
+      "candidates": [
+        "persona_035"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:50:48.490521+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123693,
+      "candidates": [
+        "persona_035"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:50:55.075682+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123700,
+      "candidates": [
+        "persona_036"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:50:55.077127+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123701,
+      "candidates": [
+        "persona_036"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:51:29.184148+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123708,
+      "candidates": [
+        "persona_037"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:51:29.187532+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123709,
+      "candidates": [
+        "persona_037"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:52:02.724432+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123716,
+      "candidates": [
+        "persona_038"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:52:02.726529+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123717,
+      "candidates": [
+        "persona_038"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:52:37.024498+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123724,
+      "candidates": [
+        "persona_039"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:52:37.029498+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123725,
+      "candidates": [
+        "persona_039"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:52:52.195244+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123732,
+      "candidates": [
+        "persona_040"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:52:52.198552+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123733,
+      "candidates": [
+        "persona_040"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:53:32.065058+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123740,
+      "candidates": [
+        "persona_041"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:53:32.071429+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123741,
+      "candidates": [
+        "persona_041"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:54:14.111895+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123748,
+      "candidates": [
+        "persona_042"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:54:14.118353+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123749,
+      "candidates": [
+        "persona_042"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:54:39.651218+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123756,
+      "candidates": [
+        "persona_043"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:54:39.655444+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123757,
+      "candidates": [
+        "persona_043"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:54:59.169271+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123764,
+      "candidates": [
+        "persona_044"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:54:59.176458+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123765,
+      "candidates": [
+        "persona_044"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:55:13.635849+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123772,
+      "candidates": [
+        "persona_045"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:55:13.640046+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123773,
+      "candidates": [
+        "persona_045"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:55:50.502398+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123780,
+      "candidates": [
+        "persona_046"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:55:50.502553+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123781,
+      "candidates": [
+        "persona_046"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:56:05.219694+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123788,
+      "candidates": [
+        "persona_047"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:56:05.225894+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123789,
+      "candidates": [
+        "persona_047"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:56:10.464110+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123796,
+      "candidates": [
+        "persona_048"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:56:10.470665+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123797,
+      "candidates": [
+        "persona_048"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:56:51.420901+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123804,
+      "candidates": [
+        "persona_049"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:56:51.427848+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123805,
+      "candidates": [
+        "persona_049"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:57:14.080947+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123812,
+      "candidates": [
+        "persona_050"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:57:14.088514+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123813,
+      "candidates": [
+        "persona_050"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:57:55.555726+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123820,
+      "candidates": [
+        "persona_051"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:57:55.560195+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123821,
+      "candidates": [
+        "persona_051"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:58:33.380942+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123828,
+      "candidates": [
+        "persona_052"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:58:33.383267+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123829,
+      "candidates": [
+        "persona_052"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:59:05.640737+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123836,
+      "candidates": [
+        "persona_053"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:59:05.640900+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123837,
+      "candidates": [
+        "persona_053"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:59:27.777633+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123844,
+      "candidates": [
+        "persona_054"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T15:59:27.784622+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123845,
+      "candidates": [
+        "persona_054"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:00:08.224266+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123852,
+      "candidates": [
+        "persona_055"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:00:08.230512+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123853,
+      "candidates": [
+        "persona_055"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:00:34.083098+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123860,
+      "candidates": [
+        "persona_056"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:00:34.088559+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123861,
+      "candidates": [
+        "persona_056"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:00:58.725070+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123868,
+      "candidates": [
+        "persona_057"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:00:58.729734+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123869,
+      "candidates": [
+        "persona_057"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:01:07.106862+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123876,
+      "candidates": [
+        "persona_058"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:01:07.113188+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123877,
+      "candidates": [
+        "persona_058"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:01:25.092652+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123884,
+      "candidates": [
+        "persona_059"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:01:25.096761+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123885,
+      "candidates": [
+        "persona_059"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:01:32.643117+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123892,
+      "candidates": [
+        "persona_060"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:01:32.643267+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123893,
+      "candidates": [
+        "persona_060"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:02:02.532947+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123900,
+      "candidates": [
+        "persona_061"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:02:02.535624+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123901,
+      "candidates": [
+        "persona_061"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:02:09.062559+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123908,
+      "candidates": [
+        "persona_062"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:02:09.065061+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123909,
+      "candidates": [
+        "persona_062"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:02:27.431045+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123916,
+      "candidates": [
+        "persona_063"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:02:27.434252+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123917,
+      "candidates": [
+        "persona_063"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:02:46.376420+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123924,
+      "candidates": [
+        "persona_064"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:02:46.378784+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123925,
+      "candidates": [
+        "persona_064"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:03:11.265117+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123932,
+      "candidates": [
+        "persona_065"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:03:11.272145+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123933,
+      "candidates": [
+        "persona_065"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:03:55.296246+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123940,
+      "candidates": [
+        "persona_066"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:03:55.302571+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123941,
+      "candidates": [
+        "persona_066"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:04:35.555028+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123948,
+      "candidates": [
+        "persona_067"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:04:35.561487+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123949,
+      "candidates": [
+        "persona_067"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:04:54.815678+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123956,
+      "candidates": [
+        "persona_068"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:04:54.823229+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123957,
+      "candidates": [
+        "persona_068"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:05:20.287556+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123964,
+      "candidates": [
+        "persona_069"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:05:20.291047+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123965,
+      "candidates": [
+        "persona_069"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:05:32.253966+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123972,
+      "candidates": [
+        "persona_070"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:05:32.259831+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123973,
+      "candidates": [
+        "persona_070"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:06:09.569149+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123980,
+      "candidates": [
+        "persona_071"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:06:09.578780+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123981,
+      "candidates": [
+        "persona_071"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:06:32.356582+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123988,
+      "candidates": [
+        "persona_072"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:06:32.360452+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123989,
+      "candidates": [
+        "persona_072"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:07:00.002789+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 123996,
+      "candidates": [
+        "persona_073"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:07:00.006520+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 123997,
+      "candidates": [
+        "persona_073"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:07:40.127751+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 124004,
+      "candidates": [
+        "persona_074"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:07:40.133512+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 124005,
+      "candidates": [
+        "persona_074"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:07:57.666847+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 124012,
+      "candidates": [
+        "persona_075"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:07:57.672506+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 124013,
+      "candidates": [
+        "persona_075"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:08:04.389479+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 124020,
+      "candidates": [
+        "persona_076"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:08:04.392808+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 124021,
+      "candidates": [
+        "persona_076"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:08:23.900798+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 124028,
+      "candidates": [
+        "persona_077"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:08:23.906819+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 124029,
+      "candidates": [
+        "persona_077"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:08:37.026917+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 124036,
+      "candidates": [
+        "persona_078"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:08:37.031331+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 124037,
+      "candidates": [
+        "persona_078"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:09:08.259166+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 124044,
+      "candidates": [
+        "persona_079"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:09:08.262135+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 124045,
+      "candidates": [
+        "persona_079"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:09:18.304032+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 124052,
+      "candidates": [
+        "persona_080"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:09:18.311326+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 124053,
+      "candidates": [
+        "persona_080"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:09:58.237572+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 124060,
+      "candidates": [
+        "persona_081"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:09:58.242377+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 124061,
+      "candidates": [
+        "persona_081"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:10:26.660604+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 124068,
+      "candidates": [
+        "persona_082"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:10:26.663564+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 124069,
+      "candidates": [
+        "persona_082"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:11:03.839814+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 124076,
+      "candidates": [
+        "persona_083"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:11:03.843701+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 124077,
+      "candidates": [
+        "persona_083"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:11:37.443527+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 124084,
+      "candidates": [
+        "persona_084"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:11:37.448161+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 124085,
+      "candidates": [
+        "persona_084"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:12:03.748744+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 124092,
+      "candidates": [
+        "persona_085"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:12:03.752776+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 124093,
+      "candidates": [
+        "persona_085"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:12:20.003024+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 124100,
+      "candidates": [
+        "persona_086"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:12:20.008256+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 124101,
+      "candidates": [
+        "persona_086"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:12:34.021756+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 124108,
+      "candidates": [
+        "persona_087"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:12:34.025679+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 124109,
+      "candidates": [
+        "persona_087"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:13:03.140711+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 124116,
+      "candidates": [
+        "persona_088"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:13:03.145780+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 124117,
+      "candidates": [
+        "persona_088"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:13:34.366774+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 124124,
+      "candidates": [
+        "persona_089"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:13:34.371970+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 124125,
+      "candidates": [
+        "persona_089"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:13:59.517785+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 124132,
+      "candidates": [
+        "persona_090"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:13:59.522982+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 124133,
+      "candidates": [
+        "persona_090"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:14:36.261660+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 124140,
+      "candidates": [
+        "persona_091"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:14:36.264487+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 124141,
+      "candidates": [
+        "persona_091"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:14:59.939247+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 124148,
+      "candidates": [
+        "persona_092"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:14:59.944369+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 124149,
+      "candidates": [
+        "persona_092"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:15:10.629616+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 124156,
+      "candidates": [
+        "persona_093"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:15:10.633458+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 124157,
+      "candidates": [
+        "persona_093"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:15:29.376089+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 124164,
+      "candidates": [
+        "persona_094"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:15:29.383259+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 124165,
+      "candidates": [
+        "persona_094"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:15:39.103667+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 124172,
+      "candidates": [
+        "persona_095"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:15:39.108912+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 124173,
+      "candidates": [
+        "persona_095"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:15:47.555563+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 124180,
+      "candidates": [
+        "persona_096"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:15:47.559775+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 124181,
+      "candidates": [
+        "persona_096"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:16:27.810069+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 124188,
+      "candidates": [
+        "persona_097"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:16:27.816604+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 124189,
+      "candidates": [
+        "persona_097"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:16:39.652551+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 124196,
+      "candidates": [
+        "persona_098"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:16:39.656590+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 124197,
+      "candidates": [
+        "persona_098"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:17:19.646057+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 124204,
+      "candidates": [
+        "persona_099"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:17:19.653620+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 124205,
+      "candidates": [
+        "persona_099"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:18:04.069553+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE",
+      "line": 124212,
+      "candidates": [
+        "persona_100"
+      ]
+    },
+    {
+      "timestamp": "2026-11-07T16:18:04.073697+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/",
+      "line": 124213,
+      "candidates": [
+        "persona_100"
+      ]
+    }
+  ],
+  "end": "2026-11-07T16:18:04.129060+00:00",
+  "server_cycle": 5,
+  "line_end": 124219,
+  "complete": true,
+  "unattributed": 0,
+  "pageFailures": 100
+}

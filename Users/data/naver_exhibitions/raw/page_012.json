@@ -1,0 +1,45 @@
+{
+  "page": 12,
+  "records": [
+    {
+      "page": 12,
+      "event_id": "42313143",
+      "title": "AS _____ AS POSSIBLE",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42313143&qvt=0&query=AS%20AS%20POSSIBLE",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261027_10%2F1793081532106laHOG_JPEG%2F360_main_thumb_url_1793081532096.jpg",
+      "period": "2026.10.23.~2026.11.13.",
+      "venue": "퐁피두센터 한화",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=2046311184"
+    },
+    {
+      "page": 12,
+      "event_id": "42312858",
+      "title": "아일렛솔 초대전",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42312858&qvt=0&query=%EC%95%84%EC%9D%BC%EB%A0%9B%EC%86%94%20%EC%B4%88%EB%8C%80%EC%A0%84",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261027_191%2F1793071308896kP5RX_JPEG%2F360_main_thumb_url_1793071308878.jpg",
+      "period": "2026.10.27.~2026.11.10.",
+      "venue": "미앤갤러리",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=1984872933"
+    },
+    {
+      "page": 12,
+      "event_id": "42308172",
+      "title": "피고 지는 사이 : 허보리·조해영·윤정원",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42308172&qvt=0&query=%ED%94%BC%EA%B3%A0%20%EC%A7%80%EB%8A%94%20%EC%82%AC%EC%9D%B4%20%ED%97%88%EB%B3%B4%EB%A6%AC%20%EC%A1%B0%ED%95%B4%EC%98%81%20%EC%9C%A4%EC%A0%95%EC%9B%90",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261026_5%2F17930098484683kuTD_JPEG%2F360_main_thumb_url_1793009848448.jpg",
+      "period": "2026.11.07.~2026.12.06.",
+      "venue": "아트코드갤러리",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=570465515"
+    },
+    {
+      "page": 12,
+      "event_id": "42306811",
+      "title": "흰 돌 밑",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42306811&qvt=0&query=%ED%9D%B0%20%EB%8F%8C%20%EB%B0%91",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261026_129%2F1792986792066A959J_PNG%2F360_main_thumb_url_1792986792026.png",
+      "period": "2026.10.29.~2026.11.21.",
+      "venue": "누크갤러리",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=33849872"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "persona_id": "persona_006",
+  "started_at": "2026-11-08T23:54:34.947053+00:00",
+  "ended_at": "2026-11-08T23:54:38.556164+00:00",
+  "end_reason": "페이지 로딩 또는 실행 실패",
+  "interests": {
+    "categories": [
+      "축제"
+    ],
+    "tags": [
+      "친구와",
+      "대극장",
+      "참여형",
+      "복합문화축제",
+      "웅장한",
+      "가족",
+      "인간관계",
+      "실내",
+      "영화제",
+      "야외"
+    ]
+  },
+  "probabilities": {
+    "persona_id": "persona_006",
+    "action_probabilities": {
+      "search": 0.110831,
+      "content_view": 0.302267,
+      "favorite_add": 0.234257,
+      "favorite_remove": 0.050378,
+      "review_write": 0.080605,
+      "recommendation_click": 0.120907,
+      "purchase_simulation": 0.100756
+    },
+    "category_probabilities": {
+      "전시": 0.06818181818181819,
+      "뮤지컬": 0.06818181818181819,
+      "연극": 0.06818181818181819,
+      "음악": 0.06818181818181819,
+      "무용": 0.06818181818181819,
+      "축제": 0.6590909090909092
+    }
+  },
+  "actions": [
+    {
+      "timestamp": "2026-11-08T23:54:38.498576+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE"
+    },
+    {
+      "timestamp": "2026-11-08T23:54:38.504249+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/\nCall log:\n  - navigating to \"https://www.aiready.p-e.kr/\", waiting until \"domcontentloaded\"\n"
+    }
+  ],
+  "viewed_contents": [],
+  "summary": {
+    "content_count_by_category": {},
+    "content_count_by_tag": {},
+    "viewed_content_ids": []
+  }
+}

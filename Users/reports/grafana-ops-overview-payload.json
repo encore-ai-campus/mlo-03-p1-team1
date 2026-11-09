@@ -1,0 +1,227 @@
+{
+    "dashboard":  {
+                      "annotations":  {
+                                          "list":  [
+                                                       {
+                                                           "builtIn":  1,
+                                                           "datasource":  {
+                                                                              "type":  "grafana",
+                                                                              "uid":  "-- Grafana --"
+                                                                          },
+                                                           "enable":  true,
+                                                           "hide":  true,
+                                                           "iconColor":  "rgba(0, 211, 255, 1)",
+                                                           "name":  "Annotations \u0026 Alerts",
+                                                           "type":  "dashboard"
+                                                       }
+                                                   ]
+                                      },
+                      "id":  2294717475487744,
+                      "panels":  [
+                                     {
+                                         "datasource":  {
+                                                            "type":  "prometheus",
+                                                            "uid":  "fg3gsoufwijnka"
+                                                        },
+                                         "fieldConfig":  {
+                                                             "defaults":  {
+                                                                              "min":  0,
+                                                                              "unit":  "percent"
+                                                                          },
+                                                             "overrides":  [
+
+                                                                           ]
+                                                         },
+                                         "gridPos":  {
+                                                         "h":  8,
+                                                         "w":  12,
+                                                         "x":  0,
+                                                         "y":  0
+                                                     },
+                                         "id":  1,
+                                         "options":  {
+                                                         "legend":  {
+                                                                        "displayMode":  "table",
+                                                                        "placement":  "bottom",
+                                                                        "showLegend":  true
+                                                                    },
+                                                         "tooltip":  {
+                                                                         "mode":  "multi"
+                                                                     }
+                                                     },
+                                         "targets":  [
+                                                         {
+                                                             "expr":  "100 * (1 - avg by(instance) (rate(node_cpu_seconds_total{mode=\"idle\",instance=~\"192[.]168[.]0[.](151|156|157|161|162|170):9100\"}[5m])))",
+                                                             "legendFormat":  "{{instance}}",
+                                                             "range":  true,
+                                                             "refId":  "A"
+                                                         }
+                                                     ],
+                                         "title":  "Host CPU Usage (%) - Nginx/API/DB",
+                                         "type":  "timeseries"
+                                     },
+                                     {
+                                         "datasource":  {
+                                                            "type":  "prometheus",
+                                                            "uid":  "fg3gsoufwijnka"
+                                                        },
+                                         "fieldConfig":  {
+                                                             "defaults":  {
+                                                                              "max":  100,
+                                                                              "min":  0,
+                                                                              "unit":  "percent"
+                                                                          },
+                                                             "overrides":  [
+
+                                                                           ]
+                                                         },
+                                         "gridPos":  {
+                                                         "h":  8,
+                                                         "w":  12,
+                                                         "x":  12,
+                                                         "y":  0
+                                                     },
+                                         "id":  2,
+                                         "options":  {
+                                                         "legend":  {
+                                                                        "displayMode":  "table",
+                                                                        "placement":  "bottom",
+                                                                        "showLegend":  true
+                                                                    },
+                                                         "tooltip":  {
+                                                                         "mode":  "multi"
+                                                                     }
+                                                     },
+                                         "targets":  [
+                                                         {
+                                                             "expr":  "100 * (1 - node_memory_MemAvailable_bytes{instance=~\"192[.]168[.]0[.](151|156|157|161|162|170):9100\"} / node_memory_MemTotal_bytes{instance=~\"192[.]168[.]0[.](151|156|157|161|162|170):9100\"})",
+                                                             "legendFormat":  "{{instance}}",
+                                                             "range":  true,
+                                                             "refId":  "A"
+                                                         }
+                                                     ],
+                                         "title":  "Host Memory Usage (%) - Nginx/API/DB",
+                                         "type":  "timeseries"
+                                     },
+                                     {
+                                         "datasource":  {
+                                                            "type":  "loki",
+                                                            "uid":  "dg3gsp6pckjk0a"
+                                                        },
+                                         "gridPos":  {
+                                                         "h":  7,
+                                                         "w":  24,
+                                                         "x":  0,
+                                                         "y":  8
+                                                     },
+                                         "id":  3,
+                                         "options":  {
+                                                         "dedupStrategy":  "none",
+                                                         "enableLogDetails":  true,
+                                                         "prettifyLogMessage":  false,
+                                                         "showCommonLabels":  false,
+                                                         "showLabels":  false,
+                                                         "showTime":  true,
+                                                         "sortOrder":  "Descending",
+                                                         "wrapLogMessage":  true
+                                                     },
+                                         "targets":  [
+                                                         {
+                                                             "direction":  "backward",
+                                                             "expr":  "{job=\"nginx\",log_type=\"access\"}",
+                                                             "maxLines":  500,
+                                                             "queryType":  "range",
+                                                             "refId":  "A"
+                                                         }
+                                                     ],
+                                         "title":  "Nginx Access Logs",
+                                         "type":  "logs"
+                                     },
+                                     {
+                                         "datasource":  {
+                                                            "type":  "loki",
+                                                            "uid":  "dg3gsp6pckjk0a"
+                                                        },
+                                         "gridPos":  {
+                                                         "h":  7,
+                                                         "w":  24,
+                                                         "x":  0,
+                                                         "y":  15
+                                                     },
+                                         "id":  4,
+                                         "options":  {
+                                                         "dedupStrategy":  "none",
+                                                         "enableLogDetails":  true,
+                                                         "prettifyLogMessage":  false,
+                                                         "showCommonLabels":  false,
+                                                         "showLabels":  false,
+                                                         "showTime":  true,
+                                                         "sortOrder":  "Descending",
+                                                         "wrapLogMessage":  true
+                                                     },
+                                         "targets":  [
+                                                         {
+                                                             "direction":  "backward",
+                                                             "expr":  "{job=\"fastapi\"}",
+                                                             "maxLines":  500,
+                                                             "queryType":  "range",
+                                                             "refId":  "A"
+                                                         }
+                                                     ],
+                                         "title":  "FastAPI Logs",
+                                         "type":  "logs"
+                                     },
+                                     {
+                                         "datasource":  {
+                                                            "type":  "loki",
+                                                            "uid":  "dg3gsp6pckjk0a"
+                                                        },
+                                         "gridPos":  {
+                                                         "h":  7,
+                                                         "w":  24,
+                                                         "x":  0,
+                                                         "y":  22
+                                                     },
+                                         "id":  5,
+                                         "options":  {
+                                                         "dedupStrategy":  "none",
+                                                         "enableLogDetails":  true,
+                                                         "prettifyLogMessage":  false,
+                                                         "showCommonLabels":  false,
+                                                         "showLabels":  false,
+                                                         "showTime":  true,
+                                                         "sortOrder":  "Descending",
+                                                         "wrapLogMessage":  true
+                                                     },
+                                         "targets":  [
+                                                         {
+                                                             "direction":  "backward",
+                                                             "expr":  "{job=~\"mariadb|mongodb\"}",
+                                                             "maxLines":  500,
+                                                             "queryType":  "range",
+                                                             "refId":  "A"
+                                                         }
+                                                     ],
+                                         "title":  "Database Logs",
+                                         "type":  "logs"
+                                     }
+                                 ],
+                      "refresh":  "1m",
+                      "schemaVersion":  42,
+                      "tags":  [
+                                   "culturepick",
+                                   "monitoring"
+                               ],
+                      "time":  {
+                                   "from":  "now-6h",
+                                   "to":  "now"
+                               },
+                      "timezone":  "browser",
+                      "title":  "CulturePick - Monitoring Overview",
+                      "uid":  "culturepick-ops-overview",
+                      "version":  2
+                  },
+    "folderId":  0,
+    "overwrite":  true,
+    "message":  "Fix PromQL host matcher escaping."
+}

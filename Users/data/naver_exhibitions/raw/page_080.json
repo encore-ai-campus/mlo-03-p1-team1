@@ -1,0 +1,45 @@
+{
+  "page": 80,
+  "records": [
+    {
+      "page": 80,
+      "event_id": "42069913",
+      "title": "돗돗헌 이야기",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42069913&qvt=0&query=%EB%8F%97%EB%8F%97%ED%97%8C%20%EC%9D%B4%EC%95%BC%EA%B8%B0",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20260917_187%2F1789613944152I9kJT_JPEG%2F360_main_thumb_url_1789613944062.jpg",
+      "period": "2026.09.15.~2026.12.13.",
+      "venue": "설문대할망전시관",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=1010948893"
+    },
+    {
+      "page": 80,
+      "event_id": "42009301",
+      "title": "료지 이케다 개인전",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42009301&qvt=0&query=%EB%A3%8C%EC%A7%80%20%EC%9D%B4%EC%BC%80%EB%8B%A4%20%EA%B0%9C%EC%9D%B8%EC%A0%84",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20260909_188%2F1788918320184cvPwg_JPEG%2F360_main_thumb_url_1788918320164.jpg",
+      "period": "2026.09.24.~2027.01.18.",
+      "venue": "하우스오브레퓨즈",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=1715330414"
+    },
+    {
+      "page": 80,
+      "event_id": "42003091",
+      "title": "아득한 흑백의 얼굴들, 나의 어머니 제주해녀",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42003091&qvt=0&query=%EC%95%84%EB%93%9D%ED%95%9C%20%ED%9D%91%EB%B0%B1%EC%9D%98%20%EC%96%BC%EA%B5%B4%EB%93%A4%20%EB%82%98%EC%9D%98%20%EC%96%B4%EB%A8%B8%EB%8B%88%20%EC%A0%9C%EC%A3%BC%ED%95%B4%EB%85%80",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20260908_220%2F17888443585018qlne_JPEG%2F360_main_thumb_url_1788844358483.jpg",
+      "period": "2026.09.08.~2026.12.06.",
+      "venue": "제주해녀박물관",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=12200322"
+    },
+    {
+      "page": 80,
+      "event_id": "41483292",
+      "title": "2026 제5회 제주비엔날레",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=41483292&qvt=0&query=2026%20%EC%A0%9C5%ED%9A%8C%20%EC%A0%9C%EC%A3%BC%EB%B9%84%EC%97%94%EB%82%A0%EB%A0%88",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20260612_51%2F1781254559439fTFQT_JPEG%2F360_main_thumb_url_1781254559430.jpg",
+      "period": "2026.08.25.~2026.11.15.",
+      "venue": "제주도립미술관 전관, 제주돌문화공원 오백장군갤러리, 원도심 일대",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=13302614"
+    }
+  ]
+}

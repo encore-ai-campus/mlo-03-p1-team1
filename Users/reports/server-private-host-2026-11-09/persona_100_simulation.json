@@ -1,0 +1,64 @@
+{
+  "persona_id": "persona_100",
+  "started_at": "2026-11-09T00:32:29.562244+00:00",
+  "ended_at": "2026-11-09T00:32:33.252537+00:00",
+  "end_reason": "페이지 로딩 또는 실행 실패",
+  "interests": {
+    "categories": [
+      "음악",
+      "무용"
+    ],
+    "tags": [
+      "합창",
+      "잔잔한",
+      "자연",
+      "R&B",
+      "이야기",
+      "유서 깊은 공간",
+      "서정적인",
+      "록",
+      "실험적인",
+      "유쾌한"
+    ]
+  },
+  "probabilities": {
+    "persona_id": "persona_100",
+    "action_probabilities": {
+      "search": 0.250708,
+      "content_view": 0.24262,
+      "favorite_add": 0.188031,
+      "favorite_remove": 0.040437,
+      "review_write": 0.100283,
+      "recommendation_click": 0.097048,
+      "purchase_simulation": 0.080873
+    },
+    "category_probabilities": {
+      "전시": 0.04411764705882353,
+      "뮤지컬": 0.04411764705882353,
+      "연극": 0.04411764705882353,
+      "음악": 0.4558823529411765,
+      "무용": 0.36764705882352944,
+      "축제": 0.04411764705882353
+    }
+  },
+  "actions": [
+    {
+      "timestamp": "2026-11-09T00:32:33.183761+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE"
+    },
+    {
+      "timestamp": "2026-11-09T00:32:33.183928+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/\nCall log:\n  - navigating to \"https://www.aiready.p-e.kr/\", waiting until \"domcontentloaded\"\n"
+    }
+  ],
+  "viewed_contents": [],
+  "summary": {
+    "content_count_by_category": {},
+    "content_count_by_tag": {},
+    "viewed_content_ids": []
+  }
+}

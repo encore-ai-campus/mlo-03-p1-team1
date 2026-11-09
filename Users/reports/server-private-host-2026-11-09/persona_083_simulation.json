@@ -1,0 +1,63 @@
+{
+  "persona_id": "persona_083",
+  "started_at": "2026-11-09T00:25:02.642671+00:00",
+  "ended_at": "2026-11-09T00:25:06.202033+00:00",
+  "end_reason": "페이지 로딩 또는 실행 실패",
+  "interests": {
+    "categories": [
+      "무용"
+    ],
+    "tags": [
+      "비보잉",
+      "탭댄스",
+      "역사 이야기",
+      "사진 남기기",
+      "해설과 함께",
+      "아이와",
+      "한국무용",
+      "세계민속무용",
+      "유쾌한",
+      "감동적인"
+    ]
+  },
+  "probabilities": {
+    "persona_id": "persona_083",
+    "action_probabilities": {
+      "search": 0.266094,
+      "content_view": 0.257511,
+      "favorite_add": 0.128755,
+      "favorite_remove": 0.042918,
+      "review_write": 0.06867,
+      "recommendation_click": 0.103004,
+      "purchase_simulation": 0.133047
+    },
+    "category_probabilities": {
+      "전시": 0.0625,
+      "뮤지컬": 0.0625,
+      "연극": 0.0625,
+      "음악": 0.0625,
+      "무용": 0.6875000000000001,
+      "축제": 0.0625
+    }
+  },
+  "actions": [
+    {
+      "timestamp": "2026-11-09T00:25:06.145655+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE"
+    },
+    {
+      "timestamp": "2026-11-09T00:25:06.150549+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/\nCall log:\n  - navigating to \"https://www.aiready.p-e.kr/\", waiting until \"domcontentloaded\"\n"
+    }
+  ],
+  "viewed_contents": [],
+  "summary": {
+    "content_count_by_category": {},
+    "content_count_by_tag": {},
+    "viewed_content_ids": []
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "persona_id": "persona_012",
+  "started_at": "2026-11-08T23:56:14.018539+00:00",
+  "ended_at": "2026-11-08T23:56:17.627234+00:00",
+  "end_reason": "페이지 로딩 또는 실행 실패",
+  "interests": {
+    "categories": [
+      "축제",
+      "전시"
+    ],
+    "tags": [
+      "문학축제",
+      "대극장",
+      "역사 이야기",
+      "실내",
+      "웅장한",
+      "자연",
+      "유쾌한",
+      "실험적인",
+      "참여형",
+      "사진"
+    ]
+  },
+  "probabilities": {
+    "persona_id": "persona_012",
+    "action_probabilities": {
+      "search": 0.118407,
+      "content_view": 0.322928,
+      "favorite_add": 0.161464,
+      "favorite_remove": 0.053821,
+      "review_write": 0.047363,
+      "recommendation_click": 0.129171,
+      "purchase_simulation": 0.166846
+    },
+    "category_probabilities": {
+      "전시": 0.40909090909090906,
+      "뮤지컬": 0.04545454545454545,
+      "연극": 0.04545454545454545,
+      "음악": 0.04545454545454545,
+      "무용": 0.04545454545454545,
+      "축제": 0.40909090909090906
+    }
+  },
+  "actions": [
+    {
+      "timestamp": "2026-11-08T23:56:17.570038+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE"
+    },
+    {
+      "timestamp": "2026-11-08T23:56:17.576454+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/\nCall log:\n  - navigating to \"https://www.aiready.p-e.kr/\", waiting until \"domcontentloaded\"\n"
+    }
+  ],
+  "viewed_contents": [],
+  "summary": {
+    "content_count_by_category": {},
+    "content_count_by_tag": {},
+    "viewed_content_ids": []
+  }
+}

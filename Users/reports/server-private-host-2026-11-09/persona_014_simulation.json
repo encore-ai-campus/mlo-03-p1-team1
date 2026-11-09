@@ -1,0 +1,64 @@
+{
+  "persona_id": "persona_014",
+  "started_at": "2026-11-08T23:57:32.103746+00:00",
+  "ended_at": "2026-11-08T23:57:35.832847+00:00",
+  "end_reason": "페이지 로딩 또는 실행 실패",
+  "interests": {
+    "categories": [
+      "뮤지컬",
+      "무용"
+    ],
+    "tags": [
+      "대극장",
+      "세계민속무용",
+      "친구와",
+      "깊이 감상",
+      "댄스시어터",
+      "일상 속 발견",
+      "인간관계",
+      "사회적 메시지",
+      "발레",
+      "창작뮤지컬"
+    ]
+  },
+  "probabilities": {
+    "persona_id": "persona_014",
+    "action_probabilities": {
+      "search": 0.184928,
+      "content_view": 0.277393,
+      "favorite_add": 0.214979,
+      "favorite_remove": 0.046232,
+      "review_write": 0.114656,
+      "recommendation_click": 0.110957,
+      "purchase_simulation": 0.050855
+    },
+    "category_probabilities": {
+      "전시": 0.04285714285714286,
+      "뮤지컬": 0.38571428571428573,
+      "연극": 0.04285714285714286,
+      "음악": 0.04285714285714286,
+      "무용": 0.4428571428571429,
+      "축제": 0.04285714285714286
+    }
+  },
+  "actions": [
+    {
+      "timestamp": "2026-11-08T23:57:35.777811+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE"
+    },
+    {
+      "timestamp": "2026-11-08T23:57:35.782660+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/\nCall log:\n  - navigating to \"https://www.aiready.p-e.kr/\", waiting until \"domcontentloaded\"\n"
+    }
+  ],
+  "viewed_contents": [],
+  "summary": {
+    "content_count_by_category": {},
+    "content_count_by_tag": {},
+    "viewed_content_ids": []
+  }
+}

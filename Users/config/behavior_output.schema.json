@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "persona_id": {
+      "type": "string"
+    },
+    "action_probabilities": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "search": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "content_view": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "favorite_add": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "favorite_remove": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "review_write": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "recommendation_click": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "purchase_simulation": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "required": [
+        "search",
+        "content_view",
+        "favorite_add",
+        "favorite_remove",
+        "review_write",
+        "recommendation_click",
+        "purchase_simulation"
+      ]
+    },
+    "category_probabilities": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "전시": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "뮤지컬": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "연극": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "음악": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "무용": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "축제": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "required": [
+        "전시",
+        "뮤지컬",
+        "연극",
+        "음악",
+        "무용",
+        "축제"
+      ]
+    }
+  },
+  "required": [
+    "persona_id",
+    "action_probabilities",
+    "category_probabilities"
+  ]
+}

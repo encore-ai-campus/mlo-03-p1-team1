@@ -1,0 +1,45 @@
+{
+  "page": 30,
+  "records": [
+    {
+      "page": 30,
+      "event_id": "42467952",
+      "title": "AS THINGS FADE",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42467952&qvt=0&query=AS%20THINGS%20FADE",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261102_65%2F1793615244249gUd7Y_JPEG%2F360_main_thumb_url_1793615244220.jpg",
+      "period": "2026.11.09.~2026.11.20.",
+      "venue": "갤러리소요",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=2048759089"
+    },
+    {
+      "page": 30,
+      "event_id": "42335079",
+      "title": "일일시시 : 매일매시간 함께 작업하는 부부도예가의 도자이야기",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42335079&qvt=0&query=%EC%9D%BC%EC%9D%BC%EC%8B%9C%EC%8B%9C%20%EB%A7%A4%EC%9D%BC%EB%A7%A4%EC%8B%9C%EA%B0%84%20%ED%95%A8%EA%BB%98%20%EC%9E%91%EC%97%85%ED%95%98%EB%8A%94%20%EB%B6%80%EB%B6%80%EB%8F%84%EC%98%88%EA%B0%80%EC%9D%98%20%EB%8F%84%EC%9E%90%EC%9D%B4%EC%95%BC%EA%B8%B0",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261030_286%2F1793329096079wyPM9_JPEG%2F360_main_thumb_url_1793329096066.jpg",
+      "period": "2026.11.02.~2026.11.15.",
+      "venue": "옥교동미술관",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=1633388313"
+    },
+    {
+      "page": 30,
+      "event_id": "42312877",
+      "title": "박소진 개인전",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42312877&qvt=0&query=%EB%B0%95%EC%86%8C%EC%A7%84%20%EA%B0%9C%EC%9D%B8%EC%A0%84",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261027_223%2F1793072221956Ubk53_JPEG%2F360_main_thumb_url_1793072221939.jpg",
+      "period": "2026.10.24.~2026.11.18.",
+      "venue": "취미인간",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=1041882008"
+    },
+    {
+      "page": 30,
+      "event_id": "42308039",
+      "title": "이민주 개인전",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42308039&qvt=0&query=%EC%9D%B4%EB%AF%BC%EC%A3%BC%20%EA%B0%9C%EC%9D%B8%EC%A0%84",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261026_145%2F1793007878121KlHxt_JPEG%2F360_main_thumb_url_1793007878110.jpg",
+      "period": "2026.10.22.~2026.11.12.",
+      "venue": "비영리전시공간 싹",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=1058992907"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "page": 9,
+  "records": [
+    {
+      "page": 9,
+      "event_id": "42328072",
+      "title": "표정 그리고 무표정",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42328072&qvt=0&query=%ED%91%9C%EC%A0%95%20%EA%B7%B8%EB%A6%AC%EA%B3%A0%20%EB%AC%B4%ED%91%9C%EC%A0%95",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261029_182%2F1793251554554OalX1_JPEG%2F360_main_thumb_url_1793251554492.jpg",
+      "period": "2026.10.31.~2026.11.29.",
+      "venue": "MGFS100 갤러리",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=1912276234"
+    },
+    {
+      "page": 9,
+      "event_id": "42328067",
+      "title": "WINGS TRILOGY – Part.3 SKY",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42328067&qvt=0&query=WINGS%20TRILOGY%20Part%203%20SKY",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261029_289%2F1793251352231gfxKM_JPEG%2F360_main_thumb_url_1793251352184.jpg",
+      "period": "2026.11.04.~2026.11.10.",
+      "venue": "갤러리온도",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=1938731675"
+    },
+    {
+      "page": 9,
+      "event_id": "42322319",
+      "title": "Layered Time",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42322319&qvt=0&query=Layered%20Time",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261028_75%2F1793186304919TFh6x_JPEG%2F360_main_thumb_url_1793186304903.jpg",
+      "period": "2026.11.04.~2026.11.15.",
+      "venue": "하랑갤러리",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=207320364"
+    },
+    {
+      "page": 9,
+      "event_id": "42322294",
+      "title": "Not A Home",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42322294&qvt=0&query=Not%20A%20Home",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261028_214%2F1793185111787TqJIU_JPEG%2F360_main_thumb_url_1793185111776.jpg",
+      "period": "2026.10.31.~2026.11.24.",
+      "venue": "낫어플레이스",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=2025753338"
+    }
+  ]
+}

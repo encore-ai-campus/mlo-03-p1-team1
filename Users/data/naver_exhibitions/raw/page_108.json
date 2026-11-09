@@ -1,0 +1,45 @@
+{
+  "page": 108,
+  "records": [
+    {
+      "page": 108,
+      "event_id": "42282556",
+      "title": "어린왕자의 지구여행",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42282556&qvt=0&query=%EC%96%B4%EB%A6%B0%EC%99%95%EC%9E%90%EC%9D%98%20%EC%A7%80%EA%B5%AC%EC%97%AC%ED%96%89",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261021_275%2F1792549400551FkNr9_JPEG%2F360_main_thumb_url_1792549400469.jpg",
+      "period": "2026.10.24.~2027.05.09.",
+      "venue": "국립세종수목원",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=1346293413"
+    },
+    {
+      "page": 108,
+      "event_id": "42201992",
+      "title": "그 약, 알고 먹나요?",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42201992&qvt=0&query=%EA%B7%B8%20%EC%95%BD%20%EC%95%8C%EA%B3%A0%20%EB%A8%B9%EB%82%98%EC%9A%94",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261007_71%2F1791355033584WwzXj_JPEG%2F360_main_thumb_url_1791355033567.jpg",
+      "period": "2026.10.01.~2027.02.21.",
+      "venue": "국립강원전문과학관",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=1537243061"
+    },
+    {
+      "page": 108,
+      "event_id": "42028396",
+      "title": "걸리버를 따라 보는 세상",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42028396&qvt=0&query=%EA%B1%B8%EB%A6%AC%EB%B2%84%EB%A5%BC%20%EB%94%B0%EB%9D%BC%20%EB%B3%B4%EB%8A%94%20%EC%84%B8%EC%83%81",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20260911_121%2F1789105942604h7nBP_JPEG%2F360_main_thumb_url_1789105942593.jpg",
+      "period": "2026.09.01.~2027.02.14.",
+      "venue": "최북미술관&김환태문학관",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=32785978"
+    },
+    {
+      "page": 108,
+      "event_id": "42027816",
+      "title": "Doodle Gyeongju",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42027816&qvt=0&query=Doodle%20Gyeongju",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20260911_50%2F1789095045123fS4cY_JPEG%2F360_main_thumb_url_1789095045080.jpg",
+      "period": "2026.09.18.~2027.03.14.",
+      "venue": "플레이스씨",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=1235234390"
+    }
+  ]
+}

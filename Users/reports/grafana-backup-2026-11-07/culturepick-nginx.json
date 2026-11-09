@@ -1,0 +1,1916 @@
+﻿{
+    "meta":  {
+                 "type":  "db",
+                 "canSave":  true,
+                 "canEdit":  true,
+                 "canAdmin":  true,
+                 "canStar":  true,
+                 "canDelete":  true,
+                 "slug":  "culturepick-nginx",
+                 "url":  "/d/culturepick-nginx/culturepick-nginx",
+                 "expires":  "0001-01-01T00:00:00Z",
+                 "created":  "2026-11-06T10:35:51Z",
+                 "updated":  "2026-11-06T11:40:12Z",
+                 "updatedBy":  "admin",
+                 "createdBy":  "admin",
+                 "version":  4,
+                 "hasAcl":  false,
+                 "isFolder":  false,
+                 "apiVersion":  "v0alpha1",
+                 "folderId":  0,
+                 "folderUid":  "",
+                 "folderTitle":  "General",
+                 "folderUrl":  "",
+                 "provisioned":  false,
+                 "provisionedExternalId":  "",
+                 "annotationsPermissions":  {
+                                                "dashboard":  {
+                                                                  "canAdd":  true,
+                                                                  "canEdit":  true,
+                                                                  "canDelete":  true
+                                                              }
+                                            }
+             },
+    "dashboard":  {
+                      "annotations":  {
+                                          "list":  [
+
+                                                   ]
+                                      },
+                      "description":  "Nginx access/error logs from Alloy and Loki with Node Exporter server metrics.",
+                      "editable":  true,
+                      "graphTooltip":  1,
+                      "id":  1961758277009408,
+                      "panels":  [
+                                     {
+                                         "description":  "",
+                                         "fieldConfig":  {
+                                                             "defaults":  {
+                                                                              "color":  {
+                                                                                            "mode":  "palette-classic"
+                                                                                        },
+                                                                              "noValue":  "No data",
+                                                                              "thresholds":  {
+                                                                                                 "mode":  "absolute",
+                                                                                                 "steps":  [
+                                                                                                               {
+                                                                                                                   "color":  "green",
+                                                                                                                   "value":  null
+                                                                                                               }
+                                                                                                           ]
+                                                                                             },
+                                                                              "unit":  "short"
+                                                                          },
+                                                             "overrides":  [
+
+                                                                           ]
+                                                         },
+                                         "gridPos":  {
+                                                         "h":  4,
+                                                         "w":  24,
+                                                         "x":  0,
+                                                         "y":  0
+                                                     },
+                                         "id":  1,
+                                         "options":  {
+                                                         "content":  "### CulturePick / Nginx\n**Nginx server: [IP_REDACTED]**. Server resource panels query this verified Node Exporter instance directly. **Log host** filters Loki logs.\n\nCounts use the selected time range. Log timestamps reflect Alloy ingestion time. Empty access logs show **No data**. Zero errors means no matching collected records; it does not independently verify log collection health. Request latency and active Nginx connections are unavailable with current inputs.",
+                                                         "mode":  "markdown"
+                                                     },
+                                         "title":  "NGINX | Traffic, logs \u0026 server health",
+                                         "type":  "text"
+                                     },
+                                     {
+                                         "datasource":  {
+                                                            "type":  "loki",
+                                                            "uid":  "dg3gsp6pckjk0a"
+                                                        },
+                                         "description":  "",
+                                         "fieldConfig":  {
+                                                             "defaults":  {
+                                                                              "color":  {
+                                                                                            "mode":  "palette-classic"
+                                                                                        },
+                                                                              "noValue":  "No data",
+                                                                              "thresholds":  {
+                                                                                                 "mode":  "absolute",
+                                                                                                 "steps":  [
+                                                                                                               {
+                                                                                                                   "color":  "green",
+                                                                                                                   "value":  null
+                                                                                                               }
+                                                                                                           ]
+                                                                                             },
+                                                                              "unit":  "short"
+                                                                          },
+                                                             "overrides":  [
+
+                                                                           ]
+                                                         },
+                                         "gridPos":  {
+                                                         "h":  4,
+                                                         "w":  4,
+                                                         "x":  0,
+                                                         "y":  4
+                                                     },
+                                         "id":  2,
+                                         "options":  {
+                                                         "colorMode":  "value",
+                                                         "graphMode":  "area",
+                                                         "orientation":  "auto",
+                                                         "reduceOptions":  {
+                                                                               "calcs":  [
+                                                                                             "lastNotNull"
+                                                                                         ],
+                                                                               "fields":  "",
+                                                                               "values":  false
+                                                                           },
+                                                         "textMode":  "auto"
+                                                     },
+                                         "targets":  [
+                                                         {
+                                                             "datasource":  {
+                                                                                "type":  "loki",
+                                                                                "uid":  "dg3gsp6pckjk0a"
+                                                                            },
+                                                             "editorMode":  "code",
+                                                             "expr":  "sum(count_over_time({job=\"nginx\",host=~\"$log_host\",log_type=\"access\"}[$__range]))",
+                                                             "legendFormat":  "",
+                                                             "queryType":  "instant",
+                                                             "refId":  "A"
+                                                         }
+                                                     ],
+                                         "title":  "Requests | selected range",
+                                         "type":  "stat"
+                                     },
+                                     {
+                                         "datasource":  {
+                                                            "type":  "loki",
+                                                            "uid":  "dg3gsp6pckjk0a"
+                                                        },
+                                         "description":  "Instant query of the fixed preceding 1 minute. Zero means no matching collected access logs; it does not independently establish Alloy/Loki collection health.",
+                                         "fieldConfig":  {
+                                                             "defaults":  {
+                                                                              "color":  {
+                                                                                            "mode":  "palette-classic"
+                                                                                        },
+                                                                              "noValue":  "No data",
+                                                                              "thresholds":  {
+                                                                                                 "mode":  "absolute",
+                                                                                                 "steps":  [
+                                                                                                               {
+                                                                                                                   "color":  "green",
+                                                                                                                   "value":  null
+                                                                                                               }
+                                                                                                           ]
+                                                                                             },
+                                                                              "unit":  "reqps"
+                                                                          },
+                                                             "overrides":  [
+
+                                                                           ]
+                                                         },
+                                         "gridPos":  {
+                                                         "h":  4,
+                                                         "w":  4,
+                                                         "x":  4,
+                                                         "y":  4
+                                                     },
+                                         "id":  3,
+                                         "options":  {
+                                                         "colorMode":  "value",
+                                                         "graphMode":  "none",
+                                                         "orientation":  "auto",
+                                                         "reduceOptions":  {
+                                                                               "calcs":  [
+                                                                                             "lastNotNull"
+                                                                                         ],
+                                                                               "fields":  "",
+                                                                               "values":  false
+                                                                           },
+                                                         "textMode":  "auto"
+                                                     },
+                                         "targets":  [
+                                                         {
+                                                             "datasource":  {
+                                                                                "type":  "loki",
+                                                                                "uid":  "dg3gsp6pckjk0a"
+                                                                            },
+                                                             "editorMode":  "code",
+                                                             "expr":  "sum(rate({job=\"nginx\",host=~\"$log_host\",log_type=\"access\"}[1m])) or vector(0)",
+                                                             "legendFormat":  "",
+                                                             "queryType":  "instant",
+                                                             "refId":  "A"
+                                                         }
+                                                     ],
+                                         "title":  "Requests / second | last 1 minute average",
+                                         "type":  "stat"
+                                     },
+                                     {
+                                         "datasource":  {
+                                                            "type":  "loki",
+                                                            "uid":  "dg3gsp6pckjk0a"
+                                                        },
+                                         "description":  "",
+                                         "fieldConfig":  {
+                                                             "defaults":  {
+                                                                              "color":  {
+                                                                                            "mode":  "palette-classic"
+                                                                                        },
+                                                                              "noValue":  "No data",
+                                                                              "thresholds":  {
+                                                                                                 "mode":  "absolute",
+                                                                                                 "steps":  [
+                                                                                                               {
+                                                                                                                   "color":  "green",
+                                                                                                                   "value":  null
+                                                                                                               }
+                                                                                                           ]
+                                                                                             },
+                                                                              "unit":  "short"
+                                                                          },
+                                                             "overrides":  [
+
+                                                                           ]
+                                                         },
+                                         "gridPos":  {
+                                                         "h":  4,
+                                                         "w":  4,
+                                                         "x":  8,
+                                                         "y":  4
+                                                     },
+                                         "id":  4,
+                                         "options":  {
+                                                         "colorMode":  "value",
+                                                         "graphMode":  "area",
+                                                         "orientation":  "auto",
+                                                         "reduceOptions":  {
+                                                                               "calcs":  [
+                                                                                             "lastNotNull"
+                                                                                         ],
+                                                                               "fields":  "",
+                                                                               "values":  false
+                                                                           },
+                                                         "textMode":  "auto"
+                                                     },
+                                         "targets":  [
+                                                         {
+                                                             "datasource":  {
+                                                                                "type":  "loki",
+                                                                                "uid":  "dg3gsp6pckjk0a"
+                                                                            },
+                                                             "editorMode":  "code",
+                                                             "expr":  "(sum(count_over_time({job=\"nginx\",host=~\"$log_host\",log_type=\"access\"} | pattern `\u003cclient_ip\u003e - \u003c_\u003e [\u003c_\u003e] \"\u003cmethod\u003e \u003curi\u003e \u003c_\u003e\" \u003cstatus\u003e \u003cbody_bytes\u003e \"\u003c_\u003e\" \"\u003c_\u003e\"` | __error__=\"\" | status=~\"4..\" [$__range]))) or vector(0)",
+                                                             "legendFormat":  "",
+                                                             "queryType":  "instant",
+                                                             "refId":  "A"
+                                                         }
+                                                     ],
+                                         "title":  "4xx requests | selected range",
+                                         "type":  "stat"
+                                     },
+                                     {
+                                         "datasource":  {
+                                                            "type":  "loki",
+                                                            "uid":  "dg3gsp6pckjk0a"
+                                                        },
+                                         "description":  "",
+                                         "fieldConfig":  {
+                                                             "defaults":  {
+                                                                              "color":  {
+                                                                                            "mode":  "palette-classic"
+                                                                                        },
+                                                                              "noValue":  "No data",
+                                                                              "thresholds":  {
+                                                                                                 "mode":  "absolute",
+                                                                                                 "steps":  [
+                                                                                                               {
+                                                                                                                   "color":  "green",
+                                                                                                                   "value":  null
+                                                                                                               },
+                                                                                                               {
+                                                                                                                   "color":  "orange",
+                                                                                                                   "value":  1
+                                                                                                               },
+                                                                                                               {
+                                                                                                                   "color":  "red",
+                                                                                                                   "value":  5
+                                                                                                               }
+                                                                                                           ]
+                                                                                             },
+                                                                              "unit":  "percent"
+                                                                          },
+                                                             "overrides":  [
+
+                                                                           ]
+                                                         },
+                                         "gridPos":  {
+                                                         "h":  4,
+                                                         "w":  4,
+                                                         "x":  12,
+                                                         "y":  4
+                                                     },
+                                         "id":  5,
+                                         "options":  {
+                                                         "colorMode":  "value",
+                                                         "graphMode":  "area",
+                                                         "orientation":  "auto",
+                                                         "reduceOptions":  {
+                                                                               "calcs":  [
+                                                                                             "lastNotNull"
+                                                                                         ],
+                                                                               "fields":  "",
+                                                                               "values":  false
+                                                                           },
+                                                         "textMode":  "auto"
+                                                     },
+                                         "targets":  [
+                                                         {
+                                                             "datasource":  {
+                                                                                "type":  "loki",
+                                                                                "uid":  "dg3gsp6pckjk0a"
+                                                                            },
+                                                             "editorMode":  "code",
+                                                             "expr":  "100*((sum(count_over_time({job=\"nginx\",host=~\"$log_host\",log_type=\"access\"} | pattern `\u003cclient_ip\u003e - \u003c_\u003e [\u003c_\u003e] \"\u003cmethod\u003e \u003curi\u003e \u003c_\u003e\" \u003cstatus\u003e \u003cbody_bytes\u003e \"\u003c_\u003e\" \"\u003c_\u003e\"` | __error__=\"\" | status=~\"5..\" [$__range]))) or vector(0))/(sum(count_over_time({job=\"nginx\",host=~\"$log_host\",log_type=\"access\"}[$__range])))",
+                                                             "legendFormat":  "",
+                                                             "queryType":  "instant",
+                                                             "refId":  "A"
+                                                         }
+                                                     ],
+                                         "title":  "5xx error rate | selected range",
+                                         "type":  "stat"
+                                     },
+                                     {
+                                         "datasource":  {
+                                                            "type":  "loki",
+                                                            "uid":  "dg3gsp6pckjk0a"
+                                                        },
+                                         "description":  "Collected error.log lines of all severities. Zero does not independently verify collection health.",
+                                         "fieldConfig":  {
+                                                             "defaults":  {
+                                                                              "color":  {
+                                                                                            "mode":  "palette-classic"
+                                                                                        },
+                                                                              "noValue":  "No data",
+                                                                              "thresholds":  {
+                                                                                                 "mode":  "absolute",
+                                                                                                 "steps":  [
+                                                                                                               {
+                                                                                                                   "color":  "green",
+                                                                                                                   "value":  null
+                                                                                                               }
+                                                                                                           ]
+                                                                                             },
+                                                                              "unit":  "short"
+                                                                          },
+                                                             "overrides":  [
+
+                                                                           ]
+                                                         },
+                                         "gridPos":  {
+                                                         "h":  4,
+                                                         "w":  4,
+                                                         "x":  16,
+                                                         "y":  4
+                                                     },
+                                         "id":  6,
+                                         "options":  {
+                                                         "colorMode":  "value",
+                                                         "graphMode":  "area",
+                                                         "orientation":  "auto",
+                                                         "reduceOptions":  {
+                                                                               "calcs":  [
+                                                                                             "lastNotNull"
+                                                                                         ],
+                                                                               "fields":  "",
+                                                                               "values":  false
+                                                                           },
+                                                         "textMode":  "auto"
+                                                     },
+                                         "targets":  [
+                                                         {
+                                                             "datasource":  {
+                                                                                "type":  "loki",
+                                                                                "uid":  "dg3gsp6pckjk0a"
+                                                                            },
+                                                             "editorMode":  "code",
+                                                             "expr":  "sum(count_over_time({job=\"nginx\",host=~\"$log_host\",log_type=\"error\"}[$__range])) or vector(0)",
+                                                             "legendFormat":  "",
+                                                             "queryType":  "instant",
+                                                             "refId":  "A"
+                                                         }
+                                                     ],
+                                         "title":  "Error log lines | selected range",
+                                         "type":  "stat"
+                                     },
+                                     {
+                                         "datasource":  {
+                                                            "type":  "loki",
+                                                            "uid":  "dg3gsp6pckjk0a"
+                                                        },
+                                         "description":  "",
+                                         "fieldConfig":  {
+                                                             "defaults":  {
+                                                                              "color":  {
+                                                                                            "mode":  "palette-classic"
+                                                                                        },
+                                                                              "noValue":  "No data",
+                                                                              "thresholds":  {
+                                                                                                 "mode":  "absolute",
+                                                                                                 "steps":  [
+                                                                                                               {
+                                                                                                                   "color":  "green",
+                                                                                                                   "value":  null
+                                                                                                               }
+                                                                                                           ]
+                                                                                             },
+                                                                              "unit":  "bytes"
+                                                                          },
+                                                             "overrides":  [
+
+                                                                           ]
+                                                         },
+                                         "gridPos":  {
+                                                         "h":  4,
+                                                         "w":  4,
+                                                         "x":  20,
+                                                         "y":  4
+                                                     },
+                                         "id":  7,
+                                         "options":  {
+                                                         "colorMode":  "value",
+                                                         "graphMode":  "area",
+                                                         "orientation":  "auto",
+                                                         "reduceOptions":  {
+                                                                               "calcs":  [
+                                                                                             "lastNotNull"
+                                                                                         ],
+                                                                               "fields":  "",
+                                                                               "values":  false
+                                                                           },
+                                                         "textMode":  "auto"
+                                                     },
+                                         "targets":  [
+                                                         {
+                                                             "datasource":  {
+                                                                                "type":  "loki",
+                                                                                "uid":  "dg3gsp6pckjk0a"
+                                                                            },
+                                                             "editorMode":  "code",
+                                                             "expr":  "sum(sum_over_time({job=\"nginx\",host=~\"$log_host\",log_type=\"access\"} | pattern `\u003cclient_ip\u003e - \u003c_\u003e [\u003c_\u003e] \"\u003cmethod\u003e \u003curi\u003e \u003c_\u003e\" \u003cstatus\u003e \u003cbody_bytes\u003e \"\u003c_\u003e\" \"\u003c_\u003e\"` | __error__=\"\" | unwrap body_bytes | __error__=\"\" [$__range]))",
+                                                             "legendFormat":  "",
+                                                             "queryType":  "instant",
+                                                             "refId":  "A"
+                                                         }
+                                                     ],
+                                         "title":  "Response body sent | selected range",
+                                         "type":  "stat"
+                                     },
+                                     {
+                                         "datasource":  {
+                                                            "type":  "loki",
+                                                            "uid":  "dg3gsp6pckjk0a"
+                                                        },
+                                         "description":  "",
+                                         "fieldConfig":  {
+                                                             "defaults":  {
+                                                                              "color":  {
+                                                                                            "mode":  "palette-classic"
+                                                                                        },
+                                                                              "custom":  {
+                                                                                             "drawStyle":  "line",
+                                                                                             "fillOpacity":  12,
+                                                                                             "lineWidth":  2,
+                                                                                             "showPoints":  "never",
+                                                                                             "spanNulls":  false
+                                                                                         },
+                                                                              "noValue":  "No data",
+                                                                              "thresholds":  {
+                                                                                                 "mode":  "absolute",
+                                                                                                 "steps":  [
+                                                                                                               {
+                                                                                                                   "color":  "green",
+                                                                                                                   "value":  null
+                                                                                                               }
+                                                                                                           ]
+                                                                                             },
+                                                                              "unit":  "reqps"
+                                                                          },
+                                                             "overrides":  [
+
+                                                                           ]
+                                                         },
+                                         "gridPos":  {
+                                                         "h":  8,
+                                                         "w":  12,
+                                                         "x":  0,
+                                                         "y":  8
+                                                     },
+                                         "id":  8,
+                                         "options":  {
+                                                         "legend":  {
+                                                                        "calcs":  [
+                                                                                      "lastNotNull",
+                                                                                      "max"
+                                                                                  ],
+                                                                        "displayMode":  "list",
+                                                                        "placement":  "bottom"
+                                                                    },
+                                                         "tooltip":  {
+                                                                         "mode":  "multi",
+                                                                         "sort":  "desc"
+                                                                     }
+                                                     },
+                                         "targets":  [
+                                                         {
+                                                             "datasource":  {
+                                                                                "type":  "loki",
+                                                                                "uid":  "dg3gsp6pckjk0a"
+                                                                            },
+                                                             "editorMode":  "code",
+                                                             "expr":  "sum by (status) (rate({job=\"nginx\",host=~\"$log_host\",log_type=\"access\"} | pattern `\u003cclient_ip\u003e - \u003c_\u003e [\u003c_\u003e] \"\u003cmethod\u003e \u003curi\u003e \u003c_\u003e\" \u003cstatus\u003e \u003cbody_bytes\u003e \"\u003c_\u003e\" \"\u003c_\u003e\"` | __error__=\"\"[$__auto]))",
+                                                             "legendFormat":  "{{status}}",
+                                                             "queryType":  "range",
+                                                             "refId":  "A"
+                                                         }
+                                                     ],
+                                         "title":  "Request rate by HTTP status",
+                                         "type":  "timeseries"
+                                     },
+                                     {
+                                         "datasource":  {
+                                                            "type":  "loki",
+                                                            "uid":  "dg3gsp6pckjk0a"
+                                                        },
+                                         "description":  "",
+                                         "fieldConfig":  {
+                                                             "defaults":  {
+                                                                              "color":  {
+                                                                                            "mode":  "palette-classic"
+                                                                                        },
+                                                                              "custom":  {
+                                                                                             "drawStyle":  "line",
+                                                                                             "fillOpacity":  12,
+                                                                                             "lineWidth":  2,
+                                                                                             "showPoints":  "never",
+                                                                                             "spanNulls":  false
+                                                                                         },
+                                                                              "noValue":  "No data",
+                                                                              "thresholds":  {
+                                                                                                 "mode":  "absolute",
+                                                                                                 "steps":  [
+                                                                                                               {
+                                                                                                                   "color":  "green",
+                                                                                                                   "value":  null
+                                                                                                               }
+                                                                                                           ]
+                                                                                             },
+                                                                              "unit":  "reqps"
+                                                                          },
+                                                             "overrides":  [
+
+                                                                           ]
+                                                         },
+                                         "gridPos":  {
+                                                         "h":  8,
+                                                         "w":  12,
+                                                         "x":  12,
+                                                         "y":  8
+                                                     },
+                                         "id":  9,
+                                         "options":  {
+                                                         "legend":  {
+                                                                        "calcs":  [
+                                                                                      "lastNotNull",
+                                                                                      "max"
+                                                                                  ],
+                                                                        "displayMode":  "list",
+                                                                        "placement":  "bottom"
+                                                                    },
+                                                         "tooltip":  {
+                                                                         "mode":  "multi",
+                                                                         "sort":  "desc"
+                                                                     }
+                                                     },
+                                         "targets":  [
+                                                         {
+                                                             "datasource":  {
+                                                                                "type":  "loki",
+                                                                                "uid":  "dg3gsp6pckjk0a"
+                                                                            },
+                                                             "editorMode":  "code",
+                                                             "expr":  "sum(rate({job=\"nginx\",host=~\"$log_host\",log_type=\"access\"} | pattern `\u003cclient_ip\u003e - \u003c_\u003e [\u003c_\u003e] \"\u003cmethod\u003e \u003curi\u003e \u003c_\u003e\" \u003cstatus\u003e \u003cbody_bytes\u003e \"\u003c_\u003e\" \"\u003c_\u003e\"` | __error__=\"\" | status=~\"4..\" [$__auto])) or vector(0)",
+                                                             "legendFormat":  "4xx",
+                                                             "queryType":  "range",
+                                                             "refId":  "A"
+                                                         },
+                                                         {
+                                                             "datasource":  {
+                                                                                "type":  "loki",
+                                                                                "uid":  "dg3gsp6pckjk0a"
+                                                                            },
+                                                             "editorMode":  "code",
+                                                             "expr":  "sum(rate({job=\"nginx\",host=~\"$log_host\",log_type=\"access\"} | pattern `\u003cclient_ip\u003e - \u003c_\u003e [\u003c_\u003e] \"\u003cmethod\u003e \u003curi\u003e \u003c_\u003e\" \u003cstatus\u003e \u003cbody_bytes\u003e \"\u003c_\u003e\" \"\u003c_\u003e\"` | __error__=\"\" | status=~\"5..\" [$__auto])) or vector(0)",
+                                                             "legendFormat":  "5xx",
+                                                             "queryType":  "range",
+                                                             "refId":  "B"
+                                                         }
+                                                     ],
+                                         "title":  "4xx / 5xx request rate",
+                                         "type":  "timeseries"
+                                     },
+                                     {
+                                         "datasource":  {
+                                                            "type":  "loki",
+                                                            "uid":  "dg3gsp6pckjk0a"
+                                                        },
+                                         "description":  "Paths grouped without query strings; includes static assets.",
+                                         "fieldConfig":  {
+                                                             "defaults":  {
+                                                                              "color":  {
+                                                                                            "mode":  "palette-classic"
+                                                                                        },
+                                                                              "noValue":  "No data",
+                                                                              "thresholds":  {
+                                                                                                 "mode":  "absolute",
+                                                                                                 "steps":  [
+                                                                                                               {
+                                                                                                                   "color":  "green",
+                                                                                                                   "value":  null
+                                                                                                               }
+                                                                                                           ]
+                                                                                             },
+                                                                              "unit":  "short"
+                                                                          },
+                                                             "overrides":  [
+
+                                                                           ]
+                                                         },
+                                         "gridPos":  {
+                                                         "h":  8,
+                                                         "w":  12,
+                                                         "x":  0,
+                                                         "y":  16
+                                                     },
+                                         "id":  10,
+                                         "options":  {
+                                                         "displayMode":  "gradient",
+                                                         "orientation":  "horizontal",
+                                                         "reduceOptions":  {
+                                                                               "calcs":  [
+                                                                                             "lastNotNull"
+                                                                                         ],
+                                                                               "fields":  "",
+                                                                               "values":  false
+                                                                           },
+                                                         "showUnfilled":  true
+                                                     },
+                                         "targets":  [
+                                                         {
+                                                             "datasource":  {
+                                                                                "type":  "loki",
+                                                                                "uid":  "dg3gsp6pckjk0a"
+                                                                            },
+                                                             "editorMode":  "code",
+                                                             "expr":  "topk(10,sum by (request_path) (count_over_time({job=\"nginx\",host=~\"$log_host\",log_type=\"access\"} | pattern `\u003cclient_ip\u003e - \u003c_\u003e [\u003c_\u003e] \"\u003cmethod\u003e \u003curi\u003e \u003c_\u003e\" \u003cstatus\u003e \u003cbody_bytes\u003e \"\u003c_\u003e\" \"\u003c_\u003e\"` | __error__=\"\" | regexp `\"[A-Z]+ (?P\u003crequest_path\u003e[^? ]+)` [$__range])))",
+                                                             "legendFormat":  "{{request_path}}",
+                                                             "queryType":  "instant",
+                                                             "refId":  "A"
+                                                         }
+                                                     ],
+                                         "title":  "Top 10 paths | selected range",
+                                         "type":  "bargauge"
+                                     },
+                                     {
+                                         "datasource":  {
+                                                            "type":  "loki",
+                                                            "uid":  "dg3gsp6pckjk0a"
+                                                        },
+                                         "description":  "",
+                                         "fieldConfig":  {
+                                                             "defaults":  {
+                                                                              "color":  {
+                                                                                            "mode":  "palette-classic"
+                                                                                        },
+                                                                              "noValue":  "No data",
+                                                                              "thresholds":  {
+                                                                                                 "mode":  "absolute",
+                                                                                                 "steps":  [
+                                                                                                               {
+                                                                                                                   "color":  "green",
+                                                                                                                   "value":  null
+                                                                                                               }
+                                                                                                           ]
+                                                                                             },
+                                                                              "unit":  "short"
+                                                                          },
+                                                             "overrides":  [
+
+                                                                           ]
+                                                         },
+                                         "gridPos":  {
+                                                         "h":  8,
+                                                         "w":  6,
+                                                         "x":  12,
+                                                         "y":  16
+                                                     },
+                                         "id":  11,
+                                         "options":  {
+                                                         "displayMode":  "gradient",
+                                                         "orientation":  "horizontal",
+                                                         "reduceOptions":  {
+                                                                               "calcs":  [
+                                                                                             "lastNotNull"
+                                                                                         ],
+                                                                               "fields":  "",
+                                                                               "values":  false
+                                                                           },
+                                                         "showUnfilled":  true
+                                                     },
+                                         "targets":  [
+                                                         {
+                                                             "datasource":  {
+                                                                                "type":  "loki",
+                                                                                "uid":  "dg3gsp6pckjk0a"
+                                                                            },
+                                                             "editorMode":  "code",
+                                                             "expr":  "sum by (status) (count_over_time({job=\"nginx\",host=~\"$log_host\",log_type=\"access\"} | pattern `\u003cclient_ip\u003e - \u003c_\u003e [\u003c_\u003e] \"\u003cmethod\u003e \u003curi\u003e \u003c_\u003e\" \u003cstatus\u003e \u003cbody_bytes\u003e \"\u003c_\u003e\" \"\u003c_\u003e\"` | __error__=\"\"[$__range]))",
+                                                             "legendFormat":  "{{status}}",
+                                                             "queryType":  "instant",
+                                                             "refId":  "A"
+                                                         }
+                                                     ],
+                                         "title":  "HTTP status distribution | selected range",
+                                         "type":  "bargauge"
+                                     },
+                                     {
+                                         "datasource":  {
+                                                            "type":  "loki",
+                                                            "uid":  "dg3gsp6pckjk0a"
+                                                        },
+                                         "description":  "",
+                                         "fieldConfig":  {
+                                                             "defaults":  {
+                                                                              "color":  {
+                                                                                            "mode":  "palette-classic"
+                                                                                        },
+                                                                              "noValue":  "No data",
+                                                                              "thresholds":  {
+                                                                                                 "mode":  "absolute",
+                                                                                                 "steps":  [
+                                                                                                               {
+                                                                                                                   "color":  "green",
+                                                                                                                   "value":  null
+                                                                                                               }
+                                                                                                           ]
+                                                                                             },
+                                                                              "unit":  "short"
+                                                                          },
+                                                             "overrides":  [
+
+                                                                           ]
+                                                         },
+                                         "gridPos":  {
+                                                         "h":  8,
+                                                         "w":  6,
+                                                         "x":  18,
+                                                         "y":  16
+                                                     },
+                                         "id":  12,
+                                         "options":  {
+                                                         "displayMode":  "gradient",
+                                                         "orientation":  "horizontal",
+                                                         "reduceOptions":  {
+                                                                               "calcs":  [
+                                                                                             "lastNotNull"
+                                                                                         ],
+                                                                               "fields":  "",
+                                                                               "values":  false
+                                                                           },
+                                                         "showUnfilled":  true
+                                                     },
+                                         "targets":  [
+                                                         {
+                                                             "datasource":  {
+                                                                                "type":  "loki",
+                                                                                "uid":  "dg3gsp6pckjk0a"
+                                                                            },
+                                                             "editorMode":  "code",
+                                                             "expr":  "sum by (method) (count_over_time({job=\"nginx\",host=~\"$log_host\",log_type=\"access\"} | pattern `\u003cclient_ip\u003e - \u003c_\u003e [\u003c_\u003e] \"\u003cmethod\u003e \u003curi\u003e \u003c_\u003e\" \u003cstatus\u003e \u003cbody_bytes\u003e \"\u003c_\u003e\" \"\u003c_\u003e\"` | __error__=\"\"[$__range]))",
+                                                             "legendFormat":  "{{method}}",
+                                                             "queryType":  "instant",
+                                                             "refId":  "A"
+                                                         }
+                                                     ],
+                                         "title":  "Request methods | selected range",
+                                         "type":  "bargauge"
+                                     },
+                                     {
+                                         "datasource":  {
+                                                            "type":  "loki",
+                                                            "uid":  "dg3gsp6pckjk0a"
+                                                        },
+                                         "description":  "Body bytes in access logs; excludes response headers and TLS overhead.",
+                                         "fieldConfig":  {
+                                                             "defaults":  {
+                                                                              "color":  {
+                                                                                            "mode":  "palette-classic"
+                                                                                        },
+                                                                              "custom":  {
+                                                                                             "drawStyle":  "line",
+                                                                                             "fillOpacity":  12,
+                                                                                             "lineWidth":  2,
+                                                                                             "showPoints":  "never",
+                                                                                             "spanNulls":  false
+                                                                                         },
+                                                                              "noValue":  "No data",
+                                                                              "thresholds":  {
+                                                                                                 "mode":  "absolute",
+                                                                                                 "steps":  [
+                                                                                                               {
+                                                                                                                   "color":  "green",
+                                                                                                                   "value":  null
+                                                                                                               }
+                                                                                                           ]
+                                                                                             },
+                                                                              "unit":  "Bps"
+                                                                          },
+                                                             "overrides":  [
+
+                                                                           ]
+                                                         },
+                                         "gridPos":  {
+                                                         "h":  7,
+                                                         "w":  12,
+                                                         "x":  0,
+                                                         "y":  24
+                                                     },
+                                         "id":  13,
+                                         "options":  {
+                                                         "legend":  {
+                                                                        "calcs":  [
+                                                                                      "lastNotNull",
+                                                                                      "max"
+                                                                                  ],
+                                                                        "displayMode":  "list",
+                                                                        "placement":  "bottom"
+                                                                    },
+                                                         "tooltip":  {
+                                                                         "mode":  "multi",
+                                                                         "sort":  "desc"
+                                                                     }
+                                                     },
+                                         "targets":  [
+                                                         {
+                                                             "datasource":  {
+                                                                                "type":  "loki",
+                                                                                "uid":  "dg3gsp6pckjk0a"
+                                                                            },
+                                                             "editorMode":  "code",
+                                                             "expr":  "sum(rate({job=\"nginx\",host=~\"$log_host\",log_type=\"access\"} | pattern `\u003cclient_ip\u003e - \u003c_\u003e [\u003c_\u003e] \"\u003cmethod\u003e \u003curi\u003e \u003c_\u003e\" \u003cstatus\u003e \u003cbody_bytes\u003e \"\u003c_\u003e\" \"\u003c_\u003e\"` | __error__=\"\" | unwrap body_bytes | __error__=\"\" [$__auto]))",
+                                                             "legendFormat":  "Response body",
+                                                             "queryType":  "range",
+                                                             "refId":  "A"
+                                                         }
+                                                     ],
+                                         "title":  "Response body throughput",
+                                         "type":  "timeseries"
+                                     },
+                                     {
+                                         "datasource":  {
+                                                            "type":  "loki",
+                                                            "uid":  "dg3gsp6pckjk0a"
+                                                        },
+                                         "description":  "IP recorded by Nginx; may represent a proxy or NAT.",
+                                         "fieldConfig":  {
+                                                             "defaults":  {
+                                                                              "color":  {
+                                                                                            "mode":  "palette-classic"
+                                                                                        },
+                                                                              "noValue":  "No data",
+                                                                              "thresholds":  {
+                                                                                                 "mode":  "absolute",
+                                                                                                 "steps":  [
+                                                                                                               {
+                                                                                                                   "color":  "green",
+                                                                                                                   "value":  null
+                                                                                                               }
+                                                                                                           ]
+                                                                                             },
+                                                                              "unit":  "short"
+                                                                          },
+                                                             "overrides":  [
+
+                                                                           ]
+                                                         },
+                                         "gridPos":  {
+                                                         "h":  7,
+                                                         "w":  12,
+                                                         "x":  12,
+                                                         "y":  24
+                                                     },
+                                         "id":  14,
+                                         "options":  {
+                                                         "displayMode":  "gradient",
+                                                         "orientation":  "horizontal",
+                                                         "reduceOptions":  {
+                                                                               "calcs":  [
+                                                                                             "lastNotNull"
+                                                                                         ],
+                                                                               "fields":  "",
+                                                                               "values":  false
+                                                                           },
+                                                         "showUnfilled":  true
+                                                     },
+                                         "targets":  [
+                                                         {
+                                                             "datasource":  {
+                                                                                "type":  "loki",
+                                                                                "uid":  "dg3gsp6pckjk0a"
+                                                                            },
+                                                             "editorMode":  "code",
+                                                             "expr":  "topk(10,sum by (client_ip) (count_over_time({job=\"nginx\",host=~\"$log_host\",log_type=\"access\"} | pattern `\u003cclient_ip\u003e - \u003c_\u003e [\u003c_\u003e] \"\u003cmethod\u003e \u003curi\u003e \u003c_\u003e\" \u003cstatus\u003e \u003cbody_bytes\u003e \"\u003c_\u003e\" \"\u003c_\u003e\"` | __error__=\"\"[$__range])))",
+                                                             "legendFormat":  "{{client_ip}}",
+                                                             "queryType":  "instant",
+                                                             "refId":  "A"
+                                                         }
+                                                     ],
+                                         "title":  "Top 10 client IPs | selected range",
+                                         "type":  "bargauge"
+                                     },
+                                     {
+                                         "collapsed":  false,
+                                         "description":  "",
+                                         "fieldConfig":  {
+                                                             "defaults":  {
+                                                                              "color":  {
+                                                                                            "mode":  "palette-classic"
+                                                                                        },
+                                                                              "noValue":  "No data",
+                                                                              "thresholds":  {
+                                                                                                 "mode":  "absolute",
+                                                                                                 "steps":  [
+                                                                                                               {
+                                                                                                                   "color":  "green",
+                                                                                                                   "value":  null
+                                                                                                               }
+                                                                                                           ]
+                                                                                             },
+                                                                              "unit":  "short"
+                                                                          },
+                                                             "overrides":  [
+
+                                                                           ]
+                                                         },
+                                         "gridPos":  {
+                                                         "h":  1,
+                                                         "w":  24,
+                                                         "x":  0,
+                                                         "y":  31
+                                                     },
+                                         "id":  15,
+                                         "options":  {
+
+                                                     },
+                                         "title":  "SERVER HEALTH | Nginx [IP_REDACTED]",
+                                         "type":  "row"
+                                     },
+                                     {
+                                         "datasource":  {
+                                                            "type":  "prometheus",
+                                                            "uid":  "fg3gsoufwijnka"
+                                                        },
+                                         "description":  "Node Exporter scrape health; does not independently establish Nginx process health.",
+                                         "fieldConfig":  {
+                                                             "defaults":  {
+                                                                              "color":  {
+                                                                                            "mode":  "palette-classic"
+                                                                                        },
+                                                                              "mappings":  [
+                                                                                               {
+                                                                                                   "options":  {
+                                                                                                                   "0":  {
+                                                                                                                             "color":  "red",
+                                                                                                                             "text":  "DOWN"
+                                                                                                                         },
+                                                                                                                   "1":  {
+                                                                                                                             "color":  "green",
+                                                                                                                             "text":  "UP"
+                                                                                                                         }
+                                                                                                               },
+                                                                                                   "type":  "value"
+                                                                                               }
+                                                                                           ],
+                                                                              "noValue":  "No data",
+                                                                              "thresholds":  {
+                                                                                                 "mode":  "absolute",
+                                                                                                 "steps":  [
+                                                                                                               {
+                                                                                                                   "color":  "green",
+                                                                                                                   "value":  null
+                                                                                                               }
+                                                                                                           ]
+                                                                                             },
+                                                                              "unit":  "short"
+                                                                          },
+                                                             "overrides":  [
+
+                                                                           ]
+                                                         },
+                                         "gridPos":  {
+                                                         "h":  4,
+                                                         "w":  4,
+                                                         "x":  0,
+                                                         "y":  32
+                                                     },
+                                         "id":  16,
+                                         "options":  {
+                                                         "colorMode":  "value",
+                                                         "graphMode":  "area",
+                                                         "orientation":  "auto",
+                                                         "reduceOptions":  {
+                                                                               "calcs":  [
+                                                                                             "lastNotNull"
+                                                                                         ],
+                                                                               "fields":  "",
+                                                                               "values":  false
+                                                                           },
+                                                         "textMode":  "auto"
+                                                     },
+                                         "targets":  [
+                                                         {
+                                                             "datasource":  {
+                                                                                "type":  "prometheus",
+                                                                                "uid":  "fg3gsoufwijnka"
+                                                                            },
+                                                             "editorMode":  "code",
+                                                             "expr":  "up{job=\"node\",instance=\"[IP_REDACTED]:9100\"}",
+                                                             "instant":  true,
+                                                             "legendFormat":  "",
+                                                             "range":  false,
+                                                             "refId":  "A"
+                                                         }
+                                                     ],
+                                         "title":  "Node Exporter scrape",
+                                         "type":  "stat"
+                                     },
+                                     {
+                                         "datasource":  {
+                                                            "type":  "prometheus",
+                                                            "uid":  "fg3gsoufwijnka"
+                                                        },
+                                         "description":  "",
+                                         "fieldConfig":  {
+                                                             "defaults":  {
+                                                                              "color":  {
+                                                                                            "mode":  "palette-classic"
+                                                                                        },
+                                                                              "noValue":  "No data",
+                                                                              "thresholds":  {
+                                                                                                 "mode":  "absolute",
+                                                                                                 "steps":  [
+                                                                                                               {
+                                                                                                                   "color":  "green",
+                                                                                                                   "value":  null
+                                                                                                               }
+                                                                                                           ]
+                                                                                             },
+                                                                              "unit":  "s"
+                                                                          },
+                                                             "overrides":  [
+
+                                                                           ]
+                                                         },
+                                         "gridPos":  {
+                                                         "h":  4,
+                                                         "w":  5,
+                                                         "x":  4,
+                                                         "y":  32
+                                                     },
+                                         "id":  17,
+                                         "options":  {
+                                                         "colorMode":  "value",
+                                                         "graphMode":  "area",
+                                                         "orientation":  "auto",
+                                                         "reduceOptions":  {
+                                                                               "calcs":  [
+                                                                                             "lastNotNull"
+                                                                                         ],
+                                                                               "fields":  "",
+                                                                               "values":  false
+                                                                           },
+                                                         "textMode":  "auto"
+                                                     },
+                                         "targets":  [
+                                                         {
+                                                             "datasource":  {
+                                                                                "type":  "prometheus",
+                                                                                "uid":  "fg3gsoufwijnka"
+                                                                            },
+                                                             "editorMode":  "code",
+                                                             "expr":  "time()-node_boot_time_seconds{job=\"node\",instance=\"[IP_REDACTED]:9100\"}",
+                                                             "instant":  true,
+                                                             "legendFormat":  "",
+                                                             "range":  false,
+                                                             "refId":  "A"
+                                                         }
+                                                     ],
+                                         "title":  "Server uptime",
+                                         "type":  "stat"
+                                     },
+                                     {
+                                         "datasource":  {
+                                                            "type":  "prometheus",
+                                                            "uid":  "fg3gsoufwijnka"
+                                                        },
+                                         "description":  "",
+                                         "fieldConfig":  {
+                                                             "defaults":  {
+                                                                              "color":  {
+                                                                                            "mode":  "palette-classic"
+                                                                                        },
+                                                                              "noValue":  "No data",
+                                                                              "thresholds":  {
+                                                                                                 "mode":  "absolute",
+                                                                                                 "steps":  [
+                                                                                                               {
+                                                                                                                   "color":  "green",
+                                                                                                                   "value":  null
+                                                                                                               },
+                                                                                                               {
+                                                                                                                   "color":  "orange",
+                                                                                                                   "value":  75
+                                                                                                               },
+                                                                                                               {
+                                                                                                                   "color":  "red",
+                                                                                                                   "value":  90
+                                                                                                               }
+                                                                                                           ]
+                                                                                             },
+                                                                              "unit":  "percent"
+                                                                          },
+                                                             "overrides":  [
+
+                                                                           ]
+                                                         },
+                                         "gridPos":  {
+                                                         "h":  4,
+                                                         "w":  5,
+                                                         "x":  9,
+                                                         "y":  32
+                                                     },
+                                         "id":  18,
+                                         "options":  {
+                                                         "colorMode":  "value",
+                                                         "graphMode":  "area",
+                                                         "orientation":  "auto",
+                                                         "reduceOptions":  {
+                                                                               "calcs":  [
+                                                                                             "lastNotNull"
+                                                                                         ],
+                                                                               "fields":  "",
+                                                                               "values":  false
+                                                                           },
+                                                         "textMode":  "auto"
+                                                     },
+                                         "targets":  [
+                                                         {
+                                                             "datasource":  {
+                                                                                "type":  "prometheus",
+                                                                                "uid":  "fg3gsoufwijnka"
+                                                                            },
+                                                             "editorMode":  "code",
+                                                             "expr":  "100*(1-avg(rate(node_cpu_seconds_total{job=\"node\",instance=\"[IP_REDACTED]:9100\",mode=\"idle\"}[$__rate_interval])))",
+                                                             "instant":  true,
+                                                             "legendFormat":  "",
+                                                             "range":  false,
+                                                             "refId":  "A"
+                                                         }
+                                                     ],
+                                         "title":  "CPU usage",
+                                         "type":  "stat"
+                                     },
+                                     {
+                                         "datasource":  {
+                                                            "type":  "prometheus",
+                                                            "uid":  "fg3gsoufwijnka"
+                                                        },
+                                         "description":  "",
+                                         "fieldConfig":  {
+                                                             "defaults":  {
+                                                                              "color":  {
+                                                                                            "mode":  "palette-classic"
+                                                                                        },
+                                                                              "noValue":  "No data",
+                                                                              "thresholds":  {
+                                                                                                 "mode":  "absolute",
+                                                                                                 "steps":  [
+                                                                                                               {
+                                                                                                                   "color":  "green",
+                                                                                                                   "value":  null
+                                                                                                               },
+                                                                                                               {
+                                                                                                                   "color":  "orange",
+                                                                                                                   "value":  75
+                                                                                                               },
+                                                                                                               {
+                                                                                                                   "color":  "red",
+                                                                                                                   "value":  90
+                                                                                                               }
+                                                                                                           ]
+                                                                                             },
+                                                                              "unit":  "percent"
+                                                                          },
+                                                             "overrides":  [
+
+                                                                           ]
+                                                         },
+                                         "gridPos":  {
+                                                         "h":  4,
+                                                         "w":  5,
+                                                         "x":  14,
+                                                         "y":  32
+                                                     },
+                                         "id":  19,
+                                         "options":  {
+                                                         "colorMode":  "value",
+                                                         "graphMode":  "area",
+                                                         "orientation":  "auto",
+                                                         "reduceOptions":  {
+                                                                               "calcs":  [
+                                                                                             "lastNotNull"
+                                                                                         ],
+                                                                               "fields":  "",
+                                                                               "values":  false
+                                                                           },
+                                                         "textMode":  "auto"
+                                                     },
+                                         "targets":  [
+                                                         {
+                                                             "datasource":  {
+                                                                                "type":  "prometheus",
+                                                                                "uid":  "fg3gsoufwijnka"
+                                                                            },
+                                                             "editorMode":  "code",
+                                                             "expr":  "100*(1-node_memory_MemAvailable_bytes{job=\"node\",instance=\"[IP_REDACTED]:9100\"}/node_memory_MemTotal_bytes{job=\"node\",instance=\"[IP_REDACTED]:9100\"})",
+                                                             "instant":  true,
+                                                             "legendFormat":  "",
+                                                             "range":  false,
+                                                             "refId":  "A"
+                                                         }
+                                                     ],
+                                         "title":  "Memory usage",
+                                         "type":  "stat"
+                                     },
+                                     {
+                                         "datasource":  {
+                                                            "type":  "prometheus",
+                                                            "uid":  "fg3gsoufwijnka"
+                                                        },
+                                         "description":  "",
+                                         "fieldConfig":  {
+                                                             "defaults":  {
+                                                                              "color":  {
+                                                                                            "mode":  "palette-classic"
+                                                                                        },
+                                                                              "noValue":  "No data",
+                                                                              "thresholds":  {
+                                                                                                 "mode":  "absolute",
+                                                                                                 "steps":  [
+                                                                                                               {
+                                                                                                                   "color":  "green",
+                                                                                                                   "value":  null
+                                                                                                               },
+                                                                                                               {
+                                                                                                                   "color":  "orange",
+                                                                                                                   "value":  75
+                                                                                                               },
+                                                                                                               {
+                                                                                                                   "color":  "red",
+                                                                                                                   "value":  90
+                                                                                                               }
+                                                                                                           ]
+                                                                                             },
+                                                                              "unit":  "percent"
+                                                                          },
+                                                             "overrides":  [
+
+                                                                           ]
+                                                         },
+                                         "gridPos":  {
+                                                         "h":  4,
+                                                         "w":  5,
+                                                         "x":  19,
+                                                         "y":  32
+                                                     },
+                                         "id":  20,
+                                         "options":  {
+                                                         "colorMode":  "value",
+                                                         "graphMode":  "area",
+                                                         "orientation":  "auto",
+                                                         "reduceOptions":  {
+                                                                               "calcs":  [
+                                                                                             "lastNotNull"
+                                                                                         ],
+                                                                               "fields":  "",
+                                                                               "values":  false
+                                                                           },
+                                                         "textMode":  "auto"
+                                                     },
+                                         "targets":  [
+                                                         {
+                                                             "datasource":  {
+                                                                                "type":  "prometheus",
+                                                                                "uid":  "fg3gsoufwijnka"
+                                                                            },
+                                                             "editorMode":  "code",
+                                                             "expr":  "100*(1-node_filesystem_avail_bytes{job=\"node\",instance=\"[IP_REDACTED]:9100\",mountpoint=\"/\",fstype!~\"tmpfs|overlay\"}/node_filesystem_size_bytes{job=\"node\",instance=\"[IP_REDACTED]:9100\",mountpoint=\"/\",fstype!~\"tmpfs|overlay\"})",
+                                                             "instant":  true,
+                                                             "legendFormat":  "",
+                                                             "range":  false,
+                                                             "refId":  "A"
+                                                         }
+                                                     ],
+                                         "title":  "Root filesystem used",
+                                         "type":  "stat"
+                                     },
+                                     {
+                                         "datasource":  {
+                                                            "type":  "prometheus",
+                                                            "uid":  "fg3gsoufwijnka"
+                                                        },
+                                         "description":  "",
+                                         "fieldConfig":  {
+                                                             "defaults":  {
+                                                                              "color":  {
+                                                                                            "mode":  "palette-classic"
+                                                                                        },
+                                                                              "custom":  {
+                                                                                             "drawStyle":  "line",
+                                                                                             "fillOpacity":  12,
+                                                                                             "lineWidth":  2,
+                                                                                             "showPoints":  "never",
+                                                                                             "spanNulls":  false
+                                                                                         },
+                                                                              "noValue":  "No data",
+                                                                              "thresholds":  {
+                                                                                                 "mode":  "absolute",
+                                                                                                 "steps":  [
+                                                                                                               {
+                                                                                                                   "color":  "green",
+                                                                                                                   "value":  null
+                                                                                                               }
+                                                                                                           ]
+                                                                                             },
+                                                                              "unit":  "percent"
+                                                                          },
+                                                             "overrides":  [
+
+                                                                           ]
+                                                         },
+                                         "gridPos":  {
+                                                         "h":  8,
+                                                         "w":  12,
+                                                         "x":  0,
+                                                         "y":  36
+                                                     },
+                                         "id":  21,
+                                         "options":  {
+                                                         "legend":  {
+                                                                        "calcs":  [
+                                                                                      "lastNotNull",
+                                                                                      "max"
+                                                                                  ],
+                                                                        "displayMode":  "list",
+                                                                        "placement":  "bottom"
+                                                                    },
+                                                         "tooltip":  {
+                                                                         "mode":  "multi",
+                                                                         "sort":  "desc"
+                                                                     }
+                                                     },
+                                         "targets":  [
+                                                         {
+                                                             "datasource":  {
+                                                                                "type":  "prometheus",
+                                                                                "uid":  "fg3gsoufwijnka"
+                                                                            },
+                                                             "editorMode":  "code",
+                                                             "expr":  "100*(1-avg(rate(node_cpu_seconds_total{job=\"node\",instance=\"[IP_REDACTED]:9100\",mode=\"idle\"}[$__rate_interval])))",
+                                                             "instant":  false,
+                                                             "legendFormat":  "CPU",
+                                                             "range":  true,
+                                                             "refId":  "A"
+                                                         },
+                                                         {
+                                                             "datasource":  {
+                                                                                "type":  "prometheus",
+                                                                                "uid":  "fg3gsoufwijnka"
+                                                                            },
+                                                             "editorMode":  "code",
+                                                             "expr":  "100*(1-node_memory_MemAvailable_bytes{job=\"node\",instance=\"[IP_REDACTED]:9100\"}/node_memory_MemTotal_bytes{job=\"node\",instance=\"[IP_REDACTED]:9100\"})",
+                                                             "instant":  false,
+                                                             "legendFormat":  "Memory",
+                                                             "range":  true,
+                                                             "refId":  "B"
+                                                         }
+                                                     ],
+                                         "title":  "CPU / memory utilization",
+                                         "type":  "timeseries"
+                                     },
+                                     {
+                                         "datasource":  {
+                                                            "type":  "prometheus",
+                                                            "uid":  "fg3gsoufwijnka"
+                                                        },
+                                         "description":  "",
+                                         "fieldConfig":  {
+                                                             "defaults":  {
+                                                                              "color":  {
+                                                                                            "mode":  "palette-classic"
+                                                                                        },
+                                                                              "custom":  {
+                                                                                             "drawStyle":  "line",
+                                                                                             "fillOpacity":  12,
+                                                                                             "lineWidth":  2,
+                                                                                             "showPoints":  "never",
+                                                                                             "spanNulls":  false
+                                                                                         },
+                                                                              "noValue":  "No data",
+                                                                              "thresholds":  {
+                                                                                                 "mode":  "absolute",
+                                                                                                 "steps":  [
+                                                                                                               {
+                                                                                                                   "color":  "green",
+                                                                                                                   "value":  null
+                                                                                                               }
+                                                                                                           ]
+                                                                                             },
+                                                                              "unit":  "Bps"
+                                                                          },
+                                                             "overrides":  [
+
+                                                                           ]
+                                                         },
+                                         "gridPos":  {
+                                                         "h":  8,
+                                                         "w":  12,
+                                                         "x":  12,
+                                                         "y":  36
+                                                     },
+                                         "id":  22,
+                                         "options":  {
+                                                         "legend":  {
+                                                                        "calcs":  [
+                                                                                      "lastNotNull",
+                                                                                      "max"
+                                                                                  ],
+                                                                        "displayMode":  "list",
+                                                                        "placement":  "bottom"
+                                                                    },
+                                                         "tooltip":  {
+                                                                         "mode":  "multi",
+                                                                         "sort":  "desc"
+                                                                     }
+                                                     },
+                                         "targets":  [
+                                                         {
+                                                             "datasource":  {
+                                                                                "type":  "prometheus",
+                                                                                "uid":  "fg3gsoufwijnka"
+                                                                            },
+                                                             "editorMode":  "code",
+                                                             "expr":  "sum(rate(node_network_receive_bytes_total{job=\"node\",instance=\"[IP_REDACTED]:9100\",device!~\"lo|veth.*|docker.*|br-.*\"}[$__rate_interval]))",
+                                                             "instant":  false,
+                                                             "legendFormat":  "Receive",
+                                                             "range":  true,
+                                                             "refId":  "A"
+                                                         },
+                                                         {
+                                                             "datasource":  {
+                                                                                "type":  "prometheus",
+                                                                                "uid":  "fg3gsoufwijnka"
+                                                                            },
+                                                             "editorMode":  "code",
+                                                             "expr":  "sum(rate(node_network_transmit_bytes_total{job=\"node\",instance=\"[IP_REDACTED]:9100\",device!~\"lo|veth.*|docker.*|br-.*\"}[$__rate_interval]))",
+                                                             "instant":  false,
+                                                             "legendFormat":  "Transmit",
+                                                             "range":  true,
+                                                             "refId":  "B"
+                                                         }
+                                                     ],
+                                         "title":  "Network throughput",
+                                         "type":  "timeseries"
+                                     },
+                                     {
+                                         "datasource":  {
+                                                            "type":  "prometheus",
+                                                            "uid":  "fg3gsoufwijnka"
+                                                        },
+                                         "description":  "",
+                                         "fieldConfig":  {
+                                                             "defaults":  {
+                                                                              "color":  {
+                                                                                            "mode":  "palette-classic"
+                                                                                        },
+                                                                              "custom":  {
+                                                                                             "drawStyle":  "line",
+                                                                                             "fillOpacity":  12,
+                                                                                             "lineWidth":  2,
+                                                                                             "showPoints":  "never",
+                                                                                             "spanNulls":  false
+                                                                                         },
+                                                                              "noValue":  "No data",
+                                                                              "thresholds":  {
+                                                                                                 "mode":  "absolute",
+                                                                                                 "steps":  [
+                                                                                                               {
+                                                                                                                   "color":  "green",
+                                                                                                                   "value":  null
+                                                                                                               }
+                                                                                                           ]
+                                                                                             },
+                                                                              "unit":  "short"
+                                                                          },
+                                                             "overrides":  [
+
+                                                                           ]
+                                                         },
+                                         "gridPos":  {
+                                                         "h":  7,
+                                                         "w":  12,
+                                                         "x":  0,
+                                                         "y":  44
+                                                     },
+                                         "id":  23,
+                                         "options":  {
+                                                         "legend":  {
+                                                                        "calcs":  [
+                                                                                      "lastNotNull",
+                                                                                      "max"
+                                                                                  ],
+                                                                        "displayMode":  "list",
+                                                                        "placement":  "bottom"
+                                                                    },
+                                                         "tooltip":  {
+                                                                         "mode":  "multi",
+                                                                         "sort":  "desc"
+                                                                     }
+                                                     },
+                                         "targets":  [
+                                                         {
+                                                             "datasource":  {
+                                                                                "type":  "prometheus",
+                                                                                "uid":  "fg3gsoufwijnka"
+                                                                            },
+                                                             "editorMode":  "code",
+                                                             "expr":  "node_load1{job=\"node\",instance=\"[IP_REDACTED]:9100\"}",
+                                                             "instant":  false,
+                                                             "legendFormat":  "1 minute",
+                                                             "range":  true,
+                                                             "refId":  "A"
+                                                         },
+                                                         {
+                                                             "datasource":  {
+                                                                                "type":  "prometheus",
+                                                                                "uid":  "fg3gsoufwijnka"
+                                                                            },
+                                                             "editorMode":  "code",
+                                                             "expr":  "node_load5{job=\"node\",instance=\"[IP_REDACTED]:9100\"}",
+                                                             "instant":  false,
+                                                             "legendFormat":  "5 minute",
+                                                             "range":  true,
+                                                             "refId":  "B"
+                                                         },
+                                                         {
+                                                             "datasource":  {
+                                                                                "type":  "prometheus",
+                                                                                "uid":  "fg3gsoufwijnka"
+                                                                            },
+                                                             "editorMode":  "code",
+                                                             "expr":  "node_load15{job=\"node\",instance=\"[IP_REDACTED]:9100\"}",
+                                                             "instant":  false,
+                                                             "legendFormat":  "15 minute",
+                                                             "range":  true,
+                                                             "refId":  "C"
+                                                         }
+                                                     ],
+                                         "title":  "Load average",
+                                         "type":  "timeseries"
+                                     },
+                                     {
+                                         "datasource":  {
+                                                            "type":  "prometheus",
+                                                            "uid":  "fg3gsoufwijnka"
+                                                        },
+                                         "description":  "Physical sda device only. dm-0 is backed by sda and is excluded to avoid counting the same I/O twice.",
+                                         "fieldConfig":  {
+                                                             "defaults":  {
+                                                                              "color":  {
+                                                                                            "mode":  "palette-classic"
+                                                                                        },
+                                                                              "custom":  {
+                                                                                             "drawStyle":  "line",
+                                                                                             "fillOpacity":  12,
+                                                                                             "lineWidth":  2,
+                                                                                             "showPoints":  "never",
+                                                                                             "spanNulls":  false
+                                                                                         },
+                                                                              "noValue":  "No data",
+                                                                              "thresholds":  {
+                                                                                                 "mode":  "absolute",
+                                                                                                 "steps":  [
+                                                                                                               {
+                                                                                                                   "color":  "green",
+                                                                                                                   "value":  null
+                                                                                                               }
+                                                                                                           ]
+                                                                                             },
+                                                                              "unit":  "Bps"
+                                                                          },
+                                                             "overrides":  [
+
+                                                                           ]
+                                                         },
+                                         "gridPos":  {
+                                                         "h":  7,
+                                                         "w":  12,
+                                                         "x":  12,
+                                                         "y":  44
+                                                     },
+                                         "id":  24,
+                                         "options":  {
+                                                         "legend":  {
+                                                                        "calcs":  [
+                                                                                      "lastNotNull",
+                                                                                      "max"
+                                                                                  ],
+                                                                        "displayMode":  "list",
+                                                                        "placement":  "bottom"
+                                                                    },
+                                                         "tooltip":  {
+                                                                         "mode":  "multi",
+                                                                         "sort":  "desc"
+                                                                     }
+                                                     },
+                                         "targets":  [
+                                                         {
+                                                             "datasource":  {
+                                                                                "type":  "prometheus",
+                                                                                "uid":  "fg3gsoufwijnka"
+                                                                            },
+                                                             "editorMode":  "code",
+                                                             "expr":  "sum(rate(node_disk_read_bytes_total{job=\"node\",instance=\"[IP_REDACTED]:9100\",device=\"sda\"}[$__rate_interval]))",
+                                                             "instant":  false,
+                                                             "legendFormat":  "Read",
+                                                             "range":  true,
+                                                             "refId":  "A"
+                                                         },
+                                                         {
+                                                             "datasource":  {
+                                                                                "type":  "prometheus",
+                                                                                "uid":  "fg3gsoufwijnka"
+                                                                            },
+                                                             "editorMode":  "code",
+                                                             "expr":  "sum(rate(node_disk_written_bytes_total{job=\"node\",instance=\"[IP_REDACTED]:9100\",device=\"sda\"}[$__rate_interval]))",
+                                                             "instant":  false,
+                                                             "legendFormat":  "Write",
+                                                             "range":  true,
+                                                             "refId":  "B"
+                                                         }
+                                                     ],
+                                         "title":  "Disk I/O throughput | physical sda",
+                                         "type":  "timeseries"
+                                     },
+                                     {
+                                         "datasource":  {
+                                                            "type":  "loki",
+                                                            "uid":  "dg3gsp6pckjk0a"
+                                                        },
+                                         "description":  "Up to 200 matching lines in the selected time range.",
+                                         "fieldConfig":  {
+                                                             "defaults":  {
+                                                                              "color":  {
+                                                                                            "mode":  "palette-classic"
+                                                                                        },
+                                                                              "noValue":  "No data",
+                                                                              "thresholds":  {
+                                                                                                 "mode":  "absolute",
+                                                                                                 "steps":  [
+                                                                                                               {
+                                                                                                                   "color":  "green",
+                                                                                                                   "value":  null
+                                                                                                               }
+                                                                                                           ]
+                                                                                             },
+                                                                              "unit":  "short"
+                                                                          },
+                                                             "overrides":  [
+
+                                                                           ]
+                                                         },
+                                         "gridPos":  {
+                                                         "h":  9,
+                                                         "w":  24,
+                                                         "x":  0,
+                                                         "y":  51
+                                                     },
+                                         "id":  25,
+                                         "options":  {
+                                                         "dedupStrategy":  "none",
+                                                         "enableLogDetails":  true,
+                                                         "showCommonLabels":  false,
+                                                         "showLabels":  false,
+                                                         "showTime":  true,
+                                                         "sortOrder":  "Descending",
+                                                         "wrapLogMessage":  true
+                                                     },
+                                         "targets":  [
+                                                         {
+                                                             "datasource":  {
+                                                                                "type":  "loki",
+                                                                                "uid":  "dg3gsp6pckjk0a"
+                                                                            },
+                                                             "editorMode":  "code",
+                                                             "expr":  "{job=\"nginx\",host=~\"$log_host\",log_type=\"access\"} | pattern `\u003cclient_ip\u003e - \u003c_\u003e [\u003c_\u003e] \"\u003cmethod\u003e \u003curi\u003e \u003c_\u003e\" \u003cstatus\u003e \u003cbody_bytes\u003e \"\u003c_\u003e\" \"\u003c_\u003e\"` | __error__=\"\" | status=~\"[45]..\"",
+                                                             "legendFormat":  "",
+                                                             "maxLines":  200,
+                                                             "queryType":  "range",
+                                                             "refId":  "A"
+                                                         }
+                                                     ],
+                                         "title":  "Recent HTTP 4xx / 5xx access logs",
+                                         "type":  "logs"
+                                     },
+                                     {
+                                         "datasource":  {
+                                                            "type":  "loki",
+                                                            "uid":  "dg3gsp6pckjk0a"
+                                                        },
+                                         "description":  "Up to 200 collected lines. Empty means no matching collected lines in this range.",
+                                         "fieldConfig":  {
+                                                             "defaults":  {
+                                                                              "color":  {
+                                                                                            "mode":  "palette-classic"
+                                                                                        },
+                                                                              "noValue":  "No data",
+                                                                              "thresholds":  {
+                                                                                                 "mode":  "absolute",
+                                                                                                 "steps":  [
+                                                                                                               {
+                                                                                                                   "color":  "green",
+                                                                                                                   "value":  null
+                                                                                                               }
+                                                                                                           ]
+                                                                                             },
+                                                                              "unit":  "short"
+                                                                          },
+                                                             "overrides":  [
+
+                                                                           ]
+                                                         },
+                                         "gridPos":  {
+                                                         "h":  9,
+                                                         "w":  24,
+                                                         "x":  0,
+                                                         "y":  60
+                                                     },
+                                         "id":  26,
+                                         "options":  {
+                                                         "dedupStrategy":  "none",
+                                                         "enableLogDetails":  true,
+                                                         "showCommonLabels":  false,
+                                                         "showLabels":  false,
+                                                         "showTime":  true,
+                                                         "sortOrder":  "Descending",
+                                                         "wrapLogMessage":  true
+                                                     },
+                                         "targets":  [
+                                                         {
+                                                             "datasource":  {
+                                                                                "type":  "loki",
+                                                                                "uid":  "dg3gsp6pckjk0a"
+                                                                            },
+                                                             "editorMode":  "code",
+                                                             "expr":  "{job=\"nginx\",host=~\"$log_host\",log_type=\"error\"}",
+                                                             "legendFormat":  "",
+                                                             "maxLines":  200,
+                                                             "queryType":  "range",
+                                                             "refId":  "A"
+                                                         }
+                                                     ],
+                                         "title":  "Nginx error.log",
+                                         "type":  "logs"
+                                     },
+                                     {
+                                         "datasource":  {
+                                                            "type":  "loki",
+                                                            "uid":  "dg3gsp6pckjk0a"
+                                                        },
+                                         "description":  "Up to 200 recent access log lines.",
+                                         "fieldConfig":  {
+                                                             "defaults":  {
+                                                                              "color":  {
+                                                                                            "mode":  "palette-classic"
+                                                                                        },
+                                                                              "noValue":  "No data",
+                                                                              "thresholds":  {
+                                                                                                 "mode":  "absolute",
+                                                                                                 "steps":  [
+                                                                                                               {
+                                                                                                                   "color":  "green",
+                                                                                                                   "value":  null
+                                                                                                               }
+                                                                                                           ]
+                                                                                             },
+                                                                              "unit":  "short"
+                                                                          },
+                                                             "overrides":  [
+
+                                                                           ]
+                                                         },
+                                         "gridPos":  {
+                                                         "h":  10,
+                                                         "w":  24,
+                                                         "x":  0,
+                                                         "y":  69
+                                                     },
+                                         "id":  27,
+                                         "options":  {
+                                                         "dedupStrategy":  "none",
+                                                         "enableLogDetails":  true,
+                                                         "showCommonLabels":  false,
+                                                         "showLabels":  false,
+                                                         "showTime":  true,
+                                                         "sortOrder":  "Descending",
+                                                         "wrapLogMessage":  true
+                                                     },
+                                         "targets":  [
+                                                         {
+                                                             "datasource":  {
+                                                                                "type":  "loki",
+                                                                                "uid":  "dg3gsp6pckjk0a"
+                                                                            },
+                                                             "editorMode":  "code",
+                                                             "expr":  "{job=\"nginx\",host=~\"$log_host\",log_type=\"access\"}",
+                                                             "legendFormat":  "",
+                                                             "maxLines":  200,
+                                                             "queryType":  "range",
+                                                             "refId":  "A"
+                                                         }
+                                                     ],
+                                         "title":  "Nginx access.log",
+                                         "type":  "logs"
+                                     }
+                                 ],
+                      "refresh":  "30s",
+                      "schemaVersion":  39,
+                      "tags":  [
+                                   "culturepick",
+                                   "nginx",
+                                   "loki",
+                                   "node-exporter"
+                               ],
+                      "templating":  {
+                                         "list":  [
+                                                      {
+                                                          "current":  {
+                                                                          "text":  "nginx",
+                                                                          "value":  "nginx"
+                                                                      },
+                                                          "datasource":  {
+                                                                             "type":  "loki",
+                                                                             "uid":  "dg3gsp6pckjk0a"
+                                                                         },
+                                                          "definition":  "label_values({job=\"nginx\"}, host)",
+                                                          "includeAll":  false,
+                                                          "label":  "Log host",
+                                                          "multi":  false,
+                                                          "name":  "log_host",
+                                                          "options":  [
+
+                                                                      ],
+                                                          "query":  "label_values({job=\"nginx\"}, host)",
+                                                          "refresh":  1,
+                                                          "sort":  1,
+                                                          "type":  "query"
+                                                      }
+                                                  ]
+                                     },
+                      "time":  {
+                                   "from":  "now-1h",
+                                   "to":  "now"
+                               },
+                      "timepicker":  {
+                                         "refresh_intervals":  [
+                                                                   "15s",
+                                                                   "30s",
+                                                                   "1m",
+                                                                   "5m"
+                                                               ]
+                                     },
+                      "timezone":  "Asia/Seoul",
+                      "title":  "CulturePick - Nginx",
+                      "uid":  "culturepick-nginx",
+                      "version":  4
+                  }
+}

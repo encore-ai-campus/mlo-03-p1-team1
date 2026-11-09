@@ -1,0 +1,45 @@
+{
+  "page": 5,
+  "records": [
+    {
+      "page": 5,
+      "event_id": "42473664",
+      "title": "조성옥 개인전",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42473664&qvt=0&query=%EC%A1%B0%EC%84%B1%EC%98%A5%20%EA%B0%9C%EC%9D%B8%EC%A0%84",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261103_99%2F1793676120679D662t_JPEG%2F360_main_thumb_url_1793676120626.jpg",
+      "period": "2026.11.04.~2026.11.14.",
+      "venue": "스텔라 갤러리",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=1580239350"
+    },
+    {
+      "page": 5,
+      "event_id": "42468098",
+      "title": "전영선 개인전",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42468098&qvt=0&query=%EC%A0%84%EC%98%81%EC%84%A0%20%EA%B0%9C%EC%9D%B8%EC%A0%84",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261102_198%2F17936188588410zGS0_JPEG%2F360_main_thumb_url_1793618858736.jpg",
+      "period": "2026.11.01.~2026.11.14.",
+      "venue": "갤러리헬렌에이",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=1484397374"
+    },
+    {
+      "page": 5,
+      "event_id": "42467592",
+      "title": "흔적의 결 part 2",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42467592&qvt=0&query=%ED%9D%94%EC%A0%81%EC%9D%98%20%EA%B2%B0%20part%202",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261102_269%2F1793608459749uAbOS_JPEG%2F360_main_thumb_url_1793608459698.jpg",
+      "period": "2026.10.29.~2026.11.14.",
+      "venue": "픽셀투페이퍼",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=2049739652"
+    },
+    {
+      "page": 5,
+      "event_id": "42412520",
+      "title": "카테 개인전",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42412520&qvt=0&query=%EC%B9%B4%ED%85%8C%20%EA%B0%9C%EC%9D%B8%EC%A0%84",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261102_40%2F1793607151191v7xMp_JPEG%2F360_main_thumb_url_1793607151136.jpg",
+      "period": "2026.10.27.~2026.11.25.",
+      "venue": "디크레센도",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=1675568605"
+    }
+  ]
+}

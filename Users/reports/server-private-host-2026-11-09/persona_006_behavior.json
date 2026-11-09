@@ -1,0 +1,20 @@
+{
+  "persona_id": "persona_006",
+  "action_probabilities": {
+    "search": 0.110831,
+    "content_view": 0.302267,
+    "favorite_add": 0.234257,
+    "favorite_remove": 0.050378,
+    "review_write": 0.080605,
+    "recommendation_click": 0.120907,
+    "purchase_simulation": 0.100756
+  },
+  "category_probabilities": {
+    "전시": 0.06818181818181819,
+    "뮤지컬": 0.06818181818181819,
+    "연극": 0.06818181818181819,
+    "음악": 0.06818181818181819,
+    "무용": 0.06818181818181819,
+    "축제": 0.6590909090909092
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "persona_id": "persona_003",
+  "started_at": "2026-11-08T23:52:36.772055+00:00",
+  "ended_at": "2026-11-08T23:52:40.347366+00:00",
+  "end_reason": "페이지 로딩 또는 실행 실패",
+  "interests": {
+    "categories": [
+      "연극"
+    ],
+    "tags": [
+      "넌버벌",
+      "실내",
+      "여유로운 관람",
+      "새로운 시도",
+      "이야기",
+      "대극장",
+      "활기찬",
+      "인형극",
+      "유서 깊은 공간",
+      "감동적인"
+    ]
+  },
+  "probabilities": {
+    "persona_id": "persona_003",
+    "action_probabilities": {
+      "search": 0.217628,
+      "content_view": 0.326442,
+      "favorite_add": 0.163221,
+      "favorite_remove": 0.054407,
+      "review_write": 0.047878,
+      "recommendation_click": 0.130577,
+      "purchase_simulation": 0.059848
+    },
+    "category_probabilities": {
+      "전시": 0.06818181818181819,
+      "뮤지컬": 0.06818181818181819,
+      "연극": 0.6590909090909092,
+      "음악": 0.06818181818181819,
+      "무용": 0.06818181818181819,
+      "축제": 0.06818181818181819
+    }
+  },
+  "actions": [
+    {
+      "timestamp": "2026-11-08T23:52:40.290868+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE"
+    },
+    {
+      "timestamp": "2026-11-08T23:52:40.297129+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/\nCall log:\n  - navigating to \"https://www.aiready.p-e.kr/\", waiting until \"domcontentloaded\"\n"
+    }
+  ],
+  "viewed_contents": [],
+  "summary": {
+    "content_count_by_category": {},
+    "content_count_by_tag": {},
+    "viewed_content_ids": []
+  }
+}

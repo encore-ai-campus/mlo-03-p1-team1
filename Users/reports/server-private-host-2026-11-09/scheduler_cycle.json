@@ -1,0 +1,507 @@
+{
+  "cycle": 32,
+  "started_at": "2026-11-08T23:52:09.122205+00:00",
+  "ended_at": "2026-11-09T00:32:33.253640+00:00",
+  "results": [
+    {
+      "persona_id": "persona_001",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_002",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_003",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_004",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_005",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_006",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_007",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_008",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_009",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_010",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_011",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_012",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_013",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_014",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_015",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_016",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_017",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_018",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_019",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_020",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_021",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_022",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_023",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_024",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_025",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_026",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_027",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_028",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_029",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_030",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_031",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_032",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_033",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_034",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_035",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_036",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_037",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_038",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_039",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_040",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_041",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_042",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_043",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_044",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_045",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_046",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_047",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_048",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_049",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_050",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_051",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_052",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_053",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_054",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_055",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_056",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_057",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_058",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_059",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_060",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_061",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_062",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_063",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_064",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_065",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_066",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_067",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_068",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_069",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_070",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_071",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_072",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_073",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_074",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_075",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_076",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_077",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_078",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_079",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_080",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_081",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_082",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_083",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_084",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_085",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_086",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_087",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_088",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_089",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_090",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_091",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_092",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_093",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_094",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_095",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_096",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_097",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_098",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_099",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    },
+    {
+      "persona_id": "persona_100",
+      "status": "종료",
+      "end_reason": "페이지 로딩 또는 실행 실패"
+    }
+  ]
+}

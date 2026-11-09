@@ -1,0 +1,45 @@
+{
+  "page": 65,
+  "records": [
+    {
+      "page": 65,
+      "event_id": "42133861",
+      "title": "유동하는 경계",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42133861&qvt=0&query=%EC%9C%A0%EB%8F%99%ED%95%98%EB%8A%94%20%EA%B2%BD%EA%B3%84",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20260922_257%2F17900593043865bGN5_JPEG%2F360_main_thumb_url_1790059304360.jpg",
+      "period": "2026.09.04.~2026.11.22.",
+      "venue": "서호미술관",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=11620424"
+    },
+    {
+      "page": 65,
+      "event_id": "42127538",
+      "title": "박찬흠 개인전",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42127538&qvt=0&query=%EB%B0%95%EC%B0%AC%ED%9D%A0%20%EA%B0%9C%EC%9D%B8%EC%A0%84",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20260921_67%2F1789960837090aLqXJ_JPEG%2F360_main_thumb_url_1789960837048.jpg",
+      "period": "2026.09.20.~2026.12.31.",
+      "venue": "벗이미술관",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=37375127"
+    },
+    {
+      "page": 65,
+      "event_id": "42127523",
+      "title": "경계 밖의 예술",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42127523&qvt=0&query=%EA%B2%BD%EA%B3%84%20%EB%B0%96%EC%9D%98%20%EC%98%88%EC%88%A0",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20260921_124%2F1789960654849WwTih_JPEG%2F360_main_thumb_url_1789960654831.jpg",
+      "period": "2026.09.18.~2026.12.31.",
+      "venue": "벗이미술관",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=37375127"
+    },
+    {
+      "page": 65,
+      "event_id": "42077216",
+      "title": "이상용 개인전",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42077216&qvt=0&query=%EC%9D%B4%EC%83%81%EC%9A%A9%20%EA%B0%9C%EC%9D%B8%EC%A0%84",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20260918_241%2F1789722249294NyGHB_JPEG%2F360_main_thumb_url_1789722249282.jpg",
+      "period": "2026.10.02.~2026.12.12.",
+      "venue": "갤러리 끼 PAJU",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=1221654769"
+    }
+  ]
+}

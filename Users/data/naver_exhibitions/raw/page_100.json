@@ -1,0 +1,45 @@
+{
+  "page": 100,
+  "records": [
+    {
+      "page": 100,
+      "event_id": "41612427",
+      "title": "헤일리 티프먼, 일상을 그리다 평범한 하루의 온도",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=41612427&qvt=0&query=%ED%97%A4%EC%9D%BC%EB%A6%AC%20%ED%8B%B0%ED%94%84%EB%A8%BC%20%EC%9D%BC%EC%83%81%EC%9D%84%20%EA%B7%B8%EB%A6%AC%EB%8B%A4%20%ED%8F%89%EB%B2%94%ED%95%9C%20%ED%95%98%EB%A3%A8%EC%9D%98%20%EC%98%A8%EB%8F%84",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20260707_182%2F1783390322236OlmvI_JPEG%2F360_main_thumb_url_1783390322195.jpg",
+      "period": "2026.07.30.~2026.12.20.",
+      "venue": "포디움다이브",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=1064153092"
+    },
+    {
+      "page": 100,
+      "event_id": "41607911",
+      "title": "콩, 한 알의 이야기",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=41607911&qvt=0&query=%EC%BD%A9%20%ED%95%9C%20%EC%95%8C%EC%9D%98%20%EC%9D%B4%EC%95%BC%EA%B8%B0",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20260706_232%2F1783306363224j0Qeh_JPEG%2F360_main_thumb_url_1783306363197.jpg",
+      "period": "2026.07.07.~2026.12.31.",
+      "venue": "근대문화공간 수원구부국원",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=1615260537"
+    },
+    {
+      "page": 100,
+      "event_id": "41569330",
+      "title": "고문서로 만나는 조선의 일상",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=41569330&qvt=0&query=%EA%B3%A0%EB%AC%B8%EC%84%9C%EB%A1%9C%20%EB%A7%8C%EB%82%98%EB%8A%94%20%EC%A1%B0%EC%84%A0%EC%9D%98%20%EC%9D%BC%EC%83%81",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20260629_44%2F1782711973936rh5Ds_JPEG%2F360_main_thumb_url_1782711973911.jpg",
+      "period": "2026.06.26.~2027.05.30.",
+      "venue": "수원광교박물관",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=20597182"
+    },
+    {
+      "page": 100,
+      "event_id": "41513093",
+      "title": "French Allure 프렌치 얼루어",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=41513093&qvt=0&query=French%20Allure%20%ED%94%84%EB%A0%8C%EC%B9%98%20%EC%96%BC%EB%A3%A8%EC%96%B4",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20260617_82%2F1781686679423OAWoA_JPEG%2F360_main_thumb_url_1781686679416.jpg",
+      "period": "2026.06.17.~2027.04.10.",
+      "venue": "고은 깁슨 사진미술관",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=1190582507"
+    }
+  ]
+}

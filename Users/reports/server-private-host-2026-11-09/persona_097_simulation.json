@@ -1,0 +1,63 @@
+{
+  "persona_id": "persona_097",
+  "started_at": "2026-11-09T00:30:55.376131+00:00",
+  "ended_at": "2026-11-09T00:30:58.969995+00:00",
+  "end_reason": "페이지 로딩 또는 실행 실패",
+  "interests": {
+    "categories": [
+      "전시"
+    ],
+    "tags": [
+      "이야기",
+      "유서 깊은 공간",
+      "실험적인",
+      "공예",
+      "유쾌한",
+      "자연",
+      "체험형",
+      "회화",
+      "서정적인",
+      "몰입형"
+    ]
+  },
+  "probabilities": {
+    "persona_id": "persona_097",
+    "action_probabilities": {
+      "search": 0.127168,
+      "content_view": 0.346821,
+      "favorite_add": 0.17341,
+      "favorite_remove": 0.057803,
+      "review_write": 0.092486,
+      "recommendation_click": 0.138728,
+      "purchase_simulation": 0.063584
+    },
+    "category_probabilities": {
+      "전시": 0.673913043478261,
+      "뮤지컬": 0.06521739130434782,
+      "연극": 0.06521739130434782,
+      "음악": 0.06521739130434782,
+      "무용": 0.06521739130434782,
+      "축제": 0.06521739130434782
+    }
+  },
+  "actions": [
+    {
+      "timestamp": "2026-11-09T00:30:58.910433+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE"
+    },
+    {
+      "timestamp": "2026-11-09T00:30:58.915924+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/\nCall log:\n  - navigating to \"https://www.aiready.p-e.kr/\", waiting until \"domcontentloaded\"\n"
+    }
+  ],
+  "viewed_contents": [],
+  "summary": {
+    "content_count_by_category": {},
+    "content_count_by_tag": {},
+    "viewed_content_ids": []
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "page": 20,
+  "records": [
+    {
+      "page": 20,
+      "event_id": "42489493",
+      "title": "HORMONE HOUSE",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42489493&qvt=0&query=HORMONE%20HOUSE",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261105_275%2F1793845156597r3rSe_JPEG%2F360_main_thumb_url_1793845156569.jpg",
+      "period": "2026.11.05.~2026.11.20.",
+      "venue": "아이테르 범일가옥",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=1229988725"
+    },
+    {
+      "page": 20,
+      "event_id": "42482659",
+      "title": "원희제 그림전",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42482659&qvt=0&query=%EC%9B%90%ED%9D%AC%EC%A0%9C%20%EA%B7%B8%EB%A6%BC%EC%A0%84",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261104_282%2F1793759440216vzC4H_JPEG%2F360_main_thumb_url_1793759440132.jpg",
+      "period": "2026.11.03.~2026.11.22.",
+      "venue": "갤러리유연",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=1452281439"
+    },
+    {
+      "page": 20,
+      "event_id": "42482654",
+      "title": "김대영 개인전",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42482654&qvt=0&query=%EA%B9%80%EB%8C%80%EC%98%81%20%EA%B0%9C%EC%9D%B8%EC%A0%84",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261104_33%2F1793759212947iMaHt_JPEG%2F360_main_thumb_url_1793759212890.jpg",
+      "period": "2026.11.07.~2026.11.22.",
+      "venue": "갤러리 궁",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=2142313200"
+    },
+    {
+      "page": 20,
+      "event_id": "42473979",
+      "title": "자연의 추상",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42473979&qvt=0&query=%EC%9E%90%EC%97%B0%EC%9D%98%20%EC%B6%94%EC%83%81",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261103_164%2F1793684581570s3gOy_JPEG%2F360_main_thumb_url_1793684581557.jpeg",
+      "period": "2026.11.05.~2026.11.15.",
+      "venue": "스페이스 포포",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=1911150295"
+    }
+  ]
+}

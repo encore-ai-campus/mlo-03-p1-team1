@@ -1,0 +1,45 @@
+{
+  "page": 40,
+  "records": [
+    {
+      "page": 40,
+      "event_id": "42345389",
+      "title": "The Hardest Earth",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42345389&qvt=0&query=The%20Hardest%20Earth",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261102_110%2F1793587500588JFcp2_JPEG%2F360_main_thumb_url_1793587500571.jpg",
+      "period": "2026.10.23.~2026.11.24.",
+      "venue": "SPACE776",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=1549658112"
+    },
+    {
+      "page": 40,
+      "event_id": "42334887",
+      "title": "임현락 초대전",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42334887&qvt=0&query=%EC%9E%84%ED%98%84%EB%9D%BD%20%EC%B4%88%EB%8C%80%EC%A0%84",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261030_107%2F1793326144330Mzu0F_JPEG%2F360_main_thumb_url_1793326144321.jpg",
+      "period": "2026.10.29.~2027.01.20.",
+      "venue": "흰물결갤러리",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=1712298168"
+    },
+    {
+      "page": 40,
+      "event_id": "42312882",
+      "title": "기계적 시선: 접촉하여 보기",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42312882&qvt=0&query=%EA%B8%B0%EA%B3%84%EC%A0%81%20%EC%8B%9C%EC%84%A0%20%EC%A0%91%EC%B4%89%ED%95%98%EC%97%AC%20%EB%B3%B4%EA%B8%B0",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261027_97%2F1793072661299pGcyP_JPEG%2F360_main_thumb_url_1793072661274.jpg",
+      "period": "2026.10.28.~2026.12.20.",
+      "venue": "서울시립 사진미술관",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=1530242788"
+    },
+    {
+      "page": 40,
+      "event_id": "42312872",
+      "title": "소장품, 시대의 장면들",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42312872&qvt=0&query=%EC%86%8C%EC%9E%A5%ED%92%88%20%EC%8B%9C%EB%8C%80%EC%9D%98%20%EC%9E%A5%EB%A9%B4%EB%93%A4",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261027_237%2F1793071959940EU2Vv_JPEG%2F360_main_thumb_url_1793071959922.jpg",
+      "period": "2026.10.16.~2026.12.06.",
+      "venue": "아르코미술관",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=13284653"
+    }
+  ]
+}

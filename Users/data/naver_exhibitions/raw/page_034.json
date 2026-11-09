@@ -1,0 +1,45 @@
+{
+  "page": 34,
+  "records": [
+    {
+      "page": 34,
+      "event_id": "42327779",
+      "title": "공명",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42327779&qvt=0&query=%EA%B3%B5%EB%AA%85%20%EC%B0%BD%EB%8F%99%EC%98%88%EC%88%A0%EC%B4%8C%20%EC%95%84%ED%8A%B8%EC%84%BC%ED%84%B0",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261029_36%2F1793246365001SgRzK_JPEG%2F360_main_thumb_url_1793246364986.jpg",
+      "period": "2026.11.03.~2026.11.22.",
+      "venue": "창동예술촌 아트센터",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=21652378"
+    },
+    {
+      "page": 34,
+      "event_id": "42320642",
+      "title": "사유의 시점",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42320642&qvt=0&query=%EC%82%AC%EC%9C%A0%EC%9D%98%20%EC%8B%9C%EC%A0%90",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261028_264%2F1793156201493BI0tj_JPEG%2F360_main_thumb_url_1793156201483.jpg",
+      "period": "2026.11.05.~2026.11.25.",
+      "venue": "그린갤러리",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=2015609064"
+    },
+    {
+      "page": 34,
+      "event_id": "42308035",
+      "title": "정민진 개인전",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42308035&qvt=0&query=%EC%A0%95%EB%AF%BC%EC%A7%84%20%EA%B0%9C%EC%9D%B8%EC%A0%84",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261026_191%2F1793007593949IyXko_JPEG%2F360_main_thumb_url_1793007593940.jpg",
+      "period": "2026.11.07.~2026.11.29.",
+      "venue": "소집",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=1317824336"
+    },
+    {
+      "page": 34,
+      "event_id": "42252861",
+      "title": "열람 : 열해의 기록",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42252861&qvt=0&query=%EC%97%B4%EB%9E%8C%20%EC%97%B4%ED%95%B4%EC%9D%98%20%EA%B8%B0%EB%A1%9D",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261019_244%2F1792381821604e7VeR_JPEG%2F360_main_thumb_url_1792381821589.jpg",
+      "period": "2026.11.06.~2026.11.29.",
+      "venue": "박연문화관",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=1388815680"
+    }
+  ]
+}

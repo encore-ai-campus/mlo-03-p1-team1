@@ -1,0 +1,45 @@
+{
+  "page": 32,
+  "records": [
+    {
+      "page": 32,
+      "event_id": "42509752",
+      "title": "헬프 유어셀프",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42509752&qvt=0&query=%ED%97%AC%ED%94%84%20%EC%9C%A0%EC%96%B4%EC%85%80%ED%94%84%20%EB%B3%B5%ED%95%A9%EB%AC%B8%ED%99%94%EC%A7%80%EA%B5%AC%20%EB%88%84%EC%97%90",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261109_205%2F17941941979445ymMl_JPEG%2F360_main_thumb_url_1794194197931.jpg",
+      "period": "2026.11.03.~2026.11.15.",
+      "venue": "복합문화지구 누에",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=38415154"
+    },
+    {
+      "page": 32,
+      "event_id": "42498114",
+      "title": "정이핀 개인전",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42498114&qvt=0&query=%EC%A0%95%EC%9D%B4%ED%95%80%20%EA%B0%9C%EC%9D%B8%EC%A0%84",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261106_295%2F1793933589869mDqjO_JPEG%2F360_main_thumb_url_1793933589825.jpg",
+      "period": "2026.11.05.~2026.11.28.",
+      "venue": "전주한벽문화관",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=11671624"
+    },
+    {
+      "page": 32,
+      "event_id": "42498103",
+      "title": "이화SUN민화 세 번째 회원전",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42498103&qvt=0&query=%EC%9D%B4%ED%99%94SUN%EB%AF%BC%ED%99%94%20%EC%84%B8%20%EB%B2%88%EC%A7%B8%20%ED%9A%8C%EC%9B%90%EC%A0%84",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261106_239%2F1793933120570Ik0u9_JPEG%2F360_main_thumb_url_1793933120550.jpg",
+      "period": "2026.11.05.~2026.11.10.",
+      "venue": "갤러리 원",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=2059888673"
+    },
+    {
+      "page": 32,
+      "event_id": "42489860",
+      "title": "최대광 초대전",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42489860&qvt=0&query=%EC%B5%9C%EB%8C%80%EA%B4%91%20%EC%B4%88%EB%8C%80%EC%A0%84",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261105_182%2F1793850903515VpFYr_JPEG%2F360_main_thumb_url_1793850903430.jpg",
+      "period": "2026.10.14.~2026.11.10.",
+      "venue": "국립금오공과대학교",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=11591520"
+    }
+  ]
+}

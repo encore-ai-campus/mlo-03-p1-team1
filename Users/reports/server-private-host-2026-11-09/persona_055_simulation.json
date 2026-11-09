@@ -1,0 +1,63 @@
+{
+  "persona_id": "persona_055",
+  "started_at": "2026-11-09T00:13:58.099896+00:00",
+  "ended_at": "2026-11-09T00:14:01.688960+00:00",
+  "end_reason": "페이지 로딩 또는 실행 실패",
+  "interests": {
+    "categories": [
+      "전시"
+    ],
+    "tags": [
+      "자연",
+      "일상 속 발견",
+      "사회적 메시지",
+      "혼자 관람",
+      "독립공간",
+      "건축",
+      "가족",
+      "감동적인",
+      "몰입형",
+      "일러스트"
+    ]
+  },
+  "probabilities": {
+    "persona_id": "persona_055",
+    "action_probabilities": {
+      "search": 0.106126,
+      "content_view": 0.289436,
+      "favorite_add": 0.224313,
+      "favorite_remove": 0.048239,
+      "review_write": 0.119633,
+      "recommendation_click": 0.115774,
+      "purchase_simulation": 0.096479
+    },
+    "category_probabilities": {
+      "전시": 0.673913043478261,
+      "뮤지컬": 0.06521739130434782,
+      "연극": 0.06521739130434782,
+      "음악": 0.06521739130434782,
+      "무용": 0.06521739130434782,
+      "축제": 0.06521739130434782
+    }
+  },
+  "actions": [
+    {
+      "timestamp": "2026-11-09T00:14:01.637923+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE"
+    },
+    {
+      "timestamp": "2026-11-09T00:14:01.639852+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/\nCall log:\n  - navigating to \"https://www.aiready.p-e.kr/\", waiting until \"domcontentloaded\"\n"
+    }
+  ],
+  "viewed_contents": [],
+  "summary": {
+    "content_count_by_category": {},
+    "content_count_by_tag": {},
+    "viewed_content_ids": []
+  }
+}

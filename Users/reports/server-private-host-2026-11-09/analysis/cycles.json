@@ -1,0 +1,517 @@
+[
+  {
+    "ordinal": 1,
+    "server_cycle": 1,
+    "start_kst": "2026-11-07 15:36:52",
+    "end_kst": "2026-11-07 16:37:29",
+    "people": 100,
+    "complete": true,
+    "counts": {
+      "시작": 9642,
+      "완료": 9637,
+      "성공": 2694,
+      "건너뜀": 167,
+      "실패": 183
+    },
+    "page_failures": 2,
+    "unattributed": 22257,
+    "line_start": 1,
+    "line_end": 22770
+  },
+  {
+    "ordinal": 2,
+    "server_cycle": 1,
+    "start_kst": "2026-11-07 18:28:38",
+    "end_kst": "2026-11-07 19:31:58",
+    "people": 100,
+    "complete": true,
+    "counts": {
+      "시작": 10629,
+      "성공": 2978,
+      "완료": 10623,
+      "건너뜀": 223,
+      "실패": 230
+    },
+    "page_failures": 0,
+    "unattributed": 24625,
+    "line_start": 22772,
+    "line_end": 47860
+  },
+  {
+    "ordinal": 3,
+    "server_cycle": 2,
+    "start_kst": "2026-11-07 20:01:59",
+    "end_kst": "2026-11-07 21:06:31",
+    "people": 100,
+    "complete": true,
+    "counts": {
+      "시작": 11138,
+      "완료": 11134,
+      "성공": 3008,
+      "건너뜀": 230,
+      "실패": 227
+    },
+    "page_failures": 0,
+    "unattributed": 25533,
+    "line_start": 47862,
+    "line_end": 74022
+  },
+  {
+    "ordinal": 4,
+    "server_cycle": 3,
+    "start_kst": "2026-11-07 21:36:31",
+    "end_kst": "2026-11-07 22:35:57",
+    "people": 100,
+    "complete": true,
+    "counts": {
+      "시작": 10179,
+      "성공": 2806,
+      "완료": 10176,
+      "건너뜀": 200,
+      "실패": 168
+    },
+    "page_failures": 0,
+    "unattributed": 23518,
+    "line_start": 74024,
+    "line_end": 97961
+  },
+  {
+    "ordinal": 5,
+    "server_cycle": 4,
+    "start_kst": "2026-11-07 23:05:57",
+    "end_kst": "2026-11-08 00:07:42",
+    "people": 100,
+    "complete": true,
+    "counts": {
+      "시작": 10785,
+      "성공": 2867,
+      "완료": 10681,
+      "실패": 347,
+      "건너뜀": 224
+    },
+    "page_failures": 1,
+    "unattributed": 24796,
+    "line_start": 97963,
+    "line_end": 123417
+  },
+  {
+    "ordinal": 6,
+    "server_cycle": 5,
+    "start_kst": "2026-11-08 00:37:42",
+    "end_kst": "2026-11-08 01:18:04",
+    "people": 100,
+    "complete": true,
+    "counts": {
+      "실패": 200
+    },
+    "page_failures": 100,
+    "unattributed": 0,
+    "line_start": 123419,
+    "line_end": 124219
+  },
+  {
+    "ordinal": 7,
+    "server_cycle": 6,
+    "start_kst": "2026-11-08 01:48:04",
+    "end_kst": "2026-11-08 02:33:11",
+    "people": 100,
+    "complete": true,
+    "counts": {
+      "실패": 200
+    },
+    "page_failures": 100,
+    "unattributed": 0,
+    "line_start": 124221,
+    "line_end": 125021
+  },
+  {
+    "ordinal": 8,
+    "server_cycle": 7,
+    "start_kst": "2026-11-08 03:03:11",
+    "end_kst": "2026-11-08 03:41:07",
+    "people": 100,
+    "complete": true,
+    "counts": {
+      "실패": 200
+    },
+    "page_failures": 100,
+    "unattributed": 0,
+    "line_start": 125023,
+    "line_end": 125823
+  },
+  {
+    "ordinal": 9,
+    "server_cycle": 8,
+    "start_kst": "2026-11-08 04:11:07",
+    "end_kst": "2026-11-08 04:56:52",
+    "people": 100,
+    "complete": true,
+    "counts": {
+      "실패": 200
+    },
+    "page_failures": 100,
+    "unattributed": 0,
+    "line_start": 125825,
+    "line_end": 126625
+  },
+  {
+    "ordinal": 10,
+    "server_cycle": 9,
+    "start_kst": "2026-11-08 05:26:52",
+    "end_kst": "2026-11-08 06:07:53",
+    "people": 100,
+    "complete": true,
+    "counts": {
+      "실패": 200
+    },
+    "page_failures": 100,
+    "unattributed": 0,
+    "line_start": 126627,
+    "line_end": 127427
+  },
+  {
+    "ordinal": 11,
+    "server_cycle": 10,
+    "start_kst": "2026-11-08 06:37:53",
+    "end_kst": "2026-11-08 07:21:24",
+    "people": 100,
+    "complete": true,
+    "counts": {
+      "실패": 200
+    },
+    "page_failures": 100,
+    "unattributed": 0,
+    "line_start": 127429,
+    "line_end": 128229
+  },
+  {
+    "ordinal": 12,
+    "server_cycle": 11,
+    "start_kst": "2026-11-08 07:51:24",
+    "end_kst": "2026-11-08 08:35:25",
+    "people": 100,
+    "complete": true,
+    "counts": {
+      "실패": 200
+    },
+    "page_failures": 100,
+    "unattributed": 0,
+    "line_start": 128231,
+    "line_end": 129031
+  },
+  {
+    "ordinal": 13,
+    "server_cycle": 12,
+    "start_kst": "2026-11-08 09:05:25",
+    "end_kst": "2026-11-08 09:50:05",
+    "people": 100,
+    "complete": true,
+    "counts": {
+      "실패": 200
+    },
+    "page_failures": 100,
+    "unattributed": 0,
+    "line_start": 129033,
+    "line_end": 129833
+  },
+  {
+    "ordinal": 14,
+    "server_cycle": 13,
+    "start_kst": "2026-11-08 10:20:05",
+    "end_kst": "2026-11-08 11:00:19",
+    "people": 100,
+    "complete": true,
+    "counts": {
+      "실패": 200
+    },
+    "page_failures": 100,
+    "unattributed": 0,
+    "line_start": 129835,
+    "line_end": 130635
+  },
+  {
+    "ordinal": 15,
+    "server_cycle": 14,
+    "start_kst": "2026-11-08 11:30:19",
+    "end_kst": "2026-11-08 12:11:40",
+    "people": 100,
+    "complete": true,
+    "counts": {
+      "실패": 200
+    },
+    "page_failures": 100,
+    "unattributed": 0,
+    "line_start": 130637,
+    "line_end": 131437
+  },
+  {
+    "ordinal": 16,
+    "server_cycle": 15,
+    "start_kst": "2026-11-08 12:41:40",
+    "end_kst": "2026-11-08 13:23:24",
+    "people": 100,
+    "complete": true,
+    "counts": {
+      "실패": 200
+    },
+    "page_failures": 100,
+    "unattributed": 0,
+    "line_start": 131439,
+    "line_end": 132239
+  },
+  {
+    "ordinal": 17,
+    "server_cycle": 16,
+    "start_kst": "2026-11-08 13:53:24",
+    "end_kst": "2026-11-08 14:36:42",
+    "people": 100,
+    "complete": true,
+    "counts": {
+      "실패": 200
+    },
+    "page_failures": 100,
+    "unattributed": 0,
+    "line_start": 132241,
+    "line_end": 133041
+  },
+  {
+    "ordinal": 18,
+    "server_cycle": 17,
+    "start_kst": "2026-11-08 15:06:42",
+    "end_kst": "2026-11-08 15:51:12",
+    "people": 100,
+    "complete": true,
+    "counts": {
+      "실패": 200
+    },
+    "page_failures": 100,
+    "unattributed": 0,
+    "line_start": 133043,
+    "line_end": 133843
+  },
+  {
+    "ordinal": 19,
+    "server_cycle": 18,
+    "start_kst": "2026-11-08 16:21:12",
+    "end_kst": "2026-11-08 17:03:36",
+    "people": 100,
+    "complete": true,
+    "counts": {
+      "실패": 200
+    },
+    "page_failures": 100,
+    "unattributed": 0,
+    "line_start": 133845,
+    "line_end": 134645
+  },
+  {
+    "ordinal": 20,
+    "server_cycle": 19,
+    "start_kst": "2026-11-08 17:33:36",
+    "end_kst": "2026-11-08 18:12:53",
+    "people": 100,
+    "complete": true,
+    "counts": {
+      "실패": 200
+    },
+    "page_failures": 100,
+    "unattributed": 0,
+    "line_start": 134647,
+    "line_end": 135447
+  },
+  {
+    "ordinal": 21,
+    "server_cycle": 20,
+    "start_kst": "2026-11-08 18:42:53",
+    "end_kst": "2026-11-08 19:25:22",
+    "people": 100,
+    "complete": true,
+    "counts": {
+      "실패": 200
+    },
+    "page_failures": 100,
+    "unattributed": 0,
+    "line_start": 135449,
+    "line_end": 136249
+  },
+  {
+    "ordinal": 22,
+    "server_cycle": 21,
+    "start_kst": "2026-11-08 19:55:22",
+    "end_kst": "2026-11-08 20:33:55",
+    "people": 100,
+    "complete": true,
+    "counts": {
+      "실패": 200
+    },
+    "page_failures": 100,
+    "unattributed": 0,
+    "line_start": 136251,
+    "line_end": 137051
+  },
+  {
+    "ordinal": 23,
+    "server_cycle": 22,
+    "start_kst": "2026-11-08 21:03:55",
+    "end_kst": "2026-11-08 21:42:16",
+    "people": 100,
+    "complete": true,
+    "counts": {
+      "실패": 200
+    },
+    "page_failures": 100,
+    "unattributed": 0,
+    "line_start": 137053,
+    "line_end": 137853
+  },
+  {
+    "ordinal": 24,
+    "server_cycle": 23,
+    "start_kst": "2026-11-08 22:12:16",
+    "end_kst": "2026-11-08 22:54:25",
+    "people": 100,
+    "complete": true,
+    "counts": {
+      "실패": 200
+    },
+    "page_failures": 100,
+    "unattributed": 0,
+    "line_start": 137855,
+    "line_end": 138655
+  },
+  {
+    "ordinal": 25,
+    "server_cycle": 24,
+    "start_kst": "2026-11-08 23:24:25",
+    "end_kst": "2026-11-09 00:04:28",
+    "people": 100,
+    "complete": true,
+    "counts": {
+      "실패": 200
+    },
+    "page_failures": 100,
+    "unattributed": 0,
+    "line_start": 138657,
+    "line_end": 139457
+  },
+  {
+    "ordinal": 26,
+    "server_cycle": 25,
+    "start_kst": "2026-11-09 00:34:28",
+    "end_kst": "2026-11-09 01:15:37",
+    "people": 100,
+    "complete": true,
+    "counts": {
+      "실패": 200
+    },
+    "page_failures": 100,
+    "unattributed": 0,
+    "line_start": 139459,
+    "line_end": 140259
+  },
+  {
+    "ordinal": 27,
+    "server_cycle": 26,
+    "start_kst": "2026-11-09 01:45:37",
+    "end_kst": "2026-11-09 02:27:05",
+    "people": 100,
+    "complete": true,
+    "counts": {
+      "실패": 200
+    },
+    "page_failures": 100,
+    "unattributed": 0,
+    "line_start": 140261,
+    "line_end": 141061
+  },
+  {
+    "ordinal": 28,
+    "server_cycle": 27,
+    "start_kst": "2026-11-09 02:57:05",
+    "end_kst": "2026-11-09 03:38:45",
+    "people": 100,
+    "complete": true,
+    "counts": {
+      "실패": 200
+    },
+    "page_failures": 100,
+    "unattributed": 0,
+    "line_start": 141063,
+    "line_end": 141863
+  },
+  {
+    "ordinal": 29,
+    "server_cycle": 28,
+    "start_kst": "2026-11-09 04:08:45",
+    "end_kst": "2026-11-09 04:49:31",
+    "people": 100,
+    "complete": true,
+    "counts": {
+      "실패": 200
+    },
+    "page_failures": 100,
+    "unattributed": 0,
+    "line_start": 141865,
+    "line_end": 142665
+  },
+  {
+    "ordinal": 30,
+    "server_cycle": 29,
+    "start_kst": "2026-11-09 05:19:31",
+    "end_kst": "2026-11-09 06:01:47",
+    "people": 100,
+    "complete": true,
+    "counts": {
+      "실패": 200
+    },
+    "page_failures": 100,
+    "unattributed": 0,
+    "line_start": 142667,
+    "line_end": 143467
+  },
+  {
+    "ordinal": 31,
+    "server_cycle": 30,
+    "start_kst": "2026-11-09 06:31:47",
+    "end_kst": "2026-11-09 07:12:41",
+    "people": 100,
+    "complete": true,
+    "counts": {
+      "실패": 200
+    },
+    "page_failures": 100,
+    "unattributed": 0,
+    "line_start": 143469,
+    "line_end": 144269
+  },
+  {
+    "ordinal": 32,
+    "server_cycle": 31,
+    "start_kst": "2026-11-09 07:42:41",
+    "end_kst": "2026-11-09 08:22:09",
+    "people": 100,
+    "complete": true,
+    "counts": {
+      "실패": 200
+    },
+    "page_failures": 100,
+    "unattributed": 0,
+    "line_start": 144271,
+    "line_end": 145071
+  },
+  {
+    "ordinal": 33,
+    "server_cycle": 32,
+    "start_kst": "2026-11-09 08:52:09",
+    "end_kst": "2026-11-09 09:32:33",
+    "people": 100,
+    "complete": true,
+    "counts": {
+      "실패": 200
+    },
+    "page_failures": 100,
+    "unattributed": 0,
+    "line_start": 145073,
+    "line_end": 145873
+  }
+]

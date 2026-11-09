@@ -1,0 +1,63 @@
+{
+  "persona_id": "persona_041",
+  "started_at": "2026-11-09T00:08:29.705964+00:00",
+  "ended_at": "2026-11-09T00:08:33.302097+00:00",
+  "end_reason": "페이지 로딩 또는 실행 실패",
+  "interests": {
+    "categories": [
+      "무용"
+    ],
+    "tags": [
+      "서정적인",
+      "독립공간",
+      "새로운 시도",
+      "탭댄스",
+      "스트리트댄스",
+      "이야기",
+      "유서 깊은 공간",
+      "댄스시어터",
+      "한국무용",
+      "해설과 함께"
+    ]
+  },
+  "probabilities": {
+    "persona_id": "persona_041",
+    "action_probabilities": {
+      "search": 0.278902,
+      "content_view": 0.269906,
+      "favorite_add": 0.209177,
+      "favorite_remove": 0.044984,
+      "review_write": 0.039586,
+      "recommendation_click": 0.107962,
+      "purchase_simulation": 0.049483
+    },
+    "category_probabilities": {
+      "전시": 0.0625,
+      "뮤지컬": 0.0625,
+      "연극": 0.0625,
+      "음악": 0.0625,
+      "무용": 0.6875000000000001,
+      "축제": 0.0625
+    }
+  },
+  "actions": [
+    {
+      "timestamp": "2026-11-09T00:08:33.248582+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE"
+    },
+    {
+      "timestamp": "2026-11-09T00:08:33.253573+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/\nCall log:\n  - navigating to \"https://www.aiready.p-e.kr/\", waiting until \"domcontentloaded\"\n"
+    }
+  ],
+  "viewed_contents": [],
+  "summary": {
+    "content_count_by_category": {},
+    "content_count_by_tag": {},
+    "viewed_content_ids": []
+  }
+}

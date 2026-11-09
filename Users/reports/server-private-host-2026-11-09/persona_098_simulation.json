@@ -1,0 +1,64 @@
+{
+  "persona_id": "persona_098",
+  "started_at": "2026-11-09T00:31:18.912838+00:00",
+  "ended_at": "2026-11-09T00:31:22.594086+00:00",
+  "end_reason": "페이지 로딩 또는 실행 실패",
+  "interests": {
+    "categories": [
+      "뮤지컬",
+      "무용"
+    ],
+    "tags": [
+      "대극장뮤지컬",
+      "현대무용",
+      "가족",
+      "주크박스뮤지컬",
+      "자연",
+      "라이선스뮤지컬",
+      "사진 남기기",
+      "아이와",
+      "독립공간",
+      "상상력"
+    ]
+  },
+  "probabilities": {
+    "persona_id": "persona_098",
+    "action_probabilities": {
+      "search": 0.193892,
+      "content_view": 0.290839,
+      "favorite_add": 0.079981,
+      "favorite_remove": 0.048473,
+      "review_write": 0.120213,
+      "recommendation_click": 0.116335,
+      "purchase_simulation": 0.150267
+    },
+    "category_probabilities": {
+      "전시": 0.04285714285714286,
+      "뮤지컬": 0.4428571428571429,
+      "연극": 0.04285714285714286,
+      "음악": 0.04285714285714286,
+      "무용": 0.38571428571428573,
+      "축제": 0.04285714285714286
+    }
+  },
+  "actions": [
+    {
+      "timestamp": "2026-11-09T00:31:22.525981+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE"
+    },
+    {
+      "timestamp": "2026-11-09T00:31:22.534705+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/\nCall log:\n  - navigating to \"https://www.aiready.p-e.kr/\", waiting until \"domcontentloaded\"\n"
+    }
+  ],
+  "viewed_contents": [],
+  "summary": {
+    "content_count_by_category": {},
+    "content_count_by_tag": {},
+    "viewed_content_ids": []
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "persona_id": "persona_046",
+  "started_at": "2026-11-09T00:10:30.136185+00:00",
+  "ended_at": "2026-11-09T00:10:33.749731+00:00",
+  "end_reason": "페이지 로딩 또는 실행 실패",
+  "interests": {
+    "categories": [
+      "음악"
+    ],
+    "tags": [
+      "R&B",
+      "연인과",
+      "자연",
+      "합창",
+      "사진 남기기",
+      "상상력",
+      "독립공간",
+      "감동적인",
+      "힙합",
+      "서정적인"
+    ]
+  },
+  "probabilities": {
+    "persona_id": "persona_046",
+    "action_probabilities": {
+      "search": 0.255881,
+      "content_view": 0.247627,
+      "favorite_add": 0.191911,
+      "favorite_remove": 0.041271,
+      "review_write": 0.036319,
+      "recommendation_click": 0.099051,
+      "purchase_simulation": 0.127941
+    },
+    "category_probabilities": {
+      "전시": 0.06521739130434782,
+      "뮤지컬": 0.06521739130434782,
+      "연극": 0.06521739130434782,
+      "음악": 0.673913043478261,
+      "무용": 0.06521739130434782,
+      "축제": 0.06521739130434782
+    }
+  },
+  "actions": [
+    {
+      "timestamp": "2026-11-09T00:10:33.699218+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE"
+    },
+    {
+      "timestamp": "2026-11-09T00:10:33.703833+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/\nCall log:\n  - navigating to \"https://www.aiready.p-e.kr/\", waiting until \"domcontentloaded\"\n"
+    }
+  ],
+  "viewed_contents": [],
+  "summary": {
+    "content_count_by_category": {},
+    "content_count_by_tag": {},
+    "viewed_content_ids": []
+  }
+}

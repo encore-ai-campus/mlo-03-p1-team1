@@ -1,0 +1,64 @@
+{
+  "persona_id": "persona_008",
+  "started_at": "2026-11-08T23:55:14.287940+00:00",
+  "ended_at": "2026-11-08T23:55:17.908813+00:00",
+  "end_reason": "페이지 로딩 또는 실행 실패",
+  "interests": {
+    "categories": [
+      "뮤지컬",
+      "연극"
+    ],
+    "tags": [
+      "인형극",
+      "웅장한",
+      "사회적 메시지",
+      "주크박스뮤지컬",
+      "소극장뮤지컬",
+      "넌버벌",
+      "사진 남기기",
+      "혼자 관람",
+      "새로운 시도",
+      "유쾌한"
+    ]
+  },
+  "probabilities": {
+    "persona_id": "persona_008",
+    "action_probabilities": {
+      "search": 0.202532,
+      "content_view": 0.303797,
+      "favorite_add": 0.083544,
+      "favorite_remove": 0.050633,
+      "review_write": 0.081013,
+      "recommendation_click": 0.121519,
+      "purchase_simulation": 0.156962
+    },
+    "category_probabilities": {
+      "전시": 0.04285714285714286,
+      "뮤지컬": 0.41428571428571426,
+      "연극": 0.41428571428571426,
+      "음악": 0.04285714285714286,
+      "무용": 0.04285714285714286,
+      "축제": 0.04285714285714286
+    }
+  },
+  "actions": [
+    {
+      "timestamp": "2026-11-08T23:55:17.856245+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE"
+    },
+    {
+      "timestamp": "2026-11-08T23:55:17.856440+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/\nCall log:\n  - navigating to \"https://www.aiready.p-e.kr/\", waiting until \"domcontentloaded\"\n"
+    }
+  ],
+  "viewed_contents": [],
+  "summary": {
+    "content_count_by_category": {},
+    "content_count_by_tag": {},
+    "viewed_content_ids": []
+  }
+}

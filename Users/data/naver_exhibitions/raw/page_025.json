@@ -1,0 +1,45 @@
+{
+  "page": 25,
+  "records": [
+    {
+      "page": 25,
+      "event_id": "42313273",
+      "title": "이어지는",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42313273&qvt=0&query=%EC%9D%B4%EC%96%B4%EC%A7%80%EB%8A%94",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261027_143%2F17930822283438G2ql_JPEG%2F360_main_thumb_url_1793082228320.jpg",
+      "period": "2026.11.04.~2026.12.03.",
+      "venue": "갤러리 다선",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=31139811"
+    },
+    {
+      "page": 25,
+      "event_id": "42312596",
+      "title": "엔조 개인전",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42312596&qvt=0&query=%EC%97%94%EC%A1%B0%20%EA%B0%9C%EC%9D%B8%EC%A0%84",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261027_10%2F1793065196592WKxkV_JPEG%2F360_main_thumb_url_1793065196571.jpg",
+      "period": "2026.10.31.~2026.11.15.",
+      "venue": "낭만시간연구소",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=1214940167"
+    },
+    {
+      "page": 25,
+      "event_id": "42308303",
+      "title": "우연의 겹침과 기억",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42308303&qvt=0&query=%EC%9A%B0%EC%97%B0%EC%9D%98%20%EA%B2%B9%EC%B9%A8%EA%B3%BC%20%EA%B8%B0%EC%96%B5",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261026_228%2F1793010908726q3jNg_JPEG%2F360_main_thumb_url_1793010908689.jpg",
+      "period": "2026.10.23.~2026.11.11.",
+      "venue": "아트웨이갤러리",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=1887849409"
+    },
+    {
+      "page": 25,
+      "event_id": "42306927",
+      "title": "박성아 : 그리고 콜론은 닿을 수 없었다",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42306927&qvt=0&query=%EB%B0%95%EC%84%B1%EC%95%84%20%EA%B7%B8%EB%A6%AC%EA%B3%A0%20%EC%BD%9C%EB%A1%A0%EC%9D%80%20%EB%8B%BF%EC%9D%84%20%EC%88%98%20%EC%97%86%EC%97%88%EB%8B%A4",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261026_257%2F1792991296471mDL37_JPEG%2F360_main_thumb_url_1792991296409.jpg",
+      "period": "2026.10.30.~2026.11.21.",
+      "venue": "영공",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=2065016390"
+    }
+  ]
+}

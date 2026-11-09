@@ -1,0 +1,801 @@
+[2026-11-07T16:48:04.168246+00:00] 시작 persona_001; 동시 활동 1/5; 최대 292.1초
+[2026-11-07T16:48:07.842129+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T16:48:07.849260+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_001_simulation.json
+[2026-11-07T16:48:07.906860+00:00] 종료 persona_001; 동시 활동 0/5
+[2026-11-07T16:48:34.220958+00:00] 시작 persona_002; 동시 활동 1/5; 최대 272.4초
+[2026-11-07T16:48:37.791891+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T16:48:37.795360+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_002_simulation.json
+[2026-11-07T16:48:37.849391+00:00] 종료 persona_002; 동시 활동 0/5
+[2026-11-07T16:49:03.067410+00:00] 시작 persona_003; 동시 활동 1/5; 최대 191.8초
+[2026-11-07T16:49:06.592853+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T16:49:06.598151+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_003_simulation.json
+[2026-11-07T16:49:06.651421+00:00] 종료 persona_003; 동시 활동 0/5
+[2026-11-07T16:49:40.740416+00:00] 시작 persona_004; 동시 활동 1/5; 최대 60.3초
+[2026-11-07T16:49:44.288070+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T16:49:44.293709+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_004_simulation.json
+[2026-11-07T16:49:44.347310+00:00] 종료 persona_004; 동시 활동 0/5
+[2026-11-07T16:50:18.957626+00:00] 시작 persona_005; 동시 활동 1/5; 최대 69.4초
+[2026-11-07T16:50:22.500033+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T16:50:22.502968+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_005_simulation.json
+[2026-11-07T16:50:22.557242+00:00] 종료 persona_005; 동시 활동 0/5
+[2026-11-07T16:50:25.244200+00:00] 시작 persona_006; 동시 활동 1/5; 최대 151.8초
+[2026-11-07T16:50:28.769926+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T16:50:28.777575+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_006_simulation.json
+[2026-11-07T16:50:28.829235+00:00] 종료 persona_006; 동시 활동 0/5
+[2026-11-07T16:50:39.580143+00:00] 시작 persona_007; 동시 활동 1/5; 최대 178.7초
+[2026-11-07T16:50:43.108587+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T16:50:43.111499+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_007_simulation.json
+[2026-11-07T16:50:43.166600+00:00] 종료 persona_007; 동시 활동 0/5
+[2026-11-07T16:51:22.533554+00:00] 시작 persona_008; 동시 활동 1/5; 최대 211.8초
+[2026-11-07T16:51:26.116598+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T16:51:26.120728+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_008_simulation.json
+[2026-11-07T16:51:26.173091+00:00] 종료 persona_008; 동시 활동 0/5
+[2026-11-07T16:51:48.999786+00:00] 시작 persona_009; 동시 활동 1/5; 최대 283.8초
+[2026-11-07T16:51:52.546678+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T16:51:52.551225+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_009_simulation.json
+[2026-11-07T16:51:52.606867+00:00] 종료 persona_009; 동시 활동 0/5
+[2026-11-07T16:52:17.218707+00:00] 시작 persona_010; 동시 활동 1/5; 최대 129.8초
+[2026-11-07T16:52:20.774104+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T16:52:20.776465+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_010_simulation.json
+[2026-11-07T16:52:20.835053+00:00] 종료 persona_010; 동시 활동 0/5
+[2026-11-07T16:52:51.580103+00:00] 시작 persona_011; 동시 활동 1/5; 최대 128.7초
+[2026-11-07T16:52:55.135064+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T16:52:55.141617+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_011_simulation.json
+[2026-11-07T16:52:55.194848+00:00] 종료 persona_011; 동시 활동 0/5
+[2026-11-07T16:52:59.422385+00:00] 시작 persona_012; 동시 활동 1/5; 최대 119.4초
+[2026-11-07T16:53:02.946812+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T16:53:02.950786+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_012_simulation.json
+[2026-11-07T16:53:03.002995+00:00] 종료 persona_012; 동시 활동 0/5
+[2026-11-07T16:53:41.273501+00:00] 시작 persona_013; 동시 활동 1/5; 최대 71.0초
+[2026-11-07T16:53:44.931878+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T16:53:44.937583+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_013_simulation.json
+[2026-11-07T16:53:44.990256+00:00] 종료 persona_013; 동시 활동 0/5
+[2026-11-07T16:53:59.698250+00:00] 시작 persona_014; 동시 활동 1/5; 최대 279.9초
+[2026-11-07T16:54:03.235487+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T16:54:03.239898+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_014_simulation.json
+[2026-11-07T16:54:03.290409+00:00] 종료 persona_014; 동시 활동 0/5
+[2026-11-07T16:54:32.228135+00:00] 시작 persona_015; 동시 활동 1/5; 최대 67.0초
+[2026-11-07T16:54:35.748545+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T16:54:35.750979+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_015_simulation.json
+[2026-11-07T16:54:35.805219+00:00] 종료 persona_015; 동시 활동 0/5
+[2026-11-07T16:54:58.102150+00:00] 시작 persona_016; 동시 활동 1/5; 최대 274.4초
+[2026-11-07T16:55:01.669124+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T16:55:01.680896+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_016_simulation.json
+[2026-11-07T16:55:01.733891+00:00] 종료 persona_016; 동시 활동 0/5
+[2026-11-07T16:55:30.747231+00:00] 시작 persona_017; 동시 활동 1/5; 최대 159.0초
+[2026-11-07T16:55:34.309102+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T16:55:34.311827+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_017_simulation.json
+[2026-11-07T16:55:34.365874+00:00] 종료 persona_017; 동시 활동 0/5
+[2026-11-07T16:55:41.508623+00:00] 시작 persona_018; 동시 활동 1/5; 최대 147.8초
+[2026-11-07T16:55:45.056976+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T16:55:45.065984+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_018_simulation.json
+[2026-11-07T16:55:45.122090+00:00] 종료 persona_018; 동시 활동 0/5
+[2026-11-07T16:55:55.889246+00:00] 시작 persona_019; 동시 활동 1/5; 최대 135.5초
+[2026-11-07T16:55:59.393984+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T16:55:59.399480+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_019_simulation.json
+[2026-11-07T16:55:59.451580+00:00] 종료 persona_019; 동시 활동 0/5
+[2026-11-07T16:56:29.593479+00:00] 시작 persona_020; 동시 활동 1/5; 최대 254.1초
+[2026-11-07T16:56:33.127142+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T16:56:33.130711+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_020_simulation.json
+[2026-11-07T16:56:33.184017+00:00] 종료 persona_020; 동시 활동 0/5
+[2026-11-07T16:57:09.447045+00:00] 시작 persona_021; 동시 활동 1/5; 최대 178.6초
+[2026-11-07T16:57:12.993406+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T16:57:12.998558+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_021_simulation.json
+[2026-11-07T16:57:13.048596+00:00] 종료 persona_021; 동시 활동 0/5
+[2026-11-07T16:57:24.614436+00:00] 시작 persona_022; 동시 활동 1/5; 최대 291.8초
+[2026-11-07T16:57:28.161983+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T16:57:28.168717+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_022_simulation.json
+[2026-11-07T16:57:28.222111+00:00] 종료 persona_022; 동시 활동 0/5
+[2026-11-07T16:57:31.361636+00:00] 시작 persona_023; 동시 활동 1/5; 최대 246.5초
+[2026-11-07T16:57:34.877560+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T16:57:34.882927+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_023_simulation.json
+[2026-11-07T16:57:34.937942+00:00] 종료 persona_023; 동시 활동 0/5
+[2026-11-07T16:57:59.739562+00:00] 시작 persona_024; 동시 활동 1/5; 최대 129.2초
+[2026-11-07T16:58:03.295567+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T16:58:03.299687+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_024_simulation.json
+[2026-11-07T16:58:03.349097+00:00] 종료 persona_024; 동시 활동 0/5
+[2026-11-07T16:58:13.520661+00:00] 시작 persona_025; 동시 활동 1/5; 최대 194.3초
+[2026-11-07T16:58:17.056633+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T16:58:17.060503+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_025_simulation.json
+[2026-11-07T16:58:17.114192+00:00] 종료 persona_025; 동시 활동 0/5
+[2026-11-07T16:58:46.442676+00:00] 시작 persona_026; 동시 활동 1/5; 최대 83.8초
+[2026-11-07T16:58:50.087904+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T16:58:50.088065+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_026_simulation.json
+[2026-11-07T16:58:50.141763+00:00] 종료 persona_026; 동시 활동 0/5
+[2026-11-07T16:59:13.101811+00:00] 시작 persona_027; 동시 활동 1/5; 최대 235.5초
+[2026-11-07T16:59:16.643591+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T16:59:16.649415+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_027_simulation.json
+[2026-11-07T16:59:16.700866+00:00] 종료 persona_027; 동시 활동 0/5
+[2026-11-07T16:59:39.883471+00:00] 시작 persona_028; 동시 활동 1/5; 최대 77.5초
+[2026-11-07T16:59:43.393965+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T16:59:43.399087+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_028_simulation.json
+[2026-11-07T16:59:43.453605+00:00] 종료 persona_028; 동시 활동 0/5
+[2026-11-07T17:00:14.870724+00:00] 시작 persona_029; 동시 활동 1/5; 최대 184.4초
+[2026-11-07T17:00:18.399664+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:00:18.402593+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_029_simulation.json
+[2026-11-07T17:00:18.455270+00:00] 종료 persona_029; 동시 활동 0/5
+[2026-11-07T17:00:59.274541+00:00] 시작 persona_030; 동시 활동 1/5; 최대 203.9초
+[2026-11-07T17:01:02.819854+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:01:02.825417+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_030_simulation.json
+[2026-11-07T17:01:02.877985+00:00] 종료 persona_030; 동시 활동 0/5
+[2026-11-07T17:01:09.898631+00:00] 시작 persona_031; 동시 활동 1/5; 최대 130.7초
+[2026-11-07T17:01:13.443662+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:01:13.446833+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_031_simulation.json
+[2026-11-07T17:01:13.499893+00:00] 종료 persona_031; 동시 활동 0/5
+[2026-11-07T17:01:30.293687+00:00] 시작 persona_032; 동시 활동 1/5; 최대 258.0초
+[2026-11-07T17:01:33.855142+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:01:33.860401+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_032_simulation.json
+[2026-11-07T17:01:33.914289+00:00] 종료 persona_032; 동시 활동 0/5
+[2026-11-07T17:01:51.616629+00:00] 시작 persona_033; 동시 활동 1/5; 최대 202.9초
+[2026-11-07T17:01:55.173602+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:01:55.177795+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_033_simulation.json
+[2026-11-07T17:01:55.231078+00:00] 종료 persona_033; 동시 활동 0/5
+[2026-11-07T17:02:31.560689+00:00] 시작 persona_034; 동시 활동 1/5; 최대 82.7초
+[2026-11-07T17:02:35.106244+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:02:35.111566+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_034_simulation.json
+[2026-11-07T17:02:35.166523+00:00] 종료 persona_034; 동시 활동 0/5
+[2026-11-07T17:02:37.795884+00:00] 시작 persona_035; 동시 활동 1/5; 최대 135.0초
+[2026-11-07T17:02:41.309786+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:02:41.318111+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_035_simulation.json
+[2026-11-07T17:02:41.370066+00:00] 종료 persona_035; 동시 활동 0/5
+[2026-11-07T17:03:18.061454+00:00] 시작 persona_036; 동시 활동 1/5; 최대 202.7초
+[2026-11-07T17:03:21.635519+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:03:21.640531+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_036_simulation.json
+[2026-11-07T17:03:21.692168+00:00] 종료 persona_036; 동시 활동 0/5
+[2026-11-07T17:03:48.661715+00:00] 시작 persona_037; 동시 활동 1/5; 최대 206.9초
+[2026-11-07T17:03:52.287308+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:03:52.290127+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_037_simulation.json
+[2026-11-07T17:03:52.346803+00:00] 종료 persona_037; 동시 활동 0/5
+[2026-11-07T17:04:29.188245+00:00] 시작 persona_038; 동시 활동 1/5; 최대 286.8초
+[2026-11-07T17:04:32.739479+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:04:32.739635+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_038_simulation.json
+[2026-11-07T17:04:32.799635+00:00] 종료 persona_038; 동시 활동 0/5
+[2026-11-07T17:05:05.782138+00:00] 시작 persona_039; 동시 활동 1/5; 최대 87.1초
+[2026-11-07T17:05:09.344571+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:05:09.350592+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_039_simulation.json
+[2026-11-07T17:05:09.405314+00:00] 종료 persona_039; 동시 활동 0/5
+[2026-11-07T17:05:30.137840+00:00] 시작 persona_040; 동시 활동 1/5; 최대 243.8초
+[2026-11-07T17:05:33.668427+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:05:33.673616+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_040_simulation.json
+[2026-11-07T17:05:33.732681+00:00] 종료 persona_040; 동시 활동 0/5
+[2026-11-07T17:06:07.877762+00:00] 시작 persona_041; 동시 활동 1/5; 최대 280.4초
+[2026-11-07T17:06:11.432031+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:06:11.432184+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_041_simulation.json
+[2026-11-07T17:06:11.484209+00:00] 종료 persona_041; 동시 활동 0/5
+[2026-11-07T17:06:51.914583+00:00] 시작 persona_042; 동시 활동 1/5; 최대 160.1초
+[2026-11-07T17:06:55.461533+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:06:55.461694+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_042_simulation.json
+[2026-11-07T17:06:55.517642+00:00] 종료 persona_042; 동시 활동 0/5
+[2026-11-07T17:07:15.354098+00:00] 시작 persona_043; 동시 활동 1/5; 최대 69.7초
+[2026-11-07T17:07:18.884688+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:07:18.888185+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_043_simulation.json
+[2026-11-07T17:07:18.940604+00:00] 종료 persona_043; 동시 활동 0/5
+[2026-11-07T17:07:49.721847+00:00] 시작 persona_044; 동시 활동 1/5; 최대 83.5초
+[2026-11-07T17:07:53.248181+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:07:53.255126+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_044_simulation.json
+[2026-11-07T17:07:53.309450+00:00] 종료 persona_044; 동시 활동 0/5
+[2026-11-07T17:08:32.113545+00:00] 시작 persona_045; 동시 활동 1/5; 최대 110.7초
+[2026-11-07T17:08:35.680836+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:08:35.688445+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_045_simulation.json
+[2026-11-07T17:08:35.742881+00:00] 종료 persona_045; 동시 활동 0/5
+[2026-11-07T17:09:09.304820+00:00] 시작 persona_046; 동시 활동 1/5; 최대 226.8초
+[2026-11-07T17:09:12.998835+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:09:13.001885+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_046_simulation.json
+[2026-11-07T17:09:13.053144+00:00] 종료 persona_046; 동시 활동 0/5
+[2026-11-07T17:09:30.230995+00:00] 시작 persona_047; 동시 활동 1/5; 최대 112.5초
+[2026-11-07T17:09:33.790959+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:09:33.795954+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_047_simulation.json
+[2026-11-07T17:09:33.846433+00:00] 종료 persona_047; 동시 활동 0/5
+[2026-11-07T17:09:42.171953+00:00] 시작 persona_048; 동시 활동 1/5; 최대 72.9초
+[2026-11-07T17:09:45.701512+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:09:45.701698+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_048_simulation.json
+[2026-11-07T17:09:45.753504+00:00] 종료 persona_048; 동시 활동 0/5
+[2026-11-07T17:09:54.647131+00:00] 시작 persona_049; 동시 활동 1/5; 최대 209.8초
+[2026-11-07T17:09:58.181891+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:09:58.184471+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_049_simulation.json
+[2026-11-07T17:09:58.235842+00:00] 종료 persona_049; 동시 활동 0/5
+[2026-11-07T17:10:36.027663+00:00] 시작 persona_050; 동시 활동 1/5; 최대 73.5초
+[2026-11-07T17:10:39.584083+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:10:39.588527+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_050_simulation.json
+[2026-11-07T17:10:39.640629+00:00] 종료 persona_050; 동시 활동 0/5
+[2026-11-07T17:10:59.227894+00:00] 시작 persona_051; 동시 활동 1/5; 최대 188.7초
+[2026-11-07T17:11:02.754629+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:11:02.761237+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_051_simulation.json
+[2026-11-07T17:11:02.817952+00:00] 종료 persona_051; 동시 활동 0/5
+[2026-11-07T17:11:41.728719+00:00] 시작 persona_052; 동시 활동 1/5; 최대 257.3초
+[2026-11-07T17:11:45.253256+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:11:45.254202+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_052_simulation.json
+[2026-11-07T17:11:45.309518+00:00] 종료 persona_052; 동시 활동 0/5
+[2026-11-07T17:11:52.165106+00:00] 시작 persona_053; 동시 활동 1/5; 최대 171.1초
+[2026-11-07T17:11:55.749530+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:11:55.749676+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_053_simulation.json
+[2026-11-07T17:11:55.802241+00:00] 종료 persona_053; 동시 활동 0/5
+[2026-11-07T17:12:28.042174+00:00] 시작 persona_054; 동시 활동 1/5; 최대 73.1초
+[2026-11-07T17:12:31.589003+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:12:31.593779+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_054_simulation.json
+[2026-11-07T17:12:31.646650+00:00] 종료 persona_054; 동시 활동 0/5
+[2026-11-07T17:12:52.068616+00:00] 시작 persona_055; 동시 활동 1/5; 최대 179.7초
+[2026-11-07T17:12:55.584651+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:12:55.588206+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_055_simulation.json
+[2026-11-07T17:12:55.639987+00:00] 종료 persona_055; 동시 활동 0/5
+[2026-11-07T17:13:14.400499+00:00] 시작 persona_056; 동시 활동 1/5; 최대 291.6초
+[2026-11-07T17:13:17.922899+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:13:17.927377+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_056_simulation.json
+[2026-11-07T17:13:17.980701+00:00] 종료 persona_056; 동시 활동 0/5
+[2026-11-07T17:13:30.564227+00:00] 시작 persona_057; 동시 활동 1/5; 최대 283.0초
+[2026-11-07T17:13:34.115651+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:13:34.119209+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_057_simulation.json
+[2026-11-07T17:13:34.172209+00:00] 종료 persona_057; 동시 활동 0/5
+[2026-11-07T17:14:11.969559+00:00] 시작 persona_058; 동시 활동 1/5; 최대 67.3초
+[2026-11-07T17:14:15.586931+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:14:15.589516+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_058_simulation.json
+[2026-11-07T17:14:15.643890+00:00] 종료 persona_058; 동시 활동 0/5
+[2026-11-07T17:14:33.799585+00:00] 시작 persona_059; 동시 활동 1/5; 최대 139.0초
+[2026-11-07T17:14:37.346938+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:14:37.352535+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_059_simulation.json
+[2026-11-07T17:14:37.404465+00:00] 종료 persona_059; 동시 활동 0/5
+[2026-11-07T17:14:55.385907+00:00] 시작 persona_060; 동시 활동 1/5; 최대 85.2초
+[2026-11-07T17:14:58.913186+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:14:58.919536+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_060_simulation.json
+[2026-11-07T17:14:58.972857+00:00] 종료 persona_060; 동시 활동 0/5
+[2026-11-07T17:15:39.801627+00:00] 시작 persona_061; 동시 활동 1/5; 최대 287.2초
+[2026-11-07T17:15:43.329645+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:15:43.336360+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_061_simulation.json
+[2026-11-07T17:15:43.391092+00:00] 종료 persona_061; 동시 활동 0/5
+[2026-11-07T17:16:07.481489+00:00] 시작 persona_062; 동시 활동 1/5; 최대 128.1초
+[2026-11-07T17:16:11.044177+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:16:11.046909+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_062_simulation.json
+[2026-11-07T17:16:11.098869+00:00] 종료 persona_062; 동시 활동 0/5
+[2026-11-07T17:16:46.097612+00:00] 시작 persona_063; 동시 활동 1/5; 최대 146.4초
+[2026-11-07T17:16:49.637572+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:16:49.640210+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_063_simulation.json
+[2026-11-07T17:16:49.695070+00:00] 종료 persona_063; 동시 활동 0/5
+[2026-11-07T17:17:04.101821+00:00] 시작 persona_064; 동시 활동 1/5; 최대 205.6초
+[2026-11-07T17:17:07.617647+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:17:07.621592+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_064_simulation.json
+[2026-11-07T17:17:07.674248+00:00] 종료 persona_064; 동시 활동 0/5
+[2026-11-07T17:17:30.380029+00:00] 시작 persona_065; 동시 활동 1/5; 최대 119.1초
+[2026-11-07T17:17:33.918890+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:17:33.925551+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_065_simulation.json
+[2026-11-07T17:17:33.974916+00:00] 종료 persona_065; 동시 활동 0/5
+[2026-11-07T17:18:08.615447+00:00] 시작 persona_066; 동시 활동 1/5; 최대 271.2초
+[2026-11-07T17:18:12.129021+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:18:12.133981+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_066_simulation.json
+[2026-11-07T17:18:12.184970+00:00] 종료 persona_066; 동시 활동 0/5
+[2026-11-07T17:18:47.479368+00:00] 시작 persona_067; 동시 활동 1/5; 최대 299.9초
+[2026-11-07T17:18:51.043951+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:18:51.047496+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_067_simulation.json
+[2026-11-07T17:18:51.098598+00:00] 종료 persona_067; 동시 활동 0/5
+[2026-11-07T17:19:18.708428+00:00] 시작 persona_068; 동시 활동 1/5; 최대 64.8초
+[2026-11-07T17:19:22.338889+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:19:22.343251+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_068_simulation.json
+[2026-11-07T17:19:22.397659+00:00] 종료 persona_068; 동시 활동 0/5
+[2026-11-07T17:19:54.501883+00:00] 시작 persona_069; 동시 활동 1/5; 최대 169.7초
+[2026-11-07T17:19:58.048663+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:19:58.052664+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_069_simulation.json
+[2026-11-07T17:19:58.104544+00:00] 종료 persona_069; 동시 활동 0/5
+[2026-11-07T17:20:06.603853+00:00] 시작 persona_070; 동시 활동 1/5; 최대 90.5초
+[2026-11-07T17:20:10.149514+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:20:10.149664+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_070_simulation.json
+[2026-11-07T17:20:10.206123+00:00] 종료 persona_070; 동시 활동 0/5
+[2026-11-07T17:20:48.440024+00:00] 시작 persona_071; 동시 활동 1/5; 최대 168.4초
+[2026-11-07T17:20:51.998578+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:20:52.004393+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_071_simulation.json
+[2026-11-07T17:20:52.059532+00:00] 종료 persona_071; 동시 활동 0/5
+[2026-11-07T17:21:12.910239+00:00] 시작 persona_072; 동시 활동 1/5; 최대 97.6초
+[2026-11-07T17:21:16.450092+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:21:16.456751+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_072_simulation.json
+[2026-11-07T17:21:16.509561+00:00] 종료 persona_072; 동시 활동 0/5
+[2026-11-07T17:21:31.234943+00:00] 시작 persona_073; 동시 활동 1/5; 최대 219.3초
+[2026-11-07T17:21:34.752564+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:21:34.757580+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_073_simulation.json
+[2026-11-07T17:21:34.811172+00:00] 종료 persona_073; 동시 활동 0/5
+[2026-11-07T17:22:11.876617+00:00] 시작 persona_074; 동시 활동 1/5; 최대 164.6초
+[2026-11-07T17:22:15.395107+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:22:15.400595+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_074_simulation.json
+[2026-11-07T17:22:15.452351+00:00] 종료 persona_074; 동시 활동 0/5
+[2026-11-07T17:22:25.464122+00:00] 시작 persona_075; 동시 활동 1/5; 최대 231.8초
+[2026-11-07T17:22:29.026054+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:22:29.030579+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_075_simulation.json
+[2026-11-07T17:22:29.082827+00:00] 종료 persona_075; 동시 활동 0/5
+[2026-11-07T17:22:42.529541+00:00] 시작 persona_076; 동시 활동 1/5; 최대 193.0초
+[2026-11-07T17:22:46.050690+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:22:46.054512+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_076_simulation.json
+[2026-11-07T17:22:46.109546+00:00] 종료 persona_076; 동시 활동 0/5
+[2026-11-07T17:23:15.754625+00:00] 시작 persona_077; 동시 활동 1/5; 최대 208.3초
+[2026-11-07T17:23:19.269209+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:23:19.270762+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_077_simulation.json
+[2026-11-07T17:23:19.325804+00:00] 종료 persona_077; 동시 활동 0/5
+[2026-11-07T17:23:50.829501+00:00] 시작 persona_078; 동시 활동 1/5; 최대 63.4초
+[2026-11-07T17:23:54.338896+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:23:54.345483+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_078_simulation.json
+[2026-11-07T17:23:54.397648+00:00] 종료 persona_078; 동시 활동 0/5
+[2026-11-07T17:23:57.494187+00:00] 시작 persona_079; 동시 활동 1/5; 최대 157.2초
+[2026-11-07T17:24:01.062063+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:24:01.065721+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_079_simulation.json
+[2026-11-07T17:24:01.120964+00:00] 종료 persona_079; 동시 활동 0/5
+[2026-11-07T17:24:39.679111+00:00] 시작 persona_080; 동시 활동 1/5; 최대 114.4초
+[2026-11-07T17:24:43.363483+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:24:43.367602+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_080_simulation.json
+[2026-11-07T17:24:43.418140+00:00] 종료 persona_080; 동시 활동 0/5
+[2026-11-07T17:24:47.992213+00:00] 시작 persona_081; 동시 활동 1/5; 최대 152.8초
+[2026-11-07T17:24:51.556673+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:24:51.560869+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_081_simulation.json
+[2026-11-07T17:24:51.610952+00:00] 종료 persona_081; 동시 활동 0/5
+[2026-11-07T17:25:11.464384+00:00] 시작 persona_082; 동시 활동 1/5; 최대 73.1초
+[2026-11-07T17:25:14.977454+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:25:14.981533+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_082_simulation.json
+[2026-11-07T17:25:15.035153+00:00] 종료 persona_082; 동시 활동 0/5
+[2026-11-07T17:25:45.550766+00:00] 시작 persona_083; 동시 활동 1/5; 최대 124.8초
+[2026-11-07T17:25:49.089428+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:25:49.093588+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_083_simulation.json
+[2026-11-07T17:25:49.145527+00:00] 종료 persona_083; 동시 활동 0/5
+[2026-11-07T17:26:10.170533+00:00] 시작 persona_084; 동시 활동 1/5; 최대 184.0초
+[2026-11-07T17:26:13.724234+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:26:13.730854+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_084_simulation.json
+[2026-11-07T17:26:13.784165+00:00] 종료 persona_084; 동시 활동 0/5
+[2026-11-07T17:26:32.462263+00:00] 시작 persona_085; 동시 활동 1/5; 최대 103.2초
+[2026-11-07T17:26:36.005229+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:26:36.008260+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_085_simulation.json
+[2026-11-07T17:26:36.057692+00:00] 종료 persona_085; 동시 활동 0/5
+[2026-11-07T17:26:54.434776+00:00] 시작 persona_086; 동시 활동 1/5; 최대 220.7초
+[2026-11-07T17:26:57.957050+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:26:57.957196+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_086_simulation.json
+[2026-11-07T17:26:58.012832+00:00] 종료 persona_086; 동시 활동 0/5
+[2026-11-07T17:27:18.950065+00:00] 시작 persona_087; 동시 활동 1/5; 최대 85.7초
+[2026-11-07T17:27:22.469430+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:27:22.473358+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_087_simulation.json
+[2026-11-07T17:27:22.527938+00:00] 종료 persona_087; 동시 활동 0/5
+[2026-11-07T17:27:30.712714+00:00] 시작 persona_088; 동시 활동 1/5; 최대 233.4초
+[2026-11-07T17:27:34.237469+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:27:34.242992+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_088_simulation.json
+[2026-11-07T17:27:34.296678+00:00] 종료 persona_088; 동시 활동 0/5
+[2026-11-07T17:28:09.658167+00:00] 시작 persona_089; 동시 활동 1/5; 최대 241.5초
+[2026-11-07T17:28:13.221766+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:28:13.225659+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_089_simulation.json
+[2026-11-07T17:28:13.276643+00:00] 종료 persona_089; 동시 활동 0/5
+[2026-11-07T17:28:49.340234+00:00] 시작 persona_090; 동시 활동 1/5; 최대 231.4초
+[2026-11-07T17:28:52.898992+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:28:52.903888+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_090_simulation.json
+[2026-11-07T17:28:52.958852+00:00] 종료 persona_090; 동시 활동 0/5
+[2026-11-07T17:29:02.985207+00:00] 시작 persona_091; 동시 활동 1/5; 최대 199.9초
+[2026-11-07T17:29:06.530858+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:29:06.536490+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_091_simulation.json
+[2026-11-07T17:29:06.586252+00:00] 종료 persona_091; 동시 활동 0/5
+[2026-11-07T17:29:19.433876+00:00] 시작 persona_092; 동시 활동 1/5; 최대 180.5초
+[2026-11-07T17:29:22.974484+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:29:22.978658+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_092_simulation.json
+[2026-11-07T17:29:23.025511+00:00] 종료 persona_092; 동시 활동 0/5
+[2026-11-07T17:29:54.697646+00:00] 시작 persona_093; 동시 활동 1/5; 최대 219.6초
+[2026-11-07T17:29:58.370377+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:29:58.374010+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_093_simulation.json
+[2026-11-07T17:29:58.426145+00:00] 종료 persona_093; 동시 활동 0/5
+[2026-11-07T17:30:10.617947+00:00] 시작 persona_094; 동시 활동 1/5; 최대 62.8초
+[2026-11-07T17:30:14.179163+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:30:14.184404+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_094_simulation.json
+[2026-11-07T17:30:14.255691+00:00] 종료 persona_094; 동시 활동 0/5
+[2026-11-07T17:30:23.477216+00:00] 시작 persona_095; 동시 활동 1/5; 최대 61.7초
+[2026-11-07T17:30:27.047205+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:30:27.047391+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_095_simulation.json
+[2026-11-07T17:30:27.102746+00:00] 종료 persona_095; 동시 활동 0/5
+[2026-11-07T17:31:04.611914+00:00] 시작 persona_096; 동시 활동 1/5; 최대 154.7초
+[2026-11-07T17:31:08.192977+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:31:08.195484+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_096_simulation.json
+[2026-11-07T17:31:08.249855+00:00] 종료 persona_096; 동시 활동 0/5
+[2026-11-07T17:31:42.740853+00:00] 시작 persona_097; 동시 활동 1/5; 최대 135.3초
+[2026-11-07T17:31:46.273614+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:31:46.277880+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_097_simulation.json
+[2026-11-07T17:31:46.328056+00:00] 종료 persona_097; 동시 활동 0/5
+[2026-11-07T17:32:26.005773+00:00] 시작 persona_098; 동시 활동 1/5; 최대 262.3초
+[2026-11-07T17:32:29.541409+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:32:29.544752+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_098_simulation.json
+[2026-11-07T17:32:29.597266+00:00] 종료 persona_098; 동시 활동 0/5
+[2026-11-07T17:32:32.990267+00:00] 시작 persona_099; 동시 활동 1/5; 최대 189.8초
+[2026-11-07T17:32:36.508466+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:32:36.515041+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_099_simulation.json
+[2026-11-07T17:32:36.570809+00:00] 종료 persona_099; 동시 활동 0/5
+[2026-11-07T17:33:07.573648+00:00] 시작 persona_100; 동시 활동 1/5; 최대 221.3초
+[2026-11-07T17:33:11.140608+00:00] 네트워크 요청: 실패 - GET /: net::ERR_ADDRESS_UNREACHABLE
+[2026-11-07T17:33:11.144615+00:00] 페이지 실행: 실패 - Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/
+Call log:
+  - navigating to "https://www.aiready.p-e.kr/", waiting until "domcontentloaded"
+
+실행 결과 저장: runs/persona_100_simulation.json
+[2026-11-07T17:33:11.195099+00:00] 종료 persona_100; 동시 활동 0/5
+[2026-11-07T17:33:11.195773+00:00] 회차 6: 100명 전원 종료

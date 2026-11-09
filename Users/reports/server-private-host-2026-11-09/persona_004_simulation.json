@@ -1,0 +1,64 @@
+{
+  "persona_id": "persona_004",
+  "started_at": "2026-11-08T23:53:17.173323+00:00",
+  "ended_at": "2026-11-08T23:53:20.792800+00:00",
+  "end_reason": "페이지 로딩 또는 실행 실패",
+  "interests": {
+    "categories": [
+      "음악",
+      "무용"
+    ],
+    "tags": [
+      "크로스오버",
+      "전자음악",
+      "사회적 메시지",
+      "미술관",
+      "인간관계",
+      "여유로운 관람",
+      "체험형",
+      "역사 이야기",
+      "웅장한",
+      "탭댄스"
+    ]
+  },
+  "probabilities": {
+    "persona_id": "persona_004",
+    "action_probabilities": {
+      "search": 0.271572,
+      "content_view": 0.262812,
+      "favorite_add": 0.072273,
+      "favorite_remove": 0.043802,
+      "review_write": 0.108629,
+      "recommendation_click": 0.105125,
+      "purchase_simulation": 0.135786
+    },
+    "category_probabilities": {
+      "전시": 0.04411764705882353,
+      "뮤지컬": 0.04411764705882353,
+      "연극": 0.04411764705882353,
+      "음악": 0.4264705882352941,
+      "무용": 0.3970588235294118,
+      "축제": 0.04411764705882353
+    }
+  },
+  "actions": [
+    {
+      "timestamp": "2026-11-08T23:53:20.736781+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE"
+    },
+    {
+      "timestamp": "2026-11-08T23:53:20.743509+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/\nCall log:\n  - navigating to \"https://www.aiready.p-e.kr/\", waiting until \"domcontentloaded\"\n"
+    }
+  ],
+  "viewed_contents": [],
+  "summary": {
+    "content_count_by_category": {},
+    "content_count_by_tag": {},
+    "viewed_content_ids": []
+  }
+}

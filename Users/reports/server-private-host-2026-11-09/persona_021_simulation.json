@@ -1,0 +1,64 @@
+{
+  "persona_id": "persona_021",
+  "started_at": "2026-11-09T00:00:17.347924+00:00",
+  "ended_at": "2026-11-09T00:00:20.951286+00:00",
+  "end_reason": "페이지 로딩 또는 실행 실패",
+  "interests": {
+    "categories": [
+      "연극",
+      "무용"
+    ],
+    "tags": [
+      "아이와",
+      "이야기",
+      "탭댄스",
+      "사진 남기기",
+      "사회적 메시지",
+      "활기찬",
+      "고전극",
+      "깊이 감상",
+      "여유로운 관람",
+      "유쾌한"
+    ]
+  },
+  "probabilities": {
+    "persona_id": "persona_021",
+    "action_probabilities": {
+      "search": 0.191571,
+      "content_view": 0.287356,
+      "favorite_add": 0.143678,
+      "favorite_remove": 0.047893,
+      "review_write": 0.118774,
+      "recommendation_click": 0.114943,
+      "purchase_simulation": 0.095785
+    },
+    "category_probabilities": {
+      "전시": 0.04545454545454545,
+      "뮤지컬": 0.04545454545454545,
+      "연극": 0.40909090909090906,
+      "음악": 0.04545454545454545,
+      "무용": 0.40909090909090906,
+      "축제": 0.04545454545454545
+    }
+  },
+  "actions": [
+    {
+      "timestamp": "2026-11-09T00:00:20.898584+00:00",
+      "action": "네트워크 요청",
+      "status": "실패",
+      "detail": "GET /: net::ERR_ADDRESS_UNREACHABLE"
+    },
+    {
+      "timestamp": "2026-11-09T00:00:20.904696+00:00",
+      "action": "페이지 실행",
+      "status": "실패",
+      "detail": "Page.goto: net::ERR_ADDRESS_UNREACHABLE at https://www.aiready.p-e.kr/\nCall log:\n  - navigating to \"https://www.aiready.p-e.kr/\", waiting until \"domcontentloaded\"\n"
+    }
+  ],
+  "viewed_contents": [],
+  "summary": {
+    "content_count_by_category": {},
+    "content_count_by_tag": {},
+    "viewed_content_ids": []
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "page": 8,
+  "records": [
+    {
+      "page": 8,
+      "event_id": "42335311",
+      "title": "불의 사제",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42335311&qvt=0&query=%EB%B6%88%EC%9D%98%20%EC%82%AC%EC%A0%9C",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261030_275%2F1793332741281aSuNV_JPEG%2F360_main_thumb_url_1793332741210.jpg",
+      "period": "2026.11.04.~2026.11.18.",
+      "venue": "한벽원미술관",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=11620358"
+    },
+    {
+      "page": 8,
+      "event_id": "42335259",
+      "title": "김대열 초대전",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42335259&qvt=0&query=%EA%B9%80%EB%8C%80%EC%97%B4%20%EC%B4%88%EB%8C%80%EC%A0%84",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261030_289%2F1793331793689LVvGg_JPEG%2F360_main_thumb_url_1793331793636.jpg",
+      "period": "2026.10.28.~2026.11.11.",
+      "venue": "세종뮤지엄갤러리",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=1524731952"
+    },
+    {
+      "page": 8,
+      "event_id": "42335241",
+      "title": "Head in the Clouds",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42335241&qvt=0&query=Head%20in%20the%20Clouds",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261030_276%2F1793330912258VMXow_JPEG%2F360_main_thumb_url_1793330912248.jpg",
+      "period": "2026.11.03.~2026.11.15.",
+      "venue": "문화실험공간 호수",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=1443382294"
+    },
+    {
+      "page": 8,
+      "event_id": "42335228",
+      "title": "종이 연필 지우개 책",
+      "event_url": "https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=QkRS^bjBC^VmJEX0NQYw==^TEdOX0tJVA==&pkid=360&os=42335228&qvt=0&query=%EC%A2%85%EC%9D%B4%20%EC%97%B0%ED%95%84%20%EC%A7%80%EC%9A%B0%EA%B0%9C%20%EC%B1%85",
+      "poster_url": "https://search.pstatic.net/common?type=ofullfill&size=138x200&quality=95&direct=true&src=https%3A%2F%2Fcsearch-phinf.pstatic.net%2F20261030_65%2F1793330513506Q03uz_JPEG%2F360_main_thumb_url_1793330513497.jpg",
+      "period": "2026.11.04.~2026.11.27.",
+      "venue": "갤러리 플래닛",
+      "venue_url": "http://map.naver.com/index.nhn?pinType=site&mapMode=0&pinId=33300080"
+    }
+  ]
+}
