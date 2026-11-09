@@ -80,26 +80,7 @@ Open API(문화체육관광부)와 네이버 크롤링으로 문화 컨텐츠 �
  
 ## 5. 요구사항 명세서
 
-- API 공통 접두사: /api/v1 (표에서는 생략)
-- 요청·응답 형식: JSON
-- 인증 방식: 서버 세션 기반 Bearer 토큰 인증
 
-| 요구사항 ID | 구분 | 요구사항 | 상세 내용 | 관련 API | 관련 WBS |
-|---|---|---|---|---|---|
-| FR-01 | 회원 관리 | 회원가입 및 로그인 | 이름·이메일·비밀번호 기반 회원가입, 로그인 시 인증 토큰 발급, 로그아웃 시 현재 세션 폐기 | POST /auth/register<br>POST /auth/login<br>POST /auth/logout | MEM-01, MEM-02 |
-| FR-02 | 회원 관리 | 프로필 관리 | 내 회원정보 조회 및 이름·성별·나이·거주지·직업·MBTI 수정 | GET /users/me<br>PATCH /users/me | MEM-01, MEM-02 |
-| FR-03 | 회원 관리 | 취향 설문 | 관심 분야·태그 등 사용자 선호 정보 수집 및 저장·수정 | PUT /surveys/me | MEM-01, MEM-02 |
-| FR-04, FR-05 | 콘텐츠 | 콘텐츠 조회·검색·필터 | 문화 콘텐츠 목록·상세 조회, 키워드·지역·분야·기간·무료 여부 기준 검색 및 필터링·정렬 | GET /contents<br>GET /contents/{content_id} | CONT-01, CONT-02 |
-| FR-06 | 사용자 활동 | 찜 관리 | 관심 콘텐츠 찜 등록·해제 및 내 찜 목록 조회 | GET /bookmarks<br>PUT /bookmarks/{content_id}<br>DELETE /bookmarks/{content_id} | ACT-01, ACT-02 |
-| FR-07 | 사용자 활동 | 리뷰·평점 관리 | 콘텐츠별 리뷰·평점 조회 및 내 리뷰 작성·수정·삭제 | GET /contents/{content_id}/reviews<br>PUT /contents/{content_id}/reviews/me<br>DELETE /contents/{content_id}/reviews/me | ACT-01, ACT-02 |
-| FR-08 | 사용자 활동 | 활동 이력 관리 | 콘텐츠 조회·검색·필터 사용·추천 클릭 등 행동 이벤트 기록 및 내 최근 조회 콘텐츠 목록 제공 | POST /history/events<br>GET /history | ACT-01, ACT-02 |
-| FR-09, FR-10 | 추천 | 맞춤형 추천 및 화면 제공 | 취향 설문·활동 데이터를 활용한 개인화 추천 콘텐츠 표시, 비로그인 시 인기 콘텐츠 제공 | GET /recommendations | RECO-01, RECO-02 |
-| FR-11 | 주문·결제 | 주문 및 결제 처리 | 결제 기능 설정 조회, 콘텐츠·수량에 따른 결제 처리 및 주문·결제 이력 저장 | GET /payments/config<br>POST /payments/simulations | PAY-01, PAY-02 |
-| FR-12 | 주문·결제 | 결제 내역 조회 | 내 주문·결제 내역 목록 및 개별 주문·결제 상태 상세 조회 | GET /payments<br>GET /payments/{payment_id} | PAY-01, PAY-02 |
-| FR-13 | 데이터 | 데이터베이스 관리 | 회원·콘텐츠·취향·찜·리뷰·활동·주문·결제 데이터 저장 및 관리 | 별도 API 없음 — 각 기능의 서버 로직에서 처리 | DATA-01 |
-| FR-14 | 데이터 | 외부 데이터 수집 | 외부 공개 API 및 데이터 수집 작업을 통한 문화 콘텐츠 확보 | 별도 API 없음 — 수집 작업으로 실행 | DATA-02 |
-| FR-15 | 데이터 | 데이터 정제 및 적재 | 수집 데이터의 형식 통일, 중복 처리 및 데이터베이스 적재 | 별도 API 없음 — 데이터 처리 파이프라인에서 실행 | DATA-02 |
-| — | 운영 | 서버 상태 확인 | 백엔드 실행 상태 및 MariaDB 연결·서비스 준비 상태 확인 | GET /health<br>GET /ready | — |
 
 
 
