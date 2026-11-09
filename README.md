@@ -108,7 +108,7 @@ Open API(문화체육관광부)와 네이버 크롤링으로 문화 컨텐츠 �
 ### 6.1 시스템 아키텍처
 [시스템 아키텍처 WIKI 상세보기](https://github.com/encore-ai-campus/mlo-03-p1-team1/wiki/System%E2%80%90Architecture)
  
-<img width="3583" height="2193" alt="Image" src="https://github.com/user-attachments/assets/27678f0d-5207-44c6-8f6d-eab6df8c4b7f" />
+<img width="3578" height="2188" alt="SystemArchitecture" src="https://github.com/user-attachments/assets/530fb772-7282-4c2b-9db7-f9d11290df06" />
 
 ### 6.2 ERD (Entity Relationship Diagram)
  [ERD WIKI 상세보기](https://github.com/encore-ai-campus/mlo-03-p1-team1/wiki/ERD)
